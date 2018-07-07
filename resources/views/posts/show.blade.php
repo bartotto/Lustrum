@@ -12,15 +12,7 @@
             </div>
             <div class="panel-body">             
                 <h1>{{ $post->title }}</h1>
-                @if (count($post->tags))                  
-                    @foreach ($post->tags as $tag)
-                        <a href="/posts/tags/{{ $tag->name }}" class="btn btn-primary btn-sm">
-                           {{ $tag->name }}
-                        </a>
-                    @endforeach
-                    <br>
-                @endif
-
+            
                 {{ $post->body }}
 
                 <hr>

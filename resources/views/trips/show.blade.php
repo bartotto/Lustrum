@@ -2,27 +2,31 @@
 
 @section('content')
     <div class="col-md-8 col-md-offset-2">
-        <button onclick="goBack()">
-           {{ trans('info.back') }}
-        </button>
+
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h2>{{ $trip->destination }}</h2>
                 <h3>{{ $trip->year }}</h3>
             </div>
-                     
+            <button onclick="goBack()">
+                {{ trans('info.back') }}
+            </button>
             <div class="panel-body">
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 2</div>
-                    <img src="\img\Kenia\Luco_Kenia.png" style="width:100%">
-                    <div class="text">Luco</div>
+                    <img src="\img\{{ $trip->destination }}\1.jpg" style="width:100%">
                 </div>
-
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 2</div>
-                    <img src="\img\Kenia\Kenia_vuur.jpg" style="width:100%">
-                    <div class="text">Vuurtje</div>
+                    <img src="\img\{{ $trip->destination }}\2.jpg" style="width:100%">
                 </div>      
+                <div class="mySlides fade">
+                    <img src="\img\{{ $trip->destination }}\3.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="\img\{{ $trip->destination }}\4.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="\img\{{ $trip->destination }}\5.jpg" style="width:100%">
+                </div>  
             </div>
         </div>
     </div>

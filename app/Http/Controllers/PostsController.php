@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers;
 
-//use Illuminate\Http\Request;
 use App\User;
 use App\Post;
-use App\Mail\new_post;
 
 class PostsController extends Controller {
     
@@ -16,7 +14,6 @@ class PostsController extends Controller {
     public function index() {
         $posts = Post::latest()
                 ->filter(request()->only(['month', 'year']))
-                ->filter(request()->only('tag'))
                 ->get();
         return view('posts.index', compact('posts'));
         }
@@ -39,9 +36,6 @@ class PostsController extends Controller {
         $user->publish(
             new Post(request(['title', 'body']))
             );
-        
-        \Mail::to($user)->send(new new_post($user));
-        
         return redirect('/posts');
         }   
     }

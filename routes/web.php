@@ -47,8 +47,6 @@ Route::group(['middleware' => 'language'], function () {
     Route::post('/posts', 'PostsController@store');
     Route::post('/posts/{post}/comments', 'CommentsController@store');
     
-    Route::get('/posts/tags/{tag}', 'TagsController@index');
-    
     Route::get('/trips', 'TripsController@index')->name('trips');
     Route::get('/trips/{trip}', 'TripsController@show');
 });

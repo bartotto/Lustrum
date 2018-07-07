@@ -12,8 +12,7 @@
                 @foreach ($trips as $trip)
                     <li><a href="/trips/{{ $trip->id }}">{{ $trip->destination }}</a></li>
                 @endforeach
-            </div>
-       
+            </div>      
         </div>
     </div>
 @endsection

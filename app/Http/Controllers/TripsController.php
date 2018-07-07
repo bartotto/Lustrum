@@ -14,6 +14,12 @@ class TripsController extends Controller {
         }
         
     public function show(Trip $trip) {
-        return view('trips.show', compact('trip'));
+        $directory = "/img/$trip/";
+        $filecount = 0;
+        $files = glob($directory . "*.jpg");
+        if ($files){
+            $filecount = count($files);
+        }
+        return view('trips.show', compact('trip',$filecount));
         }
     }

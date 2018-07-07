@@ -13,18 +13,7 @@
                     </a>
                 </li>
             @endforeach
-        </ol>
-    </div>
-    <div class="sidebar-module">
-        <h4>{{ trans('info.tags') }}</h4>
-        <ol class="list-unstyled">
-            @foreach ($tags as $tag)
-                <li>
-                    <a href="/posts?tag={{ $tag }}">
-                        {{ $tag }}
-                    </a>
-                </li>
-            @endforeach
+            <li><a href="{{ route('posts')   }}">{{ trans('info.all') }}</a></li>
         </ol>
     </div>
     <div class="sidebar-module">

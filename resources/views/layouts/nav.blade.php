@@ -45,11 +45,11 @@
                     <li>
                         @if (app()->getLocale() == 'en')
                             <a href="{{ language()->back('nl') }}">
-                                <img src='\img\Flags\nl.png' style="width:30px;height:20px;border:0;">
+                                <img src='\img\Flags\nl.png' style="width:24px;height:16px;border:0;margin-top:4px;">
                             </a>
                         @elseif (app()->getLocale() == 'nl')
                             <a href="{{ language()->back('en') }}">
-                                <img src='\img\Flags\gb.png' style="width:30px;height:20px;border:0;">
+                                <img src='\img\Flags\gb.png' style="width:24px;height:16px;border:0;margin-top:4px;">
                             </a>
                         @endif
                     </li>

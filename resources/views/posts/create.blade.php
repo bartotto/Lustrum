@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="col-md-8 col-md-offset-2">
-        <button onclick="goBack()">
+        <button class="btn btn-primary" onclick="goBack()">
             {{ trans('info.back') }}
         </button>
         <div class="panel panel-default">

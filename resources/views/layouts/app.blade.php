@@ -24,7 +24,7 @@
     <body>
         <h1 class="bart-kop">
             <a href="{{ route('home') }}">
-                VIIe Lustrumreis Caligula
+                VIIe Lustrumreis Caligula: Kaukasisch hilarisch!
             </a>
         </h1>  
         <div id="app">

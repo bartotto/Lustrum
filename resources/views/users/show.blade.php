@@ -2,13 +2,13 @@
 
 @section('content')
     <div class="col-md-8 col-md-offset-2">
+        <button class="btn btn-primary" onclick="goBack()">
+            {{ trans('info.back') }}
+        </button>
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h2>{{ trans('info.all_details') }}</h2>
+                <h2>{{ trans('info.all_details') }} {{ $user->name }}</h2>
             </div>
-            <button onclick="goBack()">
-                {{ trans('info.back') }}
-            </button>
             <div class="panel-body">
                 <div class="row">                 
                     <TABLE BORDER="0" STYLE="border-style: solid">

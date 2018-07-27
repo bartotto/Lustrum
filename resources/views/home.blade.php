@@ -18,25 +18,27 @@
                 @endif                 
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 4</div>
+                    <div class="numbertext">1 / 5</div>
+                    <img src="img\KaukasischHilarisch.jpeg" style="width:100%">
+                    <div class="text">Georgie</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
                     <img src="img\Groep\Kenia.jpg" style="width:100%">
                     <div class="text">Kenia</div>
                 </div>
-
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 4</div>
+                    <div class="numbertext">3 / 5</div>
                     <img src="img\Groep\Lappland.jpg" style="width:100%">
                     <div class="text">Oman</div>
                 </div>      
-
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 4</div>
+                    <div class="numbertext">4 / 5</div>
                     <img src="img\Groep\Cameroun.jpg" style="width:100%">
                     <div class="text">Karpaten</div>
                 </div>
-
                 <div class="mySlides fade">
-                    <div class="numbertext">4 / 4</div>
+                    <div class="numbertext">5 / 5</div>
                     <img src="img\Groep\Oman.jpg" style="width:100%">
                     <div class="text">Zweden</div>
                 </div>

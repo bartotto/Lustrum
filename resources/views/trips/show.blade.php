@@ -10,21 +10,19 @@
                 <h2>{{ $trip->destination }} ({{ $trip->year }})</h2>
             </div>
             <div class="panel-body">
-                <div class="mySlides fade">
-                    <img src="\img\{{ $trip->destination }}\1.jpg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="\img\{{ $trip->destination }}\2.jpg" style="width:100%">
-                </div>      
-                <div class="mySlides fade">
-                    <img src="\img\{{ $trip->destination }}\3.jpg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="\img\{{ $trip->destination }}\4.jpg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="\img\{{ $trip->destination }}\5.jpg" style="width:100%">
-                </div>  
+                @php
+                    $aantal = 1;
+                @endphp
+                @for($i = 1;$i <= $aantal; $i++)
+                    @if(file_exists('img/'.$trip->destination.'/'.$i.'.jpg'))
+                        @php 
+                            $aantal++;
+                        @endphp
+                        <div class="mySlides fade">
+                            <img src="<?php echo '/img/'.$trip->destination.'/'.$i.'.jpg';?>" style="width:100%">
+                        </div>
+                    @endif
+                @endfor
             </div>
         </div>
     </div>

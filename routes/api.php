@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
+/* uitgevinkt tegen error: Unable to prepare route [api/user] for serialization. Uses Closure.
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });

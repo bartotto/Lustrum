@@ -29,7 +29,7 @@
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="/profile/{{ Auth::user()->id }}">{{ trans('info.profile') }}</a></li>
+                            <li><a href="/users/{{ Auth::user()->id }}">{{ trans('info.profile') }}</a></li>
                             <li>
                                 <a href="{{ route('logout') }}"
                                     onclick="event.preventDefault();

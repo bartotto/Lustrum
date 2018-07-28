@@ -10,7 +10,9 @@
                 <div class="row">
                     <ol>
                         @foreach ($users as $user)
-                            <li><a href="/users/{{ $user->id }}">{{ $user->name }}</a></li>
+                            @if($user->joins)
+                                <li><a href="/users/{{ $user->id }}">{{ $user->name }}</a></li>
+                            @endif
                         @endforeach
                     </ol>
                 </div>

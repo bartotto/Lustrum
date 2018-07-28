@@ -28,22 +28,11 @@ Route::group(['middleware' => 'language'], function () {
     Route::get('/georgia_map', 'HomeController@georgia_map')->name('georgia_map');
     Route::get('/program', 'HomeController@program')->name('program');
     
-    Route::get('/joiners', function() {
-        $users = DB::table('users')
-                ->where('joins',true)
-                ->orderBy ('name')
-                ->get();
-        return view('joiners', compact('users'));
-    })->name('joiners');
-    
+    Route::get('/joiners', 'UsersController@joiners')->name('joiners');
     Route::get('/users', 'UsersController@index')->name('users');
     Route::get('/users/{user}', 'UsersController@show');
     Route::get('/profile/{user}/edit', 'UsersController@edit')->name('profile.edit');
     Route::patch('/users/{user}', 'UsersController@update');
-    Route::get('/profile/{id}', function($id) {
-        $user = DB::table('users')->find($id);
-        return view('users.show', compact('user'));
-        })->name('profile');
     
     Route::get('/posts', 'PostsController@index')->name('posts');
     Route::get('/posts/{post}', 'PostsController@show');

@@ -28,4 +28,10 @@ class UsersController extends Controller {
         $user->update($request->all());
         return view('users.show', compact('user'));
         }
+        
+    public function joiners() {
+        $users = User::orderBy('name')->get();
+        return view('joiners', compact('users'));
+        }
+        
     }

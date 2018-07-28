@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Validator;
+use Illuminate\Http\Request;
 use App\User;
 use App\Post;
 
@@ -27,11 +29,10 @@ class PostsController extends Controller {
         }
     
     public function store() {
-        $this->validate(request(), [
-            'title'     => 'required|min:4',
-            'body'      => 'required|min:4'
+        $this->validate(request(),[
+           'title' => 'required|unique:posts|min:4|max:255',
+           'body' => 'required|min:4',
         ]);
-        
         $user = auth()->user();
         $user->publish(
             new Post(request(['title', 'body']))

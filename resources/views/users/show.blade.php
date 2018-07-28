@@ -5,6 +5,11 @@
         <button class="btn btn-primary" onclick="goBack()">
             {{ trans('info.back') }}
         </button>
+        @if(Auth::user()->id == $user->id)
+            <a class="btn btn-primary" href="{{ route('profile.edit', ['id'=>$user->id]) }}">
+                {{ trans('info.edit') }}
+            </a>
+        @endif
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h2>{{ trans('info.all_details') }} {{ $user->name }}</h2>

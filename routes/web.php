@@ -1,4 +1,4 @@
-<?php
+  <?php
 
 /*
 |--------------------------------------------------------------------------
@@ -34,9 +34,8 @@ Route::group(['middleware' => 'language'], function () {
     
     Route::get('/users', 'UsersController@index')->name('users');
     Route::get('/users/{user}', 'UsersController@show');
-    Route::get('/users/{user}/edit', 'UsersController@edit');
-    Route::patch('users/{user]', 'UsersController@update');
-    
+    Route::get('/profile/{user}/edit', 'UsersController@edit')->name('profile.edit');
+    Route::patch('users/{user}', 'UsersController@update');
     Route::get('/profile/{id}', function($id) {
         $user = DB::table('users')->find($id);
         return view('users.show', compact('user'));
@@ -45,7 +44,7 @@ Route::group(['middleware' => 'language'], function () {
     Route::get('/posts', 'PostsController@index')->name('posts');
     Route::get('/posts/{post}', 'PostsController@show');
     Route::get('/post/create', 'PostsController@create')->name('post.create');
-    Route::post('/posts', 'PostsController@store');
+    Route::post('/post', 'PostsController@store');
     Route::post('/posts/{post}/comments', 'CommentsController@store');
     
     Route::get('/trips', 'TripsController@index')->name('trips');

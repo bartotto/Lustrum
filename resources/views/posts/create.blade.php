@@ -10,7 +10,7 @@
                 <h2>{{ trans('info.post_create') }}</h2>
             </div>
         </div>
-        <form method="POST" action="/posts">
+        <form method="POST" action="/post">
             {{ csrf_field() }}
             <div class="form-group">
                 <label for="title">{{ trans('info.post_title') }}:</label>

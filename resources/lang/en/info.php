@@ -3,7 +3,7 @@
 return [
     'about'         => 'About',
     'about_blog'    => 'This is the official blog page of the club. Please treat everything confidential!',
-    'add'           => 'Create new post',
+    'add_user'      => 'Create new user',
     'all'           => 'All',
     'all_details'   => 'All details of:',
     'archives'      => 'Archives',
@@ -32,7 +32,7 @@ return [
     'home_descr2'   => '(please take note: from now on we will travel every 4 years)',
     'home_descr3'   => 'Saturday September 22 - Monday October 1st, 2018',
     'home_address'  => 'Home address',
-    'home_pc'       => 'Postal code &nbsp; City',
+    'home_postalcode'=> 'Postal code &nbsp; City',
     'home_country'  => 'Country',
     'home_tel'      => 'Telephone home',
     'joiners'       => 'Who joins?',

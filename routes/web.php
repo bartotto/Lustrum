@@ -27,6 +27,7 @@ Route::group(['middleware' => 'language'], function () {
     Route::get('/joiners', function() {
         $users = DB::table('users')
                 ->where('joins',true)
+                ->orderBy ('name')
                 ->get();
         return view('joiners', compact('users'));
     })->name('joiners');

@@ -39,4 +39,8 @@ class HomeController extends Controller {
     public function program() {
         return view('program');
     }
+    
+    public function logout() {
+        return view('welcome');
+    }
 }

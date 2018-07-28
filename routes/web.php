@@ -35,7 +35,7 @@ Route::group(['middleware' => 'language'], function () {
     Route::get('/users', 'UsersController@index')->name('users');
     Route::get('/users/{user}', 'UsersController@show');
     Route::get('/profile/{user}/edit', 'UsersController@edit')->name('profile.edit');
-    Route::patch('users/{user}', 'UsersController@update');
+    Route::patch('/users/{user}', 'UsersController@update');
     Route::get('/profile/{id}', function($id) {
         $user = DB::table('users')->find($id);
         return view('users.show', compact('user'));

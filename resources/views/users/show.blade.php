@@ -5,7 +5,7 @@
         <button class="btn btn-primary" onclick="goBack()">
             {{ trans('info.back') }}
         </button>
-        @if(Auth::user()->id == $user->id)
+        @if(Auth::id() == $user->id)
             <a class="btn btn-primary" href="{{ route('profile.edit', ['id'=>$user->id]) }}">
                 {{ trans('info.edit') }}
             </a>

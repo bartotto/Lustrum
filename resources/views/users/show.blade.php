@@ -32,7 +32,7 @@
                         </TR>
                         <TR>
                             <TD>{{ trans('info.home_address') }}</TD>
-                            <TD>{{ $user->home_address." ".$user->home_number }}</TD>
+                            <TD>{{ $user->home_address }}</TD>
                         </TR>
                         <TR>
                             <TD></TD>

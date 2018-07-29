@@ -11,7 +11,7 @@
         </div>
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Right Side Of Navbar -->
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav mx-auto">
                 <!-- Authentication Links -->
                 @guest
                     <li><a href="{{ route('login') }}">{{ trans('info.login') }}</a></li>

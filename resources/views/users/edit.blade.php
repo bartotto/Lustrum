@@ -20,14 +20,16 @@
                         </div>
                     </div>
                 </div>
+                <!--
                 <div class="form-horizontal">
                     <div class="form-group form-group-lg">
                         <label class="col-sm-4 control-label" for="dob">{{ trans('info.dob') }}</label>
                         <div class="col-sm-8">
-                            <input class="form-control" type="date" value="{{ date('d-m-y', strtotime($user->dob)) }}" id="dob" name="dob" required>
+                            <input class="form-control" type="date" value="{{ $user->dob->format('d/m/Y') }}" id="dob" name="dob" required>
                         </div>
                     </div>
                 </div>
+                -->
                 <div class="form-horizontal">
                     <div class="form-group form-group-lg">
                         <label class="col-sm-4 control-label" for="email">{{ trans('info.email_address') }}</label>

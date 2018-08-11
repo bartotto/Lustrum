@@ -23,7 +23,7 @@ return [
     'destination'   => 'Bestemming',
     'dob'           => 'Geboortedatum',
     'edit'          => 'Wijzig',
-    'edit_user'     => 'Wijzig gegevens gebruiker',
+    'edit_user'     => 'Wijzig jouw gegevens hier',
     'email_address' => 'E-mail',
     'footer'        => '© Bart',
     'footer_up'     => 'Terug naar boven',

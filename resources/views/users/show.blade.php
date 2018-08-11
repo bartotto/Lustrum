@@ -21,10 +21,10 @@
                             <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.name') }}</TD>
                             <TD WIDTH="250" HEIGHT="30">{{ $user->name }}</TD>
                         </TR>
-                        <TR>
+                        <!-- <TR>
                             <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.dob') }}</TD>
                             <TD>{{ date("d-m-y", strtotime($user->dob)) }}</TD>
-                        </TR>
+                        </TR> -->
                         <TR>
                             <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.email_address') }}</TD>
                             <TD>{{ $user->email }}</TD>

@@ -26,7 +26,5 @@
             @include ('layouts.errors')
         </form>  
     </div>
-
     @include ('layouts.sidebar')
- 
 @endsection

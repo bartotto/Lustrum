@@ -7,7 +7,7 @@
         </button>
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h1>{{ trans('info.edit_user') }}</h1>
+                <h2>{{ trans('info.edit_user') }}</h2>
             </div>     
             <form method="POST" action="/users/{{ $user->id }}">
                 {{ method_field('PATCH') }}

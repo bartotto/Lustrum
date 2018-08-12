@@ -11,7 +11,8 @@
         </div>
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Right Side Of Navbar -->
-            <ul class="nav navbar-nav mx-auto">
+            <!-- <ul class="nav navbar-nav mx-auto"> -->
+            <ul class="nav navbar-nav pull-right">
                 <!-- Authentication Links -->
                 @guest
                     <li><a href="{{ route('login') }}">{{ trans('info.login') }}</a></li>
@@ -42,7 +43,7 @@
                             </li>
                         </ul>
                     </li>           
-                    <li>
+                    <!--<li>
                         @if (app()->getLocale() == 'en')
                             <a href="{{ language()->back('nl') }}">
                                 <img src='\img\Flags\nl.png' style="width:24px;height:16px;border:0;margin-top:4px;">
@@ -52,7 +53,7 @@
                                 <img src='\img\Flags\gb.png' style="width:24px;height:16px;border:0;margin-top:4px;">
                             </a>
                         @endif
-                    </li>
+                    </li>-->
                 @endguest
             </ul>
         </div>

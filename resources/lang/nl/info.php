@@ -70,7 +70,7 @@ return [
     'program6'      => 'Donderdag - trek naar vil. Ardoti (5-6h) en verder (4km) naar Mutso fortress. Rit naar Shatili (12km, 30 min). Guesthouse.',
     'program7'      => 'Vrijdag -  Rit naar Chargali,  Rafting op rivier Aragvi. Na de lunch rit naar Tbilisi. Hotel.',
     'program8'      => 'Zaterdag – Tblisi city tour. Na de lunch excursie in oude hoofdstad Mskheta. Bezoek aan Jvari monastery. \'s Avonds traditional Georgian table with Tamada and music in wine cellar. Hotel.',
-    'program9'      => 'Zondag – relaxen.',
+    'program9'      => 'Zondag – Bezoek geboortestad Stalin, relaxen.',
     'program10'     => 'Maandag 1 oktober - 06:30 vertrek met KL3109. Aankomst Schiphol 09:40.',
     'register'      => 'Registreer',
     'remember_me'   => 'Onthoud mij',

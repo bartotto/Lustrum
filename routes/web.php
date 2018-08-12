@@ -11,12 +11,6 @@
 |
 */
 
-  /*
-Route::get('/', function () {
-    return view('welcome');
-});
-*/
-
 Route::get('/','HomeController@logout')->name('logout');
   
 Auth::routes();

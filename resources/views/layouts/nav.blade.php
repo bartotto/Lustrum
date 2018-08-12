@@ -21,10 +21,17 @@
                     <li><a href="{{ route('georgia') }}">{{ trans('info.destination') }}</a></li>
                     <li><a href="{{ route('program') }}">{{ trans('info.program') }}</a></li>
                     <li><a href="{{ route('posts')   }}">{{ trans('info.blog') }}</a></li>
-                    <li><a href="{{ route('joiners') }}">{{ trans('info.joiners') }}</a></li>
-                    <li><a href="{{ route('luco')    }}">{{ trans('info.luco') }}</a></li>
-                    <li><a href="{{ route('users')   }}">{{ trans('info.club') }}</a></li>
+                    <li><a href="{{ route('joiners') }}">{{ trans('info.joiners') }}</a></li>  
                     <li><a href="{{ route('trips')   }}">{{ trans('info.trips') }}</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+                            Info<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ route('luco')    }}">{{ trans('info.luco') }}</a></li>
+                            <li><a href="{{ route('users')   }}">{{ trans('info.club') }}</a></li>
+                        </ul>
+                    </li> 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
                             {{ Auth::user()->name }} <span class="caret"></span>

@@ -11,9 +11,10 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Styles -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
         <link href="{{ asset('css/blog.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet"> 
         <style>
             #map {
                 height: 400px;
@@ -22,7 +23,7 @@
         </style>
     </head>
     <body>
-        <h1 class="bart-kop">
+        <h1 style="margin:auto; text-align:center; vertical-align:middle; background-color:#f9f9f9; padding:20px;">
             <a href="{{ route('home') }}">
                 VIIe Lustrumreis Caligula: Kaukasisch hilarisch!
             </a>
@@ -40,29 +41,14 @@
         @include('layouts.footer')
         
         <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>  
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script src="{{ asset('js/app.js') }}"></script>
-        <script src="{{ asset('js/photo.js') }}"></script>
         <script>
             function goBack() {
             window.history.back()
             }
         </script>
-        <script>
-            function myMap() {
-                var tbilisi = {lat: 41.717, lng: 44.827};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 6,
-                    center: tbilisi,
-                    mapTypeId: google.maps.MapTypeId.roadmap
-                    });
-                var marker = new google.maps.Marker({
-                    position: tbilisi,
-                    map: map
-                    });
-                }
-        </script>
-        <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3PveB9htkol0a_N0hBEEzfEzUM4B9xUY&callback=myMap">
-        </script> 
     </body>
 </html>

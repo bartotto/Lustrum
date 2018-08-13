@@ -34,9 +34,36 @@ class HomeController extends Controller {
     public function georgia_map() {
         return view('georgia_map');
         }
-    
+        
+    public function packlist() {
+        return view('packlist');
+        }
+        
+    public function prep_other() {
+        return view('prep_other');
+        }
+        
     public function program() {
         return view('program');
+        }
+        
+    public function kenia() {
+        return view('trips.kenia');
+        }
+    public function lappland() {
+        return view('trips.lappland');
+        }
+    public function cameroun() {
+        return view('trips.cameroun');
+        }
+    public function oman() {
+        return view('trips.oman');
+        }
+    public function karpaten() {
+        return view('trips.karpaten');
+        }
+    public function dalarna() {
+        return view('trips.dalarna');
         }
     
     public function logout() {

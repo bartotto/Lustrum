@@ -1,8 +1,5 @@
 @extends('layouts.app')
 
-<!-- Styles-->
-<link href="{{ asset('css/style.css') }}" rel="stylesheet"> 
-
 @section('content')
     <div class="col-md-8 col-md-offset-2">
         <div class="panel panel-default">
@@ -16,7 +13,6 @@
                         {{ session('status') }}
                     </div>
                 @endif                 
-                <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 5</div>
                     <img src="img\KaukasischHilarisch.jpeg" style="width:100%">
@@ -30,17 +26,17 @@
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 5</div>
                     <img src="img\Groep\Lappland.jpg" style="width:100%">
-                    <div class="text">Oman</div>
+                    <div class="text">Lappland</div>
                 </div>      
                 <div class="mySlides fade">
                     <div class="numbertext">4 / 5</div>
                     <img src="img\Groep\Cameroun.jpg" style="width:100%">
-                    <div class="text">Karpaten</div>
+                    <div class="text">Cameroun</div>
                 </div>
                 <div class="mySlides fade">
                     <div class="numbertext">5 / 5</div>
                     <img src="img\Groep\Oman.jpg" style="width:100%">
-                    <div class="text">Zweden</div>
+                    <div class="text">Oman</div>
                 </div>
                 <hr>
                 <div class="content">
@@ -49,4 +45,5 @@
             </div>
         </div>
     </div>
+    <script src="{{ asset('js/photo.js') }}"></script>
 @endsection

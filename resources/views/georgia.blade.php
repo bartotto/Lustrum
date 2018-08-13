@@ -4,9 +4,7 @@
     <div class="col-md-8 col-md-offset-2">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h2>
-                    {{ trans('info.caucasus') }}
-                </h2>
+                <h2>{{ trans('info.caucasus') }}</h2>
                 <a href="{{ route('georgia_map') }}">
                     {{ trans('info.map') }}
                 </a>

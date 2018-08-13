@@ -1,68 +1,72 @@
-<nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
-        <div class="navbar-header">
-            <!-- Collapsed Hamburger -->
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle Navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="app-navbar-collapse">
-            <!-- Right Side Of Navbar -->
-            <!-- <ul class="nav navbar-nav mx-auto"> -->
-            <ul class="nav navbar-nav pull-right">
-                <!-- Authentication Links -->
-                @guest
-                    <li><a href="{{ route('login') }}">{{ trans('info.login') }}</a></li>
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{{ route('home') }}">
+        <img src= "https://upload.wikimedia.org/wikipedia/commons/d/db/Capitoline_Museum_Caligula.jpg" width="60" height="60" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar nav">
+            @guest
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('login') }}">{{ trans('info.login') }}</a>
                     <!-- <li><a href="{{ route('register') }}">{{ trans('info.register') }}</a></li> -->
-                @else
-                    <li><a href="{{ route('georgia') }}">{{ trans('info.destination') }}</a></li>
-                    <li><a href="{{ route('program') }}">{{ trans('info.program') }}</a></li>
-                    <li><a href="{{ route('posts')   }}">{{ trans('info.blog') }}</a></li>
-                    <li><a href="{{ route('joiners') }}">{{ trans('info.joiners') }}</a></li>  
-                    <li><a href="{{ route('trips')   }}">{{ trans('info.trips') }}</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
-                            Info<span class="caret"></span>
+                </li>
+            @else
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('georgia') }}">{{ trans('info.destination') }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('program') }}">{{ trans('info.program') }}</a>
+                </li>  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('packlist') }}">{{ trans('info.prep') }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('posts')   }}">{{ trans('info.blog') }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('kenia')   }}">{{ trans('info.trips') }}</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Info
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                        <a class="dropdown-item" href="{{ route('users') }}  ">{{ trans('info.club') }}</a>
+                        <a class="dropdown-item" href="{{ route('joiners') }}">{{ trans('info.joiners') }}</a>
+                        <a class="dropdown-item" href="{{ route('luco') }}   ">{{ trans('info.luco') }}</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ Auth::user()->name }}
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                        <a class="dropdown-item" href="/users/{{ Auth::user()->id }}">{{ trans('info.profile') }}</a>
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+                            {{ trans('info.logout') }}
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ route('luco')    }}">{{ trans('info.luco') }}</a></li>
-                            <li><a href="{{ route('users')   }}">{{ trans('info.club') }}</a></li>
-                        </ul>
-                    </li> 
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
-                            {{ Auth::user()->name }} <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/users/{{ Auth::user()->id }}">{{ trans('info.profile') }}</a></li>
-                            <li>
-                                <a href="{{ route('logout') }}"
-                                    onclick="event.preventDefault();
-                                             document.getElementById('logout-form').submit();">
-                                    {{ trans('info.logout') }}
-                                </a>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
-                                </form>
-                            </li>
-                        </ul>
-                    </li>           
-                    <!--<li>
-                        @if (app()->getLocale() == 'en')
-                            <a href="{{ language()->back('nl') }}">
-                                <img src='\img\Flags\nl.png' style="width:24px;height:16px;border:0;margin-top:4px;">
-                            </a>
-                        @elseif (app()->getLocale() == 'nl')
-                            <a href="{{ language()->back('en') }}">
-                                <img src='\img\Flags\gb.png' style="width:24px;height:16px;border:0;margin-top:4px;">
-                            </a>
-                        @endif
-                    </li>-->
-                @endguest
-            </ul>
-        </div>
+                    </div>
+                </li>
+                <!--
+                @if (app()->getLocale() == 'en')
+                    <a class="nav-item nav-link" href="{{ language()->back('nl') }}">
+                        <img src='\img\Flags\nl.png' style="width:24px;height:16px;border:0;margin-top:4px;">
+                    </a>
+                @elseif (app()->getLocale() == 'nl')
+                    <a class="nav-item nav-link" href="{{ language()->back('en') }}">
+                        <img src='\img\Flags\gb.png' style="width:24px;height:16px;border:0;margin-top:4px;">
+                    </a>
+                @endif
+                -->
+            @endguest
+        </ul>
     </div>
 </nav>
+</div>

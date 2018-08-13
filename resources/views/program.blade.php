@@ -19,7 +19,6 @@
                     <li>{{ trans('info.program9') }}</li>
                     <li>{{ trans('info.program10') }}</li>
                 </ul>
-
                 <div class="row">
                     <div class="col-md-12">
                         <div class="col-md-4">

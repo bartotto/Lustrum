@@ -16,7 +16,7 @@
             <h5 class="card-title">Zorg dat je goed voorbereid op reis gaat.</h5>
             <p class="card-text">Regel daarom de volgende zaken asap alsjeblieft:</p>
             <ol>
-                <li>Zorg dat jouw paspoort nog 6 maanden geldig is.</li>
+                <li>Zorg dat jouw paspoort (bij aankomst) nog 3 maanden geldig is. Voor Georgië is geen visum nodig voor een verblijf van maximaal 1 jaar.</li>
                 <li>Zorg voor een passende reisverzekering. Als je geen doorlopende reisverzekering hebt, sluit er dan nu 1 af.</li>
             </ol>
         </div>

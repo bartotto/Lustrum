@@ -45,6 +45,14 @@
                             <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.mobile') }}</TD>
                             <TD>{{ $user->mobile }}</TD>
                         </TR>
+                        <TR>
+                            <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner') }}</TD>
+                            <TD>{{ $user->partner }}</TD>
+                        </TR>
+                           <TR>
+                            <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_mobile') }}</TD>
+                            <TD>{{ $user->partner_mobile }}</TD>
+                        </TR>
                     </TABLE>
                 </div>
             </div>

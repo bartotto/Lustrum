@@ -58,6 +58,8 @@ return [
     'our_guides'    => 'Onze gidsen:',
     'pack_list'     => 'Paklijst',
     'pack_list_title' => 'Paklijst: watch this space!',
+    'partner'       => 'Partner',
+    'partner_mobile' => 'Mobiel partner',
     'password'      => 'Wachtwoord',
     'post_create'   => 'Schrijf een bijdrage',
     'post_body'     => 'Tekst',

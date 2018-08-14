@@ -57,6 +57,8 @@ return [
     'our_guides'    => 'Our guides:',
     'pack_list'     => 'Packing list',
     'pack_list_title' => 'Packing list: watch this space!',
+    'partner'       => 'Partner',
+    'partner_mobile' => 'Mobile partner',
     'password'      => 'Password',
     'post_body'     => 'Body',
     'post_create'   => 'Publish a post',

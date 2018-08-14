@@ -86,6 +86,22 @@
                         </div>
                     </div>
                 </div>
+                <div class="form-horizontal">        
+                    <div class="form-group form-group-lg">
+                        <label class="col-sm-4 control-label" for="partner">{{ trans('info.partner') }}</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" value="{{ $user->partner }}" id="partner" name="partner">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-horizontal">        
+                    <div class="form-group form-group-lg">
+                        <label class="col-sm-4 control-label" for="partner_mobile">{{ trans('info.partner_mobile') }}</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" value="{{ $user->partner_mobile }}" id="partner_mobile" name="partner_mobile">
+                        </div>
+                    </div>
+                </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>
                 </div>      

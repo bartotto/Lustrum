@@ -102,6 +102,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="form-horizontal">        
+                    <div class="form-group form-group-lg">
+                        <label class="col-sm-4 control-label" for="size">{{ trans('info.size') }}</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" value="{{ $user->size }}" id="size" name="size" min="44" max="60">
+                        </div>
+                    </div>
+                </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>
                 </div>      

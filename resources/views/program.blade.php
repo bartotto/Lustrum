@@ -18,6 +18,11 @@
             <p>01/10 Monday: Departure for Adam.</p>
             <div class="row">
                 <div class="col-md-12">
+                    <img id="Kaart" src="img/Kaart_Aart.png" width="100%" height="auto">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
                     <div class="col-md-4">
                         <div class="content">
                             <h3>{{ trans('info.our_guides') }}</h3>

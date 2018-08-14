@@ -5,22 +5,22 @@
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('kenia') }}">Kenia</a>
+                    <a class="nav-link" href="{{ route('kenia') }}">Kenia<br>1989</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="{{ route('lappland') }} ">Lappland</a>
+                    <a class="nav-link active" href="{{ route('lappland') }} ">Lappland<br>1994</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('cameroun') }} ">Cameroun</a>
+                    <a class="nav-link" href="{{ route('cameroun') }} ">Cameroun<br>1999</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('oman') }} ">Oman</a>
+                    <a class="nav-link" href="{{ route('oman') }} ">Oman<br>2005</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('karpaten') }} ">Karpaten</a>
+                    <a class="nav-link" href="{{ route('karpaten') }} ">Karpaten<br>2009</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('dalarna') }} ">Dalarna</a>
+                    <a class="nav-link" href="{{ route('dalarna') }} ">Dalarna<br>2014</a>
                 </li>
             </ul>
         </div>

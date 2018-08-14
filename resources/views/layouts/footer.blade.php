@@ -1,12 +1,12 @@
 <footer class="bart-footer">
     <div class="container">
         <div>
-            <img src="img\logos\Kenia.jpg" alt="Kenia" height="auto" width="80">
-            <img src="img\logos\Lappland.jpg" alt="Kenia" height="auto" width="80">
-            <img src="img\logos\Cameroun.jpg" alt="Kenia" height="auto" width="80">
-            <img src="img\logos\Oman.jpg" alt="Kenia" height="auto" width="80">
-            <img src="img\logos\Karpaten.jpg" alt="Kenia" height="auto" width="80">
-            <img src="img\logos\Dalarna.jpg" alt="Kenia" height="auto" width="80">
+            <img src="\img\logos\Kenia.jpg" alt="Kenia" height="auto" width="80">
+            <img src="\img\logos\Lappland.jpg" alt="Lappland" height="auto" width="80">
+            <img src="\img\logos\Cameroun.jpg" alt="Cameroun" height="auto" width="80">
+            <img src="\img\logos\Oman.jpg" alt="Oman" height="auto" width="80">
+            <img src="\img\logos\Karpaten.jpg" alt="Karpaten" height="auto" width="80">
+            <img src="\img\logos\Dalarna.jpg" alt="Dalarna" height="auto" width="80">
         </div>
         <p align="center">{{ trans('info.footer') }}</p>
         <p align="center">

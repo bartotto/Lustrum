@@ -2,7 +2,7 @@
     <div id="topheader">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="{{ route('home') }}">
-                <img src= "/img/logos/Caligula.png" width="60" height="60" alt="Logo jaarclub Caligula">
+                <img src= "/img/Logos/Caligula.png" width="60" height="60" alt="Logo jaarclub Caligula">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

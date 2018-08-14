@@ -20,8 +20,8 @@ Route::group(['middleware' => 'language'], function () {
     Route::get('/luco', 'HomeController@luco')->name('luco');
     Route::get('/georgia', 'HomeController@georgia')->name('georgia');
     Route::get('/georgia_map', 'HomeController@georgia_map')->name('georgia_map');
-    Route::get('/program', 'HomeController@program')->name('program');
     Route::get('/preparations', 'HomeController@preparations')->name('preparations');
+    Route::get('/trip', 'HomeController@trip')->name('trip');
     
     Route::get('/joiners', 'UsersController@joiners')->name('joiners');
     Route::get('/users', 'UsersController@index')->name('users');

@@ -8,29 +8,39 @@
         <div class="card-body">
             <p class="card-text">{{ trans('info.luco_descr2') }}</p>
             <div class="mySlides fade">
-                <div class="numbertext">1 / 5</div>
-                <img src="img\Luco\Luco_Kenia.png" style="width:100%">
+                <div class="numbertext">1 / 7</div>
+                <img src="img\Luco\Kenia.png" style="max-width:100%">
                 <div class="text">Kenia</div>
             </div>
             <div class="mySlides fade">
-                <div class="numbertext">2 / 5</div>
-                <img src="img\Luco\Luco_Oman.jpg" style="width:100%">
+                <div class="numbertext">2 / 7</div>
+                <img src="img\Luco\Oman.jpg" style="max-width:100%">
                 <div class="text">Oman</div>
-            </div>      
+            </div>
             <div class="mySlides fade">
-                <div class="numbertext">3 / 5</div>
-                <img src="img\Luco\Luco_Karpaten.png" style="width:100%">
+                <div class="numbertext">3 / 7</div>
+                <img src="img\Luco\Oman2.jpg" style="max-width:100%">
+                <div class="text">Oman</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                <img src="img\Luco\Karpaten.png" style="max-width:100%">
                 <div class="text">Karpaten</div>
             </div> 
             <div class="mySlides fade">
-                <div class="numbertext">4 / 5</div>
-                <img src="img\Luco\Luco_Karpaten2.JPG" style="width:100%">
+                <div class="numbertext">5 / 7</div>
+                <img src="img\Luco\Karpaten2.jpg" style="max-width:100%">
                 <div class="text">Karpaten</div>
             </div>    
             <div class="mySlides fade">
-                <div class="numbertext">5 / 5</div>
-                 <img src="img\Luco\Luco_Zweden.png" style="width:100%">
-                <div class="text">Zweden</div>
+                <div class="numbertext">6 / 7</div>
+                <img src="img\Luco\Dalarna.jpg" style="max-width:100%">
+                <div class="text">Dalarna</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 7</div>
+                <img src="img\Luco\Dalarna2.png" style="max-width:100%">
+                <div class="text">Dalarna</div>
             </div>
         </div>
         <div class="card-footer text-muted">

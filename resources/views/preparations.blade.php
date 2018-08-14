@@ -5,12 +5,28 @@
     <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="card card-block">
+                <img class="card-img-top" src="img/News.jpg" alt="News" height="auto" width="48">
+                <div class="card-header">
+                    <h2>{{ trans('info.last_news') }}</h2>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Strandborrel donderdag 30 augustus</h5>
+                    <p class="card-text">Partners/vriendinnen ook mee!</p>
+                    <p class="card-text">Vanaf 18:00 in Standtent Culpepper, Zwarte Pad, Strand Noord, Scheveningen</p>
+                </div>
+                <div class="card-footer text-muted">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card card-block">
                 <img class="card-img-top" src="img/Rugzak.jpg" alt="Paklijst" height="auto" width="48">
                 <div class="card-header">
                     <h2>{{ trans('info.pack_list') }}</h2>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">En ik neem mee</h5>
+                    <h5 class="card-title">Ik ga op reis en neem mee</h5>
                     <p class="card-text">De gids zorgt voor tenten en matrassen</p>
                     <ul style="list-style-type:none">
                         <li>1</li>
@@ -47,7 +63,7 @@
                     <h2>{{ trans('info.prep_insurance') }}</h2>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Wie haalt je op als je een enkel verzwikt?</h5>
+                    <h5 class="card-title">Wie haalt je van de berg als je je enkel verzwikt?</h5>
                     Zorg voor een passende reisverzekering. Als je geen doorlopende reisverzekering hebt, sluit er dan nu 1 af.
                 </div>
                 <div class="card-footer text-muted">

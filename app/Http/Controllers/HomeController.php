@@ -35,12 +35,8 @@ class HomeController extends Controller {
         return view('georgia_map');
         }
         
-    public function packlist() {
-        return view('packlist');
-        }
-        
-    public function prep_other() {
-        return view('prep_other');
+    public function preparations() {
+        return view('preparations');
         }
         
     public function program() {

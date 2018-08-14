@@ -34,7 +34,7 @@
                         $aantal++;
                     @endphp
                     <div class="mySlides fade">
-                        <img src="<?php echo '/img/Lappland/'.$i.'.jpg';?>" style="width:100%">
+                        <img src="<?php echo '/img/Lappland/'.$i.'.jpg';?>" style="max-width:100%">
                         <div class="numbertext">{{ $i }}</div>
                     </div>
                 @endif

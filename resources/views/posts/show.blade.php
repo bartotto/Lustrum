@@ -12,11 +12,8 @@
             </div>
             <div class="panel-body">             
                 <h1>{{ $post->title }}</h1>
-            
                 {{ $post->body }}
-
                 <hr>
-
                 <div class="comments">
                     <ul class="list-group">
                         @foreach ($post->comments as $comment)
@@ -29,9 +26,7 @@
                         @endforeach
                     </ul>
                 </div>
-
                 <hr>
-
                 <div class=card">
                     <div class=card-block">
                         <form method="POST" action="/posts/{{ $post->id }}/comments">
@@ -49,7 +44,5 @@
             </div>
         </div>
     </div>
-
     @include ('layouts.sidebar')
-
 @endsection

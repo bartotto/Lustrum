@@ -5,11 +5,12 @@
     <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="card card-block">
+                <img class="card-img-top" src="img/Rugzak.jpg" alt="Paklijst" height="auto" width="48">
                 <div class="card-header">
                     <h2>{{ trans('info.pack_list') }}</h2>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">In ieder geval meenemen</h5>
+                    <h5 class="card-title">En ik neem mee</h5>
                     <p class="card-text">De gids zorgt voor tenten en matrassen</p>
                     <ul style="list-style-type:none">
                         <li>1</li>
@@ -26,7 +27,7 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="card card-block">
-                <img class="card-img-top" src="img/Passport.jpg" alt="Card image cap" height="auto" width="48">
+                <img class="card-img-top" src="img/Passport.jpg" alt="Paspoort" height="auto" width="48">
                 <div class="card-header">
                     <h2>{{ trans('info.prep_passport') }}</h2>
                 </div>
@@ -41,7 +42,7 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="card card-block">
-                <img class="card-img-top" src="img/Insurance.jpg" alt="Card image cap" height="auto" width="48">
+                <img class="card-img-top" src="img/Insurance.jpg" alt="Verzekering" height="auto" width="48">
                 <div class="card-header">
                     <h2>{{ trans('info.prep_insurance') }}</h2>
                 </div>
@@ -56,7 +57,7 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="card card-block">
-                <img class="card-img-top" src="img/Question.jpg" alt="Card image cap" height="auto" width="48">
+                <img class="card-img-top" src="img/Question.jpg" alt="Vraag?" height="auto" width="48">
                 <div class="card-header">
                     <h2>{{ trans('info.questions') }}</h2>
                 </div>

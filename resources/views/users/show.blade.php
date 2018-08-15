@@ -12,7 +12,7 @@
         @endif
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h2>{{ trans('info.all_details') }} {{ $user->name }}</h2>
+                <h2>{{ trans('info.all_details') }}</h2>
             </div>
             <div class="panel-body">
                 <div class="row">                 
@@ -56,6 +56,10 @@
                         <TR>
                             <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.size') }}</TD>
                             <TD>{{ $user->size }}</TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.last_login') }}</TD>
+                            <TD>{{ $user->previous_last_login }}</TD>
                         </TR>
                     </TABLE>
                 </div>

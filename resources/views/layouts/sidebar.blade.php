@@ -1,7 +1,6 @@
 <div class="col-sm-2 blog-sidebar">
     <div class="sidebar-module sidebar-module-inset">
-        <h4>{{ trans('info.about') }}</h4>
-        <p>Dit is het <em>praat portaal</em> over onze 7e lustrumreis. De Luco behoudt zich het recht voor ongepaste uitingen te verwijderen.</p>
+        <p>Dit is het <em>praat portaal</em> over onze VIIe lustrumreis. De Luco behoudt zich het recht voor ongepaste uitingen te verwijderen.</p>
     </div>
     <div class="sidebar-module">
         <h4>{{ trans('info.archives') }}</h4>

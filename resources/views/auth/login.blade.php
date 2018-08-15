@@ -8,7 +8,7 @@
                     <div class="card-header">
                         <h2>{{ trans('info.login_start') }}</h2>
                     </div>
-                    <img class="card-img-top" src="/img/Club/1_jaarclub_Rdam.jpg" alt="Rotterdam 1983" height="auto" width="48">
+                    <img class="card-img-top" src="/img/Club/1_Jaarclub_Rdam.jpg" alt="Rotterdam 1983" height="auto" width="48">
                     <br>
                     <img class="card-img-top" src="/img/Club/2_Kenia_vuur.jpg" alt="Kenia 1989" height="auto" width="48">
                     <br>

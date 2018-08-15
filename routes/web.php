@@ -19,7 +19,6 @@ Route::group(['middleware' => 'language'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/luco', 'HomeController@luco')->name('luco');
     Route::get('/georgia', 'HomeController@georgia')->name('georgia');
-    Route::get('/georgia_map', 'HomeController@georgia_map')->name('georgia_map');
     Route::get('/preparations', 'HomeController@preparations')->name('preparations');
     Route::get('/trip', 'HomeController@trip')->name('trip');
     
@@ -41,4 +40,5 @@ Route::group(['middleware' => 'language'], function () {
     Route::get('/oman',     'HomeController@oman')->name('oman');
     Route::get('/karpaten', 'HomeController@karpaten')->name('karpaten');
     Route::get('/dalarna',  'HomeController@dalarna')->name('dalarna');
+    Route::get('/georgie',  'HomeController@georgie')->name('georgie');
 });

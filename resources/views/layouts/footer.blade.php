@@ -7,6 +7,7 @@
             <img src="/img/Logos/Oman.jpg" alt="Oman" height="auto" width="80">
             <img src="/img/Logos/Karpaten.jpg" alt="Karpaten" height="auto" width="80">
             <img src="/img/Logos/Dalarna.jpg" alt="Dalarna" height="auto" width="80">
+            <img src="/img/Logos/Georgie.jpg" alt="Georgie" height="auto" width="80">
         </div>
         <p align="center">{{ trans('info.footer') }}</p>
         <p align="center">

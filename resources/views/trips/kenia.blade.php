@@ -22,6 +22,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('dalarna') }} ">Dalarna<br>2014</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('georgie') }} ">Georgie<br>2018</a>
+                </li>
             </ul>
         </div>
         <div class="card-body">
@@ -34,7 +37,7 @@
                         $aantal++;
                     @endphp
                     <div class="mySlides fade">
-                        <img src="<?php echo '/img/Kenia/'.$i.'.jpg';?>" style="width:100%">
+                        <img src="<?php echo '/img/Kenia/'.$i.'.jpg';?>" style="width:80%">
                         <div class="numbertext">{{ $i }}</div>
                     </div>
                 @endif

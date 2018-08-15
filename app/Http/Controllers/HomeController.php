@@ -30,10 +30,6 @@ class HomeController extends Controller {
     public function georgia() {
         return view('georgia');
         }
-    
-    public function georgia_map() {
-        return view('georgia_map');
-        }
         
     public function preparations() {
         return view('preparations');
@@ -60,6 +56,9 @@ class HomeController extends Controller {
         }
     public function dalarna() {
         return view('trips.dalarna');
+        }
+    public function georgie() {
+        return view('trips.georgie');
         }
     
     public function logout() {

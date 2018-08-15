@@ -164,12 +164,17 @@ html, body {
     
 .column-program {
     float: left;
-}
+    }
 
 .left {
     width: 20%;
-}
+    }
 
 .right {
     width: 80%;
-}
+    }
+    
+.card-footer {
+    font-size: 12px;
+    text-align: center;
+    }

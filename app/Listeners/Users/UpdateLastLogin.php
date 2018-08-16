@@ -23,7 +23,12 @@ class UpdateLastLogin{
      * @return void
      */
     public function handle(Login $event){
-        $event->user->previous_last_login = $event->user->last_login;
+        if($event->user->last_login){
+            $event->user->previous_last_login = $event->user->last_login;
+            }
+        else{
+            $event->user->previous_last_login = now();
+            }
         $event->user->last_login = now();
         $event->user->save();   
         }

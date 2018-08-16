@@ -24,7 +24,7 @@
                     <div class="card-header">
                         <h2>Safety first!</h2>
                     </div>
-                    @if(Auth::user()->previous_last_login)
+                    @if(Auth::user()->previous_last_login < Auth::user()->last_login)
                         <div class="card-body">
                             <p>U was voor het laatst ingelogd op: {{ Auth::user()->previous_last_login->format('d M Y')}}
                             om {{ Auth::user()->previous_last_login->format('H:i')}}</p>

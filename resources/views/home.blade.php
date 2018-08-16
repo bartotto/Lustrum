@@ -44,7 +44,7 @@
                     <div class="mySlides fade">
                         <div class="numbertext">1 / 6</div>
                         <img src="img\Groep\Kenia.jpg" style="width:100%">
-                        <div class="text">Kenia 1989</div>
+                        <div class="text">Kenya 1989</div>
                     </div>
                     <div class="mySlides fade">
                         <div class="numbertext">2 / 6</div>

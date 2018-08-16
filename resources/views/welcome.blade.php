@@ -25,8 +25,8 @@
                         <h2>Safety first!</h2>
                     </div>
                     <div class="card-body">
-                        <p>U was voor het laatst ingelogd op: {{ Auth::user()->created_at->format('d M Y')}}
-                        om {{ Auth::user()->created_at->format('H i')}}</p>
+                        <p>U was voor het laatst ingelogd op: {{ Auth::user()->previous_last_login->format('d M Y')}}
+                        om {{ Auth::user()->previous_last_login->format('H i')}}</p>
                     </div>
                     <div class="card-footer text-muted">
                         <p>Wat u dit niet? Verander gauw u wachtwoord of trek onmiddelijk aan de bel bij <a href="mailto:luco@lustrumcaligula.com?SUBJECT=Wachtwoord probleem">Webmaster</a></p>

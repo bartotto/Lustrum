@@ -27,8 +27,8 @@ class HomeController extends Controller {
         return view('luco');
         }
      
-    public function georgia() {
-        return view('georgia');
+    public function destination() {
+        return view('destination');
         }
         
     public function preparations() {
@@ -39,8 +39,8 @@ class HomeController extends Controller {
         return view('trip');
         }
         
-    public function kenia() {
-        return view('trips.kenia');
+    public function kenya() {
+        return view('trips.kenya');
         }
     public function lappland() {
         return view('trips.lappland');
@@ -51,14 +51,14 @@ class HomeController extends Controller {
     public function oman() {
         return view('trips.oman');
         }
-    public function karpaten() {
-        return view('trips.karpaten');
+    public function carpathians() {
+        return view('trips.carpathians');
         }
     public function dalarna() {
         return view('trips.dalarna');
         }
-    public function georgie() {
-        return view('trips.georgie');
+    public function georgia() {
+        return view('trips.georgia');
         }
     
     public function logout() {

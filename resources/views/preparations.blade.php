@@ -38,7 +38,7 @@
                         </ul>
                     </div>
                     <div class="card-footer text-muted">
-                        <p>Aart?</p>
+                        <p>Volgt begin september. Stay tuned.</p>
                     </div>
                 </div>
             </div>

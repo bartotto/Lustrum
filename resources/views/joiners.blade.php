@@ -17,8 +17,8 @@
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">1 / 6</div>
-                <img src="img\Groep\Kenia.jpg" style="max-width:100%">
-                <div class="text">Kenia</div>
+                <img src="img\Groep\Kenya.jpg" style="max-width:100%">
+                <div class="text">Kenya</div>
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">2 / 6</div>
@@ -37,8 +37,8 @@
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">5 / 6</div>
-                <img src="img\Groep\Karpaten.jpg" style="max-width:100%">
-                <div class="text">Karpaten</div>
+                <img src="img\Groep\Carpathians.jpg" style="max-width:100%">
+                <div class="text">Carpathians</div>
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">6 / 6</div>

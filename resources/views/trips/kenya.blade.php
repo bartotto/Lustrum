@@ -5,7 +5,7 @@
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('kenia') }}">Kenia<br>1989</a>
+                    <a class="nav-link active" href="{{ route('kenya') }}">Kenya<br>1989</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('lappland') }} ">Lappland<br>1994</a>
@@ -17,13 +17,13 @@
                     <a class="nav-link" href="{{ route('oman') }} ">Oman<br>2005</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('karpaten') }} ">Karpaten<br>2009</a>
+                    <a class="nav-link" href="{{ route('carpathians') }} ">Carpathians<br>2009</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('dalarna') }} ">Dalarna<br>2014</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="{{ route('georgie') }} ">Georgie<br>2018</a>
+                    <a class="nav-link" href="{{ route('georgia') }} ">Georgia<br>2018</a>
                 </li>
             </ul>
         </div>
@@ -32,12 +32,12 @@
                 $aantal = 1;
             @endphp
             @for($i = 1;$i <= $aantal; $i++)
-                @if(file_exists('img/Georgie/'.$i.'.jpg'))
+                @if(file_exists('img/Kenia/'.$i.'.jpg'))
                     @php 
                         $aantal++;
                     @endphp
                     <div class="mySlides fade">
-                        <img src="<?php echo '/img/Georgie/'.$i.'.jpg';?>" style="width:80%">
+                        <img src="<?php echo '/img/Kenia/'.$i.'.jpg';?>" style="width:80%">
                         <div class="numbertext">{{ $i }}</div>
                     </div>
                 @endif

@@ -5,7 +5,7 @@
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('kenia') }}">Kenia<br>1989</a>
+                    <a class="nav-link" href="{{ route('kenya') }}">Kenya<br>1989</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('lappland') }} ">Lappland<br>1994</a>
@@ -17,13 +17,13 @@
                     <a class="nav-link" href="{{ route('oman') }} ">Oman<br>2005</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('karpaten') }} ">Karpaten<br>2009</a>
+                    <a class="nav-link" href="{{ route('carpathians') }} ">Carpathians<br>2009</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="{{ route('dalarna') }} ">Dalarna<br>2014</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('georgie') }} ">Georgie<br>2018</a>
+                    <a class="nav-link" href="{{ route('georgia') }} ">Georgia<br>2018</a>
                 </li>
             </ul>
         </div>

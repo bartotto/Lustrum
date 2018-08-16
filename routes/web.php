@@ -18,7 +18,7 @@ Auth::routes();
 Route::group(['middleware' => 'language'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/luco', 'HomeController@luco')->name('luco');
-    Route::get('/georgia', 'HomeController@georgia')->name('georgia');
+    Route::get('/destination', 'HomeController@destination')->name('destination');
     Route::get('/preparations', 'HomeController@preparations')->name('preparations');
     Route::get('/trip', 'HomeController@trip')->name('trip');
     
@@ -34,11 +34,11 @@ Route::group(['middleware' => 'language'], function () {
     Route::post('/post', 'PostsController@store');
     Route::post('/posts/{post}/comments', 'CommentsController@store');
     
-    Route::get('/kenia',    'HomeController@kenia')->name('kenia');
-    Route::get('/lappland', 'HomeController@lappland')->name('lappland');
-    Route::get('/cameroun', 'HomeController@cameroun')->name('cameroun');
-    Route::get('/oman',     'HomeController@oman')->name('oman');
-    Route::get('/karpaten', 'HomeController@karpaten')->name('karpaten');
-    Route::get('/dalarna',  'HomeController@dalarna')->name('dalarna');
-    Route::get('/georgie',  'HomeController@georgie')->name('georgie');
+    Route::get('/kenya',       'HomeController@kenya')->name('kenya');
+    Route::get('/lappland',    'HomeController@lappland')->name('lappland');
+    Route::get('/cameroun',    'HomeController@cameroun')->name('cameroun');
+    Route::get('/oman',        'HomeController@oman')->name('oman');
+    Route::get('/carpathians', 'HomeController@carpathians')->name('carpathians');
+    Route::get('/dalarna',     'HomeController@dalarna')->name('dalarna');
+    Route::get('/georgia',     'HomeController@georgia')->name('georgia');
 });

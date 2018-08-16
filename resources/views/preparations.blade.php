@@ -33,8 +33,7 @@
                             <p class="card-text">Zoek je maten op in de tabel hieronder en registreer het getal
                                 in de eerste kolom bij <a href="/users/{{ Auth::user()->id }}">je profiel</a>. 
                                 Wees er snel bij!</p>
-                            <!-- Button to Open the Modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#maattabel">
                                 Maat tabel
                             </button>
                         </div>
@@ -120,11 +119,11 @@
                     </div>
                 </div>
             </div>
-            <div class="modal" id="myModal">
-                <div class="modal-dialog">
+            <div class="modal" id="maattabel">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title">Maat tabel</h4>
+                            <h4 class="modal-title">Echte mannen maat tabel</h4>
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
                         <div class="modal-body">

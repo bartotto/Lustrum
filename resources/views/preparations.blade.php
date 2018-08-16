@@ -23,20 +23,22 @@
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="card" style="height: 100%">
-                    <img class="card-img-top" src="img/Pet.jpg" alt="Pet" height="auto" width="48">
+                    <img class="card-img-top" src="img/Alex.jpg" alt="Alex" height="auto" width="48">
                     <div class="card-header">
                         <h2>{{ trans('info.kledinglijn') }}</h2>
                     </div>
                     <div class="card-block">
                         <div class="card-body">
-                            <h5 class="card-title">Kledinglijn commissaris Alex heeft met spoed jullie maten nodig</h5>
-                            <p class="card-text">Zoek je maten op in de tabel hieronder en registreer het getal
+                            <h5 class="card-title">Commissaris heeft met spoed jullie maten nodig!</h5>
+                            <p class="card-text">Zoek jouw maat op in de tabel hieronder en registreer het getal
                                 in de eerste kolom bij <a href="/users/{{ Auth::user()->id }}">je profiel</a>. 
-                                Wees er snel bij!</p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#maattabel">
-                                Maat tabel
-                            </button>
-                        </div>
+                            </p>
+                            <p class="card-text">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#maattabel">
+                                    Maat tabel
+                                </button>
+                            </p>
+                         </div>
                     </div>
                     <div class="card-footer text-muted">
                         14 augustus 2018
@@ -51,7 +53,7 @@
                     </div>
                     <div class="card-block">
                         <div class="card-body">
-                            <h5 class="card-title">Anders kom je er niet in.</h5>
+                            <h5 class="card-title">Anders kom je er echt niet in, apekop...</h5>
                             <p class="card-text">Zorg dat jouw paspoort (bij aankomst) nog 3 maanden geldig is.
                                 Voor Georgië is geen visum nodig voor een verblijf van maximaal 1 jaar.</p>
                         </div>
@@ -98,7 +100,7 @@
                         </div>
                     </div>
                     <div class="card-footer text-muted">
-                        <p>Volgt begin september. Stay tuned.</p>
+                        <p>Volgt begin september.<br>Stay tuned.</p>
                     </div>
                 </div>
             </div>
@@ -123,14 +125,14 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title">Echte mannen maat tabel</h4>
+                            <h4 class="modal-title">Echte mannen - maat tabel</h4>
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
                         <div class="modal-body">
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col"></th>
+                                        <th scope="col">Jouw maat</th>
                                         <th scope="col">EU</th>
                                         <th scope="col">Borst omtrek (cm)</th>
                                         <th scope="col">Taille omtrek (cm)</th>
@@ -217,7 +219,7 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-danger" data-dismiss="modal">{{ trans('info.close') }}</button>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>

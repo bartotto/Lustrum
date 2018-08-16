@@ -30,38 +30,44 @@
                     <div class="card-header">
                         <h2>{{ trans('info.president') }}</h2>
                     </div>
-                    <div class="card-body">                 
+                    <div class="card-body">
                         <p>Mijne Heeren,<br>Beste Clubgenoten,</p>
                         <p>September 1983 ligt inmiddels bijna 35 jaar achter ons. Het was en blijft een unieke maand met
                             ontelbare nieuwe ervaringen, indrukken, nieuwe vriendjes en met uiteraard als hoogtepunt de
                             mooie en prille conceptie van wat enige maanden zou uitgroeien tot Caligula. Al 35 jaar,
                             7x5 Caligula. Van jaarclub tot instituut…..een hechte band…..dikke vrienden..!</p>
-                        <p>35 jaar van mooie momenten en heerlijke gemeenschappelijke herinneringen. 35 jaar van
+                        <p>35 jaar van mooie momenten en heerlijke gemeenschappelijke herinneringen. 35 jaar van 
                             vriendschap op allerlei verschillende manieren, van adhoc, ja zelfs opportunities tot door dik en dun. 
-                        Ook 35 jaar van verandering, individuele ontwikkeling, nieuwe en andere verwantschappen en prioriteiten.
-                        Uw Lustrum Commissie is daarom zo verheugd met het feit dat wij ons VII<sup>e</sup> Lustrum met een
-                        record aantal van 14 (wellicht 15) clubgenoten gaan beleven. Dat hebben we in de afgelopen 24 jaar
-                        niet meer mee mogen maken.
-                        Bij de Lustrumreizen ging kwaliteit altijd voor kwantiteit, echter het is bijzonder waardevol en
-                        bijzonder dat wij over enige weken met zo’n grote clubafvaardiging afreizen naar een unieke plek
-                        voor een inspirerend en hilarisch samenzijn.</p>
+                            Ook 35 jaar van verandering, individuele ontwikkeling, nieuwe en andere verwantschappen en prioriteiten.
+                            Uw Lustrum Commissie is daarom zo verheugd dat wij ons 7de Lustrum met een indrukwekkend aantal van 14
+                        (wellicht 15) clubgenoten gaan beleven. Dat hebben we in de afgelopen 25 jaar niet meer mee mogen maken!
+                        Bij de Lustrumreizen ging kwaliteit altijd voor kwantiteit, echter het is bijzonder waardevol dat wij
+                        over enige weken met zo’n grote clubafvaardiging afreizen naar een unieke plek voor een inspirerend en
+                        hilarisch samenzijn.</p>
                         <p>Ons VII<sup>e</sup> Lustrum is het moment om de herinneringen levend te houden, echter belangrijker,
                             om samen het heden te ervaren en vooruit te kijken naar de toekomst. Laten we gezamenlijk nieuwe
-                            en unieke herinneringen creëren en zo onze band onderhouden, opnieuw aan te halen of
-                            te versterken. De Lustrumreis met het bewezen en onverslaanbare concept van natuur, avontuur en
-                            cultuur, biedt hiervoor de ultieme opportuniteit. We gaan de uitdaging aan met elkaar nieuwe
-                            inspirerende paden in vinden, daar is geen coach voor nodig. We hebben tenslotte in onze diverse
-                            groep ‘vrienden voor het leven’  veel talent, ervaring en passie waardoor verdere verdieping en
-                            verbinding spontaan kan plaats vinden.</p>
-                        <p>Wij spreken tevens de hoop uit dat de vernieuwde website, ontwikkeld door onze webmaster,
-                            er mede toe zal bijdrage dat U hernieuwt bevangen raakt door de Lustrumkoorts. Samen met uw
-                            clubgenoten op een gezamelijke en persoonlijke reis vol ongekende uitdagingen, verdiepende
-                            reflecties, eindeloze inspiratie en lol, veel lol.</p>
+                            en unieke herinneringen creëren en zo onze band onderhouden, opnieuw aan te halen of te versterken.
+                            De Lustrumreis met het bewezen en onverslaanbare concept van natuur, avontuur en cultuur, biedt
+                            hiervoor de ultieme opportuniteit.</p>
+                        <p>We gaan de uitdaging aan met elkaar nieuwe inspirerende paden te vinden, daar is geen coach voor nodig.
+                            We hebben tenslotte in onze groep ‘vrienden voor het leven’  veel talent, ervaring en passie waardoor
+                            verdere verdieping en verbinding spontaan kan plaats vinden. Plaats kan vinden op een wel heel unieke
+                            ‘say yes’ plek, Georgie een verre en hoge uithoek van het Romeinse rijk, ingeklemd tussen Azerbeidzjan,
+                            Rusland en Turkije. Een land met achterhaalde maar ook inspirerende tradities. Elke maaltijd begint
+                            met het benoemen van een ‘Tamada’, de toastmaster, degene die de cadans van de borrel flow bepaald.
+                            Tevens worden diner gangen niet afgeruimd, maar dient men deze te laten staan, de volgende gang wordt
+                            er bovenop gestapeld. De vrouwen bereiden de maaltijd en komen aan het einde rond de tafel om te zingen.
+                            Het is een land met een nog authentieke ‘macho’ cultuur, kortom een land voor Caligula om mee kennis
+                            te maken.</p>
+                        <p>Wij spreken de hoop uit dat de vernieuwde website, ontwikkeld door onze webmaster, er mede toe
+                            zal bijdrage dat U hernieuwd bevangen raakt door de Lustrumkoorts. Samen met uw clubgenoten op een
+                            gezamelijke en persoonlijke reis vol ongekende uitdagingen, verdiepende reflecties, eindeloze
+                            inspiratie en lol, veel lol.</p>
                         <p>Graag sluit ik af met de woorden<br>
                         Mijne heren, Say yes to another excess! Geld speelt geen rol ! Lappen Mannen! Caligula Goes Gorilla!
-                        Wat? Water! Gimme 5 + 18 beer, We will Survive, Kaukasisch Hilarisch..…!</p>
+                        Wat? Water! Gimme 5 + 18 beer, We will Survive, Kaukasich Hilarisch..…!</p>
                         <p>Namens de Lustrum Commissie,<br>
-                        Aart
+                        Aart<br>
                         President</p>
                     </div>
                 </div>

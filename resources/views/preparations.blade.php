@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card card-block">
+                <div class="card card-block text-white bg-warning mb-3">
                     <img class="card-img-top" src="img/Passport.jpg" alt="Paspoort" height="auto" width="48">
                     <div class="card-header">
                         <h2>{{ trans('info.prep_passport') }}</h2>
@@ -58,7 +58,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card card-block">
+                <div class="card card-block text-white bg-warning mb-3">
                     <img class="card-img-top" src="img/Insurance.jpg" alt="Verzekering" height="auto" width="48">
                     <div class="card-header">
                         <h2>{{ trans('info.prep_insurance') }}</h2>

@@ -50,7 +50,7 @@
                     <br>
                     <div class="mySlides fade">
                         <div class="numbertext">1 / 6</div>
-                        <img src="img\Groep\Kenia.jpg" style="width:100%">
+                        <img src="img\Groep\Kenya.jpg" style="width:100%">
                         <div class="text">Kenya 1989</div>
                     </div>
                     <div class="mySlides fade">
@@ -70,7 +70,7 @@
                     </div>
                     <div class="mySlides fade">
                         <div class="numbertext">5 / 6</div>
-                        <img src="img\Groep\Karpaten.jpg" style="width:100%">
+                        <img src="img\Groep\Carpathians.jpg" style="width:100%">
                         <div class="text">Karpaten 2009</div>
                     </div>
                      <div class="mySlides fade">

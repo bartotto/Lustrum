@@ -13,6 +13,7 @@ return [
     'caucasus2'     => 'te ver voor andere keizers… maar niet voor CALIGULA!',
     'caucasus3'     => 'Georgië – een onbedorven plek on the edge of Europe',
     'caucasus4'     => 'En een heerlijk klimaat',
+    'close'         => 'Sluit',
     'club'          => 'Club',
     'comment_add'   => 'Voeg commentaar toe',
     'comment_here'  => 'Uw commentaar hier.',

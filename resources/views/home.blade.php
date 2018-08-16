@@ -4,22 +4,24 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4">
-                <div class="card card-block">
+                <div class="card" style="height: 100%;">
                     <img class="card-img-top" src="img\KaukasischHilarisch.jpeg" alt="Aart" height="auto" width="48">
                     <div class="card-header">
                         <h2>VII<sup>e</sup> Lustrumreis</h2>
                     </div>
-                    <div class="card-body">
-                        @if (session('status'))
-                            <div class="alert alert-success">
-                                {{ session('status') }}
+                    <div class="card-block">
+                        <div class="card-body">
+                            @if (session('status'))
+                                <div class="alert alert-success">
+                                    {{ session('status') }}
+                                </div>
+                            @endif                 
+                            <div class="content">
+                                <p>{{ trans('info.home_descr') }}</p>
+                                <p>{{ trans('info.home_descr2') }}</p>
                             </div>
-                        @endif                 
-                        <div class="content">
-                            <p>{{ trans('info.home_descr') }}</p>
-                            <p>{{ trans('info.home_descr2') }}</p>
                         </div>
-                    </div>
+                    </div>    
                 </div>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-8">

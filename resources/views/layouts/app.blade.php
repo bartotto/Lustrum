@@ -25,7 +25,7 @@
     <body>
         <h1 style="margin:auto; text-align:center; vertical-align:middle; background-color:#f9f9f9; padding:20px;">
             <a href="{{ route('home') }}">
-                VIIe Lustrumreis Caligula: Kaukasisch Hilarisch!
+                VII<sup>e</sup> Lustrumreis Caligula: Kaukasisch Hilarisch!
             </a>
         </h1>  
         <div id="app">

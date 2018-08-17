@@ -34,6 +34,9 @@ Route::group(['middleware' => 'language'], function () {
     Route::post('/post', 'PostsController@store');
     Route::post('/posts/{post}/comments', 'CommentsController@store');
     
+    Route::get('/trips', 'TripsController@index')->name('trips');
+    Route::get('/trips/{trip}', 'TripsController@show');
+    
     Route::get('/kenya',       'HomeController@kenya')->name('kenya');
     Route::get('/lappland',    'HomeController@lappland')->name('lappland');
     Route::get('/cameroun',    'HomeController@cameroun')->name('cameroun');

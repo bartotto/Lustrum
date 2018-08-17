@@ -10,13 +10,13 @@
                     </div>
                     <img class="card-img-top" src="/img/Club/1_Jaarclub_Rdam.jpg" alt="Rotterdam 1983" height="auto" width="48">
                     <br>
-                    <img class="card-img-top" src="/img/Club/2_Kenia_vuur.jpg" alt="Kenia 1989" height="auto" width="48">
+                    <img class="card-img-top" src="/img/Club/2_Kenya_vuur.jpg" alt="Kenya 1989" height="auto" width="48">
                     <br>
                     <img class="card-img-top" src="/img/Club/3_Cameroun_voetbal.jpg" alt="Cameroun 1999" height="auto" width="48">
                     <br>
                     <img class="card-img-top" src="/img/Club/5_Oman_kamelen.jpg" alt="Oman 2005" height="auto" width="48">
                     <br>
-                    <img class="card-img-top" src="/img/Club/6_Karpaten_brug.jpg" alt="Karpaten 2009" height="auto" width="48">
+                    <img class="card-img-top" src="/img/Club/6_Carpathians_brug.jpg" alt="Carpathians 2009" height="auto" width="48">
                 </div>
             </div>
             <div class="col-lg-6 col-md-4 col-sm-6">

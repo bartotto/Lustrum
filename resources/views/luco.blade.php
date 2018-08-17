@@ -9,8 +9,8 @@
             <p class="card-text">{{ trans('info.luco_descr2') }}</p>
             <div class="mySlides fade">
                 <div class="numbertext">1 / 7</div>
-                <img src="img\Luco\Kenia.png" style="max-width:100%">
-                <div class="text">Kenia</div>
+                <img src="img\Luco\Kenya.png" style="max-width:100%">
+                <div class="text">Kenya</div>
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">2 / 7</div>
@@ -24,13 +24,13 @@
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">4 / 7</div>
-                <img src="img\Luco\Karpaten.png" style="max-width:100%">
-                <div class="text">Karpaten</div>
+                <img src="img\Luco\Carpathians.png" style="max-width:100%">
+                <div class="text">Carpathians</div>
             </div> 
             <div class="mySlides fade">
                 <div class="numbertext">5 / 7</div>
-                <img src="img\Luco\Karpaten2.jpg" style="max-width:100%">
-                <div class="text">Karpaten</div>
+                <img src="img\Luco\Carpathians.jpg" style="max-width:100%">
+                <div class="text">Carpathians</div>
             </div>    
             <div class="mySlides fade">
                 <div class="numbertext">6 / 7</div>

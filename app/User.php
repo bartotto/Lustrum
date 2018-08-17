@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Trip;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -39,7 +40,7 @@ class User extends Authenticatable {
         }
         
     public function trips() {
-        return $this->belongstoMany(Trip::class)->withTimestamps();
+        return $this->belongtoMany(Trip::class)->withTimestamps();
         }
-
-}
+        
+    }

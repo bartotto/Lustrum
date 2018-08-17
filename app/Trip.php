@@ -6,7 +6,8 @@ use App\User;
 use Illuminate\Database\Eloquent\Model;
 
 class Trip extends Model {
+    
     Public function users() {
-        return $this->belongtoMany(User::class)->withTimestamps();
+        return $this->belongtoMany('App\User');
         }
     }

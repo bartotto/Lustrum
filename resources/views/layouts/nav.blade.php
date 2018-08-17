@@ -55,7 +55,6 @@
                             </a>
                         </div>
                     </li>
-                    <!--
                     @if (app()->getLocale() == 'en')
                         <a class="nav-item nav-link" href="{{ language()->back('nl') }}">
                             <img src='\img\Flags\nl.png' style="width:24px;height:16px;border:0;margin-top:4px;">
@@ -65,7 +64,6 @@
                             <img src='\img\Flags\gb.png' style="width:24px;height:16px;border:0;margin-top:4px;">
                         </a>
                     @endif
-                    -->
                 @endguest
             </ul>
         </div>

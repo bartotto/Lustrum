@@ -7,7 +7,7 @@
                 <div class="card" style="height: 100%">
                     <img class="card-img-top" src="img/Other/Strandborrel.jpg" alt="Strandborrel" height="auto" width="48">
                     <div class="card-header">
-                        <h2>Strand borrel</h2>
+                        <h2>{{ trans('info.strand_borrel') }}</h2>
                     </div>
                     <div class="card-block">
                         <div class="card-body">
@@ -91,7 +91,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Ik ga op reis en neem mee</h5>
                             <p class="card-text">De gids zorgt voor tenten en matrassen</p>
-                            <p>Volgt begin september.<br>Stay tuned.</p>
+                            <p>{{ trans('info.to_follow') }}</p>
                         </div>
                     </div>
                     <div class="card-footer text-muted">
@@ -107,8 +107,8 @@
                     </div>
                     <div class="card-block">
                         <div class="card-body">
-                            <h5 class="card-title">Ga naar <a href="/posts">Blog</a> en stel je vraag</h5>
-                            <p class="card-text">De Luco probeert binnen 24 uur met een goed antwoord te komen</p>
+                            <h5 class="card-title">{{ trans('info.questions_go_to') }}<a href="/posts">Blog</a>{{ trans('info.questions_ask') }}</h5>
+                            <p class="card-text">{{ trans('info.questions_answer') }}</p>
                         </div>
                     </div>
                     <div class="card-footer text-muted">

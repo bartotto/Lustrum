@@ -10,7 +10,7 @@
                         <h2>{{ trans('info.program') }}</h2>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Dit gaan we doen</h5>
+                        <h5 class="card-title">{{ trans('info.program_do') }}</h5>
                         <p class="card-text">22/9 Saturday<br>AMS 10:40 KL3108 Arrival TBS 17:15. Drive to wine area Telavi, traditional Georgian diner & overnight stay.</p>
                         <p class="card-text">23/9 Sunday<br>AM: visit winecellar & lunch. Driving from Telavi to Omalo 4x4wd (Alexander will catch up in Telavi).</p>
                         <p class="card-text">24/9 Monday<br>Driving from Omalo to  Dartlo. Part of the way hiking.</p>
@@ -31,11 +31,11 @@
                 <div class="card card-block">
                     <img class="card-img-top" src="img/Other/Praat_Slaap.jpg" alt="Slapen" height="auto" width="48">
                     <div class="card-header">
-                        <h2>Praat & Slaap schema</h2>
+                        <h2>{{ trans('info.ps') }}</h2>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Wie met wie?</h5>
-                        <p>Volgt begin september.<br>Stay tuned.</p>
+                        <h5 class="card-title">{{ trans('info.ps_who') }}</h5>
+                        <p>{{ trans('info.to_follow') }}</p>
                     </div>
                     <div class="card-footer text-muted">
                         <p>15 aug 18</p>
@@ -49,8 +49,8 @@
                         <h2>{{ trans('info.our_guide') }}</h2>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">David Burduli zal ons over de pas leiden</h5>
-                        <p class="card-text">De algehele leiding heeft zijn vader Mamuka Burduli, hieronder met zijn vrouw</p>
+                        <h5 class="card-title">{{ trans('info.guide_pass') }}</h5>
+                        <p class="card-text">{{ trans('info.guide_pass2') }}</p>
                         <img class="card-img-bottom" src="img/Other/Burduli_Mamuka.jpg" alt="Mamuka" height="auto" width="48">
                     </div>
                     <div class="card-footer text-muted">
@@ -65,8 +65,8 @@
                         <h2>{{ trans('info.questions') }}</h2>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Ga naar <a href="/posts">Blog</a> en stel je vraag</h5>
-                        <p class="card-text">De Luco probeert binnen 24 uur met een goed antwoord te komen</p>
+                        <h5 class="card-title">{{ trans('info.questions_go_to') }}<a href="/posts">Blog</a>{{ trans('info.questions_ask') }}</h5>
+                        <p class="card-text">{{ trans('info.questions_answer') }}</p>
                     </div>
                     <div class="card-footer text-muted">
                         <p>10 aug 18</p>

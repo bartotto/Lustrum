@@ -8,15 +8,17 @@
                     <div class="card-header">
                         <h2>{{ trans('info.login_start') }}</h2>
                     </div>
-                    <img class="card-img-top" src="/img/Club/1_Jaarclub_Rdam.jpg" alt="Rotterdam 1983" height="auto" width="48">
+                    <img class="card-img-top" src="/img/Club/Jaarclub_Rdam.jpg" alt="Rotterdam 1983" height="auto" width="48">
                     <br>
-                    <img class="card-img-top" src="/img/Club/2_Kenya_vuur.jpg" alt="Kenya 1989" height="auto" width="48">
+                    <img class="card-img-top" src="/img/Club/Kenya_vuur.jpg" alt="Kenya 1989" height="auto" width="48">
                     <br>
-                    <img class="card-img-top" src="/img/Club/3_Cameroun_voetbal.jpg" alt="Cameroun 1999" height="auto" width="48">
+                    <img class="card-img-top" src="/img/Club/Cameroun_voetbal.jpg" alt="Cameroun 1999" height="auto" width="48">
                     <br>
-                    <img class="card-img-top" src="/img/Club/5_Oman_kamelen.jpg" alt="Oman 2005" height="auto" width="48">
+                    <img class="card-img-top" src="/img/Club/Oman_kamelen.jpg" alt="Oman 2005" height="auto" width="48">
                     <br>
-                    <img class="card-img-top" src="/img/Club/6_Carpathians_brug.jpg" alt="Carpathians 2009" height="auto" width="48">
+                    <img class="card-img-top" src="/img/Club/Carpathians_brug.jpg" alt="Carpathians 2009" height="auto" width="48">
+                    <br>
+                    <img class="card-img-top" src="/img/Club/Dalarna_trek.jpg" alt="Dalarna 2014" height="auto" width="48">
                 </div>
             </div>
             <div class="col-lg-6 col-md-4 col-sm-6">

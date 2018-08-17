@@ -32,7 +32,7 @@
                 $aantal = 1;
             @endphp
             @for($i = 1;$i <= $aantal; $i++)
-                @if(file_exists('img/Karpaten/'.$i.'.jpg'))
+                @if(file_exists('img/Carpathians/'.$i.'.jpg'))
                     @php 
                         $aantal++;
                     @endphp

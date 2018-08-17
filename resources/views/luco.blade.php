@@ -29,7 +29,7 @@
             </div> 
             <div class="mySlides fade">
                 <div class="numbertext">5 / 8</div>
-                <img src="img\Luco\Carpathians.jpg" style="max-width:100%">
+                <img src="img\Luco\Carpathians1.jpg" style="max-width:100%">
                 <div class="text">Carpathians</div>
             </div>    
             <div class="mySlides fade">

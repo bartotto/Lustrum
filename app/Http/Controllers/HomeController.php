@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Log;
+    
 class HomeController extends Controller {
     /**
      * Create a new controller instance.

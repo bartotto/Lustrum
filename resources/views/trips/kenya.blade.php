@@ -28,20 +28,25 @@
             </ul>
         </div>
         <div class="card-body">
-            @php
-                $aantal = 1;
-            @endphp
-            @for($i = 1;$i <= $aantal; $i++)
-                @if(file_exists('img/Trips/Kenya/'.$i.'.jpg'))
-                    @php 
-                        $aantal++;
-                    @endphp
-                    <div class="mySlides fade">
-                        <img src="<?php echo '/img/Trips/Kenya/'.$i.'.jpg';?>" style="width:80%">
-                        <div class="numbertext">{{ $i }}</div>
-                    </div>
-                @endif
-            @endfor
+            <div class="slideshow-container">
+                @php
+                    $aantal = 1;
+                @endphp
+                @for($i = 1;$i <= $aantal; $i++)
+                    @if(file_exists('img/Trips/Kenya/'.$i.'.jpg'))
+                        @php 
+                            $aantal++;
+                        @endphp
+                        <div class="mySlides fade">
+                            <img src="<?php echo '/img/Trips/Kenya/'.$i.'.jpg';?>" style="width:80%">
+                            <div class="numbertext">{{ $i }}</div>
+                        </div>
+                    @endif
+                @endfor
+            </div>
+        </div>
+        <div class="card-footer text-muted">
+            {{ trans('info.pictures_more') }}
         </div>
     </div>
     <script src="{{ asset('js/photo.js') }}"></script>

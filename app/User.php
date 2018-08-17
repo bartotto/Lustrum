@@ -6,6 +6,7 @@ use App\Trip;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Carbon\Carbon;
 
 class User extends Authenticatable {
     use Notifiable;
@@ -17,7 +18,7 @@ class User extends Authenticatable {
      */
     protected $fillable = [
         'name', 'dob', 'email', 'password', 'home_address', 'home_number', 'home_postalcode', 'home_city',
-        'home_country', 'home_tel', 'mobile', 'partner', 'partner_mobile', 'size',
+        'home_country', 'home_tel', 'mobile', 'partner', 'partner_email', 'partner_mobile', 'partner_visible', 'user_type', 'size',
         'previous_last_login', 'last_login'
     ];
 
@@ -27,9 +28,14 @@ class User extends Authenticatable {
      *
      * @var array
      */
+    
+    public function setdobAttribute($date){
+        $this->attributes['dob'] = Carbon::parse($date);
+        }
+    
     protected $hidden = [
         'password', 'remember_token',
-    ];
+        ];
     
     public function posts() {
         return $this->hasMany(Post::class);

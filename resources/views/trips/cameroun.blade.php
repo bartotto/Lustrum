@@ -43,6 +43,9 @@
                 @endif
             @endfor
         </div>
+        <div class="card-footer text-muted">
+            {{ trans('info.pictures_more') }}
+        </div>
     </div>
     <script src="{{ asset('js/photo.js') }}"></script>
 @endsection

@@ -32,12 +32,12 @@
                 $aantal = 1;
             @endphp
             @for($i = 1;$i <= $aantal; $i++)
-                @if(file_exists('img/Oman/'.$i.'.jpg'))
+                @if(file_exists('img/Trips/Oman/'.$i.'.jpg'))
                     @php 
                         $aantal++;
                     @endphp
                     <div class="mySlides fade">
-                        <img src="<?php echo '/img/Oman/'.$i.'.jpg';?>" style="max-width:100%">
+                        <img src="<?php echo '/img/Trips/Oman/'.$i.'.jpg';?>" style="max-width:100%">
                         <div class="numbertext">{{ $i }}</div>
                     </div>
                 @endif

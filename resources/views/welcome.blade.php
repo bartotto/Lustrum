@@ -5,22 +5,23 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="card card-block">
-                    <img class="card-img-top" src="img/Hilarisch.jpg" alt="Kaukasisch Hilarisch" height="auto" width="58">
+                    <img class="card-img-top" src="img/Other/Hilarisch.jpg" alt="Kaukasisch Hilarisch" height="auto" width="58">
                     <div class="card-header">
                         <h2>Welkom op de site!</h2>
                     </div>
                     <div class="card-body">
-                        <p></p>
                         <p>{{ trans('info.suggestions') }}<a href="mailto:info@bartotto.com?SUBJECT=Wachtwoord probleem">luco@lustrumcaligula.com</a></p>
                     </div>
                     <div class="card-footer text-muted">
-                        <p></p>
+                        <a class="btn btn-primary" href="{{ route('home') }}">
+                            {{ trans('info.go-to-home') }}
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="card card-block border-success">
-                    <img class="card-img-top" src="img/Login.png" alt="Login safely" height="auto" width="58">
+                    <img class="card-img-top" src="img/Other/Login.png" alt="Login safely" height="auto" width="58">
                     <div class="card-header">
                         <h2>Safety first!</h2>
                     </div>

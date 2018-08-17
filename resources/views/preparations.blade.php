@@ -5,25 +5,25 @@
         <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="card" style="height: 100%">
-                    <img class="card-img-top" src="img/News.jpg" alt="News" height="auto" width="48">
+                    <img class="card-img-top" src="img/Other/Strandborrel.jpg" alt="Strandborrel" height="auto" width="48">
                     <div class="card-header">
-                        <h2>{{ trans('info.last_news') }}</h2>
+                        <h2>Strand borrel</h2>
                     </div>
                     <div class="card-block">
                         <div class="card-body">
-                            <h5 class="card-title">Strandborrel donderdag 30 augustus</h5>
+                            <h5 class="card-title">Op donderdag 30 augustus</h5>
                             <p class="card-text">Partners/vriendinnen ook mee!</p>
                             <p class="card-text">Vanaf 18:00 in Standtent Culpepper, Zwarte Pad, Strand Noord, Scheveningen</p>
                         </div> 
                     </div>
                     <div class="card-footer text-muted">
-                        <p>12 augustus 2018</p>
+                        <p>17 aug 18</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="card" style="height: 100%">
-                    <img class="card-img-top" src="img/Alex.jpg" alt="Alex" height="auto" width="48">
+                    <img class="card-img-top" src="img/Other/Alex.jpg" alt="Alex" height="auto" width="48">
                     <div class="card-header">
                         <h2>{{ trans('info.kledinglijn') }}</h2>
                     </div>
@@ -41,13 +41,13 @@
                          </div>
                     </div>
                     <div class="card-footer text-muted">
-                        14 augustus 2018
+                        14 aug 18
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="card" style="height: 100%">
-                    <img class="card-img-top" src="img/Passport.jpg" alt="Paspoort" height="auto" width="48">
+                    <img class="card-img-top" src="img/Other/Passport.jpg" alt="Paspoort" height="auto" width="48">
                     <div class="card-header">
                         <h2>{{ trans('info.prep_passport') }}</h2>
                     </div>
@@ -59,13 +59,13 @@
                         </div>
                     </div>
                     <div class="card-footer text-muted">
-                        <p>13 augustus 2018</p>
+                        <p>13 aug 18</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="card" style="height: 100%">
-                    <img class="card-img-top" src="img/Insurance.jpg" alt="Verzekering" height="auto" width="48">
+                    <img class="card-img-top" src="img/Other/Insurance.jpg" alt="Verzekering" height="auto" width="48">
                     <div class="card-header">
                         <h2>{{ trans('info.prep_insurance') }}</h2>
                     </div>
@@ -77,13 +77,13 @@
                         </div>
                     </div>
                     <div class="card-footer text-muted">
-                        <p>13 augustus 2018</p>
+                        <p>13 aug 18</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="card" style="height: 100%">
-                    <img class="card-img-top" src="img/Rugzak.jpg" alt="Paklijst" height="auto" width="48">
+                    <img class="card-img-top" src="img/Other/Rugzak.jpg" alt="Paklijst" height="auto" width="48">
                     <div class="card-header">
                         <h2>{{ trans('info.pack_list') }}</h2>
                     </div>
@@ -91,22 +91,17 @@
                         <div class="card-body">
                             <h5 class="card-title">Ik ga op reis en neem mee</h5>
                             <p class="card-text">De gids zorgt voor tenten en matrassen</p>
-                            <ul style="list-style-type:none">
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
-                                <li>4</li>
-                            </ul>
+                            <p>Volgt begin september.<br>Stay tuned.</p>
                         </div>
                     </div>
                     <div class="card-footer text-muted">
-                        <p>Volgt begin september.<br>Stay tuned.</p>
+                        <p>17 aug 18</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="card" style="height: 100%">
-                    <img class="card-img-top" src="img/Question.jpg" alt="Vraag?" height="auto" width="48">
+                    <img class="card-img-top" src="img/Other/Question.jpg" alt="Vraag?" height="auto" width="48">
                     <div class="card-header">
                         <h2>{{ trans('info.questions') }}</h2>
                     </div>
@@ -117,7 +112,7 @@
                         </div>
                     </div>
                     <div class="card-footer text-muted">
-                        14 augustus 2018
+                        14 aug 18
                     </div>
                 </div>
             </div>

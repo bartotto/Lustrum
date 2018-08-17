@@ -27,6 +27,7 @@ return [
     'footer'        => '© Bart',
     'footer_up'     => 'Back to top',
     'forgot_pw'     => 'Forgot Your Password?',
+    'go-to-home'    => 'Continue',
     'home_descr'    => 'When are we off again?',
     'home_descr2'   => 'Please note: from now on we will travel every 4 years',
     'home_descr3'   => 'Saturday September 22 - Monday October 1st, 2018',

@@ -18,9 +18,9 @@
     <div class="sidebar-module">
         <h4>Links</h4>
         <ol class="list-unstyled">
-            <li><a href="/georgia_map">Google maps</a></li>
-            <li><a href="/program">Programma</a></li>
+            <li><a href="/destination">Programma</a></li>
             <li><a href="/joiners">Deelnemers</a></li>
+            <li><a href="/luco">Die Luco</a></li>
         </ol>
     </div>
 </div>

@@ -27,6 +27,7 @@ return [
     'footer'        => '© Bart',
     'footer_up'     => 'Terug naar boven',
     'forgot_pw'     => 'Wachtwoord vergeten?',
+    'go-to-home'    => 'Ga verder',
     'georgie_descr' => 'Feiten over Georgie',
     'home_descr'    => 'Zaterdag 22 september - maandag 1 oktober 2018',
     'home_descr2'   => 'Let op: voortaan gaan we om de 4 jaar op reis!',

@@ -7,15 +7,6 @@
                 <div class="card" style="height: 100%">
                     <div class="card-header">
                         <h2>{{ trans('info.details_all') }}</h2>
-                        <br>
-                        <button class="btn btn-primary" onclick="goBack()">
-                            {{ trans('info.back') }}
-                        </button>
-                        @if(Auth::id() == $user->id)
-                            <a class="btn btn-primary" href="{{ route('profile.edit', ['id'=>$user->id]) }}">
-                                {{ trans('info.edit') }}
-                            </a>
-                        @endif
                     </div>
                     <div class="card-block">
                         <div class="card-body">
@@ -67,17 +58,19 @@
             <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="card" style="height: 100%">
                     <div class="card-header">
-                        <h2>{{ trans('info.edit_partner') }}</h2>
-                        <br>
-                        <button class="btn btn-primary" onclick="goBack()">
-                            {{ trans('info.back') }}
-                        </button>
+                        <h2>{{ trans('info.edit_partner') }}</h2> 
                     </div>
                     <div class="card-block">
                         <div class="card-body">
                             <form method="POST" action="/users/{{ $user->id }}">
                                 {{ method_field('PATCH') }}
                                 {{ csrf_field() }}
+                                <div class="form-group">
+                                    <button class="btn btn-primary" onclick="goBack()">
+                                        {{ trans('info.back') }}
+                                    </button>
+                                    <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>
+                                </div> 
                                 <div class="form-horizontal">        
                                     <div class="form-group form-group-lg">
                                         <label class="control-label" for="partner">{{ trans('info.partner') }}</label>
@@ -100,8 +93,13 @@
                                     <div class="form-group form-group-lg">
                                         <label class="control-label" for="partner_visible">{{ trans('info.partner_visible') }}</label>
                                         <select value="{{ $user->partner_visible }}" name="partner_visible" id="partner_visible">
-                                            <option value="No">{{ trans('info.no') }}</option>
-                                            <option value="Yes">{{ trans('info.yes') }}</option>
+                                            @if($user->partner_visible == 'Yes')
+                                                <option value="No">{{ trans('info.no') }}</option>
+                                                <option value="Yes" selected>{{ trans('info.yes') }}</option>
+                                            @else
+                                                <option value="No" selected>{{ trans('info.no') }}</option>
+                                                <option value="Yes">{{ trans('info.yes') }}</option>
+                                            @endif
                                         </select>
                                     </div>
                                 </div>

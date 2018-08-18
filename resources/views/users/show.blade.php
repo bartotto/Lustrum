@@ -95,7 +95,13 @@
                                     </TR>
                                     <TR>
                                         <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_visible') }}</TD>
-                                        <TD>{{ $user->partner_visible }}</TD>
+                                        <TD>
+                                            @if($user->partner_visible=='Yes')
+                                                {{ trans('info.yes') }}
+                                            @else
+                                                {{ trans('info.no') }}
+                                            @endif
+                                        </TD>
                                     </TR>
                                 </TABLE>
                             </div> 

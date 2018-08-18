@@ -7,16 +7,18 @@
                 <div class="card" style="height: 100%">
                     <div class="card-header">
                         <h2>{{ trans('info.edit_user') }}</h2>
-                        <br>
-                        <button class="btn btn-primary" onclick="goBack()">
-                            {{ trans('info.back') }}
-                        </button>
                     </div>
                     <div class="card-block">
                         <div class="card-body">
                             <form method="POST" action="/users/{{ $user->id }}">
                                 {{ method_field('PATCH') }}
                                 {{ csrf_field() }}
+                                <div class="form-group">
+                                    <button class="btn btn-primary" onclick="goBack()">
+                                        {{ trans('info.back') }}
+                                    </button>
+                                    <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>
+                                </div>
                                 <div class="form-horizontal">
                                     <div class="form-group form-group-lg">
                                         <label class="control-label" for="name">{{ trans('info.name') }}</label>

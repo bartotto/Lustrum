@@ -12,23 +12,23 @@
                         <div class="card-body">
                             <TABLE BORDER="0" STYLE="border-style: solid">
                                 <TR>
-                                    <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.name') }}</TD>
+                                    <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.name') }}</TD>
                                     <TD WIDTH="250" HEIGHT="30">{{ $user->name }}</TD>
                                 </TR>
                                 <TR>
-                                    <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.first_name') }}</TD>
+                                    <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.first_name') }}</TD>
                                     <TD WIDTH="250" HEIGHT="30">{{ $user->first_name }}</TD>
                                 </TR>
                                 <TR>
-                                    <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.dob') }}</TD>
+                                    <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.dob') }}</TD>
                                     <TD>{{ date("d-m-y", strtotime($user->dob)) }}</TD>
                                 </TR>
                                 <TR>
-                                    <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.email_address') }}</TD>
+                                    <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.email_address') }}</TD>
                                     <TD>{{ $user->email }}</TD>
                                 </TR>
                                 <TR>
-                                    <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.home_address') }}</TD>
+                                    <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.home_address') }}</TD>
                                     <TD>{{ $user->home_address }}</TD>
                                 </TR>
                                 <TR>
@@ -36,19 +36,19 @@
                                     <TD>{{ $user->home_postalcode }} &nbsp {{ $user->home_city }}, {{ $user->home_country }}</TD>
                                 </TR>
                                 <TR>
-                                    <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.home_tel') }}</TD>
+                                    <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.home_tel') }}</TD>
                                     <TD>{{ $user->home_tel }}</TD>
                                 </TR>
                                 <TR>
-                                    <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.mobile') }}</TD>
+                                    <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.mobile') }}</TD>
                                     <TD>{{ $user->mobile }}</TD>
                                 </TR>
                                 <TR>
-                                    <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.size') }}</TD>
+                                    <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.size') }}</TD>
                                     <TD>{{ $user->size }}</TD>
                                 </TR>
                                 <TR>
-                                    <TD WIDTH="160" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.last_login') }}</TD>
+                                    <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.last_login') }}</TD>
                                     <TD>{{ $user->previous_last_login }}</TD>
                                 </TR>
                             </TABLE>
@@ -83,6 +83,12 @@
                                 </div>
                                 <div class="form-horizontal">        
                                     <div class="form-group form-group-lg">
+                                        <label class="control-label" for="partner_first_name">{{ trans('info.partner_first_name') }}</label>
+                                        <input type="text" class="form-control" value="{{ $user->partner_first_name }}" id="partner_first_name" name="partner_first_name">
+                                    </div>
+                                </div>
+                                <div class="form-horizontal">        
+                                    <div class="form-group form-group-lg">
                                         <label class="control-label" for="partner_email">{{ trans('info.partner_email') }}</label>
                                         <input type="text" class="form-control" value="{{ $user->partner_email }}" id="partner_email" name="partner_email">
                                     </div>
@@ -98,6 +104,20 @@
                                         <label class="control-label" for="partner_visible">{{ trans('info.partner_visible') }}</label>
                                         <select value="{{ $user->partner_visible }}" name="partner_visible" id="partner_visible">
                                             @if($user->partner_visible == 'Yes')
+                                                <option value="No">{{ trans('info.no') }}</option>
+                                                <option value="Yes" selected>{{ trans('info.yes') }}</option>
+                                            @else
+                                                <option value="No" selected>{{ trans('info.no') }}</option>
+                                                <option value="Yes">{{ trans('info.yes') }}</option>
+                                            @endif
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-horizontal">        
+                                    <div class="form-group form-group-lg">
+                                        <label class="control-label" for="partner_login">{{ trans('info.partner_login') }}</label>
+                                        <select value="{{ $user->partner_login }}" name="partner_login" id="partner_login">
+                                            @if($user->partner_login == 'Yes')
                                                 <option value="No">{{ trans('info.no') }}</option>
                                                 <option value="Yes" selected>{{ trans('info.yes') }}</option>
                                             @else

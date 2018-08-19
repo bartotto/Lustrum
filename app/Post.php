@@ -2,20 +2,25 @@
 
 namespace App;
 
+use App\Post;
 use Carbon\Carbon;
 
 class Post extends Model {
-
-    public function comments() {
-        return $this->hasMany(Comment::class);
-        }
+    
+    protected $fillable = [
+        'title', 'body'
+        ];
     
     public function user() {
         return $this->belongsTo(User::class);
         }
     
-    public function addComment($body) {
-        $this->comments()->create(compact('body'));
+        public function comments() {
+        return $this->hasMany(Comment::class);
+        }
+    
+    public function publish_comment(Comment $comment) {
+        $this->comments()->save($comment);
         }
         
     public function scopeFilter($query, $filters) {

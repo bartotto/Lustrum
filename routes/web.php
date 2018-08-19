@@ -34,7 +34,7 @@ Route::group(['middleware' => 'language'], function () {
     Route::get('/posts/{post}', 'PostsController@show');
     Route::get('/post/create', 'PostsController@create')->name('post.create');
     Route::post('/post', 'PostsController@store');
-    Route::post('/posts/{post}/comments', 'CommentsController@store');
+    Route::post('/posts/{post}/comment', 'CommentsController@store');
     
     Route::get('/trips', 'TripsController@index')->name('trips');
     Route::get('/trips/{trip}', 'TripsController@show');

@@ -4,13 +4,26 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Log;
+use App\User;
 use App\Post;
 use App\Comment;
 
 class CommentsController extends Controller{
-    public function store(Post $post){
-        $this->validate(request(), ['body' =>'required|min:2']);
-        $post->addComment(request('body'));
-        return back();
+    
+    public function __construct() {
+        $this->middleware('auth');
+        }
+
+    public function store(Request $request, Post $post){
+        $this->validate(request(),[
+            'title' => 'required|min:4|max:255',
+            'body' => 'required|min:4',
+        ]);
+        $comment = new Comment();
+        $comment->title = $request->title;
+        $comment->body = $request->body;
+        $comment->user_id = auth()->user()->id;
+        $post->comments()->save($comment);
+        return redirect('/posts');
         }
     }

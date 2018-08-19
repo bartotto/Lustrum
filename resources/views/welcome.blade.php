@@ -7,7 +7,7 @@
                 <div class="card card-block">
                     <img class="card-img-top" src="img/Other/Hilarisch.jpg" alt="Kaukasisch Hilarisch" height="auto" width="58">
                     <div class="card-header">
-                        <h2>Welkom op de site!</h2>
+                        <h2>{{ trans('info.welcome') }}</h2>
                     </div>
                     <div class="card-body">
                         <p>{{ trans('info.suggestions') }}<a href="mailto:info@bartotto.com?SUBJECT=Wachtwoord probleem">luco@lustrumcaligula.com</a></p>

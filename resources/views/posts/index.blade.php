@@ -1,26 +1,33 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="col-md-8 col-md-offset-2">
-        <div class="panel panel-default"> 
-            <div class="panel-heading">
-                <h2>Caligula's Blog</h2>
-                {{ trans('info.blog_descr') }} 
-            </div>
-            <div class="form-group">
-                <div class="col-md-8">
-                    <a class="btn btn-primary" href="{{ route('post.create') }}">
-                        {{ trans('info.post_create') }}
-                    </a>
+   <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9">
+                <div class="card card-block">
+                    <div class="card-header">
+                        <h2>Caligula's Blog</h2>
+                        <a class="btn btn-primary" href="{{ route('post.create') }}">
+                            {{ trans('info.post_create') }}
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        @foreach ($posts as $post)
+                            @include ('posts.post')
+                        @endforeach
+                    </div>
                 </div>
             </div>
-            <hr>
-            <div class="panel-body">
-                @foreach ($posts as $post)
-                    @include ('posts.post')
-                @endforeach
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="card card-block">
+                    <div class="card-header">
+                        <h4>{{ trans('info.blog_descr') }}</h4>
+                    </div>
+                    <div class="card-body">   
+                        @include ('layouts.sidebar')
+                    </div>
+                </div>
             </div>
         </div>
-    </div>   
-    @include ('layouts.sidebar')
+    </div>
 @endsection

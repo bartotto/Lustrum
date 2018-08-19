@@ -17,7 +17,7 @@ class User extends Authenticatable {
      * @var array
      */
     protected $fillable = [
-        'name', 'dob', 'email', 'password', 'home_address', 'home_number', 'home_postalcode', 'home_city',
+        'name', 'first_name', 'dob', 'email', 'password', 'home_address', 'home_number', 'home_postalcode', 'home_city',
         'home_country', 'home_tel', 'mobile', 'partner', 'partner_email', 'partner_mobile', 'partner_visible', 'user_type', 'size',
         'previous_last_login', 'last_login'
     ];
@@ -41,8 +41,12 @@ class User extends Authenticatable {
         return $this->hasMany(Post::class);
         }
         
-    public function publish(Post $post) {
+    public function publish_post(Post $post) {
         $this->posts()->save($post);
+        }
+        
+    public function comments() {
+        return $this->hasMany(Comment::class);
         }
         
     public function trips() {

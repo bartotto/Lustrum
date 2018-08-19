@@ -27,6 +27,12 @@
                                 </div>
                                 <div class="form-horizontal">
                                     <div class="form-group form-group-lg">
+                                        <label class="control-label" for="first_name">{{ trans('info.first_name') }}</label>
+                                        <input class="form-control" type="text" value="{{ $user->first_name }}" id="title" name="first_name" required>
+                                    </div>
+                                </div>
+                                <div class="form-horizontal">
+                                    <div class="form-group form-group-lg">
                                         <label class="control-label" for="dob">{{ trans('info.dob') }}</label>
                                         <input class="form-control" type="date" value="{{ date("d-m-Y", strtotime($user->dob)) }}" id="dob" name="dob" required>
                                     </div>

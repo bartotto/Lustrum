@@ -35,7 +35,7 @@ class PostsController extends Controller {
            'body' => 'required|min:4',
         ]);
         $user = auth()->user();
-        $user->publish(
+        $user->publish_post(
             new Post(request(['title', 'body']))
             );
         return redirect('/posts');

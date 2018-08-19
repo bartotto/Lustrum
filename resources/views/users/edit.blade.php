@@ -78,9 +78,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="size_new" class="col-sm-3 col-form-label">{{ trans('info.size') }}</label>
+                                    <label for="size" class="col-sm-3 col-form-label">{{ trans('info.size') }}</label>
                                     <div class="col-sm-9">
-                                        <select class="form-control col-sm-2" value="{{ $user->size_new }}" id="size_new" name="size_new">
+                                        <select class="form-control col-sm-2" value="{{ $user->size }}" id="size" name="size">
                                             <option>S</option>
                                             <option>M</option>
                                             <option>L</option>

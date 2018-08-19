@@ -45,7 +45,7 @@
                                 </TR>
                                 <TR>
                                     <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.size') }}</TD>
-                                    <TD>{{ $user->size }}</TD>
+                                    <TD>{{ $user->size_new }}</TD>
                                 </TR>
                                 <TR>
                                     <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.last_login') }}</TD>
@@ -74,58 +74,52 @@
                                         {{ trans('info.back') }}
                                     </button>
                                     <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>
-                                </div> 
-                                <div class="form-horizontal">        
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="partner">{{ trans('info.partner') }}</label>
-                                        <input type="text" class="form-control" value="{{ $user->partner }}" id="partner" name="partner">
+                                </div>
+                                <div class="form-group row">
+                                    <label for="partner" class="col-sm-3 col-form-label">{{ trans('info.partner') }}</label>
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="text" value="{{ $user->partner }}" id="partner" name="partner" required>
                                     </div>
                                 </div>
-                                <div class="form-horizontal">        
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="partner_first_name">{{ trans('info.partner_first_name') }}</label>
-                                        <input type="text" class="form-control" value="{{ $user->partner_first_name }}" id="partner_first_name" name="partner_first_name">
+                                <div class="form-group row">
+                                    <label for="partner_first_name" class="col-sm-3 col-form-label">{{ trans('info.partner_first_name') }}</label>
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="text" value="{{ $user->partner_first_name }}" id="partner_first_name" name="partner_first_name" required>
                                     </div>
                                 </div>
-                                <div class="form-horizontal">        
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="partner_email">{{ trans('info.partner_email') }}</label>
-                                        <input type="text" class="form-control" value="{{ $user->partner_email }}" id="partner_email" name="partner_email">
+                                <div class="form-group row">
+                                    <label for="partner_email" class="col-sm-3 col-form-label">{{ trans('info.partner_email') }}</label>
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="text" value="{{ $user->partner_email }}" id="partner_email" name="partner_email" required>
                                     </div>
                                 </div>
-                                <div class="form-horizontal">        
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="partner_mobile">{{ trans('info.partner_mobile') }}</label>
-                                        <input type="text" class="form-control" value="{{ $user->partner_mobile }}" id="partner_mobile" name="partner_mobile">
+                                <div class="form-group row">
+                                    <label for="partner_mobile" class="col-sm-3 col-form-label">{{ trans('info.partner_mobile') }}</label>
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="text" value="{{ $user->partner_mobile }}" id="partner_mobile" name="partner_mobile" required>
                                     </div>
                                 </div>
-                                <div class="form-horizontal">        
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="partner_visible">{{ trans('info.partner_visible') }}</label>
-                                        <select value="{{ $user->partner_visible }}" name="partner_visible" id="partner_visible">
-                                            @if($user->partner_visible == 'Yes')
-                                                <option value="No">{{ trans('info.no') }}</option>
-                                                <option value="Yes" selected>{{ trans('info.yes') }}</option>
+                                <div class="form-group row">        
+                                    <label for="partner_visible" class="radio-inline col-form-label">{{ trans('info.partner_visible') }}
+                                            @if($user->partner_visible == 'No')            
+                                                <input type="radio" name="partner_visible" value="No" checked>{{ trans('info.no') }}
+                                                <input type="radio" name="partner_visible" value="Yes">{{ trans('info.yes') }}  
                                             @else
-                                                <option value="No" selected>{{ trans('info.no') }}</option>
-                                                <option value="Yes">{{ trans('info.yes') }}</option>
+                                                <input type="radio" name="partner_visible" value="No">{{ trans('info.no') }}
+                                                <input type="radio" name="partner_visible" value="Yes" checked>{{ trans('info.yes') }}
                                             @endif
-                                        </select>
-                                    </div>
+                                    </label>
                                 </div>
-                                <div class="form-horizontal">        
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="partner_login">{{ trans('info.partner_login') }}</label>
-                                        <select value="{{ $user->partner_login }}" name="partner_login" id="partner_login">
-                                            @if($user->partner_login == 'Yes')
-                                                <option value="No">{{ trans('info.no') }}</option>
-                                                <option value="Yes" selected>{{ trans('info.yes') }}</option>
-                                            @else
-                                                <option value="No" selected>{{ trans('info.no') }}</option>
-                                                <option value="Yes">{{ trans('info.yes') }}</option>
-                                            @endif
-                                        </select>
-                                    </div>
+                                <div class="form-group row">         
+                                    <label for="partner_login" class="radio-inline col-sm-9 col-form-label" >{{ trans('info.partner_login') }}
+                                        @if($user->partner_login == 'No')            
+                                            <input type="radio" name="partner_login" value="No" checked>{{ trans('info.no') }}
+                                            <input type="radio" name="partner_login" value="Yes">{{ trans('info.yes') }}  
+                                        @else
+                                            <input type="radio" name="partner_login" value="No">{{ trans('info.no') }}
+                                            <input type="radio" name="partner_login" value="Yes" checked>{{ trans('info.yes') }}
+                                        @endif
+                                        </label>
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>

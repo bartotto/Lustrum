@@ -19,74 +19,75 @@
                                     </button>
                                     <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>
                                 </div>
-                                <div class="form-horizontal">
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="name">{{ trans('info.name') }}</label>
+                                <div class="form-group row">
+                                    <label for="name" class="col-sm-3 col-form-label">{{ trans('info.name') }}</label>
+                                    <div class="col-sm-9">
                                         <input class="form-control" type="text" value="{{ $user->name }}" id="title" name="name" required>
                                     </div>
                                 </div>
-                                <div class="form-horizontal">
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="first_name">{{ trans('info.first_name') }}</label>
+                                <div class="form-group row">
+                                    <label for="first_name" class="col-sm-3 col-form-label">{{ trans('info.first_name') }}</label>
+                                    <div class="col-sm-9">        
                                         <input class="form-control" type="text" value="{{ $user->first_name }}" id="title" name="first_name" required>
                                     </div>
                                 </div>
-                                <div class="form-horizontal">
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="dob">{{ trans('info.dob') }}</label>
+                                <div class="form-group row">
+                                    <label for="dob" class="col-sm-3 col-form-label">{{ trans('info.dob') }}</label>
+                                    <div class="col-sm-9">
                                         <input class="form-control" type="date" value="{{ date("d-m-Y", strtotime($user->dob)) }}" id="dob" name="dob" required>
                                     </div>
                                 </div>
-                                <div class="form-horizontal">
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="email">{{ trans('info.email_address') }}</label>
+                                <div class="form-group row">
+                                    <label for="email" class="col-sm-3 col-form-label">{{ trans('info.email_address') }}</label>
+                                    <div class="col-sm-9">
                                         <input class="form-control" type="email" value="{{ $user->email }}" id="email" name="email" required>
                                     </div>
                                 </div>
-                                <div class="form-horizontal">
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="home_address">{{ trans('info.home_address') }}</label>
-                                        <div>
-                                            <input type="text" class="form-control" value="{{ $user->home_address }}" id="home_address" name="home_address">
-                                        </div>
+                                <div class="form-group row">
+                                    <label for="home_address" class="col-sm-3 col-form-label">{{ trans('info.home_address') }}</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" value="{{ $user->home_address }}" id="home_address" name="home_address">
                                     </div>
                                 </div>
-                                <div class="form-horizontal">
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="home_postalcode">{{ trans('info.home_postalcode') }}</label>
-                                        <div>
-                                            <input type="text" class="form-control" value="{{ $user->home_postalcode }}" id="home_postalcode" name="home_postalcode">
-                                        </div>
+                                <div class="form-group row">
+                                    <label for="home_postalcode" class="col-sm-3 col-form-label">{{ trans('info.home_postalcode') }}</label>
+                                    <div class="col-3">
+                                        <input type="text" class="form-control" value="{{ $user->home_postalcode }}" id="home_postalcode" name="home_postalcode" placeholder="{{ trans('info.home_postalcode') }}">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" value="{{ $user->home_city }}" id="home_city" name="home_city" placeholder="{{ trans('info.home_city') }}">
                                     </div>
                                 </div>
-                                <div class="form-horizontal">
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="home_postalcode">{{ trans('info.home_city') }}</label>
-                                        <input type="text" class="form-control" value="{{ $user->home_city }}" id="home_city" name="home_city">
-                                    </div>
-                                </div>
-                                <div class="form-horizontal">
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="home_country">{{ trans('info.home_country') }}</label>
+                                
+                                <div class="form-group row">
+                                    <label for="home_country" class="col-sm-3 col-form-label">{{ trans('info.home_country') }}</label>
+                                    <div class="col-sm-9">
                                         <input type="text" class="form-control" value="{{ $user->home_country }}" id="home_country" name="home_country">
                                     </div>
                                 </div>
-                                <div class="form-horizontal">
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="home_tel">{{ trans('info.home_tel') }}</label>
+                                <div class="form-group row">
+                                    <label for="home_tel" class="col-sm-3 col-form-label">{{ trans('info.home_tel') }}</label>
+                                    <div class="col-sm-9">
                                         <input type="tel" class="form-control" value="{{ $user->home_tel }}" id="home_tel" name="home_tel">
                                     </div>
                                 </div>
-                                <div class="form-horizontal">        
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="mobile">{{ trans('info.mobile') }}</label>
+                                <div class="form-group row">
+                                    <label for="mobile" class="col-sm-3 col-form-label">{{ trans('info.mobile') }}</label>
+                                    <div class="col-sm-9">
                                         <input type="text" class="form-control" value="{{ $user->mobile }}" id="mobile" name="mobile">
                                     </div>
                                 </div>
-                                <div class="form-horizontal">        
-                                    <div class="form-group form-group-lg">
-                                        <label class="control-label" for="size">{{ trans('info.size') }}</label>
-                                        <input type="number" class="form-control" value="{{ $user->size }}" id="size" name="size" min="44" max="60">
+                                <div class="form-group row">
+                                    <label for="size_new" class="col-sm-3 col-form-label">{{ trans('info.size') }}</label>
+                                    <div class="col-sm-9">
+                                        <select class="form-control col-sm-2" value="{{ $user->size_new }}" id="size_new" name="size_new">
+                                            <option>S</option>
+                                            <option>M</option>
+                                            <option>L</option>
+                                            <option>XL</option>
+                                            <option>2XL</option>
+                                            <option>3XL</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -129,11 +130,23 @@
                                 </TR>
                                 <TR>
                                     <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_visible') }}</TD>
-                                    <TD>{{ $user->partner_visible }}</TD>
+                                    <TD>
+                                        @if($user->partner_visible=='Yes')
+                                            {{ trans('info.yes') }}
+                                        @else
+                                            {{ trans('info.no') }}
+                                        @endif
+                                    </TD>
                                 </TR>
                                 <TR>
                                     <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_login') }}</TD>
-                                    <TD>{{ $user->partner_login }}</TD>
+                                    <TD>
+                                        @if($user->partner_login=='Yes')
+                                            {{ trans('info.yes') }}
+                                        @else
+                                            {{ trans('info.no') }}
+                                        @endif
+                                    </TD>
                                 </TR>
                             </TABLE>
                         </div> 

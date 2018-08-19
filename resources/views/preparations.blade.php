@@ -30,8 +30,8 @@
                     <div class="card-block">
                         <div class="card-body">
                             <h5 class="card-title">Commissaris heeft met spoed jullie maten nodig!</h5>
-                            <p class="card-text">Zoek jouw maat op in de tabel hieronder en registreer het getal
-                                in de eerste kolom bij <a href="/users/{{ Auth::user()->id }}">je profiel</a>. 
+                            <p class="card-text">
+                                Zoek jouw maat op in de tabel hieronder en registreer deze bij jouw <a href="/users/{{ Auth::user()->id }}">je profiel</a>. 
                             </p>
                             <p class="card-text">
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#maattabel">
@@ -116,19 +116,21 @@
                     </div>
                 </div>
             </div>
-            <div class="modal" id="maattabel">
-                <div class="modal-dialog modal-dialog-centered">
+            <div class="modal" tabindex="-1" role="dialog" id="maattabel">
+                <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 class="modal-title">Echte mannen - maat tabel</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
                         <div class="modal-body">
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Jouw maat</th>
-                                        <th scope="col">EU</th>
+                                        <th scope="col">Kies:</th>
+                                        <th scope="col">Maat</th>
                                         <th scope="col">Borst omtrek (cm)</th>
                                         <th scope="col">Taille omtrek (cm)</th>
                                         <th scope="col">Heup omtrek (cm)</th>
@@ -137,72 +139,72 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row">44</th>
-                                        <td>S</td>
+                                        <th scope="row">S</th>
+                                        <td>44</td>
                                         <td>89-93</td>
                                         <td>76-80</td>
                                         <td>88-92</td>
                                         <td>62</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">46</th>
-                                        <td>M</td>
+                                        <th scope="row">M</th>
+                                        <td>46</td>
                                         <td>93-97</td>
                                         <td>80-84</td>
                                         <td>92-99</td>
                                         <td>63</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">48</th>
-                                        <td>M</td>
+                                        <th scope="row">M</th>
+                                        <td>48</td>
                                         <td>97-101</td>
                                         <td>84-88</td>
                                         <td>96-100</td>
                                         <td>64</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">50</th>
-                                        <td>L</td>
+                                        <th scope="row">L</th>
+                                        <td>50</td>
                                         <td>101-105</td>
                                         <td>88-92</td>
                                         <td>100-103</td>
                                         <td>65</td>
                                     </tr>
                                        <tr>
-                                        <th scope="row">52</th>
-                                        <td>L</td>
+                                        <th scope="row">L</th>
+                                        <td>52</td>
                                         <td>105-109</td>
                                         <td>92-96</td>
                                         <td>103-106</td>
                                         <td>66</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">54</th>
-                                        <td>XL</td>
+                                        <th scope="row">XL</th>
+                                        <td>54</td>
                                         <td>109-113</td>
                                         <td>96-100</td>
                                         <td>106-109</td>
                                         <td>67</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">56</th>
-                                        <td>XL</td>
+                                        <th scope="row">XL</th>
+                                        <td>56</td>
                                         <td>113-117</td>
                                         <td>101-105</td>
                                         <td>109-112</td>
                                         <td>68</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">58</th>
-                                        <td>2XL</td>
+                                        <th scope="row">2XL</th>
+                                        <td>58</td>
                                         <td>117-121</td>
                                         <td>104-108</td>
                                         <td>112-115</td>
                                         <td>69</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">60</th>
-                                        <td>3XL</td>
+                                        <th scope="row">3XL</th>
+                                        <td>60</td>
                                         <td>121-125</td>
                                         <td>108-112</td>
                                         <td>115-118</td>
@@ -212,7 +214,7 @@
                             </table>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">{{ trans('info.close') }}</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>

@@ -54,7 +54,7 @@
                                 </TR>
                                 <TR>
                                     <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.size') }}</TD>
-                                    <TD>{{ $user->size }}</TD>
+                                    <TD>{{ $user->size_new }}</TD>
                                 </TR>
                                 <TR>
                                     <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.last_login') }}</TD>

@@ -41,7 +41,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {{ Auth::user()->name }}
+                            {{ Auth::user()->first_name }}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
                             <a class="dropdown-item" href="/users/{{ Auth::user()->id }}">{{ trans('info.profile') }}</a>

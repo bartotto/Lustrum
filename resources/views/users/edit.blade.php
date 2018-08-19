@@ -80,7 +80,8 @@
                                 <div class="form-group row">
                                     <label for="size" class="col-sm-3 col-form-label">{{ trans('info.size') }}</label>
                                     <div class="col-sm-9">
-                                        <select class="form-control col-sm-2" value="{{ $user->size }}" id="size" name="size">
+                                        <select class="form-control col-sm-3" id="size" name="size">
+                                            <option>{{ $user->size }}</option>
                                             <option>S</option>
                                             <option>M</option>
                                             <option>L</option>

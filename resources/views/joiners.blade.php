@@ -17,6 +17,9 @@
                                 @endif
                         @endforeach
                     </div>
+                    <div class="card-footer text-muted">
+                        <p class="card-text">{{ trans('info.members_descr') }}</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9">

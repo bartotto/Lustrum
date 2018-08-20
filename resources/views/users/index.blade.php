@@ -9,12 +9,14 @@
                         <h2>{{ trans('info.members_list') }}</h2>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">{{ trans('info.members_descr') }}</p>
                         @foreach ($users as $user)
                             <div>
                                 <a href="/users/{{ $user->id }}">{{ $user->first_name }} {{ $user->name }}</a>
                             </div>
                         @endforeach
+                    </div>
+                    <div class="card-footer text-muted">
+                        <p class="card-text">{{ trans('info.members_descr') }}</p>
                     </div>
                 </div>
             </div>

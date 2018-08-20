@@ -45,6 +45,9 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
                             <a class="dropdown-item" href="/users/{{ Auth::user()->id }}">{{ trans('info.profile') }}</a>
+                            @if(Auth::user()->user_role == 'Member+')
+                                <a class="dropdown-item" href="/admin">{{ trans('info.admin') }}</a>
+                            @endif
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                                          document.getElementById('logout-form').submit();">

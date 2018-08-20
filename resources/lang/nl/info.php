@@ -2,6 +2,7 @@
 
 return [
     'add_user'          => 'Maak nieuwe gebruiker',
+    'admin'             => 'Admin',
     'all'               => 'Alle',
     'archives'          => 'Archief',
     'back'              => 'Terug',
@@ -50,6 +51,7 @@ return [
     'insurance_title'   => 'Wie haalt je van de berg als je je enkel verzwikt?',
     'insurance_text'    => 'Zorg voor een passende reisverzekering. Als je geen doorlopende reisverzekering hebt, sluit er dan nu 1 af.',
     'mobile'            => 'Mobiel',
+    'join'              => 'Geef je op',
     'joiners'           => 'Wie gaan mee?',
     'kledinglijn'       => 'Kledinglijn',
     'kledinglijn_title' => 'Commissaris heeft met spoed jullie maten nodig!',

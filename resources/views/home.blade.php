@@ -3,28 +3,58 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="col-lg-5 col-md-5 col-sm-5">
                 <div class="card" style="height: 100%;">
-                    <img class="card-img-top" src="img/Other/KaukasischHilarisch.jpeg" alt="Aart" height="auto" width="48">
-                    <div class="card-header">
-                        <h2>VII<sup>e</sup> Lustrumreis</h2>
-                    </div>
+                    <img class="card-img-top" src="img/Other/KaukasischHilarisch.jpeg" alt="Logo Georgia" style="width: 284px">
                     <div class="card-block">
                         <div class="card-body">
+                            <hr>
                             @if (session('status'))
                                 <div class="alert alert-success">
                                     {{ session('status') }}
                                 </div>
-                            @endif                 
+                            @endif
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 6</div>
+                                <img src="img/Groep/Kenya.jpg" style="width:100%">
+                                <div class="text">Kenya 1989</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 6</div>
+                                <img src="img/Groep/Lappland.jpg" style="width:100%">
+                                <div class="text">Lappland 1994</div>
+                            </div>      
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 6</div>
+                                <img src="img/Groep/Cameroun.jpg" style="width:100%">
+                                <div class="text">Cameroun 1999</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">4 / 6</div>
+                                <img src="img/Groep/Oman.jpg" style="width:100%">
+                                <div class="text">Oman 2005</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="img/Groep/Carpathians.jpg" style="width:100%">
+                                <div class="text">Karpaten 2009</div>
+                            </div>
+                             <div class="mySlides fade">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="img/Groep/Dalarna.jpg" style="width:100%">
+                                <div class="text">Dalarna 2014</div>
+                            </div>
+                            <hr>
                             <div class="content">
                                 <p>{{ trans('info.home_descr') }}</p>
                                 <p>{{ trans('info.home_descr2') }}</p>
                             </div>
+                            <br>
                         </div>
                     </div>    
                 </div>
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-8">
+            <div class="col-lg-7 col-md-7 col-sm-7">
                 <div class="card card-block">
                     <img class="card-img-top" src="img/Other/Aart.jpg" alt="Aart" style="width: 284px">
                     <div class="card-header">
@@ -44,48 +74,6 @@
                         <p>Namens de Lustrum Commissie,<br>
                         Aart<br>
                         President</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <div class="card card-block">
-                    <br>
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 6</div>
-                        <img src="img/Groep/Kenya.jpg" style="width:100%">
-                        <div class="text">Kenya 1989</div>
-                    </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 6</div>
-                        <img src="img/Groep/Lappland.jpg" style="width:100%">
-                        <div class="text">Lappland 1994</div>
-                    </div>      
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 6</div>
-                        <img src="img/Groep/Cameroun.jpg" style="width:100%">
-                        <div class="text">Cameroun 1999</div>
-                    </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">4 / 6</div>
-                        <img src="img/Groep/Oman.jpg" style="width:100%">
-                        <div class="text">Oman 2005</div>
-                    </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">5 / 6</div>
-                        <img src="img/Groep/Carpathians.jpg" style="width:100%">
-                        <div class="text">Karpaten 2009</div>
-                    </div>
-                     <div class="mySlides fade">
-                        <div class="numbertext">6 / 6</div>
-                        <img src="img/Groep/Dalarna.jpg" style="width:100%">
-                        <div class="text">Dalarna 2014</div>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="card-header">
-                        <h2>{{ trans('info.past_trips') }}</h2>
-                    </div>
-                    <div class="card-body"> 
                     </div>
                 </div>
             </div>

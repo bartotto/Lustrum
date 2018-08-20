@@ -216,13 +216,18 @@ html, body {
     }
     
 .card {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
     }
     
 .card-block {
   flex: 1;
     }
+
+.card-img-top {
+    margin: auto;
+    }
+    
 .card-footer {
     font-size: 12px;
     text-align: center;

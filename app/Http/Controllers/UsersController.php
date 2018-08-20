@@ -43,4 +43,7 @@ class UsersController extends Controller {
         return view('joiners', compact('users'));
         }
         
+    public function strandborrel() {
+        return view('strandborrel');
+        }
     }

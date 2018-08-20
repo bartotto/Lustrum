@@ -21,7 +21,7 @@ Route::group(['middleware' => 'language'], function () {
     Route::get('/luco', 'HomeController@luco')->name('luco');
     Route::get('/destination', 'HomeController@destination')->name('destination');
     Route::get('/preparations', 'HomeController@preparations')->name('preparations');
-    Route::get('/trip', 'HomeController@trip')->name('trip');
+    Route::get('/underway', 'HomeController@underway')->name('underway');
     
     Route::get('/joiners', 'UsersController@joiners')->name('joiners');
     Route::get('/users', 'UsersController@index')->name('users');

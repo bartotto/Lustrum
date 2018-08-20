@@ -18,10 +18,10 @@
                         <a class="nav-link" href="{{ route('destination') }}">{{ trans('info.destination') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('preparations') }}">{{ trans('info.prep') }}</a>
+                        <a class="nav-link" href="{{ route('preparations') }}">{{ trans('info.preparations') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('trip') }}">{{ trans('info.trip') }}</a>
+                        <a class="nav-link" href="{{ route('underway') }}">{{ trans('info.underway') }}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('posts')   }}">{{ trans('info.blog') }}</a>

@@ -15,7 +15,7 @@
                                 {{ csrf_field() }}
                                 <div class="form-group">
                                     <button class="btn btn-primary" onclick="goBack()">
-                                        {{ trans('info.back') }}
+                                        {{ trans('info.cancel') }}
                                     </button>
                                     <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>
                                 </div>    
@@ -94,7 +94,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="card-footer text-muted">
+                    <div class="card-footer text-muted text-left">
                         @if(Auth::user()->user_role = 'Member')
                             {{ trans('info.edit_user_warning') }}
                         @endif
@@ -148,11 +148,7 @@
                             </TABLE>
                         </div> 
                     </div>
-                    <div class="card-footer text-muted">
-                        @if(Auth::user()->user_role = 'Member')
-                            <p>{{ trans('info.edit_user_warning2') }}</p>
-                        @endif
-                    </div>  
+                    @include('users.partials.footer_partner')  
                 </div>
             </div>
         </div>

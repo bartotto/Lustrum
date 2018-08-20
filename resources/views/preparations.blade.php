@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('subtitle', '| '.trans('info.preparations'))
 @section('content')
     <div class="container-fluid">
         <div class="row">

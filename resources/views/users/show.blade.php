@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('subtitle', '| '.trans('info.profile'))
 @section('content')
     <div class="container-fluid">
         <div class="row">
@@ -54,12 +54,12 @@
                                 </TR>
                                 <TR>
                                     <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.last_login') }}</TD>
-                                    <TD>{{ $user->previous_last_login->format('d M Y')}} om {{ $user->previous_last_login->format('H:i') }}</TD>
+                                    <TD>{{ Auth::user()->previous_last_login->format('d M Y') }} om {{ Auth::user()->previous_last_login->format('H:i') }}</TD>
                                 </TR>
                             </TABLE>
                         </div> 
                     </div>
-                    <div class="card-footer text-muted">
+                    <div class="card-footer text-muted text-left">
                         @if(Auth::user()->user_role = 'Member')
                             <p>{{ trans('info.edit_user_warning') }}</p>
                         @endif
@@ -116,9 +116,10 @@
                                 </TABLE>
                             </div> 
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-muted text-left">
                             @if(Auth::user()->user_role = 'Member')
-                                <p>* {{ trans('info.edit_user_warning2') }}</p>
+                                <p>{{ trans('info.edit_user_warning2') }}<br>
+                                <sup>*</sup> {{ trans('info.edit_user_warning3') }}</p>
                             @endif
                         </div>
                     </div>

@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('subtitle', '| '.trans('info.destination'))
+
 @section('content')
     <div class="container-fluid">
         <div class="row">

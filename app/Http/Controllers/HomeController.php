@@ -37,8 +37,8 @@ class HomeController extends Controller {
         return view('preparations');
         }
         
-    public function trip() {
-        return view('trip');
+    public function underway() {
+        return view('underway');
         }
         
     public function kenya() {

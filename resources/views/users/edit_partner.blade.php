@@ -54,9 +54,11 @@
                             </TABLE>
                         </div> 
                     </div>
-                    <div class="card-footer text-muted">
-                        <p></p>
-                    </div>  
+                    <div class="card-footer text-muted text-left">
+                        @if(Auth::user()->user_role = 'Member')
+                            <p>{{ trans('info.edit_user_warning') }}</p>
+                        @endif
+                    </div>   
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
@@ -71,7 +73,7 @@
                                 {{ csrf_field() }}
                                 <div class="form-group">
                                     <button class="btn btn-primary" onclick="goBack()">
-                                        {{ trans('info.back') }}
+                                        {{ trans('info.cancel') }}
                                     </button>
                                     <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>
                                 </div>
@@ -97,7 +99,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">        
-                                    <label for="partner_visible" class="radio-inline col-sm-9 col-form-label">{{ trans('info.partner_visible') }}&nbsp;&nbsp;
+                                    <label for="partner_visible" class="radio-inline col-sm-9 col-form-label">{{ trans('info.partner_visible') }} <sup>*</sup>&nbsp;
                                         @if($user->partner_visible == 'No')            
                                             <input type="radio" name="partner_visible" value="No" checked> {{ trans('info.no') }}&nbsp;&nbsp;
                                             <input type="radio" name="partner_visible" value="Yes"> {{ trans('info.yes') }}  
@@ -125,9 +127,10 @@
                             </form>
                         </div>
                     </div>
-                    <div class="card-footer text-muted">
+                    <div class="card-footer text-muted text-left">
                         @if(Auth::user()->user_role = 'Member')
-                            <p>{{ trans('info.edit_user_warning2') }}</p>
+                            <p>{{ trans('info.edit_user_warning2') }}<br>
+                            <sup>*</sup>{{ trans('info.edit_user_warning3') }}</p>
                         @endif
                     </div>  
                 </div>

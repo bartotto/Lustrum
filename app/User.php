@@ -19,7 +19,7 @@ class User extends Authenticatable {
     protected $fillable = [
         'name', 'first_name', 'dob', 'email', 'password', 'home_address', 'home_number', 'home_postalcode', 'home_city',
         'home_country', 'home_tel', 'mobile', 'partner', 'partner_email', 'partner_mobile', 'partner_visible', 'partner_login',
-        'user_type', 'size', 'previous_last_login', 'last_login'
+        'user_role', 'size', 'previous_last_login', 'last_login'
     ];
 
     protected $dates = ['dob', 'previous_last_login', 'last_login'];

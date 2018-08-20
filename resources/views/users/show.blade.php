@@ -64,7 +64,7 @@
                         </div> 
                     </div>
                     <div class="card-footer text-muted">
-                        @if(Auth::user()->user_type = 'Member')
+                        @if(Auth::user()->user_role = 'Member')
                             <p>{{ trans('info.edit_user_warning') }}</p>
                         @endif
                     </div>  
@@ -125,7 +125,7 @@
                             </div> 
                         </div>
                         <div class="card-footer text-muted">
-                            @if(Auth::user()->user_type = 'Member')
+                            @if(Auth::user()->user_role = 'Member')
                                 <p>* {{ trans('info.edit_user_warning2') }}</p>
                             @endif
                         </div>

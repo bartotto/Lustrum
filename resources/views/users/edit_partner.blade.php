@@ -100,26 +100,26 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">        
-                                    <label for="partner_visible" class="radio-inline col-form-label">{{ trans('info.partner_visible') }}
-                                            @if($user->partner_visible == 'No')            
-                                                <input type="radio" name="partner_visible" value="No" checked>{{ trans('info.no') }}
-                                                <input type="radio" name="partner_visible" value="Yes">{{ trans('info.yes') }}  
-                                            @else
-                                                <input type="radio" name="partner_visible" value="No">{{ trans('info.no') }}
-                                                <input type="radio" name="partner_visible" value="Yes" checked>{{ trans('info.yes') }}
-                                            @endif
+                                    <label for="partner_visible" class="radio-inline col-sm-9 col-form-label">{{ trans('info.partner_visible') }}&nbsp;&nbsp;
+                                        @if($user->partner_visible == 'No')            
+                                            <input type="radio" name="partner_visible" value="No" checked> {{ trans('info.no') }}&nbsp;&nbsp;
+                                            <input type="radio" name="partner_visible" value="Yes"> {{ trans('info.yes') }}  
+                                        @else
+                                            <input type="radio" name="partner_visible" value="No"> {{ trans('info.no') }}&nbsp;&nbsp;
+                                            <input type="radio" name="partner_visible" value="Yes" checked> {{ trans('info.yes') }}
+                                        @endif
                                     </label>
                                 </div>
                                 <div class="form-group row">         
-                                    <label for="partner_login" class="radio-inline col-sm-9 col-form-label" >{{ trans('info.partner_login') }}
+                                    <label for="partner_login" class="radio-inline col-sm-9 col-form-label" >{{ trans('info.partner_login') }}&nbsp;&nbsp;
                                         @if($user->partner_login == 'No')            
-                                            <input type="radio" name="partner_login" value="No" checked>{{ trans('info.no') }}
-                                            <input type="radio" name="partner_login" value="Yes">{{ trans('info.yes') }}  
+                                            <input type="radio" name="partner_login" value="No" checked> {{ trans('info.no') }}&nbsp;&nbsp;
+                                            <input type="radio" name="partner_login" value="Yes"> {{ trans('info.yes') }}  
                                         @else
-                                            <input type="radio" name="partner_login" value="No">{{ trans('info.no') }}
-                                            <input type="radio" name="partner_login" value="Yes" checked>{{ trans('info.yes') }}
+                                            <input type="radio" name="partner_login" value="No"> {{ trans('info.no') }}&nbsp;&nbsp;
+                                            <input type="radio" name="partner_login" value="Yes" checked> {{ trans('info.yes') }}
                                         @endif
-                                        </label>
+                                    </label>
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>
@@ -129,7 +129,7 @@
                         </div>
                     </div>
                     <div class="card-footer text-muted">
-                        @if(Auth::user()->user_type = 'Member')
+                        @if(Auth::user()->user_role = 'Member')
                             <p>{{ trans('info.edit_user_warning2') }}</p>
                         @endif
                     </div>  

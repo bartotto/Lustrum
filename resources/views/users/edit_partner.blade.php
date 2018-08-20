@@ -75,16 +75,13 @@
                                     </button>
                                     <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>
                                 </div>
-                                <div class="form-group row">
-                                    <label for="partner" class="col-sm-3 col-form-label">{{ trans('info.partner') }}</label>
-                                    <div class="col-sm-9">
-                                        <input class="form-control" type="text" value="{{ $user->partner }}" id="partner" name="partner" required>
+                               <div class="form-group row">
+                                    <label for="partner" class="col-sm-3 col-form-label">{{ trans('info.name') }}</label>
+                                    <div class="col-4">
+                                        <input type="text" class="form-control" value="{{ $user->partner_first_name }}" id="partner_first_name" name="partner_first_name" placeholder="{{ trans('info.first_name') }}">
                                     </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="partner_first_name" class="col-sm-3 col-form-label">{{ trans('info.partner_first_name') }}</label>
-                                    <div class="col-sm-9">
-                                        <input class="form-control" type="text" value="{{ $user->partner_first_name }}" id="partner_first_name" name="partner_first_name" required>
+                                    <div class="col-5">
+                                        <input type="text" class="form-control" value="{{ $user->partner }}" id="partner" name="partner" placeholder="{{ trans('info.last_name') }}">
                                     </div>
                                 </div>
                                 <div class="form-group row">

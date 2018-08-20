@@ -18,17 +18,14 @@
                                         {{ trans('info.back') }}
                                     </button>
                                     <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>
-                                </div>
+                                </div>    
                                 <div class="form-group row">
                                     <label for="name" class="col-sm-3 col-form-label">{{ trans('info.name') }}</label>
-                                    <div class="col-sm-9">
-                                        <input class="form-control" type="text" value="{{ $user->name }}" id="title" name="name" required>
+                                    <div class="col-4">
+                                        <input type="text" class="form-control" value="{{ $user->first_name }}" id="first_name" name="first_name" placeholder="{{ trans('info.first_name') }}">
                                     </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="first_name" class="col-sm-3 col-form-label">{{ trans('info.first_name') }}</label>
-                                    <div class="col-sm-9">        
-                                        <input class="form-control" type="text" value="{{ $user->first_name }}" id="title" name="first_name" required>
+                                    <div class="col-5">
+                                        <input type="text" class="form-control" value="{{ $user->name }}" id="name" name="name" placeholder="{{ trans('info.last_name') }}">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -58,7 +55,6 @@
                                         <input type="text" class="form-control" value="{{ $user->home_city }}" id="home_city" name="home_city" placeholder="{{ trans('info.home_city') }}">
                                     </div>
                                 </div>
-                                
                                 <div class="form-group row">
                                     <label for="home_country" class="col-sm-3 col-form-label">{{ trans('info.home_country') }}</label>
                                     <div class="col-sm-9">

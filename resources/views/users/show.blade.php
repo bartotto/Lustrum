@@ -22,11 +22,7 @@
                             <TABLE BORDER="0" STYLE="border-style: solid">
                                 <TR>
                                     <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.name') }}</TD>
-                                    <TD WIDTH="250" HEIGHT="30">{{ $user->name }}</TD>
-                                </TR>
-                                <TR>
-                                    <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.first_name') }}</TD>
-                                    <TD WIDTH="250" HEIGHT="30">{{ $user->first_name }}</TD>
+                                    <TD WIDTH="250" HEIGHT="30">{{ $user->first_name }} {{ $user->name }}</TD>
                                 </TR>
                                 <TR>
                                     <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.dob') }}</TD>
@@ -58,7 +54,7 @@
                                 </TR>
                                 <TR>
                                     <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.last_login') }}</TD>
-                                    <TD>{{ $user->previous_last_login }}</TD>
+                                    <TD>{{ $user->previous_last_login->format('d M Y')}} om {{ $user->previous_last_login->format('H:i') }}</TD>
                                 </TR>
                             </TABLE>
                         </div> 
@@ -86,12 +82,8 @@
                             <div class="card-body">
                                 <TABLE BORDER="0" STYLE="border-style: solid">
                                     <TR>
-                                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner') }}</TD>
-                                        <TD>{{ $user->partner }}</TD>
-                                    </TR>
-                                    <TR>
-                                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_first_name') }}</TD>
-                                        <TD>{{ $user->partner_first_name }}</TD>
+                                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.name') }}</TD>
+                                        <TD>{{ $user->partner_first_name }} {{ $user->partner }}</TD>
                                     </TR>
                                     <TR>
                                         <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_email') }}</TD>

@@ -29,9 +29,9 @@
                     </div>
                     <div class="card-block">
                         <div class="card-body">
-                            <h5 class="card-title">Commissaris heeft met spoed jullie maten nodig!</h5>
+                            <h5 class="card-title">{{ trans('info.kledinglijn_title') }}</h5>
                             <p class="card-text">
-                                Zoek jouw maat op in de tabel hieronder en registreer deze bij jouw <a href="/users/{{ Auth::user()->id }}">je profiel</a>. 
+                                {{ trans('info.kledinglijn_text') }}<a href="/users/{{ Auth::user()->id }}">{{ trans('info.profile') }}</a>. 
                             </p>
                             <p class="card-text">
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#maattabel">
@@ -49,13 +49,12 @@
                 <div class="card" style="height: 100%">
                     <img class="card-img-top" src="img/Other/Passport.jpg" alt="Paspoort" height="auto" width="48">
                     <div class="card-header">
-                        <h2>{{ trans('info.prep_passport') }}</h2>
+                        <h2>{{ trans('info.passport') }}</h2>
                     </div>
                     <div class="card-block">
                         <div class="card-body">
-                            <h5 class="card-title">Anders kom je er echt niet in, apekop...</h5>
-                            <p class="card-text">Zorg dat jouw paspoort (bij aankomst) nog 3 maanden geldig is.
-                                Voor Georgië is geen visum nodig voor een verblijf van maximaal 1 jaar.</p>
+                            <h5 class="card-title">{{ trans('info.passport_title') }}</h5>
+                            <p class="card-text">{{ trans('info.passport_text') }}</p>
                         </div>
                     </div>
                     <div class="card-footer text-muted">
@@ -67,13 +66,12 @@
                 <div class="card" style="height: 100%">
                     <img class="card-img-top" src="img/Other/Insurance.jpg" alt="Verzekering" height="auto" width="48">
                     <div class="card-header">
-                        <h2>{{ trans('info.prep_insurance') }}</h2>
+                        <h2>{{ trans('info.insurance') }}</h2>
                     </div>
                     <div class="card-block">
                         <div class="card-body">
-                            <h5 class="card-title">Wie haalt je van de berg als je je enkel verzwikt?</h5>
-                            <p class="card-text">Zorg voor een passende reisverzekering. Als je geen doorlopende
-                                reisverzekering hebt, sluit er dan nu 1 af.</p>
+                            <h5 class="card-title">{{ trans('info.insurance_title') }}</h5>
+                            <p class="card-text">{{ trans('info.insurance_text') }}</p>
                         </div>
                     </div>
                     <div class="card-footer text-muted">
@@ -85,12 +83,12 @@
                 <div class="card" style="height: 100%">
                     <img class="card-img-top" src="img/Other/Rugzak.jpg" alt="Paklijst" height="auto" width="48">
                     <div class="card-header">
-                        <h2>{{ trans('info.pack_list') }}</h2>
+                        <h2>{{ trans('info.packlist') }}</h2>
                     </div>
                     <div class="card-block">
                         <div class="card-body">
-                            <h5 class="card-title">Ik ga op reis en neem mee</h5>
-                            <p class="card-text">De gids zorgt voor tenten en matrassen</p>
+                            <h5 class="card-title">{{ trans('info.packlist_title') }}</h5>
+                            <p class="card-text">{{ trans('info.packlist_text') }}</p>
                             <p>{{ trans('info.to_follow') }}</p>
                         </div>
                     </div>

@@ -8,7 +8,7 @@
                     <div class="card-header">
                         <h2>{{ trans('info.post_create') }}</h2>
                         <button class="btn btn-primary" onclick="goBack()">
-                            {{ trans('info.back') }}
+                            {{ trans('info.cancel') }}
                         </button>
                     </div>
                     <div class="card-body">

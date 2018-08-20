@@ -48,9 +48,9 @@
                             @endfor
                         </div>
                     </div>
-                    <div class="card-footer text-muted">
-                        {{ trans('info.pictures_more') }}
-                    </div>
+                <div class="card-footer text-muted">
+                    {{ trans('info.pictures_more') }}
+                </div>
                 </div>
             </div>
         </div>

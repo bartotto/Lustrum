@@ -44,6 +44,7 @@ class HomeController extends Controller {
     public function kenya() {
         return view('trips.kenya');
         }
+        
     public function lappland() {
         return view('trips.lappland');
         }

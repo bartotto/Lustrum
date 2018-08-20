@@ -42,7 +42,7 @@
                                     @endphp
                                     <div class="mySlides fade">
                                         <img src="<?php echo '/img/Trips/Kenya/'.$i.'.jpg';?>" style="width:80%">
-                                        <div class="numbertext">{{ $i }}</div>
+                                        <div class="numbertext">{{ $i }} </div>
                                     </div>
                                 @endif
                             @endfor

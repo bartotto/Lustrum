@@ -62,15 +62,12 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="home_tel" class="col-sm-3 col-form-label">{{ trans('info.home_tel') }}</label>
-                                    <div class="col-sm-9">
-                                        <input type="tel" class="form-control" value="{{ $user->home_tel }}" id="home_tel" name="home_tel">
+                                    <label for="tel_numbers" class="col-sm-3 col-form-label">{{ trans('info.tel_numbers') }}</label>
+                                    <div class="col-4">
+                                        <input type="text" class="form-control" value="{{ $user->mobile }}" id="mobile" name="mobile" placeholder="{{ trans('info.mobile') }}">
                                     </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="mobile" class="col-sm-3 col-form-label">{{ trans('info.mobile') }}</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" value="{{ $user->mobile }}" id="mobile" name="mobile">
+                                    <div class="col-4">
+                                        <input type="text" class="form-control" value="{{ $user->home_tel }}" id="home_tel" name="home_tel" placeholder="{{ trans('info.home_tel') }}">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -146,9 +143,14 @@
                                     </TD>
                                 </TR>
                             </TABLE>
-                        </div> 
+                        </div>
                     </div>
-                    @include('users.partials.footer_partner')  
+                    <div class="card-footer text-muted text-left">
+                        @if(Auth::user()->user_role = 'Member')
+                            <p>{{ trans('info.edit_user_warning2') }}<br>
+                            <sup>*</sup>{{ trans('info.edit_user_warning3') }}</p>
+                        @endif
+                    </div>
                 </div>
             </div>
         </div>

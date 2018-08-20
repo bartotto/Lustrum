@@ -18,12 +18,12 @@ Auth::routes();
 
 Route::group(['middleware' => 'language'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
-    Route::get('/luco', 'HomeController@luco')->name('luco');
     Route::get('/destination', 'HomeController@destination')->name('destination');
     Route::get('/preparations', 'HomeController@preparations')->name('preparations');
     Route::get('/underway', 'HomeController@underway')->name('underway');
-    
+    Route::get('/luco', 'HomeController@luco')->name('luco');
     Route::get('/joiners', 'UsersController@joiners')->name('joiners');
+    
     Route::get('/users', 'UsersController@index')->name('users');
     Route::get('/users/{user}', 'UsersController@show');
     Route::get('/profile/{user}/edit', 'UsersController@edit')->name('profile.edit');

@@ -44,6 +44,16 @@
                                     <TD>{{ $user->size }}</TD>
                                 </TR>
                                 <TR>
+                                    <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.strandborrel') }}</TD>
+                                    <TD>
+                                        @if($user->strandborrel=='Yes')
+                                            {{ trans('info.yes') }}
+                                        @else
+                                            {{ trans('info.no') }}
+                                        @endif
+                                    </TD>
+                                </TR>
+                                <TR>
                                     <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.last_login') }}</TD>
                                     <TD>{{ Auth::user()->previous_last_login->format('d M Y') }} om {{ Auth::user()->previous_last_login->format('H:i') }}</TD>
                                 </TR>

@@ -17,6 +17,8 @@
                                     <div>{{ $user->first_name}}  {{$user->size}}</div>
                                 @endif
                             @endforeach
+                            <br>
+                            <hr>
                             <h5 class="card-title">Trage eikels:</h5>
                             @foreach ($users as $user)
                                 @if(!$user->size)

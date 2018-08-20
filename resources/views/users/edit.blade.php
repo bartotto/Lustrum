@@ -84,6 +84,17 @@
                                         </select>
                                     </div>
                                 </div>
+                                <div class="form-group row">         
+                                    <label for="strandborrel" class="radio-inline col-sm-9 col-form-label" >{{ trans('info.strandborrel') }}&nbsp;&nbsp;
+                                        @if($user->strandborrel == 'No')            
+                                            <input type="radio" name="strandborrel" value="No" checked> {{ trans('info.no') }}&nbsp;&nbsp;
+                                            <input type="radio" name="strandborrel" value="Yes"> {{ trans('info.yes') }}  
+                                        @else
+                                            <input type="radio" name="strandborrel" value="No"> {{ trans('info.no') }}&nbsp;&nbsp;
+                                            <input type="radio" name="strandborrel" value="Yes" checked> {{ trans('info.yes') }}
+                                        @endif
+                                    </label>
+                                </div>
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>
                                 </div>      
@@ -92,7 +103,7 @@
                         </div>
                     </div>
                     <div class="card-footer text-muted text-left">
-                        @if(Auth::user()->user_role = 'Member')
+                        @if(Auth::user()->user_role = 'Member' OR Auth::user()->user_role = 'Member+')
                             {{ trans('info.edit_user_warning') }}
                         @endif
                     </div> 

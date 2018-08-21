@@ -89,7 +89,7 @@ return [
     'partner_visible'   => 'Partner gegevens zichtbaar?',
     'passport'          => 'Paspoort',
     'passport_title'    => 'Anders kom je er echt niet in...',
-    'passport_text'     => 'Zorg dat jouw paspoort (bij aankomst) nog 3 maanden geldig is. Voor Georgië is geen visum nodig voor een verblijf van maximaal 1 jaar.',
+    'passport_text'     => 'Zorg dat jouw paspoort (bij vertrek) nog 6 maanden geldig is. Voor Georgië is geen visum nodig voor een verblijf van maximaal 1 jaar.',
     'password'          => 'Wachtwoord',
     'past_trips'        => 'Vorige reizen',
     'post_create'       => 'Schrijf een bijdrage',

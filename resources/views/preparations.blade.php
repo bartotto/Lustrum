@@ -58,6 +58,10 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ trans('info.passport_title') }}</h5>
                             <p class="card-text">{{ trans('info.passport_text') }}</p>
+                            <p class="card-text">Wij vinden conflicterende info:
+                                <a href="https://www.anwb.nl/vakantie/georgie/informatie/reisdocumenten">ANWB</a> stelt 3 maanden bij aankomst,
+                                <a href="https://www.landenkompas.nl/georgie">Landenkompas</a> stelt 6 maanden bij vertrek. Laten we het zekere voor het onzekere nemen.
+                            </p>
                         </div>
                     </div>
                     <div class="card-footer text-muted">

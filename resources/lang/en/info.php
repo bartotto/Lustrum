@@ -88,7 +88,7 @@ return [
     'partner_visible'   => 'Partner visible?',
     'passport'          => 'Passport',
     'passport_title'    => 'Otherwise you will not enter...',
-    'passport_text'     => 'Please make sure your passport (at arrival) is still valid for 3 months. No visa are required for Georgia for a stay of max 1 year.',
+    'passport_text'     => 'Please make sure your passport (at departure) is still valid for 6 months. No visa are required for Georgia for a stay of max 1 year.',
     'password'          => 'Password',
     'past_trips'        => 'Previous trips',
     'pictures_club'     => 'Pictures of the Club',

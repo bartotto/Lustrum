@@ -21,8 +21,10 @@
                             <hr>
                             <h5 class="card-title">Trage eikels:</h5>
                             @foreach ($users as $user)
-                                @if(!$user->size)
-                                    <div>{{ $user->first_name}}  {{$user->size}}</div>
+                                @if($user->joins)
+                                    @if(!$user->size)
+                                        <div>{{ $user->first_name}}  {{$user->size}}</div>
+                                    @endif
                                 @endif
                             @endforeach
                          </div>

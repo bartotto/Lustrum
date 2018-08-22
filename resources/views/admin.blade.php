@@ -58,9 +58,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="col-lg-5 col-md-5 col-sm-5">
                 <div class="card" style="height: 100%">
-                    <img class="card-img-top" src="img/Other/Passport.jpg" alt="Passport" height="auto" width="48">
+                    <img class="card-img-top" src="img/Other/Passport.jpg" alt="Passport" height="auto" width="18">
                     <div class="card-header">
                         <h2>{{ trans('info.last_login') }} op de site</h2>
                     </div>
@@ -68,15 +68,18 @@
                         <div class="card-body">
                             <h5 class="card-title">Voor het laatst ingelogd:</h5>
                             @foreach ($users as $user)
-                                @if($user->last_login)
-                                    <div>{{ $user->first_name}} op {{ $user->last_login}}</div>
+                                @if($user->previous_last_login)
+                                    <div class="row">
+                                        <div class="column">{{ $user->first_name}}</div>
+                                        <div class="column" align="right">{{ $user->previous_last_login->format('d m') }}&nbsp;{{ $user->previous_last_login->format('H:i') }}</div>
+                                    </div>
                                 @endif
                             @endforeach
                             <br>
                             <hr>
                             <h5 class="card-title">Nog nooit ingelogd:</h5>
                             @foreach ($users as $user)
-                                @if(!$user->last_login)       
+                                @if(!$user->previous_last_login)       
                                     <div>{{ $user->first_name}}</div>
                                 @endif
                             @endforeach

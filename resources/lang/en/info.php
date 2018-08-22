@@ -2,6 +2,7 @@
 
 return [
     'add_user'          => 'Create new user',
+    'admin'             => 'Admin',
     'all'               => 'All',
     'archives'          => 'Archives',
     'back'              => 'Back',

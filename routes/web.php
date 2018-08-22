@@ -29,10 +29,8 @@ Route::group(['middleware' => 'language'], function () {
     Route::get('/users', 'UsersController@index')->name('users');
     Route::get('/users/{user}', 'UsersController@show');
     Route::get('/profile/{user}/edit', 'UsersController@edit')->name('profile.edit');
-    Route::get('/profile/{user}/edit_partner', 'UsersController@edit_partner')->name('profile.edit_partner');
-    Route::get('/strandborrel', 'UsersController@strandborrel')->name('strandborrel');    
+    Route::get('/profile/{user}/edit_partner', 'UsersController@edit_partner')->name('profile.edit_partner');  
     Route::patch('/users/{user}', 'UsersController@update');
-    Route::post('/users/{user}/strandborrel', 'AdminController@update_strandborrel');
     
     Route::get('/posts', 'PostsController@index')->name('posts');
     Route::get('/posts/{post}', 'PostsController@show');

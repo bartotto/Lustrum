@@ -14,9 +14,9 @@
                             <h5 class="card-title">Op donderdag 30 augustus</h5>
                             <p class="card-text">Partners/vriendinnen ook mee!</p>
                             <p class="card-text">Vanaf 18:00 in Standtent Culpepper, Zwarte Pad, Strand Noord, Scheveningen</p>
-                            <!-- <p class="card-text">
-                                <a class="btn btn-primary" href="{{ route('strandborrel') }}">{{ trans('info.join') }}</a>
-                            </p> -->
+                            <a class="btn btn-primary" href="{{ route('profile.edit', ['id'=>Auth::user()->id]) }}">
+                                {{ trans('info.join') }}
+                            </a>
                         </div> 
                     </div>
                     <div class="card-footer text-muted">

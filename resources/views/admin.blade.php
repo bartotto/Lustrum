@@ -3,7 +3,7 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="card" style="height: 100%">
                     <img class="card-img-top" src="img/Other/Alex.jpg" alt="Alex" height="auto" width="48">
                     <div class="card-header">
@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="card" style="height: 100%">
                     <img class="card-img-top" src="img/Other/Strandborrel.jpg" alt="Strandborrel" height="auto" width="48">
                     <div class="card-header">
@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="card" style="height: 100%">
                     <img class="card-img-top" src="img/Other/Passport.jpg" alt="Passport" height="auto" width="48">
                     <div class="card-header">

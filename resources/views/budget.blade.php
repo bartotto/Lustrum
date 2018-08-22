@@ -21,7 +21,7 @@
                                     <TD align="right">780</TD>
                                 </TR>
                                 <TR>
-                                    <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Hotel Tbishi za 29/8 (2 nachten, incl ontbijt)</TD>
+                                    <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Hotel Tblisi za 29/8 (2 nachten, incl ontbijt)</TD>
                                     <TD align="right">180</TD>
                                 </TR>
                                 <TR>

@@ -25,9 +25,7 @@ class HomeController extends Controller {
         return view('home');
         }
  
-    public function luco() {
-        return view('luco');
-        }
+    
      
     public function destination() {
         return view('destination');
@@ -62,6 +60,14 @@ class HomeController extends Controller {
         }
     public function georgia() {
         return view('trips.georgia');
+        }
+    
+    public function luco() {
+        return view('luco');
+        }
+        
+    public function budget() {
+        return view('budget');
         }
     
     public function logout() {

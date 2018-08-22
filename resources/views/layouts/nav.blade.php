@@ -37,6 +37,7 @@
                             <a class="dropdown-item" href="{{ route('users') }}  ">{{ trans('info.club') }}</a>
                             <a class="dropdown-item" href="{{ route('joiners') }}">{{ trans('info.joiners') }}</a>
                             <a class="dropdown-item" href="{{ route('luco') }}   ">{{ trans('info.luco') }}</a>
+                            <a class="dropdown-item" href="{{ route('budget') }} ">{{ trans('info.budget') }}</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">

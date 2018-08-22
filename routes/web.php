@@ -23,6 +23,7 @@ Route::group(['middleware' => 'language'], function () {
     Route::get('/underway', 'HomeController@underway')->name('underway');
     Route::get('/luco', 'HomeController@luco')->name('luco');
     Route::get('/joiners', 'UsersController@joiners')->name('joiners');
+    Route::get('/budget', 'HomeController@budget')->name('budget');
     Route::get('/admin', 'AdminController@index')->name('admin');
     
     Route::get('/users', 'UsersController@index')->name('users');

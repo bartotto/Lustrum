@@ -22,7 +22,7 @@
                                 </TR>
                                 <TR>
                                     <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Hotel Tbishi za 29/8 (2 nachten, incl ontbijt)</TD>
-                                    <TD align="right">105</TD>
+                                    <TD align="right">180</TD>
                                 </TR>
                                 <TR>
                                     <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Borrel, diner en uitgaan zaterdag</TD>
@@ -46,7 +46,7 @@
                                 </TR>
                                 <TR>
                                     <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Totaal</TD>
-                                    <TD align="right">1.450</TD>
+                                    <TD align="right">1.540</TD>
                                 </TR>
                             </TABLE>
                         </div>

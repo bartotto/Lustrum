@@ -14,7 +14,7 @@
                                 <div>
                                     <a href="/users/{{ $user->id }}">{{ $user->first_name }} {{ $user->name }}</a>
                                 </div>
-                                @endif
+                            @endif
                         @endforeach
                     </div>
                     <div class="card-footer text-muted">

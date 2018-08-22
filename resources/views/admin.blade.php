@@ -58,6 +58,35 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card" style="height: 100%">
+                    <img class="card-img-top" src="img/Other/Passport.jpg" alt="Passport" height="auto" width="48">
+                    <div class="card-header">
+                        <h2>{{ trans('info.last_login') }} op de site</h2>
+                    </div>
+                    <div class="card-block">
+                        <div class="card-body">
+                            <h5 class="card-title">Voor het laatst ingelogd:</h5>
+                            @foreach ($users as $user)
+                                @if($user->last_login)
+                                    <div>{{ $user->first_name}} op {{ $user->last_login}}</div>
+                                @endif
+                            @endforeach
+                            <br>
+                            <hr>
+                            <h5 class="card-title">Nog nooit ingelogd:</h5>
+                            @foreach ($users as $user)
+                                @if(!$user->last_login)       
+                                    <div>{{ $user->first_name}}</div>
+                                @endif
+                            @endforeach
+                         </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        22 aug 18
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

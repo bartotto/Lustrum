@@ -22,7 +22,7 @@
                                 </TR>
                                 <TR>
                                     <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Hotel Tbishi za 29/8 (2 nachten, incl ontbijt)</TD>
-                                    <TD align="right">90</TD>
+                                    <TD align="right">105</TD>
                                 </TR>
                                 <TR>
                                     <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Borrel, diner en uitgaan zaterdag</TD>
@@ -38,7 +38,7 @@
                                 </TR>
                                 <TR>
                                     <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Overige 'out-of-pocket expenses'</TD>
-                                    <TD align="right">40</TD>
+                                    <TD align="right">25</TD>
                                 </TR>
                                 <TR>
                                     <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Kosten organisatie (Cadeaus, logo, website)</TD>

@@ -9,7 +9,7 @@
                         <h2>Caligula's Blog</h2>
                         <a class="btn btn-primary" href="{{ route('post.create') }}">
                             {{ trans('info.post_create') }}</a>
-                        <h7>of klik op een titel van een bestaande bijdrage om commentaar te leveren.</h7>
+                        <h7>{{ trans('info.post_descr') }}</h7>
                     </div>
                     <div class="card-body">
                         @foreach ($posts as $post)

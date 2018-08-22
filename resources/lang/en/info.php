@@ -98,6 +98,7 @@ return [
     'pictures_more'     => 'If you have good pictures to add, please send to the Webmaster',
     'post_body'         => 'Body',
     'post_create'       => 'Publish a post',
+    'post_descr'        => 'or click on the title of an existing post to add a comment',
     'post_publish'      => 'Publish',
     'post_title'        => 'Title',
     'posts_header'      => 'Posts',

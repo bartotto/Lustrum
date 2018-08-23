@@ -12,7 +12,11 @@
                         @foreach ($users as $user)
                             @if($user->joins)
                                 <div>
-                                    <a href="/users/{{ $user->id }}">{{ $user->first_name }} {{ $user->name }}</a>
+                                    @if(!Auth::user()->user_role = 'Guide')
+                                        <a href="/users/{{ $user->id }}">{{ $user->first_name }} {{ $user->name }}</a>
+                                    @else
+                                        {{ $user->first_name }} {{ $user->name }}
+                                    @endif
                                 </div>
                             @endif
                         @endforeach

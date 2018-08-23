@@ -72,7 +72,7 @@
                     </div>  
                 </div>
             </div>
-            @if($user->partner_visible == 'Yes' || Auth::id() == $user->id)
+            @if(($user->partner_visible == 'Yes' || Auth::id() == $user->id) && !Auth::user()->user_role = 'Guide')
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="card" style="height: 100%">
                         <div class="card-header">

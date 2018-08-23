@@ -11,7 +11,11 @@
                     <div class="card-body">
                         @foreach ($users as $user)
                             <div>
-                                <a href="/users/{{ $user->id }}">{{ $user->first_name }} {{ $user->name }}</a>
+                                @if(!Auth::user()->user_role = 'Guide')
+                                    <a href="/users/{{ $user->id }}">{{ $user->first_name }} {{ $user->name }}</a>
+                                @else
+                                    {{ $user->first_name }} {{ $user->name }}
+                                @endif
                             </div>
                         @endforeach
                     </div>

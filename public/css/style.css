@@ -168,7 +168,6 @@ html, body {
     margin-bottom: 5px;
     font-size: 20px;
     font-weight: bold;
-    
     }
     
 .blog-post-meta {
@@ -192,6 +191,7 @@ html, body {
 .blog-comment-title {
     margin-bottom: 5px;
     font-size: 16px;
+    font-weight: bold;
     }
     
 .blog-comment-meta {

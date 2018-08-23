@@ -14,7 +14,7 @@ class UsersController extends Controller {
         }
     
     public function index() {
-        $users = User::orderBy('name')->get();
+        $users = User::where('user_role', '!=', 'Guide')->orderBy('name')->get();
         return view('users.index', compact('users'));
         }
         
@@ -39,7 +39,7 @@ class UsersController extends Controller {
         }
         
     public function joiners() {
-        $users = User::orderBy('name')->get();
+        $users = User::where('user_role', '!=', 'Guide')->orderBy('name')->get();
         return view('joiners', compact('users'));
         }
         

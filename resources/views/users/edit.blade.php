@@ -109,7 +109,7 @@
                     </div> 
                 </div>
             </div>
-            @if(!Auth::user()->user_role = 'Guide')
+            @if(Auth::user()->user_role = 'Member' || Auth::user()->user_role = 'Member+')
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="card" style="height: 100%">
                         <div class="card-header">

@@ -72,65 +72,67 @@
                     </div>  
                 </div>
             </div>
-            @if(($user->partner_visible == 'Yes' || Auth::id() == $user->id) && !Auth::user()->user_role = 'Guide')
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="card" style="height: 100%">
-                        <div class="card-header">
-                            <h2>{{ trans('info.details_partner') }}</h2>
-                            <br>
-                            @if(Auth::id() == $user->id)
-                                <a class="btn btn-primary" href="{{ route('profile.edit_partner', ['id'=>$user->id]) }}">
-                                    {{ trans('info.edit') }}
-                                </a>
-                            @endif
-                        </div>
-                        <div class="card-block">
-                            <div class="card-body">
-                                <TABLE BORDER="0" STYLE="border-style: solid">
-                                    <TR>
-                                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.name') }}</TD>
-                                        <TD>{{ $user->partner_first_name }} {{ $user->partner }}</TD>
-                                    </TR>
-                                    <TR>
-                                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_email') }}</TD>
-                                        <TD>{{ $user->partner_email }}</TD>
-                                    </TR>
-                                    <TR>
-                                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_mobile') }}</TD>
-                                        <TD>{{ $user->partner_mobile }}</TD>
-                                    </TR>
-                                    <TR>
-                                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_visible') }} <sup>*</sup></TD>
-                                        <TD>
-                                            @if($user->partner_visible=='Yes')
-                                                {{ trans('info.yes') }}
-                                            @else
-                                                {{ trans('info.no') }}
-                                            @endif
-                                        </TD>
-                                    </TR>
-                                    <TR>
-                                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_login') }}</TD>
-                                        <TD>
-                                            @if($user->partner_login=='Yes')
-                                                {{ trans('info.yes') }}
-                                            @else
-                                                {{ trans('info.no') }}
-                                            @endif
-                                        </TD>
-                                    </TR>
-                                </TABLE>
-                            </div> 
-                        </div>
-                        <div class="card-footer text-muted text-left">
-                            @if(Auth::user()->user_role = 'Member')
-                                <p>{{ trans('info.edit_user_warning2') }}<br>
-                                <sup>*</sup> {{ trans('info.edit_user_warning3') }}</p>
-                            @endif
+            @if(Auth::user()->user_role = 'Member' || Auth::user()->user_role = 'Member+')
+                @if($user->partner_visible == 'Yes' || Auth::id() == $user->id)
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="card" style="height: 100%">
+                            <div class="card-header">
+                                <h2>{{ trans('info.details_partner') }}</h2>
+                                <br>
+                                @if(Auth::id() == $user->id)
+                                    <a class="btn btn-primary" href="{{ route('profile.edit_partner', ['id'=>$user->id]) }}">
+                                        {{ trans('info.edit') }}
+                                    </a>
+                                @endif
+                            </div>
+                            <div class="card-block">
+                                <div class="card-body">
+                                    <TABLE BORDER="0" STYLE="border-style: solid">
+                                        <TR>
+                                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.name') }}</TD>
+                                            <TD>{{ $user->partner_first_name }} {{ $user->partner }}</TD>
+                                        </TR>
+                                        <TR>
+                                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_email') }}</TD>
+                                            <TD>{{ $user->partner_email }}</TD>
+                                        </TR>
+                                        <TR>
+                                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_mobile') }}</TD>
+                                            <TD>{{ $user->partner_mobile }}</TD>
+                                        </TR>
+                                        <TR>
+                                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_visible') }} <sup>*</sup></TD>
+                                            <TD>
+                                                @if($user->partner_visible=='Yes')
+                                                    {{ trans('info.yes') }}
+                                                @else
+                                                    {{ trans('info.no') }}
+                                                @endif
+                                            </TD>
+                                        </TR>
+                                        <TR>
+                                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_login') }}</TD>
+                                            <TD>
+                                                @if($user->partner_login=='Yes')
+                                                    {{ trans('info.yes') }}
+                                                @else
+                                                    {{ trans('info.no') }}
+                                                @endif
+                                            </TD>
+                                        </TR>
+                                    </TABLE>
+                                </div> 
+                            </div>
+                            <div class="card-footer text-muted text-left">
+                                @if(Auth::user()->user_role = 'Member')
+                                    <p>{{ trans('info.edit_user_warning2') }}<br>
+                                    <sup>*</sup> {{ trans('info.edit_user_warning3') }}</p>
+                                @endif
+                            </div>
                         </div>
                     </div>
-                </div>
-             @endif
+                 @endif
+            @endif
         </div>
     </div>
 @endsection

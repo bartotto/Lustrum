@@ -15,13 +15,13 @@
                     </li>
                 @else
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('home') }}">{{ trans('info.home') }}</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ route('destination') }}">{{ trans('info.destination') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('preparations') }}">{{ trans('info.preparations') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('underway') }}">{{ trans('info.underway') }}</a>
+                        <a class="nav-link" href="{{ route('program') }}">{{ trans('info.program') }}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('posts')   }}">{{ trans('info.blog') }}</a>

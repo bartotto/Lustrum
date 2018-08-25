@@ -203,28 +203,6 @@ html, body {
 .form-comment {
     margin-left: 60px;
     }
-    
-
-.column-program {
-    float: left;
-    }
-
-.left {
-    width: 20%;
-    }
-
-.right {
-    width: 80%;
-    }
-    
-.card {
-    display: flex;
-    flex-direction: column;
-    }
-    
-.card-block {
-  flex: 1;
-    }
 
 .card-img-top {
     margin: auto;

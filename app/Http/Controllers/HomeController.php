@@ -24,19 +24,14 @@ class HomeController extends Controller {
     public function index() {
         return view('home');
         }
- 
-    
+   
      
     public function destination() {
         return view('destination');
         }
         
-    public function preparations() {
-        return view('preparations');
-        }
-        
-    public function underway() {
-        return view('underway');
+    public function program() {
+        return view('program');
         }
         
     public function kenya() {

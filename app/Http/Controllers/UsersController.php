@@ -14,7 +14,10 @@ class UsersController extends Controller {
         }
     
     public function index() {
-        $users = User::where('user_role', '!=', 'Guide')->orderBy('name')->get();
+        $users = User::where([
+            ['user_role', '!=', 'Guide'],
+            ['user_role', '!=', 'Partner']
+            ])->orderBy('name')->get();
         return view('users.index', compact('users'));
         }
         

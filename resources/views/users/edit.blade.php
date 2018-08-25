@@ -86,12 +86,12 @@
                         </select>
                     </div>
                     <div class="form-group row">         
-                        <label for="strandborrel" class="radio-inline col-sm-9 col-form-label" >{{ trans('info.strand_borrel') }}&nbsp;&nbsp;
+                        <label for="strandborrel" class="radio-inline col-sm-9 col-form-label" >{{ trans('info.strand_borrel') }}&nbsp;
                             @if($user->strandborrel == 'No')            
-                                <input type="radio" name="strandborrel" value="No" checked> {{ trans('info.no') }}&nbsp;&nbsp;
+                                <input type="radio" name="strandborrel" value="No" checked> {{ trans('info.no') }}&nbsp;
                                 <input type="radio" name="strandborrel" value="Yes"> {{ trans('info.yes') }}  
                             @else
-                                <input type="radio" name="strandborrel" value="No"> {{ trans('info.no') }}&nbsp;&nbsp;
+                                <input type="radio" name="strandborrel" value="No"> {{ trans('info.no') }}&nbsp;
                                 <input type="radio" name="strandborrel" value="Yes" checked> {{ trans('info.yes') }}
                             @endif
                         </label>

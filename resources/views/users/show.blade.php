@@ -51,12 +51,12 @@
                 @endif
             </div>  
         </div>
-        @if(substr(Auth::user()->user_role,0,6) == 'Member')
+        @if(substr($user->user_role,0,6) == 'Member')
             @if($user->partner_visible == 'Yes' || Auth::id() == $user->id)
                 <div class="card">
                     <div class="card-header">
                         <h2>{{ trans('info.details_partner') }}</h2>
-                        <h2>{{ Auth::user()->user_role }}</h2>
+                        <h2>{{ $user->user_role }}</h2>
                     </div>
                     <div class="card-body">
                         @if(Auth::id() == $user->id)

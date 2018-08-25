@@ -14,32 +14,32 @@
                 @endif
                 <TABLE BORDER="0">
                     <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.name') }}</TD>
+                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.name') }}</TD>
                         <TD WIDTH="250" HEIGHT="30">{{ $user->first_name }} {{ $user->name }}</TD>
                     </TR>
                     <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.dob') }}</TD>
+                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.dob') }}</TD>
                         <TD>{{ date("d-m-y", strtotime($user->dob)) }}</TD>
                     </TR>
                     <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.email_address') }}</TD>
+                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.email_address') }}</TD>
                         <TD>{{ $user->email }}</TD>
                     </TR>
                     <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.home_address') }}</TD>
+                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.home_address') }}</TD>
                         <TD>{{ $user->home_address }}<br>{{ $user->home_postalcode }} {{ $user->home_city }}<br>{{ $user->home_country }}</TD>
                     </TR>
                     <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.home_tel') }}</TD>
+                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.home_tel') }}</TD>
                         <TD WIDTH="250" HEIGHT="30">{{ $user->home_tel }}</TD>
                     </TR>
                     <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.mobile') }}</TD>
+                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.mobile') }}</TD>
                         <TD WIDTH="250" HEIGHT="30">{{ $user->mobile }}</TD>
                     </TR>
                     @if(substr(Auth::user()->user_role,0,6) == 'Member')
                         <TR>
-                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.size') }}</TD>
+                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.size') }}</TD>
                             <TD>{{ $user->size }}</TD>
                         </TR>
                     @endif
@@ -51,7 +51,7 @@
                 @endif
             </div>
         </div>
-        @if(Auth::user()->user_role = 'Member' || Auth::user()->user_role = 'Member+')
+        @if(substr($user->user_role,0,6) == 'Member')
             <div class="card">
                 <div class="card-header">
                     <h2>{{ trans('info.details_partner') }}</h2>
@@ -64,19 +64,19 @@
                     @endif
                     <TABLE BORDER="0">
                         <TR>
-                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.name') }}</TD>
+                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.name') }}</TD>
                             <TD>{{ $user->partner_first_name }} {{ $user->partner }}</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_email') }}</TD>
+                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.partner_email') }}</TD>
                             <TD>{{ $user->partner_email }}</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_mobile') }}</TD>
+                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.partner_mobile') }}</TD>
                             <TD>{{ $user->partner_mobile }}</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_visible') }}</TD>
+                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.partner_visible') }}</TD>
                             <TD>
                                 @if($user->partner_visible=='Yes')
                                     {{ trans('info.yes') }}
@@ -86,7 +86,7 @@
                             </TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_login') }}</TD>
+                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.partner_login') }}</TD>
                             <TD>
                                 @if($user->partner_login=='Yes')
                                     {{ trans('info.yes') }}

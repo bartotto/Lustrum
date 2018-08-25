@@ -97,12 +97,12 @@
                 </form>
             </div>
             <div class="card-footer text-muted text-left">
-                @if(Auth::user()->user_role = 'Member' OR Auth::user()->user_role = 'Member+')
+                @if(substr($user->user_role,0,6) == 'Member')
                     {{ trans('info.edit_user_warning') }}
                 @endif
             </div> 
         </div>
-        @if(Auth::user()->user_role = 'Member' || Auth::user()->user_role = 'Member+')
+        @if(substr($user->user_role,0,6) == 'Member')
             <div class="card">
                 <div class="card-header">
                     <h2>{{ trans('info.details_partner') }}</h2>
@@ -115,19 +115,19 @@
                     @endif
                     <TABLE BORDER="0">
                         <TR>
-                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.name') }}</TD>
+                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.name') }}</TD>
                             <TD>{{ $user->partner_first_name }} {{ $user->partner }}</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_email') }}</TD>
+                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.partner_email') }}</TD>
                             <TD>{{ $user->partner_email }}</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_mobile') }}</TD>
+                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.partner_mobile') }}</TD>
                             <TD>{{ $user->partner_mobile }}</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_visible') }}</TD>
+                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.partner_visible') }}</TD>
                             <TD>
                                 @if($user->partner_visible=='Yes')
                                     {{ trans('info.yes') }}
@@ -137,7 +137,7 @@
                             </TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.partner_login') }}</TD>
+                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.partner_login') }}</TD>
                             <TD>
                                 @if($user->partner_login=='Yes')
                                     {{ trans('info.yes') }}
@@ -168,7 +168,7 @@
                 @endif
                 <TABLE BORDER="0">
                     <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.strand_borrel') }}</TD>
+                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.strand_borrel') }}</TD>
                         <TD>
                             @if($user->strandborrel=='Yes')
                                 {{ trans('info.yes') }}
@@ -178,7 +178,7 @@
                         </TD>
                     </TR>
                     <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.last_login') }}</TD>
+                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.last_login') }}</TD>
                         <TD>{{ Auth::user()->previous_last_login->format('d M') }} om {{ Auth::user()->previous_last_login->format('H:i') }}</TD>
                     </TR>
                 </TABLE>

@@ -75,6 +75,7 @@ return [
     'made_on'           => 'Gemaakt op',
     'map'               => 'Open Google maps',
     'matrix'            => 'Deelnemers matrix',
+    'matrix_click'      => 'Klik hier voor matrix',
     'members_list'      => 'Ledenlijst',
     'members_descr'     => 'Klik op een naam voor meer gegevens',
     'mobile'            => 'Mobiel',

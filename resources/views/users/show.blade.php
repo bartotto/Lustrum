@@ -78,7 +78,7 @@
                                 {{ trans('info.edit') }}
                             </a>
                         @endif
-                        <TABLE BORDER="0" STYLE="border-style: solid">
+                        <TABLE BORDER="0">
                             <TR>
                                 <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.name') }}</TD>
                                 <TD>{{ $user->partner_first_name }} {{ $user->partner }}</TD>

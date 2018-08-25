@@ -29,8 +29,13 @@
             <div class="card-header">
                 <h2>{{ trans('info.matrix') }}</h2>
             </div>
-            <div class="card-body"> 
-                <img src="img/Other/Matrix.png" style="max-width:100%">
+            <div class="card-body">
+                <img id="myImg" src="img/Other/Matrix_small.png" alt="Matrix">
+                <p class="card-text">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#matrix">
+                        {{ trans('info.matrix_click') }}
+                    </button>
+                </p>
             </div>
             <div class="card-footer text-muted">
                 <p class="card-text">De trend is goed!</p>
@@ -76,6 +81,46 @@
                 <p class="card-text">Binnenkort een nieuwe groepsfoto...</p>
             </div>
         </div>
+        <div class="modal" tabindex="-1" role="dialog" id="matrix">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>{{ trans('info.matrix') }}</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="myImg" src="img/Other/Matrix.png" alt="Matrix" style="max-width:1400px">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">{{ trans('info.close') }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="{{ asset('js/photo.js') }}"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+    </script>
 @endsection

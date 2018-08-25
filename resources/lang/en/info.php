@@ -73,6 +73,7 @@ return [
     'made_on'           => 'Created at',
     'map'               => 'Open Google maps',
     'matrix'            => 'Participants matrix',
+    'matrix_click'      => 'Click for matrix',
     'mobile'            => 'Mobile',
     'members_list'      => 'Members\' list',
     'members_descr'     => 'Click on a member for details',

@@ -15,11 +15,7 @@
                 <TABLE BORDER="0">
                     <TR>
                         <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.name') }}</TD>
-                        <TD WIDTH="250" HEIGHT="30">{{ $user->name }}</TD>
-                    </TR>
-                    <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.first_name') }}</TD>
-                        <TD WIDTH="250" HEIGHT="30">{{ $user->first_name }}</TD>
+                        <TD WIDTH="250" HEIGHT="30">{{ $user->first_name }} {{ $user->name }}</TD>
                     </TR>
                     <TR>
                         <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.dob') }}</TD>
@@ -31,11 +27,7 @@
                     </TR>
                     <TR>
                         <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.home_address') }}</TD>
-                        <TD>{{ $user->home_address }}</TD>
-                    </TR>
-                    <TR>
-                        <TD></TD>
-                        <TD>{{ $user->home_postalcode }} &nbsp {{ $user->home_city }}, {{ $user->home_country }}</TD>
+                        <TD>{{ $user->home_address }}<br>{{ $user->home_postalcode }} {{ $user->home_city }}<br>{{ $user->home_country }}</TD>
                     </TR>
                     <TR>
                         <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.home_tel') }}</TD>
@@ -45,10 +37,12 @@
                         <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.mobile') }}</TD>
                         <TD WIDTH="250" HEIGHT="30">{{ $user->mobile }}</TD>
                     </TR>
-                    <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.size') }}</TD>
-                        <TD>{{ $user->size }}</TD>
-                    </TR>
+                    @if(substr(Auth::user()->user_role,0,6) == 'Member')
+                        <TR>
+                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.size') }}</TD>
+                            <TD>{{ $user->size }}</TD>
+                        </TR>
+                    @endif
                 </TABLE>
             </div> 
             <div class="card-footer text-muted text-left">

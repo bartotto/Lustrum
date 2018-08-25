@@ -37,10 +37,12 @@
                         <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.mobile') }}</TD>
                         <TD WIDTH="250" HEIGHT="30">{{ $user->mobile }}</TD>
                     </TR>
-                    <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.size') }}</TD>
-                        <TD>{{ $user->size }}</TD>
-                    </TR>
+                    @if(substr(Auth::user()->user_role,0,6) == 'Member')
+                        <TR>
+                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.size') }}</TD>
+                            <TD>{{ $user->size }}</TD>
+                        </TR>
+                    @endif
                 </TABLE>
             </div> 
             <div class="card-footer text-muted text-left">
@@ -49,11 +51,12 @@
                 @endif
             </div>  
         </div>
-        @if(Auth::user()->user_role = 'Member' || Auth::user()->user_role = 'Member+')
+        @if(substr(Auth::user()->user_role,0,6) == 'Member')
             @if($user->partner_visible == 'Yes' || Auth::id() == $user->id)
                 <div class="card">
                     <div class="card-header">
                         <h2>{{ trans('info.details_partner') }}</h2>
+                        <h2>{{ Auth::user()->user_role }}</h2>
                     </div>
                     <div class="card-body">
                         @if(Auth::id() == $user->id)
@@ -97,10 +100,8 @@
                         </TABLE>
                     </div> 
                     <div class="card-footer text-muted text-left">
-                        @if(Auth::user()->user_role = 'Member')
-                            <p>{{ trans('info.edit_user_warning2') }}<br>
-                            <sup>*</sup> {{ trans('info.edit_user_warning3') }}</p>
-                        @endif
+                        <p>{{ trans('info.edit_user_warning2') }}<br>
+                        <sup>*</sup> {{ trans('info.edit_user_warning3') }}</p>
                     </div>
                 </div>
              @endif

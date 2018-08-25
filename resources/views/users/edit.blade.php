@@ -75,20 +75,22 @@
                             <input type="text" class="form-control" value="{{ $user->mobile }}" id="mobile" name="mobile" placeholder="{{ trans('info.mobile') }}">
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="size" class="col-sm-3 col-form-label">{{ trans('info.size') }}</label>
-                        <div class="col-sm-7">
-                            <select class="form-control col-sm-5" id="size" name="size">
-                                <option>{{ $user->size }}</option>
-                                <option>S</option>
-                                <option>M</option>
-                                <option>L</option>
-                                <option>XL</option>
-                                <option>2XL</option>
-                                <option>3XL</option>
-                            </select>
+                    @if(substr(Auth::user()->user_role,0,6) == 'Member')
+                        <div class="form-group row">
+                            <label for="size" class="col-sm-3 col-form-label">{{ trans('info.size') }}</label>
+                            <div class="col-sm-7">
+                                <select class="form-control col-sm-5" id="size" name="size">
+                                    <option>{{ $user->size }}</option>
+                                    <option>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                    <option>2XL</option>
+                                    <option>3XL</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
+                    @endif
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>
                     </div>

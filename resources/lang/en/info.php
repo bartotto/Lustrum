@@ -48,7 +48,7 @@ return [
     'home_postalcode'   => 'Postal code',
     'home_city'         => 'City', 
     'home_country'      => 'Country',
-    'home_tel'          => 'Home tel',
+    'home_tel'          => 'Home',
     'insurance'         => 'Insurance',
     'insurance_title'   => 'Who will get you off the mountain when weaken your ankle?',
     'insurance_text'    => 'Please provide appropriate travel insurance. If you do not have an ongoing travel insurance, then please get travel insurance now.',

@@ -74,16 +74,18 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="size" class="col-sm-5 col-form-label">{{ trans('info.size') }}</label>
-                        <select class="form-control col-sm-2" id="size" name="size">
-                            <option>{{ $user->size }}</option>
-                            <option>S</option>
-                            <option>M</option>
-                            <option>L</option>
-                            <option>XL</option>
-                            <option>2XL</option>
-                            <option>3XL</option>
-                        </select>
+                        <label for="size" class="col-sm-3 col-form-label">{{ trans('info.size') }}</label>
+                        <div class="col-sm-5">
+                            <select class="form-control col-sm-5" id="size" name="size">
+                                <option>{{ $user->size }}</option>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                                <option>XL</option>
+                                <option>2XL</option>
+                                <option>3XL</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form-group row">         
                         <label for="strandborrel" class="radio-inline col-sm-9 col-form-label" >{{ trans('info.strand_borrel') }}&nbsp;

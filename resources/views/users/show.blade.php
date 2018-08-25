@@ -30,11 +30,7 @@
                     </TR>
                     <TR>
                         <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.home_address') }}</TD>
-                        <TD>{{ $user->home_address }}</TD>
-                    </TR>
-                    <TR>
-                        <TD></TD>
-                        <TD>{{ $user->home_postalcode }} &nbsp; {{ $user->home_city }}, {{ $user->home_country }}</TD>
+                        <TD>{{ $user->home_address }}<br>{{ $user->home_postalcode }} {{ $user->home_city }}<br>{{ $user->home_country }}</TD>
                     </TR>
                     <TR>
                         <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.home_tel') }}</TD>
@@ -60,7 +56,7 @@
                     </TR>
                     <TR>
                         <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.last_login') }}</TD>
-                        <TD>{{ Auth::user()->previous_last_login->format('d M Y') }} om {{ Auth::user()->previous_last_login->format('H:i') }}</TD>
+                        <TD>{{ Auth::user()->previous_last_login->format('d M') }} om {{ Auth::user()->previous_last_login->format('H:i') }}</TD>
                     </TR>
                 </TABLE>
             </div> 

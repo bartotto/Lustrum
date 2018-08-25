@@ -7,9 +7,6 @@
                 <h2>{{ trans('info.details_all') }}</h2>
             </div>
             <div class="card-body">
-                <div class="btn btn-default">
-                    {{ trans('info.back') }}
-                </div>
                 @if(Auth::id() == $user->id)
                     <div class="btn btn-default">
                         {{ trans('info.edit') }}

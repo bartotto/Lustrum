@@ -7,9 +7,6 @@
                 <h2>{{ trans('info.details_all') }}</h2>
             </div>
             <div class="card-body">
-                <button class="btn btn-primary" onclick="goBack()">
-                    {{ trans('info.back') }}
-                </button>
                 @if(Auth::id() == $user->id)
                     <a class="btn btn-primary" href="{{ route('profile.edit', ['id'=>$user->id]) }}">
                         {{ trans('info.edit') }}

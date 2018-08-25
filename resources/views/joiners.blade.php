@@ -30,9 +30,10 @@
                 <h2>{{ trans('info.matrix') }}</h2>
             </div>
             <div class="card-body"> 
-                <div class="row">
-                    <img src="img/Other/Matrix.png" style="max-width:100%">
-                </div>
+                <img src="img/Other/Matrix.png" style="max-width:100%">
+            </div>
+            <div class="card-footer text-muted">
+                <p class="card-text">De trend is goed!</p>
             </div>
         </div>
         <div class="card">

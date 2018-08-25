@@ -11,7 +11,7 @@
                 <p class="card-text">{{ trans('info.luco_descr2') }}</p>
             </div>
             <div class="card-footer text-muted">
-                Zijn ze er klaar voor om dit nog een keer waar te maken?
+                
             </div>
         </div>
         <div class="card">
@@ -23,7 +23,7 @@
                 <p class="card-text">{{ trans('info.luco_descr3') }}</p>
             </div>
             <div class="card-footer text-muted">
-                Zijn ze er klaar voor om dit nog een keer waar te maken?
+                
             </div>
         </div>
         <div class="card">
@@ -35,7 +35,7 @@
                 <p class="card-text">{{ trans('info.luco_descr4') }}</p>
             </div>
             <div class="card-footer text-muted">
-                Zijn ze er klaar voor om dit nog een keer waar te maken?
+                
             </div>
         </div>
         <div class="card">
@@ -47,7 +47,7 @@
                 <p class="card-text">{{ trans('info.luco_descr5') }}</p>
             </div>
             <div class="card-footer text-muted">
-                Zijn ze er klaar voor om dit nog een keer waar te maken?
+                
             </div>
         </div>
     </div>

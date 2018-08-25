@@ -107,7 +107,7 @@
                     </div>
                     <div class="form-group row">
                         <label for="size" class="col-sm-3 col-form-label">{{ trans('info.size') }}</label>
-                        <div class="col-sm-5">
+                        <div class="col-sm-7">
                             <select class="form-control col-sm-5" id="size" name="size">
                                 <option>{{ $user->size }}</option>
                                 <option>S</option>
@@ -152,7 +152,7 @@
                             {{ trans('info.edit') }}
                         </div>
                     @endif
-                    <TABLE BORDER="0" STYLE="border-style: solid">
+                    <TABLE BORDER="0">
                         <TR>
                             <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.name') }}</TD>
                             <TD>{{ $user->partner_first_name }} {{ $user->partner }}</TD>

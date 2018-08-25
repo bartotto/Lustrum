@@ -26,6 +26,7 @@ return [
     'contact_info2'     => 'The company is ran by his David\'s father, pictured above with his wife.',
     'destination'       => 'Destination',
     'details_all'       => 'Personal details',
+    'details_other'     => 'Other details',
     'details_partner'   => 'Partner details',
     'dob'               => 'D.o.b.',
     'email_address'     => 'E-mail',

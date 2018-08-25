@@ -26,43 +26,13 @@
                             <input type="text" class="form-control" value="{{ $user->name }}" id="name" name="name" placeholder="{{ trans('info.last_name') }}">
                         </div>
                     </div>
-                    <div class="nativeDatePicker">
+    <!--            <div class="nativeDatePicker">
                         <label for="dob" class="col-sm-3 col-form-label">{{ trans('info.dob') }}</label>
                         <div class="col-sm-9">
-                            <!-- <input class="form-control" type="date" value="{{ date('d-m-Y', strtotime($user->dob)) }}" id="dob" name="dob"> -->
-                            <input class="form-control" type="date" id="dob" name="dob">
-                            <span class="validity"></span>
+                            <input class="form-control" type="date" value="{{ date('d-m-Y', strtotime($user->dob)) }}" id="dob" name="dob"> 
                         </div>
                     </div>
-                    <div class="fallbackDatePicker">
-                        <span>
-                            <label for="day">Day:</label>
-                            <select id="day" name="day">
-                            </select>
-                        </span>
-                        <span>
-                            <label for="month">Month:</label>
-                            <select id="month" name="month">
-                                <option selected>January</option>
-                                <option>February</option>
-                                <option>March</option>
-                                <option>April</option>
-                                <option>May</option>
-                                <option>June</option>
-                                <option>July</option>
-                                <option>August</option>
-                                <option>September</option>
-                                <option>October</option>
-                                <option>November</option>
-                                <option>December</option>
-                            </select>
-                        </span>
-                        <span>
-                            <label for="year">Year:</label>
-                            <select id="year" name="year">
-                            </select>
-                        </span>
-                    </div>
+        -->
                     <div class="form-group row">
                         <label for="email" class="col-sm-3 col-form-label">{{ trans('info.email_address') }}</label>
                         <div class="col-sm-9">
@@ -118,17 +88,6 @@
                                 <option>3XL</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="form-group row">         
-                        <label for="strandborrel" class="radio-inline col-sm-9 col-form-label" >{{ trans('info.strand_borrel') }}&nbsp;
-                            @if($user->strandborrel == 'No')            
-                                <input type="radio" name="strandborrel" value="No" checked> {{ trans('info.no') }}&nbsp;
-                                <input type="radio" name="strandborrel" value="Yes"> {{ trans('info.yes') }}  
-                            @else
-                                <input type="radio" name="strandborrel" value="No"> {{ trans('info.no') }}&nbsp;
-                                <input type="radio" name="strandborrel" value="Yes" checked> {{ trans('info.yes') }}
-                            @endif
-                        </label>
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>
@@ -195,6 +154,39 @@
                 </div>
             </div>
         @endif
+        <div class="card">
+            <div class="card-header">
+                <h2>{{ trans('info.details_other') }}</h2>
+            </div>
+            <div class="card-body">
+                @if(Auth::id() == $user->id)
+                    <a class="btn btn-default">
+                        {{ trans('info.edit') }}
+                    </a>
+                @endif
+                <TABLE BORDER="0">
+                    <TR>
+                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.strand_borrel') }}</TD>
+                        <TD>
+                            @if($user->strandborrel=='Yes')
+                                {{ trans('info.yes') }}
+                            @else
+                                {{ trans('info.no') }}
+                            @endif
+                        </TD>
+                    </TR>
+                    <TR>
+                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.last_login') }}</TD>
+                        <TD>{{ Auth::user()->previous_last_login->format('d M') }} om {{ Auth::user()->previous_last_login->format('H:i') }}</TD>
+                    </TR>
+                </TABLE>
+            </div> 
+            <div class="card-footer text-muted text-left">
+                @if(Auth::user()->user_role = 'Member')
+                    <p>{{ trans('info.edit_user_warning') }}</p>
+                @endif
+            </div>
+        </div>
     </div>
     <script>
         // define variables

@@ -30,6 +30,10 @@ class UsersController extends Controller {
         return view('users.edit_partner', compact('user'));
         }
         
+    public function edit_other(User $user) {
+        return view('users.edit_other', compact('user'));
+        }
+        
     public function update(Request $request, User $user) {
         $validatedData = $request->validate([
             'dob' => 'date'

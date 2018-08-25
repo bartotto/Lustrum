@@ -44,20 +44,6 @@
                         <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.size') }}</TD>
                         <TD>{{ $user->size }}</TD>
                     </TR>
-                    <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.strand_borrel') }}</TD>
-                        <TD>
-                            @if($user->strandborrel=='Yes')
-                                {{ trans('info.yes') }}
-                            @else
-                                {{ trans('info.no') }}
-                            @endif
-                        </TD>
-                    </TR>
-                    <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.last_login') }}</TD>
-                        <TD>{{ Auth::user()->previous_last_login->format('d M') }} om {{ Auth::user()->previous_last_login->format('H:i') }}</TD>
-                    </TR>
                 </TABLE>
             </div> 
             <div class="card-footer text-muted text-left">
@@ -122,5 +108,38 @@
                 </div>
              @endif
         @endif
+        <div class="card">
+            <div class="card-header">
+                <h2>{{ trans('info.details_other') }}</h2>
+            </div>
+            <div class="card-body">
+                @if(Auth::id() == $user->id)
+                    <a class="btn btn-primary" href="{{ route('profile.edit_other', ['id'=>$user->id]) }}">
+                        {{ trans('info.edit') }}
+                    </a>
+                @endif
+                <TABLE BORDER="0">
+                    <TR>
+                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.strand_borrel') }}</TD>
+                        <TD>
+                            @if($user->strandborrel=='Yes')
+                                {{ trans('info.yes') }}
+                            @else
+                                {{ trans('info.no') }}
+                            @endif
+                        </TD>
+                    </TR>
+                    <TR>
+                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 10px">{{ trans('info.last_login') }}</TD>
+                        <TD>{{ Auth::user()->previous_last_login->format('d M') }} om {{ Auth::user()->previous_last_login->format('H:i') }}</TD>
+                    </TR>
+                </TABLE>
+            </div> 
+            <div class="card-footer text-muted text-left">
+                @if(Auth::user()->user_role = 'Member')
+                    <p>{{ trans('info.edit_user_warning') }}</p>
+                @endif
+            </div>
+        </div>
     </div>
 @endsection

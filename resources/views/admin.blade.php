@@ -14,7 +14,6 @@
                         <div>{{ $user->first_name}}  {{$user->size}}</div>
                     @endif
                 @endforeach
-                <br>
                 <hr>
                 <h5 class="card-title">Trage eikels:</h5>
                 @foreach ($users as $user)
@@ -60,12 +59,11 @@
                 @foreach ($users as $user)
                     @if($user->previous_last_login)
                         <div class="row">
-                            <div class="column">{{ $user->first_name}}</div>
-                            <div class="column" align="right">{{ $user->previous_last_login->format('d m') }}&nbsp;{{ $user->previous_last_login->format('H:i') }}</div>
+                            <div class="col-sm">{{ $user->first_name}}</div>
+                            <div class="col-sm">{{ $user->previous_last_login->format('d/m') }}&nbsp;{{ $user->previous_last_login->format('H:i') }}</div>
                         </div>
                     @endif
                 @endforeach
-                <br>
                 <hr>
                 <h5 class="card-title">Nog nooit ingelogd:</h5>
                 @foreach ($users as $user)

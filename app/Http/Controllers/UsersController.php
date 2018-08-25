@@ -22,6 +22,7 @@ class UsersController extends Controller {
         }
         
     public function show(User $user) {
+        session(['user_role' => auth()->user()->user_role]);
         return view('users.show', compact('user'));
         }
 

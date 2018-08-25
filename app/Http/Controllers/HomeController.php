@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Log;
+use App\User;
+use App\Http\Controllers\Controller;
     
 class HomeController extends Controller {
     /**
@@ -22,10 +24,11 @@ class HomeController extends Controller {
      */
         
     public function index() {
+        $role = auth()->user()->user_role;
+        session(['user_role' => $role]);
         return view('home');
         }
    
-     
     public function destination() {
         return view('destination');
         }

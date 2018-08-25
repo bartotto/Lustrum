@@ -77,7 +77,7 @@
                                 <TD>{{ $user->partner_mobile }}</TD>
                             </TR>
                             <TR>
-                                <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.partner_visible') }} <sup>*</sup></TD>
+                                <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.partner_visible') }}<sup>*</sup></TD>
                                 <TD>
                                     @if($user->partner_visible=='Yes')
                                         {{ trans('info.yes') }}

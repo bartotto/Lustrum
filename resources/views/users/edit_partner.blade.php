@@ -83,11 +83,11 @@
                     <div class="form-group row">
                         <label for="partner_mobile" class="col-sm-3 col-form-label">{{ trans('info.partner_mobile') }}</label>
                         <div class="col-sm-9">
-                            <input class="form-control" type="text" value="{{ $user->partner_mobile }}" id="partner_mobile" name="partner_mobile" required>
+                            <input class="form-control" type="text" value="{{ $user->partner_mobile }}" id="partner_mobile" name="partner_mobile" placeholder="{{ trans('info.mobile_ph') }}" required>
                         </div>
                     </div>
                     <div class="form-group row">        
-                        <label for="partner_visible" class="radio-inline col-sm-9 col-form-label">{{ trans('info.partner_visible') }} <sup>*</sup>&nbsp;
+                        <label for="partner_visible" class="radio-inline col-sm-9 col-form-label">{{ trans('info.partner_visible') }}<sup>*</sup>&nbsp;
                             @if($user->partner_visible == 'No')            
                                 <input type="radio" name="partner_visible" value="No" checked> {{ trans('info.no') }}&nbsp;&nbsp;
                                 <input type="radio" name="partner_visible" value="Yes"> {{ trans('info.yes') }}  

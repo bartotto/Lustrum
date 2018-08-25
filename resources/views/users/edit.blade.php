@@ -66,13 +66,13 @@
                     <div class="form-group row">
                         <label for="home_tel" class="col-sm-3 col-form-label">{{ trans('info.home_tel') }}</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" value="{{ $user->home_tel }}" id="home_tel" name="home_tel" placeholder="{{ trans('info.home_tel') }}">
+                            <input type="text" class="form-control" value="{{ $user->home_tel }}" id="home_tel" name="home_tel" placeholder="{{ trans('info.home_tel_ph') }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="mobile" class="col-sm-3 col-form-label">{{ trans('info.mobile') }}</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" value="{{ $user->mobile }}" id="mobile" name="mobile" placeholder="{{ trans('info.mobile') }}">
+                            <input type="text" class="form-control" value="{{ $user->mobile }}" id="mobile" name="mobile" placeholder="{{ trans('info.mobile_ph') }}">
                         </div>
                     </div>
                     @if(substr(Auth::user()->user_role,0,6) == 'Member')
@@ -127,7 +127,7 @@
                             <TD>{{ $user->partner_mobile }}</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.partner_visible') }}</TD>
+                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.partner_visible') }}<sup>*</sup></TD></TD>
                             <TD>
                                 @if($user->partner_visible=='Yes')
                                     {{ trans('info.yes') }}

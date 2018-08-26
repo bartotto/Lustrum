@@ -37,27 +37,8 @@ class HomeController extends Controller {
         return view('program');
         }
         
-    public function kenya() {
-        return view('trips.kenya');
-        }
-        
-    public function lappland() {
-        return view('trips.lappland');
-        }
-    public function cameroun() {
-        return view('trips.cameroun');
-        }
-    public function oman() {
-        return view('trips.oman');
-        }
-    public function carpathians() {
-        return view('trips.carpathians');
-        }
-    public function dalarna() {
-        return view('trips.dalarna');
-        }
-    public function georgia() {
-        return view('trips.georgia');
+    public function tripPhoto() {
+        return view('tripPhoto');
         }
     
     public function luco() {

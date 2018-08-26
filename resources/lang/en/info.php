@@ -17,6 +17,7 @@ return [
     'caucasus2'         => 'too far for other emperors ... but not for CALIGULA!',
     'caucasus3'         => 'Georgia - an unspoiled place on the edge of Europe',
     'caucasus4'         => 'And a wonderful climate',
+    'click_picture'     => 'Click on a picture',
     'close'             => 'Close',
     'club'              => 'Club',
     'comment_add'       => 'Add comment',

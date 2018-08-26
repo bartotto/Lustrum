@@ -27,7 +27,7 @@
                         <a class="nav-link" href="{{ route('posts')   }}">{{ trans('info.blog') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('kenya')   }}">{{ trans('info.trips') }}</a>
+                        <a class="nav-link" href="{{ route('tripPhoto') }}">{{ trans('info.trips') }}</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

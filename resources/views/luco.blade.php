@@ -7,8 +7,7 @@
                 <h2>{{ trans('info.luco') }}</h2>
             </div>
             <div class="card-body">
-                <!-- The Gallery widget -->
-                <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+                <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-start-slideshow="true">
                     <div class="slides"></div>
                     <h3 class="title"></h3>
                     <a class="prev">‹</a>
@@ -28,6 +27,9 @@
                     <a href="img/Luco/Dalarna1.png" title="Dalarna"><img src="img/Luco/Thumbnails/Dalarna1.png" alt="Dalarna1"></a>
                     <a href="img/Luco/Dalarna2.jpg" title="Dalarna"><img src="img/Luco/Thumbnails/Dalarna2.jpg" alt="Dalarna2"></a>
                 </div>
+            </div>
+            <div class="card-footer text-muted">
+                {{ trans('info.click_picture') }}
             </div>
         </div>
     </div>

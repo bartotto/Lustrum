@@ -3,53 +3,32 @@
 @section('content')
     <div class="card-columns">
         <div class="card">
-            <img class="card-img-top" src="img/Luco/Kenya.png" alt="Luco Kenya" style="width: 284px">
             <div class="card-header">
-                <h2>Kenya</h2>
+                <h2>{{ trans('info.luco') }}</h2>
             </div>
             <div class="card-body">
-                <p class="card-text">{{ trans('info.luco_descr2') }}</p>
-            </div>
-            <div class="card-footer text-muted">
-                
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="img/Luco/Oman.jpg" alt="Luco Oman" style="width: 284px">
-            <div class="card-header">
-                <h2>Oman</h2>
-            </div>
-            <div class="card-body">
-                <p class="card-text">{{ trans('info.luco_descr3') }}</p>
-            </div>
-            <div class="card-footer text-muted">
-                
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="img/Luco/Carpathians.png" alt="Luco Carpathians" style="width: 284px">
-            <div class="card-header">
-                <h2>Carpathians</h2>
-            </div>
-            <div class="card-body">
-                <p class="card-text">{{ trans('info.luco_descr4') }}</p>
-            </div>
-            <div class="card-footer text-muted">
-                
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="img/Luco/Dalarna.jpg" alt="Luco Dalarna" style="width: 284px">
-            <div class="card-header">
-                <h2>Dalarna</h2>
-            </div>
-            <div class="card-body">
-                <p class="card-text">{{ trans('info.luco_descr5') }}</p>
-            </div>
-            <div class="card-footer text-muted">
-                
+                <!-- The Gallery widget -->
+                <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+                    <div class="slides"></div>
+                    <h3 class="title"></h3>
+                    <a class="prev">‹</a>
+                    <a class="next">›</a>
+                    <a class="close">×</a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator"></ol>
+                </div>
+
+                <div id="links">
+                    <a href="img/Luco/Kenya.png" title="Kenya"><img src="img/Luco/Thumbnails/Kenya.png" alt="Kenya"></a>
+                    <a href="img/Luco/Oman.jpg" title="Oman"><img src="img/Luco/Thumbnails/Oman.jpg" alt="Oman"></a>
+                    <a href="img/Luco/Oman2.jpg" title="Oman"><img src="img/Luco/Thumbnails/Oman2.jpg" alt="Oman2"></a>
+                    <a href="img/Luco/Carpathians.png" title="Carpathians"><img src="img/Luco/Thumbnails/Carpathians.png" alt="Carpathians"></a>
+                    <a href="img/Luco/Carpathians1.jpg" title="Carpathians"><img src="img/Luco/Thumbnails/Carpathians1.jpg" alt="Carpathians"></a>
+                    <a href="img/Luco/Dalarna.jpg" title="Dalarna"><img src="img/Luco/Thumbnails/Dalarna.jpg" alt="Dalarna"></a>
+                    <a href="img/Luco/Dalarna1.png" title="Dalarna"><img src="img/Luco/Thumbnails/Dalarna1.png" alt="Dalarna1"></a>
+                    <a href="img/Luco/Dalarna2.jpg" title="Dalarna"><img src="img/Luco/Thumbnails/Dalarna2.jpg" alt="Dalarna2"></a>
+                </div>
             </div>
         </div>
     </div>
-    <script src="{{ asset('js/photo.js') }}"></script>
 @endsection

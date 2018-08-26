@@ -37,7 +37,7 @@
                         </TR>
                         <TR>
                             <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Overige 'out-of-pocket expenses'</TD>
-                            <TD align="right">€25</TD>
+                            <TD align="right">€40</TD>
                         </TR>
                         <TR>
                             <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Kosten organisatie (cadeaus, logo, website)</TD>
@@ -69,6 +69,17 @@
                 <div class="card-footer text-muted">
                     {{ trans('info.budget_descr2') }}
                 </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="img/Other/new-100-gel.jpg" alt="Lappen mannen" style="width: 284px">
+            <div class="card-header">
+                <h2>{{ trans('info.lappen') }}</h2>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ trans('info.lappen_descr') }}</h5>
+                <p>{{ trans('info.lappen_descr1') }}</p>
+                <p>{{ trans('info.lappen_descr2') }}</p>
             </div>
         </div>
         <div class="card">

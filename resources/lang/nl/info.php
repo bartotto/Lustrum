@@ -8,7 +8,7 @@ return [
     'back'              => 'Terug',
     'blog'              => 'Blog',
     'budget'            => 'Budget',
-    'budget_descr'      => 'Voorlopig gedetailleerd budget in € per persoon, exclusief kosten kleding.',
+    'budget_descr'      => 'Gedetailleerde begroting in € per persoon, exclusief kosten kleding.',
     'budget_descr2'     => 'Dit wordt de beste prijs per dag (ongeachte inflatiecorrectie) sinds Lappland in 1989!',
     'cancel'            => 'Annuleer',
     'blog_descr'        => 'Voor serieuze bijdragen en Trommel-grappen',

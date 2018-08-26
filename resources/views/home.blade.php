@@ -123,6 +123,18 @@
             </div>
         </div>
         <div class="card">
+            <img class="card-img-top" src="img/Other/new-100-gel.jpg" alt="Lappen mannen" style="width: 284px">
+            <div class="card-header">
+                <h2>{{ trans('info.lappen') }}</h2>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ trans('info.lappen_descr') }}</h5>
+                <p>{{ trans('info.lappen_descr1') }}</p>
+                <p>{{ trans('info.lappen_descr2') }}</p>
+                <p>{{ trans('info.lappen_descr3') }}<a href="budget">{{ trans('info.budget') }}</a></p>
+            </div>
+        </div>
+        <div class="card">
             <img class="card-img-top" src="img/Other/Departure.jpg" alt="Departure" style="width: 284px">
             <div class="card-header">
                 <h2>{{ trans('info.when') }}</h2>

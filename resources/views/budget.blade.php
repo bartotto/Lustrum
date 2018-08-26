@@ -4,6 +4,7 @@
     <div class="card-columns">
         <div class="card">
             <div class="card-header">
+                <img class="card-img-top" src="img/Other/new-100-gel.jpg" alt="Lappen mannen" style="width: 284px">
                 <h2>{{ trans('info.budget') }}</h2>
             </div>
             <div class="card-body">
@@ -15,11 +16,11 @@
                             <TD align="right">€356</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">"Programma Burduli" van aankomst TBI tot zaterdagmiddag (all-in)</TD>
+                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">"Programma Burduli" van aankomst TBI tot zaterdagmiddag (7 nachten, all-in)</TD>
                             <TD align="right">€780</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Hotel Tblisi za 29/8 (2 nachten, incl ontbijt)</TD>
+                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Hotel Rooms, Tblisi za 29/8 (2 nachten, incl. ontbijt)</TD>
                             <TD align="right">€180</TD>
                         </TR>
                         <TR>
@@ -39,12 +40,28 @@
                             <TD align="right">€25</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Kosten organisatie (Cadeaus, logo, website)</TD>
+                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Kosten organisatie (cadeaus, logo, website)</TD>
                             <TD align="right">€14</TD>
                         </TR>
                         <TR>
                             <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Totaal</TD>
                             <TD align="right">€1.540</TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px"></TD>
+                            <TD align="right"></TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Totaal excl. vliegreis</TD>
+                            <TD align="right">€1.184</TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">1e storting (voor 31 aug)</TD>
+                            <TD align="right">-600</TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">2e storting (voor 21 sept)</TD>
+                            <TD align="right">-584</TD>
                         </TR>
                     </TABLE>
                 </div>

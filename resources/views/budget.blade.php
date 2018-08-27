@@ -124,7 +124,7 @@
                 <h2>{{ trans('info.lappen_status') }}</h2>
             </div>
             <div class="card-body">
-                <h5 class="card-title">Totaal gestort:</h5>
+                <h5 class="card-title">{{ trans('info.lappen_gestort') }}</h5>
                 <ol>
                     @foreach ($users as $user)
                         <div class="row">

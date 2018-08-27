@@ -66,6 +66,7 @@ return [
     'lappen_descr1'     => 'Maak deze week alsjeblieft € 600 over op NL26 INGB 0664 7440 44 van AHJ Otto onder vermelding van "1e storting".',
     'lappen_descr2'     => 'Het restant € 584 ontvangt de Luco graag uiterlijk 21 september as. (de dag voor vertrek) op hetzelfde rekeningnummer. Natuurlijk mag je ook het totaalbedrag van € 1.184 in één keer overmaken.',
     'lappen_descr3'     => 'Klik voor de gedetailleerde reisbudget hier: ',
+    'lappen_gestort'    => 'Totaal gestort:',
     'lappen_status'     => 'Status betalingen',
     'last_login'        => 'Laatste login',
     'last_name'         => 'Achternaam',

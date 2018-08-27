@@ -36,8 +36,8 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
                             <a class="dropdown-item" href="{{ route('users') }}  ">{{ trans('info.club') }}</a>
                             <a class="dropdown-item" href="{{ route('joiners') }}">{{ trans('info.joiners') }}</a>
-                            <a class="dropdown-item" href="{{ route('luco') }}   ">{{ trans('info.luco') }}</a>
-                            @if(substr(session('user_role'),0,6) == 'Member')
+                            <a class="dropdown-item" href="{{ route('luco') }}   ">{{ trans('info.luco') }}</a>          
+                            @if(substr(Auth::user()->user_role,0,6) == 'Member')
                                 <a class="dropdown-item" href="{{ route('budget') }} ">{{ trans('info.budget') }}</a>
                             @endif
                         </div>
@@ -75,11 +75,3 @@
         </div>
     </nav>
 </div>
-<!--
-<script>  
-    $( '#topheader .navbar-nav a' ).on( 'click', function () {
-            $( '#topheader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
-            $( this ).parent( 'li' ).addClass( 'active' );
-    });
-</script>
--->

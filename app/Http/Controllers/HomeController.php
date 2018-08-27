@@ -44,10 +44,6 @@ class HomeController extends Controller {
     public function luco() {
         return view('luco');
         }
-        
-    public function budget() {
-        return view('budget');
-        }
     
     public function logout() {
         return view('home');

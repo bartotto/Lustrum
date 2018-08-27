@@ -57,11 +57,11 @@
                         </TR>
                         <TR>
                             <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">1e storting (voor 31 aug)</TD>
-                            <TD align="right">-600</TD>
+                            <TD align="right">-€600</TD>
                         </TR>
                         <TR>
                             <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">2e storting (voor 21 sept)</TD>
-                            <TD align="right">-584</TD>
+                            <TD align="right">-€584</TD>
                         </TR>
                     </TABLE>
                 </div>
@@ -72,7 +72,7 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="img/Other/new-100-gel.jpg" alt="Lappen mannen" style="width: 284px">
+            <img class="card-img-top" src="img/Other/Lappen.jpg" alt="Lappen" style="width: 368px">
             <div class="card-header">
                 <h2>{{ trans('info.lappen') }}</h2>
             </div>
@@ -82,10 +82,7 @@
                 <p>{{ trans('info.lappen_descr2') }}</p>
             </div>
         </div>
-        <div class="card">
-            <div class="card-header">
-                <h2>{{ trans('info.trips_descr2') }}</h2>
-            </div>
+                <div class="card">
             <div class="card-body"> 
                 <div class="row">
                     <div class="mySlides fade">
@@ -120,8 +117,22 @@
                     </div>
                 </div>
             </div>
-            <div class="card-footer text-muted">
-
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="img/Other/Tikkie.jpg" alt="Tikkie" style="width: 350px">
+            <div class="card-header">
+                <h2>{{ trans('info.lappen_status') }}</h2>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Totaal gestort:</h5>
+                <ol>
+                    @foreach ($users as $user)
+                        <div class="row">
+                            <div class="col-sm">{{ $user->first_name}}</div>
+                            <div class="col-sm text-right">€ {{ $user->paid }}</div>
+                        </div>
+                    @endforeach
+                </ol>
             </div>
         </div>
     </div>

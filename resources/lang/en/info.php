@@ -65,6 +65,7 @@ return [
     'lappen_descr1'     => 'Please transfer € 600 this week to NL26 INGB 0664 7440 44 belonging to AHJ Otto stating "1e storting".',
     'lappen_descr2'     => 'Please transfer the remaining € 584 no later than September 21 st. (the day before our departure) to the same account number. Of course you can also transfer the total amount of € 1,184 in one go.',
     'lappen_descr3'     => 'Please check the detailed travel budget here: ',
+    'lappen_status'     => 'Payments status',
     'last_login'        => 'Last login',
     'last_name'         => 'Last name',
     'last_news'         => 'The latest news',

@@ -17,5 +17,9 @@ class AdminController extends Controller {
         $users = User::orderBy('first_name')->get();
         return view('admin', compact('users'));
         }
-
+        
+    public function budget() {
+        $users = User::where('joins','=','1')->orderBy('first_name')->get();
+        return view('budget', compact('users'));
+        }
     }

@@ -21,7 +21,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="body">{{ trans('info.post_body') }}:</label>
-                                <textarea id="body" name="body" class="form-control" required></textarea>
+                                <textarea class="form-control" id="body" name="body" required></textarea>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary">{{ trans('info.post_publish') }}</button>

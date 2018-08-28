@@ -4,7 +4,9 @@
     <div class="card-columns">
         <div class="card">
             <div class="card-header">
-                <img class="card-img-top" src="img/Other/new-100-gel.jpg" alt="Lappen mannen" style="width: 284px">
+                <a href="http://www.tabula.ge/en/story/115667-civil-society-activists-protest-lari-depreciation" target="_blank">
+                    <img class="card-img-top" src="img/Other/Larikoek.jpg" alt="Lariekoek" style="width: 365px">
+                </a>
                 <h2>{{ trans('info.budget') }}</h2>
             </div>
             <div class="card-body">

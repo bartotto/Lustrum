@@ -72,6 +72,7 @@ return [
     'last_news'         => 'The latest news',
     'login'             => 'Login',
     'login_start'       => 'From 1983 until now...',
+    'logo'              => 'The logo',
     'logo_new'          => 'The new logo',
     'logout'            => 'Logout',
     'luco'              => 'Your luco',

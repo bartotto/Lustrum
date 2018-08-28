@@ -73,6 +73,7 @@ return [
     'last_news'         => 'Nieuws',
     'login'             => 'Log in',
     'login_start'       => 'Van 1983 tot nu...',
+    'logo'              => 'Tamada',
     'logo_new'          => 'Het nieuwe logo',
     'logout'            => 'Log uit',
     'luco'              => 'Uw luco',

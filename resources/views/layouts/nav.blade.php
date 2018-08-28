@@ -17,6 +17,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('home') }}">{{ trans('info.home') }}</a>
                     </li>
+                    @if(Auth::user()->user_role == 'Member+')
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('logo') }}">{{ trans('info.logo') }}</a>
+                        </li>
+                    @endif
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('destination') }}">{{ trans('info.destination') }}</a>
                     </li>

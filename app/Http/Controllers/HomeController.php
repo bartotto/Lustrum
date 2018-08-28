@@ -29,6 +29,10 @@ class HomeController extends Controller {
         return view('home');
         }
    
+    public function logo() {
+        return view('logo');
+        }
+    
     public function destination() {
         return view('destination');
         }

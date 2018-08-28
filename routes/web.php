@@ -18,6 +18,7 @@ Auth::routes();
 
 Route::group(['middleware' => 'language'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/logo', 'HomeController@logo')->name('logo');
     Route::get('/destination', 'HomeController@destination')->name('destination');
     Route::get('/program', 'HomeController@program')->name('program');
     Route::get('/tripPhoto','HomeController@tripPhoto')->name('tripPhoto');

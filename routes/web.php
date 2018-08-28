@@ -41,6 +41,4 @@ Route::group(['middleware' => 'language'], function () {
     
     Route::get('/trips', 'TripsController@index')->name('trips');
     Route::get('/trips/{trip}', 'TripsController@show');
-    
-    
-});
+    });

@@ -17,7 +17,7 @@ class CommentsController extends Controller{
     public function store(Request $request, Post $post){
         $this->validate(request(),[
             'title' => 'required|min:4|max:100',
-            'body' => 'required|min:4|max:500',
+            'body' => 'required|min:4|max:5000',
         ]);
         $comment = new Comment();
         $comment->title = $request->title;

@@ -32,7 +32,7 @@ class PostsController extends Controller {
     public function store() {
         $this->validate(request(),[
            'title' => 'required|unique:posts|min:4|max:100',
-           'body' => 'required|min:4|max:500',
+           'body' => 'required|min:4|max:5000',
         ]);
         $user = auth()->user();
         $user->publish_post(

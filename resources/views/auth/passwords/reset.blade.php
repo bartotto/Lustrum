@@ -21,7 +21,7 @@
                         @endif
                     </div>
                     <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                        <label for="password">{{ trans('info.password') }}</label>
+                        <label for="password">{{ trans('auth.password_new') }}</label>
                         <input id="password" type="password" class="form-control" name="password" required>
                         @if ($errors->has('password'))
                             <span class="help-block">
@@ -30,7 +30,7 @@
                         @endif
                     </div>
                     <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
-                        <label for="password-confirm">{{ trans('info.password_confirm') }}</label>
+                        <label for="password-confirm">{{ trans('auth.password_confirm') }}</label>
                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                         @if ($errors->has('password_confirmation'))
                             <span class="help-block">

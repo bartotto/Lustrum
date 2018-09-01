@@ -112,7 +112,6 @@ return [
     'passport_text3'    => ' indicates 3 months at arrival,',
     'passport_text4'    => ' indicates 6 months at departure. Let us play safe.',
     'password'          => 'Password',
-    'password_confirm'  => 'Confirm password',
     'past_trips'        => 'Previous trips',
     'pictures_club'     => 'Pictures of the Club',
     'pictures_more'     => 'If you have good pictures to add, please send to the Webmaster',

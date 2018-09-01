@@ -9,7 +9,7 @@
             <div class="card-body">
                 <form class="form-horizontal" method="POST" action="{{ route('password.request') }}">
                     {{ csrf_field() }}
-                    <h5 class="card-title">{{ trans('auth.email_give') }}</h5>
+                    <h5 class="card-title">{{ trans('auth.reset_title') }}</h5>
                     <input type="hidden" name="token" value="{{ $token }}">
                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                         <label for="email">{{ trans('info.email_address') }}</label>

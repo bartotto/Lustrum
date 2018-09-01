@@ -12,10 +12,12 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-
+    
+    'email_descr'       => 'Dit e-mail adres moet zijn geregistreerd. Als je toegang wilt of je wilt jouw e-mail adres wijzigen, neem contact op met de',
+    'email_give'        => 'Dit is mijn e-mail adres:',
     'failed'            => 'Deze inloggegevens zijn niet bekend.',
     'reset_password'    => 'Herstel wachtwoord',
-    'send_link'         => 'Stuur wachtwoord reset link',
+    'send_link'         => 'Stuur mij een e-mail met wachtwoord reset link',
     'throttle'          => 'Te veel log in pogingen. Probeer opnieuw over :seconds seconds.',
 
 ];

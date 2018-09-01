@@ -15,7 +15,7 @@ return [
 
     'password'  => 'Wachtwoorden moeten tenminste 6 karakters lang zijn en gelijk aan de confirmatie.',
     'reset'     => 'Jouw wachtwoord is gereset!',
-    'sent'      => 'We hebben je een e-mail gestuurd met een wachtwoord reset link. Check jouw inbox!',
+    'sent'      => 'We hebben je een e-mail gestuurd met een wachtwoord reset link. Check jouw inbox (en eventueel je spamfilter)!',
     'token'     => 'Deze wachtwoord reset sleutel is niet geldig.',
     'user'      => "We vinden geen gebruiker met dit e-mail adres.",
 

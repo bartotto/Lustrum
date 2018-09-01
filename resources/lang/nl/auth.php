@@ -20,7 +20,7 @@ return [
     'password_confirm'  => 'Herhaal nieuwe wachtwoord',
     'reset_password'    => 'Herstel wachtwoord',
     'reset_title'       => 'Vul jouw e-mail adres in en kies een nieuw wachtwoord',
-    'send_link'         => 'Stuur mij een e-mail met wachtwoord reset link',
+    'send_link'         => 'Stuur mij een e-mail met wachtwoord-reset-link',
     'throttle'          => 'Te veel log in pogingen. Probeer opnieuw over :seconds seconds.',
 
 ];

@@ -20,7 +20,7 @@ return [
     'password_confirm'  => 'Repeat my new password',
     'reset_password'    => 'Reset password',
     'reset_title'       => 'Enter your e-mail address and choose a new password',
-    'send_link'         => 'Send password reset link',
+    'send_link'         => 'Send me an e-mail with password-reset-link',
     'throttle'          => 'Too many login attempts. Please try again in :seconds seconds.',
 
 ];

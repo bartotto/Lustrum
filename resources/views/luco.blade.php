@@ -16,7 +16,6 @@
                     <a class="play-pause"></a>
                     <ol class="indicator"></ol>
                 </div>
-
                 <div id="links">
                     <a href="img/Luco/Kenya.png" title="Kenya"><img src="img/Luco/Thumbnails/Kenya.png" alt="Kenya"></a>
                     <a href="img/Luco/Oman.jpg" title="Oman"><img src="img/Luco/Thumbnails/Oman.jpg" alt="Oman"></a>

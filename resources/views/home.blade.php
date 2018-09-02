@@ -12,6 +12,46 @@
             </div>
         </div>
         <div class="card">
+            <img class="card-img-top" src="img/Other/Rugzak.jpg" alt="Paklijst" height="auto" width="48">
+            <div class="card-header">
+                <h2>{{ trans('info.packlist') }}</h2>
+            </div>
+            <div class="card-block">
+                <div class="card-body">
+                    <p>Main backpack. Although the horses will carry our luggage during the hikes, you will want something you can carry comfortably if needed. Don’t forget the rain cover; some packs come with one built-in. </p>
+                    <p>Day pack which can carry some minimal belongings which you may need during the hike, e.g.:</p>
+                    <ul>
+                        <li>water bottle</li>
+                        <li>sunglasses</li>
+                        <li>sun screen</li>
+                        <li>rain jacket</li>
+                        <li>gloves</li>
+                        <li>piece of plastic to sit on when we take a break during the day – in case it is wet</li>
+                        <li>Nordic walking stick (optional)</li>
+                    </ul>
+                    <p>Main backpack:</p>
+                    <ul>
+                        <li>Sleeping bag & pillow (David will provide tents & mattresses)</li>
+                        <li>Hiking boots offering sufficient support in rough terrain</li>
+                        <li>Clothes suitable for warm, cold, rainy and dry weather conditions</li>
+                        <li>Luco Kledinglijn Committee will arrange fleece & cap</li>
+                        <li>Toiletries, towel</li>
+                        <li>IOUs</li>
+                        <li>The Luco will bring a First aid kit. You are responsible for any personal medicine.</li>
+                        <li>Knife or multi-purpose tool</li>
+                        <li>Torch or headlamp: plus extra batteries</li>
+                        <li>Solar battery charger</li>
+                        <li>BONUS: Trash Bag. A zip lock bag is a great option</li>
+                    </ul>
+                    <p>Water filter not required – the water from the streams is safe to drink</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                <p>17 aug 18</p>
+            </div>
+        </div>
+        <div class="card">
             <img class="card-img-top" src="img/Strandborrel/2.jpg" alt="Strandborrel" height="auto" width="48">
             <div class="card-header">
                 <h2>{{ trans('info.strand_borrel') }}</h2>
@@ -46,28 +86,7 @@
                 <p>17 aug 18</p>
             </div>
         </div>
-        <div class="card">
-            <img class="card-img-top" src="img/Other/Alex.jpg" alt="Alex" height="auto" width="48">
-            <div class="card-header">
-                <h2>{{ trans('info.kledinglijn') }}</h2>
-            </div>
-            <div class="card-block">
-                <div class="card-body">
-                    <h5 class="card-title">{{ trans('info.kledinglijn_title') }}</h5>
-                    <p class="card-text">
-                        {{ trans('info.kledinglijn_text') }}<a href="/users/{{ Auth::user()->id }}">{{ trans('info.profile') }}</a>.
-                    </p>
-                    <p class="card-text">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#maattabel">
-                            Maat tabel
-                        </button>
-                    </p>
-                 </div>
-            </div>
-            <div class="card-footer text-muted">
-                14 aug 18
-            </div>
-        </div>
+        
         <div class="card">
             <div class="card-body">
                 <div class="mySlides fade">
@@ -100,21 +119,6 @@
                     <img src="img/Groep/Dalarna.jpg" style="width:100%">
                     <div class="text">Dalarna 2014</div>
                 </div>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="img/Other/Question.jpg" alt="Vraag?" height="auto" width="48">
-            <div class="card-header">
-                <h2>{{ trans('info.questions') }}</h2>
-            </div>
-            <div class="card-block">
-                <div class="card-body">
-                    <h5 class="card-title">{{ trans('info.questions_go_to') }}<a href="/posts">Blog</a>{{ trans('info.questions_ask') }}</h5>
-                    <p class="card-text">{{ trans('info.questions_answer') }}</p>
-                </div>
-            </div>
-            <div class="card-footer text-muted">
-                14 aug 18
             </div>
         </div>
         <div class="card" style="width: 100%">
@@ -200,122 +204,18 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="img/Other/Rugzak.jpg" alt="Paklijst" height="auto" width="48">
+            <img class="card-img-top" src="img/Other/Question.jpg" alt="Vraag?" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.packlist') }}</h2>
+                <h2>{{ trans('info.questions') }}</h2>
             </div>
             <div class="card-block">
                 <div class="card-body">
-                    <h5 class="card-title">{{ trans('info.packlist_title') }}</h5>
-                    <p class="card-text">{{ trans('info.packlist_text') }}</p>
-                    <p>{{ trans('info.to_follow') }}</p>
+                    <h5 class="card-title">{{ trans('info.questions_go_to') }}<a href="/posts">Blog</a>{{ trans('info.questions_ask') }}</h5>
+                    <p class="card-text">{{ trans('info.questions_answer') }}</p>
                 </div>
             </div>
             <div class="card-footer text-muted">
-                <p>17 aug 18</p>
-            </div>
-        </div>
-        <div class="modal" tabindex="-1" role="dialog" id="maattabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Echte mannen - maat tabel</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Kies:</th>
-                                    <th scope="col">Maat</th>
-                                    <th scope="col">Borst omtrek (cm)</th>
-                                    <th scope="col">Taille omtrek (cm)</th>
-                                    <th scope="col">Heup omtrek (cm)</th>
-                                    <th scope="col">Mouw lengte (cm)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">S</th>
-                                    <td>44</td>
-                                    <td>89-93</td>
-                                    <td>76-80</td>
-                                    <td>88-92</td>
-                                    <td>62</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">M</th>
-                                    <td>46</td>
-                                    <td>93-97</td>
-                                    <td>80-84</td>
-                                    <td>92-99</td>
-                                    <td>63</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">M</th>
-                                    <td>48</td>
-                                    <td>97-101</td>
-                                    <td>84-88</td>
-                                    <td>96-100</td>
-                                    <td>64</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">L</th>
-                                    <td>50</td>
-                                    <td>101-105</td>
-                                    <td>88-92</td>
-                                    <td>100-103</td>
-                                    <td>65</td>
-                                </tr>
-                                   <tr>
-                                    <th scope="row">L</th>
-                                    <td>52</td>
-                                    <td>105-109</td>
-                                    <td>92-96</td>
-                                    <td>103-106</td>
-                                    <td>66</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">XL</th>
-                                    <td>54</td>
-                                    <td>109-113</td>
-                                    <td>96-100</td>
-                                    <td>106-109</td>
-                                    <td>67</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">XL</th>
-                                    <td>56</td>
-                                    <td>113-117</td>
-                                    <td>101-105</td>
-                                    <td>109-112</td>
-                                    <td>68</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2XL</th>
-                                    <td>58</td>
-                                    <td>117-121</td>
-                                    <td>104-108</td>
-                                    <td>112-115</td>
-                                    <td>69</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3XL</th>
-                                    <td>60</td>
-                                    <td>121-125</td>
-                                    <td>108-112</td>
-                                    <td>115-118</td>
-                                    <td>70</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">{{ trans('info.close') }}</button>
-                    </div>
-                </div>
+                14 aug 18
             </div>
         </div>
     </div>

@@ -45,7 +45,7 @@
                     <a href="img\Club\Oman_kamelen.jpg" title="Oman 2005" data-gallery="#blueimp-gallery-club"><img src="img\Club\Thumbnails\Oman_kamelen.jpg" alt="Oman 2005"></a>
                     <a href="img\Club\Carpathians_brug.jpg" title="Carpathians 2009" data-gallery="#blueimp-gallery-club"><img src="img\Club\Thumbnails\Carpathians_brug.jpg" alt="Carpathians 2009"></a>
                     <a href="img\Club\Carpathians_bad.jpg" title="Carpathians 2009" data-gallery="#blueimp-gallery-club"><img src="img\Club\Thumbnails\Carpathians_bad.jpg" alt="Carpathians 2009"></a>
-                    <a href="img\Club\Hangbrug.jpg" title="16 april 2011" data-gallery="#blueimp-gallery-club"><img src="img\Club\Thumbnails\Hangbrug.jpg" alt="16 april 2011"></a>
+                    <a href="img\Club\Hang_brug.jpg" title="16 april 2011" data-gallery="#blueimp-gallery-club"><img src="img\Club\Thumbnails\Hang_brug.jpg" alt="16 april 2011"></a>
                     <a href="img\Club\Carpathians_mevrouw.jpg" title="Carpathians 2009" data-gallery="#blueimp-gallery-club"><img src="img\Club\Thumbnails\Carpathians_mevrouw.jpg" alt="Carpathians 2009"></a>
                     <a href="img\Club\Dalarna_trek.jpg" title="Dalarna 2014" data-gallery="#blueimp-gallery-club"><img src="img\Club\Thumbnails\Dalarna_trek.jpg" alt="Dalarna 2014"></a>
                     <a href="img\Club\Dalarna_camp.jpg" title="Dalarna 2014" data-gallery="#blueimp-gallery-club"><img src="img\Club\Thumbnails\Dalarna_camp.jpg" alt="Dalarna 2014"></a>

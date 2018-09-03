@@ -19,6 +19,7 @@ class AdminController extends Controller {
         }
         
     public function budget() {
+        setlocale(LC_MONETARY, 'nl_NL');
         $users = User::where([
             ['joins','=','1'],
             ['user_role','<>','Partner'],

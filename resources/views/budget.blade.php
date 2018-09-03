@@ -131,7 +131,7 @@
                     @foreach ($users as $user)
                         <div class="row">
                             <div class="col-sm">{{ $user->first_name}}</div>
-                            <div class="col-sm text-right">€ {{ $user->paid }}</div>
+                            <div class="col-sm text-right">{{ money_format('%i', $user->paid) }}</div>
                         </div>
                     @endforeach
                 </ol>

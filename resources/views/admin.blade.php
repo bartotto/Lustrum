@@ -58,22 +58,22 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Strandborrel.jpg" alt="Strandborrel" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.strand_borrel') }}</h2>
+                <h2>Partners eigen login</h2>
             </div>
             <div class="card-body">
-                <h5 class="card-title">Opgegeven:</h5>
+                <h5 class="card-title"></h5>
                 <ol>
                     @foreach ($users as $user)
-                        @if($user->strandborrel=='Yes')
+                        @if($user->partner_login=='Yes')
                             <li>
-                                <a href="/users/{{ $user->id }}">{{ $user->first_name }}</a>
+                                <a href="/users/{{ $user->id }}">{{ $user->partner_first_name }} {{ $user->partner }} (id {{ $user->partner_id }})</a>
                             </li>
                         @endif
                     @endforeach
                 </ol>
             </div> 
             <div class="card-footer text-muted">
-                <p>17 aug 18</p>
+                <p>3 sept 18</p>
             </div>
         </div>
     </div>

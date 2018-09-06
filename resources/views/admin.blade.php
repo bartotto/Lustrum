@@ -66,7 +66,7 @@
                     @foreach ($users as $user)
                         @if($user->partner_login=='Yes')
                             <li>
-                                <a href="/users/{{ $user->id }}">{{ $user->partner_first_name }} {{ $user->partner }} (id {{ $user->partner_id }})</a>
+                                {{ $user->partner_first_name }} {{ $user->partner }} (id {{ $user->partner_id }})
                             </li>
                         @endif
                     @endforeach

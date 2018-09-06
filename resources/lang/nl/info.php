@@ -65,7 +65,7 @@ return [
     'lappen_descr3'     => 'Klik voor de gedetailleerde reisbudget hier: ',
     'lappen_gestort'    => 'Totaal gestort:',
     'lappen_status'     => 'Status betalingen',
-    'last_login'        => 'Laatste login',
+    'last_login'        => 'Vorige login',
     'last_name'         => 'Achternaam',
     'last_news'         => 'Nieuws',
     'login'             => 'Log in',

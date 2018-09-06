@@ -28,6 +28,8 @@
                         <li>Gloves</li>
                         <li>Piece of plastic to sit on when we take a break during the day – in case it is wet</li>
                         <li>Nordic walking stick (optional)</li>
+                        <li>Passport that is still 6 months valid at departure</li>
+                        <li>Appropriate travel insurance</li>
                     </ul>
                     <p>Main backpack:</p>
                     <ul>

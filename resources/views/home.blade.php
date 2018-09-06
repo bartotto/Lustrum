@@ -34,6 +34,7 @@
                         <li>Sleeping bag & pillow (David will provide tents & mattresses)</li>
                         <li>Hiking boots offering sufficient support in rough terrain</li>
                         <li>Clothes suitable for warm, cold, rainy and dry weather conditions</li>
+                        <li>swimming trunks</li>
                         <li>Luco Kledinglijn Committee will arrange fleece & cap</li>
                         <li>Toiletries, towel</li>
                         <li>IOUs</li>

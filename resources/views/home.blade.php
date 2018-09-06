@@ -21,12 +21,12 @@
                     <p>Main backpack. Although the horses will carry our luggage during the hikes, you will want something you can carry comfortably if needed. Don’t forget the rain cover; some packs come with one built-in. </p>
                     <p>Day pack which can carry some minimal belongings which you may need during the hike, e.g.:</p>
                     <ul>
-                        <li>water bottle</li>
-                        <li>sunglasses</li>
-                        <li>sun screen</li>
-                        <li>rain jacket</li>
-                        <li>gloves</li>
-                        <li>piece of plastic to sit on when we take a break during the day – in case it is wet</li>
+                        <li>Water bottle</li>
+                        <li>Sunglasses</li>
+                        <li>Sun screen</li>
+                        <li>Rain jacket</li>
+                        <li>Gloves</li>
+                        <li>Piece of plastic to sit on when we take a break during the day – in case it is wet</li>
                         <li>Nordic walking stick (optional)</li>
                     </ul>
                     <p>Main backpack:</p>

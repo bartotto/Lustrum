@@ -8,7 +8,7 @@
                 {{ trans('info.program') }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ trans('info.program_do') }}</h5>
+                <div class="card-title">{{ trans('info.program_do') }}</div>
                 <p class="card-text">22/9 Saturday<br>AMS 10:40 KL3108 Arrival TBS 17:15. Drive to wine area Telavi, traditional Georgian diner & overnight stay.</p>
                 <p class="card-text">23/9 Sunday<br>AM: visit winecellar & lunch. Driving from Telavi to Omalo 4x4wd (Alexander will catch up in Telavi).</p>
                 <p class="card-text">24/9 Monday<br>Driving from Omalo to  Dartlo. Part of the way hiking.</p>
@@ -30,7 +30,7 @@
                 {{ trans('info.ps') }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ trans('info.ps_who') }}</h5>
+                <div class="card-title">{{ trans('info.ps_who') }}</div>
                 <p>{{ trans('info.to_follow') }}</p>
             </div>
             <div class="card-footer text-muted">
@@ -43,7 +43,7 @@
                 {{ trans('info.our_guide') }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ trans('info.guide_info') }}</h5>
+                <div class="card-title">{{ trans('info.guide_info') }}</div>
                 <p class="card-text">{{ trans('info.guide_info2') }}</p>
             </div>
             <div class="card-footer text-muted">
@@ -56,7 +56,7 @@
                 {{ trans('info.our_contact') }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ trans('info.contact_info') }}</h5>
+                <div class="card-title">{{ trans('info.contact_info') }}</div>
                 <p class="card-text">{{ trans('info.contact_info2') }}</p>
             </div>
             <div class="card-footer text-muted">
@@ -69,7 +69,7 @@
                 {{ trans('info.questions') }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ trans('info.questions_go_to') }}<a href="/posts">Blog</a>{{ trans('info.questions_ask') }}</h5>
+                <div class="card-title">{{ trans('info.questions_go_to') }}<a href="/posts">Blog</a>{{ trans('info.questions_ask') }}</div>
                 <p class="card-text">{{ trans('info.questions_answer') }}</p>
             </div>
             <div class="card-footer text-muted">

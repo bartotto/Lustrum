@@ -8,7 +8,7 @@
                 {{ trans('info.last_login') }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">Voor het laatst ingelogd:</h5>
+                <div class="card-title">Voor het laatst ingelogd:</div>
                 @foreach ($users as $user)
                     @if($user->previous_last_login)
                         <div class="row">
@@ -18,7 +18,7 @@
                     @endif
                 @endforeach
                 <hr>
-                <h5 class="card-title">Nog nooit ingelogd:</h5>
+                <div class="card-title">Nog nooit ingelogd:</div>
                 @foreach ($users as $user)
                     @if(!$user->previous_last_login)       
                         <div>{{ $user->first_name}}</div>
@@ -35,14 +35,14 @@
                 Kledinglijn maten
             </div>
             <div class="card-body">
-                <h5 class="card-title">Al opgegeven:</h5>
+                <div class="card-title">Al opgegeven:</div>
                 @foreach ($users as $user)
                     @if($user->size)
                         <div>{{ $user->first_name}}  {{$user->size}}</div>
                     @endif
                 @endforeach
                 <hr>
-                <h5 class="card-title">Trage eikels:</h5>
+                <div class="card-title">Trage eikels:</div>
                 @foreach ($users as $user)
                     @if($user->joins)
                         @if(!$user->size)
@@ -61,7 +61,7 @@
                 Partners eigen login
             </div>
             <div class="card-body">
-                <h5 class="card-title"></h5>
+                <div class="card-title"></div>
                 <ol>
                     @foreach ($users as $user)
                         @if($user->partner_login=='Yes')

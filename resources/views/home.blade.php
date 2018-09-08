@@ -3,7 +3,7 @@
 @section('content')
     <div class="card-columns">
         <div class="card">
-            <img class="card-img-top" src="img/Other/KaukasischHilarisch.jpeg" alt="Logo Georgia" style="width: 284px">
+            <img class="card-img-top" src="img/Other/KaukasischHilarisch.jpeg" alt="Logo Georgia">
             <div class="card-header">
                 {{ trans('info.logo_new') }}
             </div>
@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="img/Other/Rugzak.jpg" alt="Paklijst" height="auto" width="48">
+            <img class="card-img-top" src="img/Other/Rugzak.jpg" alt="Paklijst">
             <div class="card-header">
                 {{ trans('info.packlist') }}
             </div>
@@ -55,13 +55,13 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="img/Strandborrel/2.jpg" alt="Strandborrel" height="auto" width="48">
+            <img class="card-img-top" src="img/Strandborrel/2.jpg" alt="Strandborrel">
             <div class="card-header">
                 {{ trans('info.strand_borrel') }}
             </div>
             <div class="card-block">
                 <div class="card-body">
-                    <h5 class="card-title">Opkomst boven verwachting</h5>
+                    <div class="card-title">Opkomst boven verwachting</div>
                     <p class="card-text">Mooi dat er zoveel dames bij waren in standtent Culpepper in Scheveningen</p>
                     <p class="card-text">Goed dat Hennink bij de borrel was en dat Jacqueline erbij was. De club leeft en de spanning voor de komende reis is voelbaar... Dames smeden plannen om tijdens de reis bij elkaar te komen? Wordt vervolgd...</p>
                 </div> 
@@ -124,8 +124,8 @@
                 </div>
             </div>
         </div>
-        <div class="card" style="width: 100%">
-            <img class="card-img-top" src="img/Other/Aart.jpg" alt="Aart" style="width: 284px">
+        <div class="card">
+            <img class="card-img-top" src="img/Other/Aart.jpg" alt="Aart">
             <div class="card-header">
                 {{ trans('info.president') }}
             </div>
@@ -148,13 +148,13 @@
         @if(substr(session('user_role'),0,6) == 'Member')
             <div class="card">
                 <a href="http://www.tabula.ge/en/story/115667-civil-society-activists-protest-lari-depreciation" target="_blank">
-                    <img class="card-img-top" src="img/Other/Larikoek.jpg" alt="Larikoek" style="width: 384px">
+                    <img class="card-img-top" src="img/Other/Larikoek.jpg" alt="Larikoek">
                 </a>
                 <div class="card-header">
                     {{ trans('info.lappen') }}
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">{{ trans('info.lappen_descr') }}</h5>
+                    <div class="card-title">{{ trans('info.lappen_descr') }}</div>
                     <p>{{ trans('info.lappen_descr1') }}</p>
                     <p>{{ trans('info.lappen_descr2') }}</p>
                     <p>{{ trans('info.lappen_descr3') }}<a href="budget">{{ trans('info.budget') }}</a></p>
@@ -162,24 +162,24 @@
             </div>
         @endif
         <div class="card">
-            <img class="card-img-top" src="img/Other/Departure.jpg" alt="Departure" style="width: 284px">
+            <img class="card-img-top" src="img/Other/Departure.jpg" alt="Departure">
             <div class="card-header">
                 {{ trans('info.when') }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ trans('info.when_descr') }}</h5>
+                <div class="card-title">{{ trans('info.when_descr') }}</div>
                 <p>{{ trans('info.when_descr2') }}</p>
                 <p>{{ trans('info.when_descr3') }}<a href="program">{{ trans('info.program') }}</a></p>
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="img/Other/Passport.jpg" alt="Paspoort" height="auto" width="48">
+            <img class="card-img-top" src="img/Other/Passport.jpg" alt="Paspoort">
             <div class="card-header">
                 {{ trans('info.passport') }}
             </div>
             <div class="card-block">
                 <div class="card-body">
-                    <h5 class="card-title">{{ trans('info.passport_title') }}</h5>
+                    <div class="card-title">{{ trans('info.passport_title') }}</div>
                     <p class="card-text">{{ trans('info.passport_text') }}</p>
                     <p class="card-text">{{ trans('info.passport_text2') }}
                         <a href="https://www.anwb.nl/vakantie/georgie/informatie/reisdocumenten">ANWB</a>{{ trans('info.passport_text3') }}
@@ -192,13 +192,13 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="img/Other/Insurance.jpg" alt="Verzekering" height="auto" width="48">
+            <img class="card-img-top" src="img/Other/Insurance.jpg" alt="Verzekering">
             <div class="card-header">
                 {{ trans('info.insurance') }}
             </div>
             <div class="card-block">
                 <div class="card-body">
-                    <h5 class="card-title">{{ trans('info.insurance_title') }}</h5>
+                    <div class="card-title">{{ trans('info.insurance_title') }}</div>
                     <p class="card-text">{{ trans('info.insurance_text') }}</p>
                 </div>
             </div>
@@ -207,13 +207,13 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="img/Other/Question.jpg" alt="Vraag?" height="auto" width="48">
+            <img class="card-img-top" src="img/Other/Question.jpg" alt="Vraag?">
             <div class="card-header">
                 {{ trans('info.questions') }}
             </div>
             <div class="card-block">
                 <div class="card-body">
-                    <h5 class="card-title">{{ trans('info.questions_go_to') }}<a href="/posts">Blog</a>{{ trans('info.questions_ask') }}</h5>
+                    <div class="card-title">{{ trans('info.questions_go_to') }}<a href="/posts">Blog</a>{{ trans('info.questions_ask') }}</div>
                     <p class="card-text">{{ trans('info.questions_answer') }}</p>
                 </div>
             </div>

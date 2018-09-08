@@ -8,7 +8,7 @@
                 Tamada - An ancient Georgian tradition
             </div>
             <div class="card-body">
-                <h5 class="card-title">As indicated by the President of our Luco Committee,</h5>
+                <div class="card-title">As indicated by the President of our Luco Committee,</div>
                 <p class="card-text">Georgia is a country with many strong, inspiring traditions.
                     One of these includes the tradition of appointing a tamada, or toastmaster, at every Georgian dinner, supra (feast) or at a wedding.
                     Aart acted as a worthy tamada during our recent get-together on the Scheveningen beach, where he so eloquently (and hilariously!)
@@ -34,7 +34,7 @@
                 {{ trans('info.ps') }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ trans('info.ps_who') }}</h5>
+                <div class="card-title">{{ trans('info.ps_who') }}</div>
                 <p>{{ trans('info.to_follow') }}</p>
             </div>
             <div class="card-footer text-muted">
@@ -47,7 +47,7 @@
                 {{ trans('info.questions') }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ trans('info.questions_go_to') }}<a href="/posts">Blog</a>{{ trans('info.questions_ask') }}</h5>
+                <div class="card-title">{{ trans('info.questions_go_to') }}<a href="/posts">Blog</a>{{ trans('info.questions_ask') }}</div>
                 <p class="card-text">{{ trans('info.questions_answer') }}</p>
             </div>
             <div class="card-footer text-muted">

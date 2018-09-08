@@ -213,14 +213,20 @@ html, body {
     font-weight: 500;
     }
     
+.card-title {
+    font-size: 16px;
+    font-weight: 500;
+    }
+    
 .card-footer {
     font-size: 12px;
     text-align: center;
     }
     
-body{
+body {
     overflow-y: scroll !important;
     }
+    
 .blueimp-gallery .modal-body {
     position: relative;
     text-align: center;

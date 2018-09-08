@@ -22,8 +22,14 @@
                             <a class="nav-link" href="{{ route('logo') }}">{{ trans('info.logo') }}</a>
                         </li>
                     @endif
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('destination') }}">{{ trans('info.destination') }}</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{ trans('info.destination') }}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                            <a class="dropdown-item" href="{{ route('destination') }}  ">{{ trans('info.destination') }}</a>
+                            <a class="dropdown-item" href="{{ route('destination_map') }}  ">{{ trans('info.map') }}</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('program') }}">{{ trans('info.program') }}</a>

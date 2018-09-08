@@ -37,6 +37,10 @@ class HomeController extends Controller {
         return view('destination');
         }
         
+    public function destination_map() {
+        return view('destination_map');
+        }
+        
     public function program() {
         return view('program');
         }

@@ -80,7 +80,7 @@ return [
     'luco_descr5'       => 'Keihard de beste',
     'made_by'           => 'door',
     'made_on'           => 'Gemaakt op',
-    'map'               => 'Open Google maps',
+    'map'               => 'Google maps',
     'matrix'            => 'Deelnemers matrix',
     'matrix_click'      => 'Klik hier voor matrix',
     'members_list'      => 'Ledenlijst',

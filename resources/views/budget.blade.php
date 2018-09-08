@@ -5,7 +5,7 @@
         <div class="card">
             <div class="card-header">
                 <a href="http://www.tabula.ge/en/story/115667-civil-society-activists-protest-lari-depreciation" target="_blank">
-                    <img class="card-img-top" src="img/Other/Larikoek.jpg" alt="Lariekoek" style="width: 365px">
+                    <img class="card-img-top" src="img/Other/Larikoek.jpg" alt="Lariekoek">
                 </a>
                 {{ trans('info.budget') }}
             </div>
@@ -74,64 +74,28 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="img/Other/Lappen.jpg" alt="Lappen" style="width: 368px">
+            <img class="card-img-top" src="img/Other/Lappen.jpg" alt="Lappen">
             <div class="card-header">
                 {{ trans('info.lappen') }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ trans('info.lappen_descr') }}</h5>
+                <div class="card-title">{{ trans('info.lappen_descr') }}</div>
                 <p>{{ trans('info.lappen_descr1') }}</p>
                 <p>{{ trans('info.lappen_descr2') }}</p>
             </div>
         </div>
-                <div class="card">
-            <div class="card-body"> 
-                <div class="row">
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 6</div>
-                        <img src="img/Groep/Kenya.jpg" style="max-width:100%">
-                        <div class="text">Kenya 1989</div>
-                    </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 6</div>
-                        <img src="img/Groep/Lappland.jpg" style="max-width:100%">
-                        <div class="text">Lappland 2004</div>
-                    </div>      
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 6</div>
-                        <img src="img/Groep/Cameroun.jpg" style="max-width:100%">
-                        <div class="text">Cameroun 2009</div>
-                    </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">4 / 6</div>
-                        <img src="img/Groep/Oman.jpg" style="max-width:100%">
-                        <div class="text">Oman 2005</div>
-                    </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">5 / 6</div>
-                        <img src="img/Groep/Carpathians.jpg" style="max-width:100%">
-                        <div class="text">Carpathians 2009</div>
-                    </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">6 / 6</div>
-                        <img src="img/Groep/Dalarna.jpg" style="max-width:100%">
-                        <div class="text">Dalarna 2014</div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="card">
-            <img class="card-img-top" src="img/Other/Tikkie.jpg" alt="Tikkie" style="width: 350px">
+            <img class="card-img-top" src="img/Other/Tikkie.jpg" alt="Tikkie">
             <div class="card-header">
                 {{ trans('info.lappen_status') }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ trans('info.lappen_gestort') }}</h5>
+                <div class="card-title">{{ trans('info.lappen_gestort') }}</div>
                 <ol>
                     @foreach ($users as $user)
                         <div class="row">
-                            <div class="col-sm">{{ $user->first_name}}</div>
-                            <div class="col-sm text-right">{{ money_format('%i', $user->paid) }}</div>
+                            <div class="col-6">{{ $user->first_name}}</div>
+                            <div class="col-6 text-right">{{ money_format('%i', $user->paid) }}</div>
                         </div>
                     @endforeach
                 </ol>

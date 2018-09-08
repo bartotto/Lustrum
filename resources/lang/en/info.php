@@ -79,7 +79,7 @@ return [
     'luco_descr5'       => 'Simply the best',
     'made_by'           => 'by',
     'made_on'           => 'Created at',
-    'map'               => 'Open Google maps',
+    'map'               => 'Google maps',
     'matrix'            => 'Participants matrix',
     'matrix_click'      => 'Click for matrix',
     'mobile'            => 'Mobile',

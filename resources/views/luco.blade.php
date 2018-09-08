@@ -19,6 +19,7 @@
                 <div id="links">
                     <a href="img/Luco/Kenya.png" title="Kenya"><img src="img/Luco/Thumbnails/Kenya.png" alt="Kenya"></a>
                     <a href="img/Luco/Oman.jpg" title="Oman"><img src="img/Luco/Thumbnails/Oman.jpg" alt="Oman"></a>
+                    <a href="img/Luco/Oman1.jpg" title="Oman"><img src="img/Luco/Thumbnails/Oman1.jpg" alt="Oman1"></a>
                     <a href="img/Luco/Oman2.jpg" title="Oman"><img src="img/Luco/Thumbnails/Oman2.jpg" alt="Oman2"></a>
                     <a href="img/Luco/Carpathians.png" title="Carpathians"><img src="img/Luco/Thumbnails/Carpathians.png" alt="Carpathians"></a>
                     <a href="img/Luco/Carpathians1.jpg" title="Carpathians"><img src="img/Luco/Thumbnails/Carpathians1.jpg" alt="Carpathians"></a>

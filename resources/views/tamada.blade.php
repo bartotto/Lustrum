@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('subtitle', '| '.trans('info.underway'))
+@section('subtitle', '| '.trans('info.tamada'))
 @section('content')
     <div class="card-columns">
         <div class="card">
@@ -26,19 +26,6 @@
             </div>
             <div class="card-footer text-muted">
                 <p>28 aug 18</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="img/Other/Praat_Slaap.jpg" alt="Slapen" height="auto" width="48">
-            <div class="card-header">
-                {{ trans('info.ps') }}
-            </div>
-            <div class="card-body">
-                <div class="card-title">{{ trans('info.ps_who') }}</div>
-                <p>{{ trans('info.to_follow') }}</p>
-            </div>
-            <div class="card-footer text-muted">
-                <p>15 aug 18</p>
             </div>
         </div>
         <div class="card">

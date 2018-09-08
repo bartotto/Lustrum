@@ -29,8 +29,8 @@ class HomeController extends Controller {
         return view('home');
         }
    
-    public function logo() {
-        return view('logo');
+    public function tamada() {
+        return view('tamada');
         }
     
     public function destination() {

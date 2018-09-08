@@ -27,7 +27,7 @@
                             {{ trans('info.destination') }}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                            <a class="dropdown-item" href="{{ route('destination') }}  ">{{ trans('info.destination') }}</a>
+                            <a class="dropdown-item" href="{{ route('destination') }}  ">{{ trans('info.slides') }}</a>
                             <a class="dropdown-item" href="{{ route('destination_map') }}  ">{{ trans('info.map') }}</a>
                         </div>
                     </li>

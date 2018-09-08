@@ -131,6 +131,7 @@ return [
     'remember_me'       => 'Remember me',
     'save'              => 'Save',
     'size'              => 'Size',
+    'slides'            => 'Slides',
     'strand_borrel'     => 'Beach drink',
     'suggestions'       => 'Please send your suggestions and ideas to improve this site by email to ',
     'title_here'        => 'Set a title for your comment',

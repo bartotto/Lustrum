@@ -133,6 +133,7 @@ return [
     'remember_me'       => 'Onthoud mij',
     'save'              => 'Sla op',
     'size'              => 'Kleding',
+    'slides'            => 'Slides',
     'strand_borrel'     => 'Strand borrel',
     'suggestions'       => 'Graag uw suggesties en ideeën om deze site te verbeteren per email naar ',
     'title_here'        => 'Kies een titel voor uw commentaar',

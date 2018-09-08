@@ -5,7 +5,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Tamada.jpg" alt="Tamada" height="auto" width="58">
             <div class="card-header">
-                <h2>Tamada - An ancient Georgian tradition</h2>
+                Tamada - An ancient Georgian tradition
             </div>
             <div class="card-body">
                 <h5 class="card-title">As indicated by the President of our Luco Committee,</h5>
@@ -31,7 +31,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Praat_Slaap.jpg" alt="Slapen" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.ps') }}</h2>
+                {{ trans('info.ps') }}
             </div>
             <div class="card-body">
                 <h5 class="card-title">{{ trans('info.ps_who') }}</h5>
@@ -44,7 +44,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Question.jpg" alt="Vraag?" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.questions') }}</h2>
+                {{ trans('info.questions') }}
             </div>
             <div class="card-body">
                 <h5 class="card-title">{{ trans('info.questions_go_to') }}<a href="/posts">Blog</a>{{ trans('info.questions_ask') }}</h5>

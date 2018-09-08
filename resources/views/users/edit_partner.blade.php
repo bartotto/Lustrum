@@ -4,45 +4,39 @@
     <div class="card-columns">
         <div class="card">
             <div class="card-header">
-                <h2>{{ trans('info.details_all') }}</h2>
+                {{ trans('info.details_all') }}
             </div>
             <div class="card-body">
                 @if(Auth::id() == $user->id)
-                    <div class="btn btn-default">
+                    <div class="btn btn-light">
                         {{ trans('info.edit') }}
                     </div>
                 @endif
-                <TABLE BORDER="0">
+                <TABLE>
                     <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.name') }}</TD>
-                        <TD WIDTH="250" HEIGHT="30">{{ $user->first_name }} {{ $user->name }}</TD>
+                        <TD WIDTH="165">{{ trans('info.name') }}</TD>
+                        <TD WIDTH="250">{{ $user->first_name }} {{ $user->name }}</TD>
                     </TR>
                     <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.dob') }}</TD>
+                        <TD WIDTH="165">{{ trans('info.dob') }}</TD>
                         <TD>{{ date("d-m-y", strtotime($user->dob)) }}</TD>
                     </TR>
                     <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.email_address') }}</TD>
+                        <TD WIDTH="165">{{ trans('info.email_address') }}</TD>
                         <TD>{{ $user->email }}</TD>
                     </TR>
                     <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.home_address') }}</TD>
+                        <TD WIDTH="165">{{ trans('info.home_address') }}</TD>
                         <TD>{{ $user->home_address }}<br>{{ $user->home_postalcode }} {{ $user->home_city }}<br>{{ $user->home_country }}</TD>
                     </TR>
                     <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.home_tel') }}</TD>
-                        <TD WIDTH="250" HEIGHT="30">{{ $user->home_tel }}</TD>
+                        <TD WIDTH="165">{{ trans('info.home_tel') }}</TD>
+                        <TD WIDTH="250">{{ $user->home_tel }}</TD>
                     </TR>
                     <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.mobile') }}</TD>
-                        <TD WIDTH="250" HEIGHT="30">{{ $user->mobile }}</TD>
+                        <TD WIDTH="165">{{ trans('info.mobile') }}</TD>
+                        <TD WIDTH="250">{{ $user->mobile }}</TD>
                     </TR>
-                    @if(substr(Auth::user()->user_role,0,6) == 'Member')
-                        <TR>
-                            <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.size') }}</TD>
-                            <TD>{{ $user->size }}</TD>
-                        </TR>
-                    @endif
                 </TABLE>
             </div> 
             <div class="card-footer text-muted text-left">
@@ -53,7 +47,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h2>{{ trans('info.edit_user') }}</h2> 
+                {{ trans('info.edit_user') }}
             </div>
             <div class="card-body">
                 <form method="POST" action="/users/{{ $user->id }}">
@@ -66,28 +60,29 @@
                         <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>
                     </div>
                    <div class="form-group row">
-                        <label for="partner" class="col-sm-3 col-form-label">{{ trans('info.name') }}</label>
+                        <label for="partner" class="col-sm-4 col-form-label">{{ trans('info.name') }}</label>
                         <div class="col-4">
                             <input type="text" class="form-control" value="{{ $user->partner_first_name }}" id="partner_first_name" name="partner_first_name" placeholder="{{ trans('info.first_name') }}">
                         </div>
-                        <div class="col-5">
+                        <div class="col-4">
                             <input type="text" class="form-control" value="{{ $user->partner }}" id="partner" name="partner" placeholder="{{ trans('info.last_name') }}">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="partner_email" class="col-sm-3 col-form-label">{{ trans('info.partner_email') }}</label>
-                        <div class="col-sm-9">
+                        <label for="partner_email" class="col-sm-4 col-form-label">{{ trans('info.partner_email') }}</label>
+                        <div class="col-sm-8">
                             <input class="form-control" type="text" value="{{ $user->partner_email }}" id="partner_email" name="partner_email" required>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="partner_mobile" class="col-sm-3 col-form-label">{{ trans('info.partner_mobile') }}</label>
-                        <div class="col-sm-9">
+                        <label for="partner_mobile" class="col-sm-4 col-form-label">{{ trans('info.partner_mobile') }}</label>
+                        <div class="col-sm-8">
                             <input class="form-control" type="text" value="{{ $user->partner_mobile }}" id="partner_mobile" name="partner_mobile" placeholder="{{ trans('info.mobile_ph') }}" required>
                         </div>
                     </div>
                     <div class="form-group row">        
-                        <label for="partner_visible" class="radio-inline col-sm-9 col-form-label">{{ trans('info.partner_visible') }}<sup>*</sup>&nbsp;
+                        <label for="partner_visible" class="col-sm-4 col-form-label">{{ trans('info.partner_visible') }}<sup>*</sup></label>
+                        <div class="col-sm-8 radio-inline">   
                             @if($user->partner_visible == 'No')            
                                 <input type="radio" name="partner_visible" value="No" checked> {{ trans('info.no') }}&nbsp;&nbsp;
                                 <input type="radio" name="partner_visible" value="Yes"> {{ trans('info.yes') }}  
@@ -95,10 +90,11 @@
                                 <input type="radio" name="partner_visible" value="No"> {{ trans('info.no') }}&nbsp;&nbsp;
                                 <input type="radio" name="partner_visible" value="Yes" checked> {{ trans('info.yes') }}
                             @endif
-                        </label>
+                        </div>
                     </div>
                     <div class="form-group row">         
-                        <label for="partner_login" class="radio-inline col-sm-9 col-form-label" >{{ trans('info.partner_login') }}&nbsp;&nbsp;
+                        <label for="partner_login" class="radio-inline col-sm-4 col-form-label" >{{ trans('info.partner_login') }}</label>
+                        <div class="col-sm-8 radio-inline"> 
                             @if($user->partner_login == 'No')            
                                 <input type="radio" name="partner_login" value="No" checked> {{ trans('info.no') }}&nbsp;&nbsp;
                                 <input type="radio" name="partner_login" value="Yes"> {{ trans('info.yes') }}  
@@ -106,7 +102,7 @@
                                 <input type="radio" name="partner_login" value="No"> {{ trans('info.no') }}&nbsp;&nbsp;
                                 <input type="radio" name="partner_login" value="Yes" checked> {{ trans('info.yes') }}
                             @endif
-                        </label>
+                        </div>
                     </div>    
                     @include ('layouts.errors')
                 </form>
@@ -120,17 +116,23 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h2>{{ trans('info.details_other') }}</h2>
+                {{ trans('info.details_other') }}
             </div>
             <div class="card-body">
                 @if(Auth::id() == $user->id)
-                    <a class="btn btn-default">
+                    <a class="btn btn-light">
                         {{ trans('info.edit') }}
                     </a>
                 @endif
-                <TABLE BORDER="0">
+                <TABLE>
+                    @if(substr(Auth::user()->user_role,0,6) == 'Member')
+                        <TR>
+                            <TD WIDTH="165">{{ trans('info.size') }}</TD>
+                            <TD>{{ $user->size }}</TD>
+                        </TR>
+                    @endif
                     <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.strand_borrel') }}</TD>
+                        <TD WIDTH="165">{{ trans('info.strand_borrel') }}</TD>
                         <TD>
                             @if($user->strandborrel=='Yes')
                                 {{ trans('info.yes') }}
@@ -140,7 +142,7 @@
                         </TD>
                     </TR>
                     <TR>
-                        <TD WIDTH="165" HEIGHT="30" STYLE="padding-left: 5px">{{ trans('info.last_login') }}</TD>
+                        <TD WIDTH="165">{{ trans('info.last_login') }}</TD>
                         <TD>{{ Auth::user()->previous_last_login->format('d M') }} om {{ Auth::user()->previous_last_login->format('H:i') }}</TD>
                     </TR>
                 </TABLE>

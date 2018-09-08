@@ -5,7 +5,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Kaart_Aart.png" alt="Kaart" height="auto" width="58">
             <div class="card-header">
-                <h2>{{ trans('info.program') }}</h2>
+                {{ trans('info.program') }}
             </div>
             <div class="card-body">
                 <h5 class="card-title">{{ trans('info.program_do') }}</h5>
@@ -27,7 +27,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Praat_Slaap.jpg" alt="Slapen" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.ps') }}</h2>
+                {{ trans('info.ps') }}
             </div>
             <div class="card-body">
                 <h5 class="card-title">{{ trans('info.ps_who') }}</h5>
@@ -40,7 +40,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Burduli_David.jpg" alt="Gids" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.our_guide') }}</h2>
+                {{ trans('info.our_guide') }}
             </div>
             <div class="card-body">
                 <h5 class="card-title">{{ trans('info.guide_info') }}</h5>
@@ -53,7 +53,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Burduli_Mamuka.jpg" alt="Gids" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.our_contact') }}</h2>
+                {{ trans('info.our_contact') }}
             </div>
             <div class="card-body">
                 <h5 class="card-title">{{ trans('info.contact_info') }}</h5>
@@ -66,7 +66,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Question.jpg" alt="Vraag?" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.questions') }}</h2>
+                {{ trans('info.questions') }}
             </div>
             <div class="card-body">
                 <h5 class="card-title">{{ trans('info.questions_go_to') }}<a href="/posts">Blog</a>{{ trans('info.questions_ask') }}</h5>

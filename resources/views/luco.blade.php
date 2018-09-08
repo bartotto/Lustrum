@@ -4,7 +4,7 @@
     <div class="card-columns">
         <div class="card">
             <div class="card-header">
-                <h2>{{ trans('info.luco') }}</h2>
+                {{ trans('info.luco') }}
             </div>
             <div class="card-body">
                 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-start-slideshow="true">

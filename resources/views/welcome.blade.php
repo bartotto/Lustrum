@@ -5,7 +5,7 @@
         <div class="card card">
             <img class="card-img-top" src="img/Other/Hilarisch.jpg" alt="Kaukasisch Hilarisch" height="auto" width="58">
             <div class="card-header">
-                <h2>{{ trans('info.welcome') }}</h2>
+                {{ trans('info.welcome') }}
             </div>
             <div class="card-body">
                 <p>{{ trans('info.suggestions') }}<a href="mailto:info@bartotto.com?SUBJECT=Wachtwoord probleem">luco@lustrumcaligula.com</a></p>
@@ -19,7 +19,7 @@
         <div class="card border-success">
             <img class="card-img-top" src="img/Other/Login.png" alt="Login safely" height="auto" width="58">
             <div class="card-header">
-                <h2>Safety first!</h2>
+                Safety first!
             </div>
             @if(Auth::user()->previous_last_login < Auth::user()->last_login)
                 <div class="card-body text-success">

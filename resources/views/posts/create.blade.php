@@ -6,7 +6,7 @@
             <div class="col-lg-9 col-md-9 col-sm-9">
                 <div class="card card-block">
                     <div class="card-header">
-                        <h2>{{ trans('info.post_create') }}</h2>
+                        {{ trans('info.post_create') }}
                         <button class="btn btn-primary" onclick="goBack()">
                             {{ trans('info.cancel') }}
                         </button>
@@ -33,7 +33,7 @@
             <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="card card-block">
                     <div class="card-header">
-                        <h4>{{ trans('info.blog_descr') }}</h4>
+                        {{ trans('info.blog_descr') }}
                     </div>
                     <div class="card-body">   
                         @include ('layouts.sidebar')

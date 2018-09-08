@@ -4,7 +4,7 @@
     <div class="card-columns">
         <div class="card">  
             <div class="card-header">
-                <h2>{{ trans('info.login_start') }}</h2>
+                {{ trans('info.login_start') }}
             </div>
             <img class="card-img-top" src="/img/Club/Jaarclub_Rdam.jpg" alt="Rotterdam 1983" height="auto" width="48">
             <br>
@@ -20,7 +20,7 @@
         </div>
         <div class="card">  
             <div class="card-header">
-                <h2>{{ trans('auth.reset_password') }}</h2>
+                {{ trans('auth.reset_password') }}
             </div>
             <div class="card-body">
                 <form class="form-horizontal" method="POST" action="{{ route('password.request') }}">

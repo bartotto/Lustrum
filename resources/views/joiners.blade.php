@@ -4,7 +4,7 @@
     <div class="card-columns">
         <div class="card">
             <div class="card-header">
-                <h2>{{ trans('info.joiners') }}</h2>
+                {{ trans('info.joiners') }}
             </div>
             <div class="card-body">
                 @foreach ($users as $user)
@@ -27,7 +27,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h2>{{ trans('info.matrix') }}</h2>
+                {{ trans('info.matrix') }}
             </div>
             <div class="card-body">
                 <img id="myImg" src="img/Other/Matrix_small.png" alt="Matrix">
@@ -43,7 +43,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h2>{{ trans('info.trips_descr2') }}</h2>
+                {{ trans('info.trips_descr2') }}
             </div>
             <div class="card-body"> 
                 <div class="mySlides fade">

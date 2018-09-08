@@ -7,7 +7,7 @@
                 <a href="http://www.tabula.ge/en/story/115667-civil-society-activists-protest-lari-depreciation" target="_blank">
                     <img class="card-img-top" src="img/Other/Larikoek.jpg" alt="Lariekoek" style="width: 365px">
                 </a>
-                <h2>{{ trans('info.budget') }}</h2>
+                {{ trans('info.budget') }}
             </div>
             <div class="card-body">
                 <p class="card-text">{{ trans('info.budget_descr') }}</p>
@@ -76,7 +76,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Lappen.jpg" alt="Lappen" style="width: 368px">
             <div class="card-header">
-                <h2>{{ trans('info.lappen') }}</h2>
+                {{ trans('info.lappen') }}
             </div>
             <div class="card-body">
                 <h5 class="card-title">{{ trans('info.lappen_descr') }}</h5>
@@ -123,7 +123,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Tikkie.jpg" alt="Tikkie" style="width: 350px">
             <div class="card-header">
-                <h2>{{ trans('info.lappen_status') }}</h2>
+                {{ trans('info.lappen_status') }}
             </div>
             <div class="card-body">
                 <h5 class="card-title">{{ trans('info.lappen_gestort') }}</h5>

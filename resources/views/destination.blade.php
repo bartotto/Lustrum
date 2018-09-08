@@ -5,7 +5,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Destination/Kaukasus.jpg" alt="Kaukasus" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.caucasus') }}</h2>
+                {{ trans('info.caucasus') }}
             </div>
             <div class="card-body">
 
@@ -14,7 +14,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Destination/Kaukasus_2.jpg" alt="Kaukasus" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.caucasus1') }}</h2>
+                {{ trans('info.caucasus1') }}
             </div>
             <div class="card-body">                      
               
@@ -23,7 +23,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Destination/Kaukasus_3.jpg" alt="Kaukasus" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.caucasus2') }}</h2>
+                {{ trans('info.caucasus2') }}
             </div>
             <div class="card-body">                      
                
@@ -32,7 +32,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Destination/Kaukasus_4.jpg" alt="Kaukasus" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.caucasus3') }}</h2>
+                {{ trans('info.caucasus3') }}
             </div>
             <div class="card-body">                      
               
@@ -41,7 +41,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Destination/Klimaat.jpg" alt="Klimaat" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.caucasus4') }}</h2>
+                {{ trans('info.caucasus4') }}
             </div>
             <div class="card-body">                      
               
@@ -50,7 +50,7 @@
         <div class="card">
             <div id="map"></div>
             <div class="card-header">
-                <h2>{{ trans('info.map') }}</h2>
+                {{ trans('info.map') }}
             </div>
             <div class="card-body">
                                     

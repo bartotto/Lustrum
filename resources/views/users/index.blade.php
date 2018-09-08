@@ -4,7 +4,7 @@
     <div class="card-columns">
         <div class="card">
             <div class="card-header">
-                <h2>{{ trans('info.members_list') }}</h2>
+                {{ trans('info.members_list') }}
             </div>
             <div class="card-body">
                 @foreach ($users as $user)
@@ -25,7 +25,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h2>{{ trans('info.pictures_club') }}</h2>
+                {{ trans('info.pictures_club') }}
             </div>
             <div class="card-body">
                 <div id="blueimp-gallery-club" class="blueimp-gallery blueimp-gallery-controls">

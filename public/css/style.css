@@ -207,6 +207,11 @@ html, body {
 .card-img-top {
     margin: auto;
     }
+
+.card-header {
+    font-size: 20px;
+    font-weight: 500;
+    }
     
 .card-footer {
     font-size: 12px;

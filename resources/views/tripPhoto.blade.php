@@ -4,7 +4,7 @@
     <div class="card-columns">
         <div class="card">
             <div class="card-header">
-                <h2>Kenya 1989</h2>
+                Kenya 1989
             </div>
             <div class="card-body">
                 <div id="blueimp-gallery-Kenya" class="blueimp-gallery blueimp-gallery-controls">
@@ -36,7 +36,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h2>Lappland 1994</h2>
+                Lappland 1994
             </div>
             <div class="card-body">
                 <div id="blueimp-gallery-Lappland" class="blueimp-gallery blueimp-gallery-controls">
@@ -68,7 +68,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h2>Cameroun 1999</h2>
+                Cameroun 1999
             </div>
             <div class="card-body">
                 <div id="blueimp-gallery-Cameroun" class="blueimp-gallery blueimp-gallery-controls">
@@ -101,7 +101,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h2>Oman 2005</h2>
+                Oman 2005
             </div>
             <div class="card-body">
                 <div id="blueimp-gallery-Oman" class="blueimp-gallery blueimp-gallery-controls">
@@ -134,7 +134,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h2>Carpathians 2009</h2>
+                Carpathians 2009
             </div>
             <div class="card-body">
                 <div id="blueimp-gallery-Carpathians" class="blueimp-gallery blueimp-gallery-controls">
@@ -167,7 +167,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h2>Dalarna 2014</h2>
+                Dalarna 2014
             </div>
             <div class="card-body">
                 <div id="blueimp-gallery-Dalarna" class="blueimp-gallery blueimp-gallery-controls">
@@ -200,7 +200,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h2>Georgia 2018</h2>
+                Georgia 2018
             </div>
             <div class="card-body">
                 <div id="blueimp-gallery-Georgia" class="blueimp-gallery blueimp-gallery-controls">

@@ -5,7 +5,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Passport.jpg" alt="Passport" height="auto" width="18">
             <div class="card-header">
-                <h2>{{ trans('info.last_login') }}</h2>
+                {{ trans('info.last_login') }}
             </div>
             <div class="card-body">
                 <h5 class="card-title">Voor het laatst ingelogd:</h5>
@@ -32,7 +32,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Alex.jpg" alt="Alex" height="auto" width="48">
             <div class="card-header">
-                <h2>Kledinglijn maten</h2>
+                Kledinglijn maten
             </div>
             <div class="card-body">
                 <h5 class="card-title">Al opgegeven:</h5>
@@ -58,7 +58,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Strandborrel.jpg" alt="Strandborrel" height="auto" width="48">
             <div class="card-header">
-                <h2>Partners eigen login</h2>
+                Partners eigen login
             </div>
             <div class="card-body">
                 <h5 class="card-title"></h5>

@@ -5,7 +5,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/KaukasischHilarisch.jpeg" alt="Logo Georgia" style="width: 284px">
             <div class="card-header">
-                <h2>{{ trans('info.logo_new') }}</h2>
+                {{ trans('info.logo_new') }}
             </div>
             <div class="card-body">
 
@@ -14,7 +14,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Rugzak.jpg" alt="Paklijst" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.packlist') }}</h2>
+                {{ trans('info.packlist') }}
             </div>
             <div class="card-block">
                 <div class="card-body">
@@ -57,7 +57,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Strandborrel/2.jpg" alt="Strandborrel" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.strand_borrel') }}</h2>
+                {{ trans('info.strand_borrel') }}
             </div>
             <div class="card-block">
                 <div class="card-body">
@@ -127,7 +127,7 @@
         <div class="card" style="width: 100%">
             <img class="card-img-top" src="img/Other/Aart.jpg" alt="Aart" style="width: 284px">
             <div class="card-header">
-                <h2>{{ trans('info.president') }}</h2>
+                {{ trans('info.president') }}
             </div>
             <div class="card-body">
                 <p>Mijne Heeren,<br>Beste Clubgenoten,</p>
@@ -151,7 +151,7 @@
                     <img class="card-img-top" src="img/Other/Larikoek.jpg" alt="Larikoek" style="width: 384px">
                 </a>
                 <div class="card-header">
-                    <h2>{{ trans('info.lappen') }}</h2>
+                    {{ trans('info.lappen') }}
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">{{ trans('info.lappen_descr') }}</h5>
@@ -164,7 +164,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Departure.jpg" alt="Departure" style="width: 284px">
             <div class="card-header">
-                <h2>{{ trans('info.when') }}</h2>
+                {{ trans('info.when') }}
             </div>
             <div class="card-body">
                 <h5 class="card-title">{{ trans('info.when_descr') }}</h5>
@@ -175,7 +175,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Passport.jpg" alt="Paspoort" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.passport') }}</h2>
+                {{ trans('info.passport') }}
             </div>
             <div class="card-block">
                 <div class="card-body">
@@ -194,7 +194,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Insurance.jpg" alt="Verzekering" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.insurance') }}</h2>
+                {{ trans('info.insurance') }}
             </div>
             <div class="card-block">
                 <div class="card-body">
@@ -209,7 +209,7 @@
         <div class="card">
             <img class="card-img-top" src="img/Other/Question.jpg" alt="Vraag?" height="auto" width="48">
             <div class="card-header">
-                <h2>{{ trans('info.questions') }}</h2>
+                {{ trans('info.questions') }}
             </div>
             <div class="card-block">
                 <div class="card-body">

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('subtitle', '| '.trans('info.destination'))
+@section('subtitle', '| '.trans('info.slides'))
 @section('content')
     <div class="row">
         <div class="col-sm-12">

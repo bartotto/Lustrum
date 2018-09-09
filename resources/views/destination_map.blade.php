@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('subtitle', '| '.trans('info.destination'))
+@section('subtitle', '| '.trans('info.map'))
 @section('content')
     <div id="map"></div>
     <script>

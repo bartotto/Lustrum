@@ -13,7 +13,7 @@
                     </a>
                 </li>
             @endforeach
-            <li><a href="{{ route('posts')   }}">{{ trans('info.all') }}</a></li>
+            <li><a href="{{ route('posts.index') }}">{{ trans('info.all') }}</a></li>
         </ol>
     </div>
 </div>

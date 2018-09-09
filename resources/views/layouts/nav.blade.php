@@ -33,7 +33,7 @@
                         <a class="nav-link" href="{{ route('program') }}">{{ trans('info.program') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('posts')   }}">{{ trans('info.blog') }}</a>
+                        <a class="nav-link" href="{{ route('posts.index')   }}">{{ trans('info.blog') }}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('tripPhoto') }}">{{ trans('info.trips') }}</a>

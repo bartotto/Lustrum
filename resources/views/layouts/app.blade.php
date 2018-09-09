@@ -59,5 +59,10 @@
             window.history.back()
             }
         </script>
+        <script>
+            $(".delete").on("submit", function(){
+                return confirm("{{ trans('info.are_you_sure') }}");
+            });
+        </script>
     </body>
 </html>

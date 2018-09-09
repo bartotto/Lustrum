@@ -114,7 +114,7 @@ return [
     'pictures_more'     => 'De Webmaster ontvangt graag meer goede foto\'s!',
     'post_blog'         => 'Caligula\'s Blog',
     'post_body'         => 'Tekst',
-    'post_create'       => 'Schrijf een nieuwe bijdrage:',
+    'post_create'       => 'Schrijf een nieuwe bijdrage',
     'post_create_success' => 'Dank! Jouw nieuwe bijdrage is succesvol toegevoegd',
     'post_delete_success' => '" is succesvol verwijderd',
     'post_descr'        => 'of klik op de titel van een bestaande bijdrage om commentaar te leveren',

@@ -9,24 +9,27 @@
                 </div>
                 <div class="card-body">
                     <p class="blog-post-title">{{ $post->title }}</p>
-                    <p class="blog-post-meta">
-                        {{ $post->user->first_name }},
-                        {{ $post->created_at->diffForHumans() }}
-                    </p>
-                    {{ $post->body }}
-                    <p>
+                    <p class="blog-post-meta">{{ $post->user->first_name }}, {{ $post->created_at->diffForHumans() }}</p>
+                    <p>{{ $post->body }}</p>
+                    @if(Auth::id() == $post->user_id)
+                        <div class="entire-thing">
+                            <div class="ad-left">
+                                <button class="btn btn-primary" onclick="goBack()">{{ trans('info.back') }}</button>&nbsp;
+                                <a class="btn btn-primary" href="{{ route('posts.edit', $post->id) }}">{{ trans('info.edit') }}</a>&nbsp;&nbsp;
+                            </div>
+                            <div class="ad-left">
+                                <form class="delete" action="{{ route('posts.destroy', $post->id)}}" method="post">
+                                    @csrf
+                                    @method('DELETE')
+                                    <input class="btn btn-warning" type="submit" value="{{ trans('info.delete') }}">
+                                </form>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    @else
                         <button class="btn btn-primary" onclick="goBack()">{{ trans('info.back') }}</button>
-                        @if(Auth::id() == $post->user_id)
-                            <a class="btn btn-primary" href="{{ route('posts.edit', $post->id) }}">{{ trans('info.edit') }}</a>
-                            <form class="delete" action="{{ route('posts.destroy', $post->id)}}" method="post">
-                                <!-- @csrf
-                                @method('DELETE') -->
-                                <input type="hidden" name="_method" value="DELETE">
-                                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                                <input class="btn btn-warning" type="submit" value="{{ trans('info.delete') }}">
-                            </form>
-                        @endif
-                    </p>
+                    @endif
+                    <br>
                     <hr>
                     <div class="comments">
                         @foreach ($post->comments as $comment)

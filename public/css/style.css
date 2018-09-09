@@ -160,8 +160,8 @@ html, body {
 
 /* Blog */  
 .blog-post {
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-bottom: 20px;
     }
     
 .blog-post-title {
@@ -172,6 +172,7 @@ html, body {
     
 .blog-post-meta {
     margin-bottom: 5px;
+    font-size: 14px;
     color: #999;
     }
     
@@ -241,3 +242,11 @@ body {
     padding:10px;
     margin-top:5px;
     }
+    
+.ad-left {
+    float: left;
+    }
+
+.entire-thing {
+    width: 360px;
+    } 

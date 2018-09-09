@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header">{{ trans('info.post_blog') }}</div>
                     <div class="card-body">
-                        <div class="card-title">{{ trans('info.post_create') }}</div>
+                        <div class="card-title">{{ trans('info.post_create') }}:</div>
                         @include ('layouts.errors')
                         <form method="post" action="{{ route('posts.store') }}">
                             <div class="form-group">

@@ -5,8 +5,8 @@
         </a>
     </p>
     <p class="blog-post-meta">
-        <h6>{{ $post->user->first_name }},
-        {{ $post->created_at->diffForHumans() }}</h6>
+        {{ $post->user->first_name }},
+        {{ $post->created_at->diffForHumans() }}
     </p>
     {{ $post->body }}
     <hr>

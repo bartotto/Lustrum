@@ -5,10 +5,9 @@
         <div class="row">
             <div class="col-lg-9 col-md-9 col-sm-9">
                 <div class="card">
-                    <div class="card-header">
-                        {{ trans('info.post_edit') }}
-                    </div>
+                    <div class="card-header">{{ trans('info.post_blog') }}</div>
                     <div class="card-body">
+                        <div class="card-title">{{ trans('info.post_edit') }}</div>
                         @include ('layouts.errors')
                         <form method="post" action="{{ route('posts.update', $post->id) }}">
                             @method('PATCH')

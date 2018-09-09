@@ -12,7 +12,7 @@
                 <div class="card-header">{{ trans('info.post_blog') }}</div>
                 <div class="card-body">
                     <a href="{{ route('posts.create') }}" class="btn btn-primary">{{ trans('info.post_create') }}</a>
-                    <div class="card-title">{{ trans('info.post_descr') }}</div>
+                    ({{ trans('info.post_descr') }})<br><br>
                     @foreach ($posts as $post)
                         @include ('posts.post')
                     @endforeach

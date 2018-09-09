@@ -161,17 +161,17 @@ html, body {
 /* Blog */  
 .blog-post {
     margin-left: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     }
     
 .blog-post-title {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     font-size: 20px;
     font-weight: bold;
     }
     
 .blog-post-meta {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     font-size: 14px;
     color: #999;
     }
@@ -186,7 +186,7 @@ html, body {
     
 .blog-comment {
     margin-left: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     }
     
 .blog-comment-title {
@@ -202,9 +202,10 @@ html, body {
     }
     
 .form-comment {
-    margin-left: 60px;
+    margin-left: 30px;
     }
-    
+
+/* Cards */ 
 .card-img-top {
     margin: auto;
     }
@@ -223,7 +224,8 @@ html, body {
     font-size: 12px;
     text-align: center;
     }
-    
+
+/* Photo Gallery */ 
 body {
     overflow-y: scroll !important;
     }
@@ -242,7 +244,8 @@ body {
     padding:10px;
     margin-top:5px;
     }
-    
+
+/* Blog: knoppen naast elkaar */ 
 .ad-left {
     float: left;
     }

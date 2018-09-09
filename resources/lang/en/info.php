@@ -113,7 +113,7 @@ return [
     'pictures_more'     => 'If you have good pictures to add, please send to the Webmaster',
     'post_blog'         => 'Caligula\'s Blog',
     'post_body'         => 'Body',
-    'post_create'       => 'Publish a new post:',
+    'post_create'       => 'Publish a new post',
     'post_create_success' => 'Thank you! Your post has been published successfully',
     'post_delete_success' => '" has been deleted successfully',
     'post_descr'        => 'or click on the title of an existing post to add a comment',

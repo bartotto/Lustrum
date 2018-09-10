@@ -1,6 +1,8 @@
 <div class="blog-comment">
     <p class="blog-comment-title">
-        {{ $comment['title'] }}
+        <a href="/comments/{{ $comment->id }}">
+            {{ $comment['title'] }}
+        </a>
     </p>
     <p class="blog-comment-meta">
         {{ $comment['user']->first_name }},

@@ -2,10 +2,15 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Post;
 use Carbon\Carbon;
 
 class Post extends Model {
+    
+    use SoftDeletes;
+    
+    protected $dates = ['deleted_at'];
     
     protected $fillable = [
         'user_id', 'title', 'body'

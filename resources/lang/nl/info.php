@@ -23,6 +23,8 @@ return [
     'club'              => 'Club',
     'comment_add'       => 'Voeg commentaar toe',
     'comment_here'      => 'Uw commentaar hier',
+    'comment_update_success' => 'Jouw commentaar met de titel "',
+    'comment_your'      => 'Dit is uw commentaar met de titel: ',
     'confirm_pw'        => 'Bevestig wachtwoord',
     'contact_info'      => 'Mamuka Burduli',
     'contact_info2'     => 'De algehele leiding heeft zijn David\'s vader, hierboven met zijn vrouw.',

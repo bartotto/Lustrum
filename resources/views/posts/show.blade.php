@@ -37,7 +37,7 @@
                         @endforeach
                     </div>
                     <hr>
-                    <div class=card">
+                    <div class="card">
                         @include ('layouts.errors')
                         <form class="form-comment" method="POST" action="/posts/{{ $post->id }}/comment">
                             {{ csrf_field() }}        

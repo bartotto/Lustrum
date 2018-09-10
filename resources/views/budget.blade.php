@@ -38,8 +38,12 @@
                             <TD align="right">€75</TD>
                         </TR>
                         <TR>
+                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">EHBO kit dokter Berning</TD>
+                            <TD align="right">€6</TD>
+                        </TR>
+                        <TR>
                             <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Overige 'out-of-pocket expenses'</TD>
-                            <TD align="right">€40</TD>
+                            <TD align="right">€34</TD>
                         </TR>
                         <TR>
                             <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 10px">Kosten organisatie (cadeaus, logo, website)</TD>

@@ -23,6 +23,8 @@ return [
     'club'              => 'Club',
     'comment_add'       => 'Add comment',
     'comment_here'      => 'Your comment here',
+    'comment_update_success' => 'Your comment with the title "',
+    'comment_your'      => 'This is your comment with the title: ',
     'confirm_pw'        => 'Confirm Password',
     'contact_info'      => 'Mamuka Burduli',
     'contact_info2'     => 'The company is ran by his David\'s father, pictured above with his wife.',

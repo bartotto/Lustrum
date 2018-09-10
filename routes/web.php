@@ -35,18 +35,9 @@ Route::group(['middleware' => 'language'], function () {
     Route::get('/profile/{user}/edit_other', 'UsersController@edit_other')->name('profile.edit_other');
     Route::patch('/users/{user}', 'UsersController@update');
     
-    /*
-    Route::get('/posts', 'PostsController@index')->name('posts');
-    Route::get('/post/{post}', 'PostsController@show');
-    Route::get('/post/create', 'PostsController@create')->name('post.create');
-    Route::post('/post/store', 'PostsController@store');
-    Route::get('/post/edit/{id}', 'PostsController@edit')->name('post.edit');
-    Route::post('/post/edit/{id}', 'PostsController@update');
-    
-    */
-    
     Route::resource('posts', 'PostsController');
     Route::post('/posts/{post}/comment', 'CommentsController@store');
+    Route::resource('comments', 'CommentsController');
     
     Route::get('/trips', 'TripsController@index')->name('trips');
     Route::get('/trips/{trip}', 'TripsController@show');

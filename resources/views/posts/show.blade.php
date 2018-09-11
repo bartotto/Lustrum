@@ -14,14 +14,20 @@
                     @if(Auth::id() == $post->user_id)
                         <div class="entire-thing">
                             <div class="ad-left">
-                                <button class="btn btn-primary" onclick="goBack()">{{ trans('info.back') }}</button>&nbsp;
-                                <a class="btn btn-primary" href="{{ route('posts.edit', $post->id) }}">{{ trans('info.edit') }}</a>&nbsp;&nbsp;
+                                <button class="btn btn-primary" onclick="goBack()">
+                                    <i class="fa fa-undo"> {{ trans('info.back') }}</i>
+                                </button>
+                                <a class="btn btn-primary" href="{{ route('posts.edit', $post->id) }}">
+                                    <i class="fa fa-edit"> {{ trans('info.edit') }}</i>
+                                </a>&nbsp;
                             </div>
                             <div class="ad-left">
                                 <form class="delete" action="{{ route('posts.destroy', $post->id)}}" method="post">
                                     @csrf
                                     @method('DELETE')
-                                    <input class="btn btn-warning" type="submit" value="{{ trans('info.delete') }}">
+                                    <button type="submit" class="btn btn-warning">
+                                        <i class="fa fa-trash"> {{ trans('info.delete') }}</i>
+                                    </button>
                                 </form>
                             </div>
                             <div class="clear"></div>

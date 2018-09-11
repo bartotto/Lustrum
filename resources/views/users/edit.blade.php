@@ -11,10 +11,8 @@
                     {{ method_field('PATCH') }}
                     {{ csrf_field() }}
                     <div class="form-group">
-                        <button class="btn btn-primary" onclick="goBack()">
-                            {{ trans('info.cancel') }}
-                        </button>
-                        <button type="submit" class="btn btn-primary">{{ trans('info.save') }}</button>
+                        <button class="btn btn-primary" onclick="goBack()"><i class="fa fa-undo"> {{ trans('info.cancel') }}</i></button>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-save"> {{ trans('info.save') }}</i></button>
                     </div>    
                     @include ('layouts.errors')
                     <div class="form-group row">

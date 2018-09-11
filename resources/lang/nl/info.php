@@ -151,6 +151,7 @@ return [
     'trips'             => 'Reizen',
     'trips_descr'       => 'Alle lustrumreizen',
     'trips_descr2'      => 'Nu al voor de 7e keer',
+    'user_update_success' => 'Jouw aanpassingen zijn goed opgeslagen',
     'welcome'           => 'Welkom op de site!',
     'when'              => 'Wanneer gaan we?',
     'when_descr'        => 'Van zaterdagochtend 22 september tot maandagochtend 1 oktober 2018',

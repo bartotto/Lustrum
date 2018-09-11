@@ -30,29 +30,24 @@
                 {{ trans('info.ps') }}
             </div>
             <div class="card-body">
-                @if(Auth::user()->user_role == 'Member+')
-                    <div class="card-title">22/9 Saturday, Telavi</div>
-                    <p>Herman praat min. een uur met Marc, Frans met Eduard, Aart met Bart Jan, Andries met Robert Jan, Bart met Alex, Tuut met Rik Jan en Bernd met Bernard.</p>
-                    <p>Bart Jan slaapt met Aart, Rik Jan met Bart, Andries met Eduard, Tuut met Robert-Jan, Marc met Alex, Frans met Bernd, Herman met Bernard.</p>
-                    <div class="card-title">23/9 Sunday, Omala</div>
-                    <p>De Lustrum Commissie heeft na rijp beraad besloten dat het verantwoord is het Praat schema verder vrij te laten.</p>
-                    <p>Bart Jan slaapt met Herman, Bart met Eduard, Tuut met Q, Robert-Jan met Aart, Frans met Bernard, Alex met Bernd , Marc met Rik Jan/Andries.</p>
-                    <div class="card-title">24/9 Monday, Dartlo</div>
-                    <p>Bart Jan slaapt met Bernard, Marc met Q, Frans met Tuut, Robert Jan met Bart, Rik Jan met Aart, Bernd met Andries, Alex met Herman/Eduard.</p>
-                    <div class="card-title">25/9 Tuesday, Camp 1</div>
-                    <p>Bart Jan slaapt met Alex, , Eduard met Bernard, Q met Robert-Jan, Herman met Marc, Bernd met Rik Jan, Andries met Tuut, Bart met Aart/Frans.</p>
-                    <div class="card-title">26/9 Wednesday, Camp 2</div>
-                    <p>Frans slaapt met Alex, Andries met Herman, Aart met Ed, Bart met Q, BJ met Robert Jan, Rik Jan met Bernard, Tuut met Marc/Bernd.</p>
-                    <div class="card-title">27/9 Thursday, Camp 3</div>
-                    <p>Marc slaapt met Ed, Bart met Bernd, Aart met Tuut, Bart Jan met Rik Jan, Frans met Herman, Robert-Jan met Bernard, Alex met Q/Andries.</p>
-                    <div class="card-title">28/9 Friday, Jomardi Rafting camp</div>
-                    <p>Marc slaapt met Aart, Bart met Tuut, Frans met Andries, Robert-Jan met Ed, Bernard met Q, Alex met Rik Jan, Herman met Bernd/BJ.</p>
-                    <div class="card-title">29+30/9 Saturday & Sunday, Tblisi</div>
-                    <p>Bernd slaapt met Ed, Bart met Herman, Aart met Q,  Marc met Bart Jan, Alex met Bernard, Frans met Rik Jan, Robert-Jan met Andries, Tuut met….??</p>
-                @else
-                    <div class="card-title">{{ trans('info.ps_who') }}</div>
-                    <p>{{ trans('info.to_follow') }}</p>
-                @endif                
+                <div class="card-title">22/9 Saturday, Telavi</div>
+                <p>Herman praat min. een uur met Marc, Frans met Eduard, Aart met Bart Jan, Andries met Robert Jan, Bart met Alex, Tuut met Rik Jan en Bernd met Bernard.</p>
+                <p>Bart Jan slaapt met Aart, Rik Jan met Bart, Andries met Eduard, Tuut met Robert-Jan, Marc met Alex, Frans met Bernd, Herman met Bernard.</p>
+                <div class="card-title">23/9 Sunday, Omala</div>
+                <p>De Lustrum Commissie heeft na rijp beraad besloten dat het verantwoord is het Praat schema verder vrij te laten.</p>
+                <p>Bart Jan slaapt met Herman, Bart met Eduard, Tuut met Q, Robert-Jan met Aart, Frans met Bernard, Alex met Bernd , Marc met Rik Jan/Andries.</p>
+                <div class="card-title">24/9 Monday, Dartlo</div>
+                <p>Bart Jan slaapt met Bernard, Marc met Q, Frans met Tuut, Robert Jan met Bart, Rik Jan met Aart, Bernd met Andries, Alex met Herman/Eduard.</p>
+                <div class="card-title">25/9 Tuesday, Camp 1</div>
+                <p>Bart Jan slaapt met Alex, , Eduard met Bernard, Q met Robert-Jan, Herman met Marc, Bernd met Rik Jan, Andries met Tuut, Bart met Aart/Frans.</p>
+                <div class="card-title">26/9 Wednesday, Camp 2</div>
+                <p>Frans slaapt met Alex, Andries met Herman, Aart met Ed, Bart met Q, BJ met Robert Jan, Rik Jan met Bernard, Tuut met Marc/Bernd.</p>
+                <div class="card-title">27/9 Thursday, Camp 3</div>
+                <p>Marc slaapt met Ed, Bart met Bernd, Aart met Tuut, Bart Jan met Rik Jan, Frans met Herman, Robert-Jan met Bernard, Alex met Q/Andries.</p>
+                <div class="card-title">28/9 Friday, Jomardi Rafting camp</div>
+                <p>Marc slaapt met Aart, Bart met Tuut, Frans met Andries, Robert-Jan met Ed, Bernard met Q, Alex met Rik Jan, Herman met Bernd/BJ.</p>
+                <div class="card-title">29+30/9 Saturday & Sunday, Tblisi</div>
+                <p>Bernd slaapt met Ed, Bart met Herman, Aart met Q,  Marc met Bart Jan, Alex met Bernard, Frans met Rik Jan, Robert-Jan met Andries, Tuut met….??</p>            
             </div>
             <div class="card-footer text-muted">
                 <p>8 sept 18</p>

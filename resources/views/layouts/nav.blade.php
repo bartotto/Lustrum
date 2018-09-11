@@ -43,7 +43,7 @@
                             Info
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                            <a class="dropdown-item" href="{{ route('users') }}  ">{{ trans('info.club') }}</a>
+                            <a class="dropdown-item" href="{{ route('club') }}  ">{{ trans('info.club') }}</a>
                             <a class="dropdown-item" href="{{ route('joiners') }}">{{ trans('info.joiners') }}</a>
                             <a class="dropdown-item" href="{{ route('luco') }}   ">{{ trans('info.luco') }}</a>          
                             @if(substr(Auth::user()->user_role,0,6) == 'Member')

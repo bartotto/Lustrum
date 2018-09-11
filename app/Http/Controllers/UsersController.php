@@ -43,7 +43,7 @@ class UsersController extends Controller {
             'dob' => 'date'
             ]);
         $user->update($request->all());
-        return view('users.show', compact('user'));
+        return view('users.show', compact('user'))->with('successMsg', trans('info.user_update_success'));
         }
         
     public function joiners() {

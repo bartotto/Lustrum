@@ -1,6 +1,10 @@
 @extends('layouts.app')
 @section('subtitle', '| '.trans('info.profile'))
 @section('content')
+    @if(!empty($successMsg))
+        <div class="alert alert-success">{{ $successMsg }}</div>
+    @endif
+    
     <div class="card-columns">
         <div class="card">
             <div class="card-header">
@@ -8,8 +12,8 @@
             </div>
             <div class="card-body">
                 @if(Auth::id() == $user->id)
-                    <a class="btn btn-primary" href="{{ route('profile.edit', ['id'=>$user->id]) }}">
-                        {{ trans('info.edit') }}
+                    <a class="btn btn-primary" href="{{ route('users.edit', ['id'=>$user->id]) }}">
+                        <i class="fa fa-edit"> {{ trans('info.edit') }}</i>
                     </a>
                 @endif
                 <TABLE BORDER="0">
@@ -53,8 +57,8 @@
                     </div>
                     <div class="card-body">
                         @if(Auth::id() == $user->id)
-                            <a class="btn btn-primary" href="{{ route('profile.edit_partner', ['id'=>$user->id]) }}">
-                                {{ trans('info.edit') }}
+                            <a class="btn btn-primary" href="{{ route('users.edit_partner', ['id'=>$user->id]) }}">
+                                <i class="fa fa-edit"> {{ trans('info.edit') }}</i>
                             </a>
                         @endif
                         <TABLE BORDER="0">
@@ -105,8 +109,8 @@
             </div>
             <div class="card-body">
                 @if(Auth::id() == $user->id)
-                    <a class="btn btn-primary" href="{{ route('profile.edit_other', ['id'=>$user->id]) }}">
-                        {{ trans('info.edit') }}
+                    <a class="btn btn-primary" href="{{ route('users.edit_other', ['id'=>$user->id]) }}">
+                        <i class="fa fa-edit"> {{ trans('info.edit') }}</i>
                     </a>
                 @endif
                 <TABLE BORDER="0">

@@ -150,6 +150,7 @@ return [
     'trips'             => 'Trips',
     'trips_descr'       => 'All lustrum trips',
     'trips_descr2'      => 'Now for the 7th time',
+    'user_update_success' => 'Your changes have been saved successfully',
     'welcome'           => 'You are welcome!',
     'when'              => 'When are we off?',
     'when_descr'        => 'From Saturday morning September 22 until Monday morning October 1st, 2018',

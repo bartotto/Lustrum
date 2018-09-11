@@ -28,12 +28,15 @@ Route::group(['middleware' => 'language'], function () {
     Route::get('/budget', 'AdminController@budget')->name('budget');
     Route::get('/admin', 'AdminController@index')->name('admin');
     
-    Route::get('/users', 'UsersController@index')->name('users');
+    
     Route::get('/users/{user}', 'UsersController@show');
-    Route::get('/profile/{user}/edit', 'UsersController@edit')->name('profile.edit');
-    Route::get('/profile/{user}/edit_partner', 'UsersController@edit_partner')->name('profile.edit_partner');
-    Route::get('/profile/{user}/edit_other', 'UsersController@edit_other')->name('profile.edit_other');
+    Route::get('/users', 'UsersController@index')->name('club');
+    Route::get('/users/{user}/edit', 'UsersController@edit')->name('users.edit');
+    Route::get('/users/{user}/edit_partner', 'UsersController@edit_partner')->name('users.edit_partner');
+    Route::get('/users/{user}/edit_other', 'UsersController@edit_other')->name('users.edit_other');
     Route::patch('/users/{user}', 'UsersController@update');
+    Route::patch('/users/partner/{user}', 'UsersController@update_partner');
+    Route::patch('/users/other/{user}', 'UsersController@update_other');
     
     Route::resource('posts', 'PostsController');
     Route::post('/posts/{post}/comment', 'CommentsController@store');

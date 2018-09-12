@@ -4,9 +4,6 @@
     <div class="card-columns">
         <div class="card">
             <img class="card-img-top" src="img/Other/KaukasischHilarisch.jpeg" alt="Logo Georgia">
-            <div class="card-header">
-                {{ trans('info.logo_new') }}
-            </div>
         </div>
          <div class="card">
             <img class="card-img-top" src="img/Other/Pet.jpg" alt="Pet">

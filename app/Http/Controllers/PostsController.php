@@ -8,6 +8,7 @@ use Log;
 use Session;
 use App\User;
 use App\Post;
+use App\Events\newBlogPost;
 
 class PostsController extends Controller {
     
@@ -41,6 +42,7 @@ class PostsController extends Controller {
             'body' => $request->get('body'),
             ]);
         $post->save();
+        event(new newBlogPost($post));
         return redirect('/posts')->with('success', trans('info.post_create_success'));
         }
         

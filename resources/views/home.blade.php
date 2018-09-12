@@ -8,6 +8,15 @@
                 {{ trans('info.logo_new') }}
             </div>
         </div>
+         <div class="card">
+            <img class="card-img-top" src="img/Other/Pet.jpg" alt="Pet">
+            <div class="card-header">
+                Sneak preview Kledinglijn
+            </div>
+            <div class="card-body">
+                <p>{{ trans('info.pet_preview') }}</p>
+            </div>
+        </div>
         <div class="card">
             <img class="card-img-top" src="img/Other/Rugzak.jpg" alt="Paklijst">
             <div class="card-header">

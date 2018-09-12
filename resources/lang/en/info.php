@@ -111,6 +111,7 @@ return [
     'passport_text4'    => ' indicates 6 months at departure. Let us play safe.',
     'password'          => 'Password',
     'past_trips'        => 'Previous trips',
+    'pet_preview'       => 'Alex released above picture. It\'s anyone\'s guess how the full VIIe Lustrum kledinglijn will look like...',
     'pictures_club'     => 'Pictures of the Club',
     'pictures_more'     => 'If you have good pictures to add, please send to the Webmaster',
     'post_blog'         => 'Caligula\'s Blog',

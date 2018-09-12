@@ -18,6 +18,9 @@ class EventServiceProvider extends ServiceProvider {
         'Illuminate\Auth\Events\Login' => [
             'App\Listeners\Users\UpdateLastLogin',
             ],
+        'App\Events\BlogPost' => [
+            'App\Listeners\SendBlogPostNotification',
+            ],
         ];
 
     /**

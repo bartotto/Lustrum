@@ -112,6 +112,7 @@ return [
     'passport_text4'    => ' stelt 6 maanden bij vertrek. Laten we het zekere voor het onzekere nemen.',
     'password'          => 'Wachtwoord',
     'past_trips'        => 'Vorige reizen',
+    'pet_preview'       => 'Alex heeft bovenstaande foto vrijgegeven. Het blijft gissen hoe de volledige VIIe Lustrum kledinglijn er uit gaat zien...',
     'pictures_club'     => 'Club foto\'s',
     'pictures_more'     => 'De Webmaster ontvangt graag meer goede foto\'s!',
     'post_blog'         => 'Caligula\'s Blog',

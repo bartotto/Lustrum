@@ -162,6 +162,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Akaunting\Language\Provider::class,
+        App\Providers\PostModelServiceProvider::class,
     ],
 
     /*

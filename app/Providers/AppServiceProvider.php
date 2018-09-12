@@ -15,6 +15,11 @@ class AppServiceProvider extends ServiceProvider {
             $archives = \App\Post::archives();
             $view->with(compact('archives')); 
             });
+            
+        \App\Post::creating(function($model){
+            $model->title = strtoupper($model->title);
+        });
+        
         }
 
     /**

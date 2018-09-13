@@ -13,11 +13,11 @@
                             <div class="form-group">
                                 @csrf
                                 <label for="title">{{ trans('info.post_title') }}:</label>
-                                <input type="text" class="form-control" id="title" name="title" required>
+                                <input type="text" class="form-control" name="title" required>
                             </div>
                             <div class="form-group">
                                 <label for="body">{{ trans('info.post_body') }}:</label>
-                                <textarea class="form-control" id="body" name="body" required></textarea>
+                                <textarea class="form-control" name="body" required></textarea>
                             </div>
                             <button class="btn btn-primary" onclick="goBack()">{{ trans('info.cancel') }}</button>
                             <button type="submit" class="btn btn-primary">{{ trans('info.post_publish') }}</button>

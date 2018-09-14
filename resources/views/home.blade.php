@@ -153,7 +153,7 @@
                     {{ trans('info.lappen') }}
                 </div>
                 <div class="card-body">
-                    <div class="card-title">{{ trans('info.lappen_descr') }}</div>
+                    <div class="card-title">{{ trans('info.lappen_descr') }}Test</div>
                     <p>{{ trans('info.lappen_descr1') }}</p>
                     <p>{{ trans('info.lappen_descr2') }}</p>
                     <p>{{ trans('info.lappen_descr3') }}<a href="budget">{{ trans('info.budget') }}</a></p>

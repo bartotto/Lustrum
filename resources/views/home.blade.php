@@ -4,6 +4,7 @@
     <div class="card-columns">
         <div class="card">
             <img class="card-img-top" src="img/Logos/Georgia.jpg" alt="Logo Georgia">
+            
         </div>
          <div class="card">
             <img class="card-img-top" src="img/Other/Pet.jpg" alt="Pet">

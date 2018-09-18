@@ -75,6 +75,8 @@ return [
     'last_news'         => 'Nieuws',
     'login'             => 'Log in',
     'login_start'       => 'Van 1983 tot nu...',
+    'logo'              => 'Logo',
+    'logo_VIIe'         => 'VIIe Lustrumlogo',
     'logout'            => 'Log uit',
     'luco'              => 'Uw luco',
     'luco_descr2'       => 'Sinds 1989',

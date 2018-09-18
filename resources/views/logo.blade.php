@@ -29,6 +29,19 @@
             </div>
         </div>
         <div class="card">
+            <img class="card-img-top" src="img/Logos/Georgia.jpg" alt="Logo Georgia" height="auto" width="48">
+            <div class="card-header">
+                {{ trans('info.logo_VIIe') }}
+            </div>
+            <div class="card-body">
+                <p class="card-text">Het Lustrumlogo staat zoals altijd symbool voor de unieke kenmerken van de reisbestemming. Georgië wordt ook wel "the cradle of wine culture" genoemd:  In de vruchtbare valeien en op de hellingen van de Kaukasus werd volgens archelogen al in Neolitische tijd (8000 v Chr) wijn verbouwd. In de loop van duizenden jaren heeft de wijncultuur een prominente rol ingenomen in de Georgische economie, cultuur en tradities. De Tamada vormt de belichaming van deze tradities. Het zal dan ook niemand verbazen dat uw Luco het beeld van de Tamada heeft gekozen als logo van onze VIIe Lustrumreis, niet in de laatste plaats vanwege de connectie die wij RSC-ers hebben met de Hoorn des Overvloeds</p>
+                <p class="card-text">Voor alle duidelijkheid: het gerucht gaat dat er sprake zou zijn van een ander lustrumlogo, waarin de Georgische minister van Financien belachelijk wordt gemaakt en de Georgische nationale trots wordt gekrenkt. Het is uiteraard volstrekte nonsense te veronderstellen dat uw Luco met een dergelijk logo onnodig risico zou willen nemen. Wij zijn onze terdege bewust van de trotse Georgische volksaard en elke suggestie dat wij deze zouden willen krenken moet dan ook naar het rijk der fabelen worden verwezen.</p>
+            </div>
+            <div class="card-footer text-muted">
+                <p>18 sep 18</p>
+            </div>
+        </div>
+        <div class="card">
             <img class="card-img-top" src="img/Other/Question.jpg" alt="Vraag?" height="auto" width="48">
             <div class="card-header">
                 {{ trans('info.questions') }}

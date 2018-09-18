@@ -18,7 +18,7 @@
                         <a class="nav-link" href="{{ route('home') }}">{{ trans('info.home') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('tamada') }}">{{ trans('info.tamada') }}</a>
+                        <a class="nav-link" href="{{ route('logo') }}">{{ trans('info.logo') }}</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

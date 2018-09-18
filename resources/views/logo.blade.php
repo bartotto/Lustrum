@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="img/Logos/Georgia.jpg" alt="Logo Georgia" height="auto" width="48">
+            <img class="card-img-top" src="img/Logos/Georgia_new.jpg" alt="Logo Georgia" height="auto" width="48">
             <div class="card-header">
                 {{ trans('info.logo_VIIe') }}
             </div>

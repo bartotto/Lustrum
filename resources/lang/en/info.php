@@ -74,6 +74,7 @@ return [
     'login'             => 'Login',
     'login_start'       => 'From 1983 until now...',
     'logo'              => 'Logo',
+    'logo_VIIe'         => 'VIIe Lustrum logo',
     'logout'            => 'Logout',
     'luco'              => 'Your luco',
     'luco_descr2'       => 'Since 1989',

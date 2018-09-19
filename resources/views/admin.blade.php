@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="img/Other/Strandborrel.jpg" alt="Strandborrel" height="auto" width="48">
+            <img class="card-img-top" src="img/Strandborrel/1.jpg" alt="Strandborrel" height="auto" width="48">
             <div class="card-header">
                 Partners eigen login
             </div>

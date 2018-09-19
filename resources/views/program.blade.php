@@ -53,43 +53,41 @@
                 <p>8 sept 18</p>
             </div>
         </div>
-        @if(Auth::user()->user_role == 'Member+')
-            <div class="card">
-                <img class="card-img-top" src="img/Other/Helicopter_crash.jpg" alt="Helicopter crash" height="auto" width="48">
-                <div class="card-header">
-                    THE KAUKASUS SURVIVAL CHALLENGE
-                </div>
-                <div class="card-body">
-                    <div class="card-title">Introduction</div>
-                    <p>The situation described is based on over 2000 actual cases in which men and women lived and died in the Kaukasus mountains, depending on the survival decisions they made.
-                    <font color="red">Your own 'life' or 'death' will depend upon how well your group can share its present knowledge of a relatively unfamiliar problem so that the group can make decisions leading to your survival.</font></p>
-                    <div class="card-title">The situation</div>
-                    <p>You and your club are on a hilarious trail in the Kaukasus mountain range, 150 km east of Telavi, Georgia. You are hoping to enjoy a pleasant week of walking at the start of Autumn.
-                        Awakening early Wednesday morning you look out of your tent and see heavy snowfall blanketing the ground. An online weather bulletin confirms your worst fears – the first snowfall of the year has come unexpectedly early.
-                        100 cm of snow is expected today and temperatures as low as -20 C, even -40 C at night. Worst yet, the cold is expected to last for 4 to 5 days.</p>
-                    <p>Because your group is unfamiliar with the area, you are unprepared for these weather conditions. You did not bring enough provisions to sustain yourselves for longer then 3 days.
-                        Your firewood supply is already dangerously depleted. You decide to use the sat phone (thanks to Bernard and RJ!) to send for a chartered helicopter. Since weather conditions are not yet serious,
-                        you locate a pilot in Tbilisi willing to transport you. He arrives just before 11.00. Although Tuut wants to walk down alone, he eventually joins the group after Aart insisted.</p>
-                    <p>Once you are airborne, the storm begins to worsen until visibility is near zero. Without warning, 30 minutes into the trip, at 11.32 AM your helicopter suddenly crashes.
-                        It lands on a wooded slope at the edge of a small clearing high in the Kaukasus mountains, close to the border with Azerbeidzjan. You are in a wilderness area made up of thick woods broken by many lakes and rivers.</p>
-                    <p>The helicopter is smashed, except for the frame, and the sat phone and instrument panel is destroyed. Fuel from the ruptured fuel tanks has already run off downhill. The pilot is dead.</p>
-                    <p>After struggling out of the helicopter with your club mates, you determine that no one is seriously hurt. Although you are dressed in qualitative Lustrum clothing, pants, Lustrum fleece, gloves and hiking boots,
-                        the cold quickly rips through your clothing. Your boots sink deep into 75 cm of snow already covering the ground. Luckily it has stopped snowing and the blizzard fades away.
-                        As you listen to the sounds moan through the Kaukasus mountains, you wonder how you and your friends will survive….?</p>
-                    <p>The pilot was not able to notify anyone of your position before you crashed. Since your pilot did not have any visibility you expect that the helicopter was considerably off course.
-                        The pilot announced shortly before the crash that you where 120 km northwest of a small town that is the nearest habitation. 
-                        You left your gear behind due to the helicopter’s weight limitations, but while escaping from the helicopter your group salvaged the 15 items listed below.</p>
-                    <div class="card-title">The challenge</div>
-                    <p><font color="red">Your first task, as an individual is to make a ranking order of importance of these items for your survival, starting with '1' for the most important, down to '15' for the least important.</font></p>
-                    <p>You may assume that the number of survivors is the same as the number of members in your team and that they have decided to stick together.</p>
-                    <p><font color="red">Please DO NOT at this stage, discuss your ranking with anyone else, that would ruin the exercise!!</font></p>
-                    <p>When you have completed your individual rankings, please hand in the form to Aart and await the next session on Thursday at Camp 3 where this team game will continue.</p>
-                </div>
-                <div class="card-footer text-muted">
-                    <p>19 sept 18</p>
-                </div>
+        <div class="card">
+            <img class="card-img-top" src="img/Other/Helicopter_crash.jpg" alt="Helicopter crash" height="auto" width="48">
+            <div class="card-header">
+                THE KAUKASUS SURVIVAL CHALLENGE
             </div>
-        @endif
+            <div class="card-body">
+                <div class="card-title">Introduction</div>
+                <p>The situation described is based on over 2000 actual cases in which men and women lived and died in the Kaukasus mountains, depending on the survival decisions they made.
+                <font color="red">Your own 'life' or 'death' will depend upon how well your group can share its present knowledge of a relatively unfamiliar problem so that the group can make decisions leading to your survival.</font></p>
+                <div class="card-title">The situation</div>
+                <p>You and your club are on a hilarious trail in the Kaukasus mountain range, 150 km east of Telavi, Georgia. You are hoping to enjoy a pleasant week of walking at the start of Autumn.
+                    Awakening early Wednesday morning you look out of your tent and see heavy snowfall blanketing the ground. An online weather bulletin confirms your worst fears – the first snowfall of the year has come unexpectedly early.
+                    100 cm of snow is expected today and temperatures as low as -20 C, even -40 C at night. Worst yet, the cold is expected to last for 4 to 5 days.</p>
+                <p>Because your group is unfamiliar with the area, you are unprepared for these weather conditions. You did not bring enough provisions to sustain yourselves for longer then 3 days.
+                    Your firewood supply is already dangerously depleted. You decide to use the sat phone (thanks to Bernard and RJ!) to send for a chartered helicopter. Since weather conditions are not yet serious,
+                    you locate a pilot in Tbilisi willing to transport you. He arrives just before 11.00. Although Tuut wants to walk down alone, he eventually joins the group after Aart insisted.</p>
+                <p>Once you are airborne, the storm begins to worsen until visibility is near zero. Without warning, 30 minutes into the trip, at 11.32 AM your helicopter suddenly crashes.
+                    It lands on a wooded slope at the edge of a small clearing high in the Kaukasus mountains, close to the border with Azerbeidzjan. You are in a wilderness area made up of thick woods broken by many lakes and rivers.</p>
+                <p>The helicopter is smashed, except for the frame, and the sat phone and instrument panel are destroyed. Fuel from the ruptured fuel tanks has already run off downhill. The pilot is dead.</p>
+                <p>After struggling out of the helicopter with your club mates, you determine that no one is seriously hurt. Although you are dressed in qualitative Lustrum clothing, pants, Lustrum fleece, gloves and hiking boots,
+                    the cold quickly rips through your clothing. Your boots sink deep into 75 cm of snow already covering the ground. Luckily it has stopped snowing and the blizzard fades away.
+                    As you listen to the sounds moan through the Kaukasus mountains, you wonder how you and your friends will survive….?</p>
+                <p>The pilot was not able to notify anyone of your position before you crashed. Since your pilot did not have any visibility you expect that the helicopter was considerably off course.
+                    The pilot announced shortly before the crash that you where 120 km northwest of a small town that is the nearest habitation. 
+                    You left your gear behind due to the helicopter’s weight limitations, but while escaping from the helicopter your group salvaged the 15 items listed below.</p>
+                <div class="card-title">The challenge</div>
+                <p><font color="red">Your first task, as an individual is to make a ranking order of importance of these items for your survival, starting with '1' for the most important, down to '15' for the least important.</font></p>
+                <p>You may assume that the number of survivors is the same as the number of members in your team and that they have decided to stick together.</p>
+                <p><font color="red">Please DO NOT at this stage, discuss your ranking with anyone else, that would ruin the exercise!!</font></p>
+                <p>When you have completed your individual rankings, please hand in the form to Aart and await the next session on Thursday at Camp 3 where this team game will continue.</p>
+            </div>
+            <div class="card-footer text-muted">
+                <p>19 sept 18</p>
+            </div>
+        </div>
         <div class="card">
             <img class="card-img-top" src="img/Other/Burduli_David.jpg" alt="Gids" height="auto" width="48">
             <div class="card-header">

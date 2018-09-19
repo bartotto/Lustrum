@@ -79,7 +79,7 @@
                     The pilot announced shortly before the crash that you where 120 km northwest of a small town that is the nearest habitation. 
                     You left your gear behind due to the helicopter’s weight limitations, but while escaping from the helicopter your group salvaged the 15 items listed below.</p>
                 <div class="card-title">The challenge</div>
-                <p><font color="red">Your first task, as an individual is to make a ranking order of importance of these items for your survival, starting with '1' for the most important, down to '15' for the least important.</font></p>
+                <p><font color="red">Your first task on Wednesday at camp 2, as an individual is to make a ranking order of importance of these items for your survival, starting with '1' for the most important, down to '15' for the least important.</font></p>
                 <p>You may assume that the number of survivors is the same as the number of members in your team and that they have decided to stick together.</p>
                 <p><font color="red">Please DO NOT at this stage, discuss your ranking with anyone else, that would ruin the exercise!!</font></p>
                 <p>When you have completed your individual rankings, please hand in the form to Aart and await the next session on Thursday at Camp 3 where this team game will continue.</p>

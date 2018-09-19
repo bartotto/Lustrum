@@ -16,7 +16,7 @@
                 <ul>
                     <li>Water bottle</li>
                     <li>Sunglasses</li>
-                    <li>Sun screen</li>
+                    <li>Sunburn lotion</li>
                     <li>Rain jacket</li>
                     <li>Gloves</li>
                     <li>Piece of plastic to sit on when we take a break during the day – in case it is wet</li>

@@ -39,6 +39,7 @@
                 </div>
                 <div id="links">
                     <a href="img\Club\Jaarclub_Rdam.jpg" title="Rotterdam 1983" data-gallery="#blueimp-gallery-club"><img src="img\Club\Thumbnails\Jaarclub_Rdam.jpg" alt="Rotterdam 1983"></a>
+                    <a href="img\Club\Beker_1988.jpg" title="Ma-Zonen 1988" data-gallery="#blueimp-gallery-club"><img src="img\Club\Thumbnails\Beker_1988.jpg" alt="Ma-Zonen 1988"></a>
                     <a href="img\Club\Kenya_vuur.jpg" title="Kenya 1989" data-gallery="#blueimp-gallery-club"><img src="img\Club\Thumbnails\Kenya_vuur.jpg" alt="Kenya 1989"></a>
                     <a href="img\Club\Cameroun_voetbal.jpg" title="Cameroun 1999" data-gallery="#blueimp-gallery-club"><img src="img\Club\Thumbnails\Cameroun_voetbal.jpg" alt="Cameroun 1999"></a>
                     <a href="img\Club\De_Herten.jpg" title="De Herten later" data-gallery="#blueimp-gallery-club"><img src="img\Club\Thumbnails\De_Herten.jpg" alt="De Herten later"></a>

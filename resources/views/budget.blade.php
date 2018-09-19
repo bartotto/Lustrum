@@ -97,7 +97,7 @@
                 <div class="card-title">{{ trans('info.lappen_gestort') }}</div>
                 @foreach ($users as $user)
                     <div class="row">
-                        <div class="col-4">{{ $user->first_name}}</div>
+                        <div class="col-6">{{ $user->first_name}}</div>
                         <div class="col-6 text-right">{{ money_format('%i', $user->paid) }}</div>
                     </div>
                 @endforeach

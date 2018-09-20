@@ -114,6 +114,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="card">
             <img class="card-img-top" src="img/Other/Aart.jpg" alt="Aart">
             <div class="card-header">
@@ -135,6 +136,7 @@
                 President</p>
             </div>
         </div>
+        
         @if(substr(session('user_role'),0,6) == 'Member')
             <div class="card">
                 <a href="http://www.tabula.ge/en/story/115667-civil-society-activists-protest-lari-depreciation" target="_blank">
@@ -151,6 +153,7 @@
                 </div>
             </div>
         @endif
+        
         <div class="card">
             <img class="card-img-top" src="img/Other/Pet.jpg" alt="Pet">
             <div class="card-header">
@@ -160,6 +163,40 @@
                 <p>{{ trans('info.pet_preview') }}</p>
             </div>
         </div>
+        
+        <div class="card">
+            <img class="card-img-top" src="img/Other/Sat_phone.png" alt="Sat phone">
+            <div class="card-header">
+                Satelliet telefoon
+            </div>
+            <div class="card-body">
+                <div class="card-title">Ons bellen</div>
+                <p>Het nummer van de Iridium telefoon welke mee gaat = + of 008816 3145 0398.
+                    Het is niet aan te raden om rechtstreeks naar de Iridium te bellen, daar bijv. KPN bijna 8 euro per minuut rekent.
+                    Staat vervolgens de Iridium niet aan, wordt u doorgeschakeld naar een voicemail menu.
+                    Om naar de Iridium toe te bellen is de goedkoopste optie via een switch, het zgn. Two Stage Dialing Access.
+                    Bel naar het volgende nummer in de US: + of 001 480 768 2500 en toets daarna het 12 cijferig Iridium nummer: 8816 3145 0398 in.
+                    De beller heeft dan de kosten voor het gesprek naar de US (tegenwoordig niet zo duur meer +/- 8 cent/min.).
+                    De ontvanger op de Iridium heeft de kosten voor Two Stage Dialing Access.</p>
+                <div class="card-title">Ons een bericht sturen</div>
+                <p>U kunt ook een voor beide partijen <font color="red">gratis (en onbeperkt) sms-je sturen</font> (met een max. van 5 stuks per 10 minuten).
+                    Er kan rechtstreeks een "sms" worden gestuurd naar de telefoon via het volgende emailadres:
+                    <a href="mailto:881631450398@msg.iridium.com" target="_top">881631450398@msg.iridium.com</a>.</p>
+                <p>De regel "onderwerp" leeg laten, deze wordt niet meegezonden. De tekst van max. 160 karakters (incl. emailadres van afzender) ingeven in het grote tekstblok
+                    (waarin u nu aan het lezen bent). Wel zelf even de telling bijhouden. Bij verzending op deze manier is er meestal geen vertraging, maar soms kan er enige
+                    tot zelfs flinke vertraging ontstaan in de "bezorgtijd".</p>
+                <p>Wilt u dat het bericht vrijwel onmiddellijk aankomt, kunt u beter de link op onze website
+                    <a href="http://www.satcomm.nl/pagina/3/service#">http://www.satcomm.nl/pagina/3/service#</a> gebruiken.
+                    Klik op het Iridium Logo bij "Stuur Iridium satelliet sms" en u krijgt een nieuw messagescherm van Iridium.</p>
+                <p>Of rechtstreeks: <a href="http://messaging.iridium.com/">http://messaging.iridium.com/</a>. In het bovenste vak het nummer aanvullen met de laatste acht cijfers van het telefoonnummer (dus 3145 0398 zonder spaties).
+                    Het volgende vak "emailadres" (van de afzender) is belangrijk, zorg dat deze foutloos wordt ingevuld, omdat u als gebruiker van een Iridium 9555 een reply kunt geven.
+                    Wordt dit vak ingevuld, dan hoeft u bij een reply zelf het emailadres niet in te geven en staat dit al voor u klaar in het display. 
+                    Vervolgens tekst ingeven met een max. van 160 karakters (de telling wordt voor u bijgehouden) en vervolgens op "send " klikken.</p>
+                <p>Het versturen naar en het ontvangen van deze "sms" op de Iridium is geheel gratis (systeem handelt max. 5 berichten, per 10 minuten, per nummer af).</p>
+                <p>(met dank aan de lustrum communicatie manager Bernard)</p>
+            </div>
+        </div>
+        
         <div class="card">
             <img class="card-img-top" src="img/Other/Departure.jpg" alt="Departure">
             <div class="card-header">
@@ -171,6 +208,7 @@
                 <p>{{ trans('info.when_descr3') }}<a href="program">{{ trans('info.program') }}</a></p>
             </div>
         </div>
+        
         <div class="card">
             <img class="card-img-top" src="img/Other/Passport.jpg" alt="Paspoort">
             <div class="card-header">
@@ -190,6 +228,7 @@
                 <p>13 aug 18</p>
             </div>
         </div>
+        
         <div class="card">
             <img class="card-img-top" src="img/Other/Insurance.jpg" alt="Verzekering">
             <div class="card-header">
@@ -205,6 +244,7 @@
                 <p>13 aug 18</p>
             </div>
         </div>
+        
         <div class="card">
             <img class="card-img-top" src="img/Other/Question.jpg" alt="Vraag?">
             <div class="card-header">

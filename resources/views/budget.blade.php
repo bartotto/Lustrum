@@ -54,6 +54,10 @@
                             <TD align="right">€1.540</TD>
                         </TR>
                         <TR>
+                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px">Bijgekomen: Sat phone Bernard</TD>
+                            <TD align="right">€22</TD>
+                        </TR>
+                        <TR>
                             <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px"></TD>
                             <TD align="right"></TD>
                         </TR>

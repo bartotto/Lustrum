@@ -82,35 +82,27 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="img/Other/Lappen.jpg" alt="Lappen">
-            <div class="card-header">
-                {{ trans('info.lappen') }}
-            </div>
+            <img class="card-img-top" src="img/Other/Tikkie.jpg" alt="Lappen">
+            <div class="card-header">Kledinglijn pakket:</div>
             <div class="card-body">
-                <div class="card-title">{{ trans('info.lappen_descr') }}</div>
-                <p>{{ trans('info.lappen_descr1') }}</p>
-                <p>{{ trans('info.lappen_descr2') }}</p>
+                <div class="card-title">{{ trans('info.lappen_gestort') }}</div>
+                @foreach ($users as $user)
+                    <div class="row">
+                        <div class="col-6">{{ $user->first_name}}</div>
+                        <div class="col-6 text-right">{{ money_format('%i', $user->paid_kleding) }}</div>
+                    </div>
+                @endforeach
             </div>
         </div>
         <div class="card">
             <img class="card-img-top" src="img/Other/Tikkie.jpg" alt="Tikkie">
-            <div class="card-header">
-                {{ trans('info.lappen_status') }}
-            </div>
+            <div class="card-header">{{ trans('info.lappen_status') }}</div>
             <div class="card-body">
                 <div class="card-title">{{ trans('info.lappen_gestort') }}</div>
                 @foreach ($users as $user)
                     <div class="row">
                         <div class="col-6">{{ $user->first_name}}</div>
                         <div class="col-6 text-right">{{ money_format('%i', $user->paid) }}</div>
-                    </div>
-                @endforeach
-                <hr>
-                <div class="card-title">Kledinglijn pakket</div>
-                @foreach ($users as $user)
-                    <div class="row">
-                        <div class="col-6">{{ $user->first_name}}</div>
-                        <div class="col-6 text-right">{{ money_format('%i', $user->paid_kleding) }}</div>
                     </div>
                 @endforeach
             </div>

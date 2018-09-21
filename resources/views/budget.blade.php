@@ -105,6 +105,14 @@
                         <div class="col-6 text-right">{{ money_format('%i', $user->paid) }}</div>
                     </div>
                 @endforeach
+                <hr>
+                <div class="card-title">Kledinglijn pakket</div>
+                @foreach ($users as $user)
+                    <div class="row">
+                        <div class="col-6">{{ $user->first_name}}</div>
+                        <div class="col-6 text-right">{{ money_format('%i', $user->paid_kleding) }}</div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>

@@ -64,7 +64,7 @@
                 <div class="card-title"></div>
                 @foreach ($users as $user)
                     @if($user->partner_login=='Yes')
-                        <div>{{ $user->partner_first_name }} {{ $user->partner }} (id {{ $user->partner_id }})</div>
+                        <div>{{ $user->first_name }}'s {{ $user->partner_first_name }} (id {{ $user->partner_id }})</div>
                     @endif
                 @endforeach
             </div> 

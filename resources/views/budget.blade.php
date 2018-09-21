@@ -10,67 +10,67 @@
                 {{ trans('info.budget') }}
             </div>
             <div class="card-body">
-                <p class="card-text">{{ trans('info.budget_descr') }}</p>
+                <p class="card-title">{{ trans('info.budget_descr') }}</p>
                 <div class="row">
-                    <TABLE BORDER="1" STYLE="border-style: solid">
+                    <TABLE>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px">Vliegticket retour AMS - TBI</TD>
+                            <TD WIDTH="365" HEIGHT="30">Vliegticket retour AMS - TBI</TD>
                             <TD align="right">€356</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px">"Programma Burduli" van aankomst TBI tot zaterdagmiddag (7 nachten, all-in)</TD>
+                            <TD WIDTH="365" HEIGHT="30">"Programma Burduli" van aankomst TBI tot zaterdagmiddag (7 nachten, all-in)</TD>
                             <TD align="right">€780</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px">Hotel Rooms, Tblisi za 29/8 (2 nachten, incl. ontbijt)</TD>
+                            <TD WIDTH="365" HEIGHT="30">Hotel Rooms, Tblisi za 29/8 (2 nachten, incl. ontbijt)</TD>
                             <TD align="right">€180</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px">Borrel, diner en uitgaan zaterdag</TD>
+                            <TD WIDTH="365" HEIGHT="30">Borrel, diner en uitgaan zaterdag</TD>
                             <TD align="right">€75</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px">Programma Gori zondag</TD>
+                            <TD WIDTH="365" HEIGHT="30">Programma Gori zondag</TD>
                             <TD align="right">€20</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px">Programma zondagmiddag/avond incl. diner</TD>
+                            <TD WIDTH="365" HEIGHT="30">Programma zondagmiddag/avond incl. diner</TD>
                             <TD align="right">€75</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px">EHBO kit dokter Berning</TD>
+                            <TD WIDTH="365" HEIGHT="30">EHBO kit dokter Berning</TD>
                             <TD align="right">€6</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px">Overige 'out-of-pocket expenses'</TD>
+                            <TD WIDTH="365" HEIGHT="30">Overige 'out-of-pocket expenses'</TD>
                             <TD align="right">€34</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px">Kosten organisatie (cadeaus, logo, website)</TD>
+                            <TD WIDTH="365" HEIGHT="30">Kosten organisatie (cadeaus, logo, website)</TD>
                             <TD align="right">€14</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px">Totaal</TD>
+                            <TD WIDTH="365" HEIGHT="30">Totaal</TD>
                             <TD align="right">€1.540</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px">Bijgekomen: Sat phone Bernard</TD>
+                            <TD WIDTH="365" HEIGHT="30">Bijgekomen: Sat phone Bernard</TD>
                             <TD align="right">€22</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px"></TD>
+                            <TD WIDTH="365" HEIGHT="30"></TD>
                             <TD align="right"></TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px">Totaal excl. vliegreis</TD>
+                            <TD WIDTH="365" HEIGHT="30">Totaal excl. vliegreis</TD>
                             <TD align="right">€1.184</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px">1e storting (voor 31 aug)</TD>
+                            <TD WIDTH="365" HEIGHT="30">1e storting (voor 31 aug)</TD>
                             <TD align="right">-€600</TD>
                         </TR>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30" STYLE="padding-left: 5px">2e storting (voor 21 sept)</TD>
+                            <TD WIDTH="365" HEIGHT="30">2e storting (voor 21 sept)</TD>
                             <TD align="right">-€584</TD>
                         </TR>
                     </TABLE>

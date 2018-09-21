@@ -165,7 +165,7 @@
         </div>
         
         <div class="card">
-            <img class="card-img-top" src="img/Other/Sat_phone.png" alt="Sat phone">
+            <img class="card-img-top" src="img/Other/Sat_phone.jpg" alt="Sat phone">
             <div class="card-header">
                 Satelliet telefoon
             </div>

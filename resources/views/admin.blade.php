@@ -62,15 +62,11 @@
             </div>
             <div class="card-body">
                 <div class="card-title"></div>
-                <ol>
-                    @foreach ($users as $user)
-                        @if($user->partner_login=='Yes')
-                            <li>
-                                {{ $user->partner_first_name }} {{ $user->partner }} (id {{ $user->partner_id }})
-                            </li>
-                        @endif
-                    @endforeach
-                </ol>
+                @foreach ($users as $user)
+                    @if($user->partner_login=='Yes')
+                        <div>{{ $user->partner_first_name }} {{ $user->partner }} (id {{ $user->partner_id }})</div>
+                    @endif
+                @endforeach
             </div> 
             <div class="card-footer text-muted">
                 <p>3 sept 18</p>

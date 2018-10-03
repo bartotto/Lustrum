@@ -76,12 +76,12 @@
                 </form>
             </div>
             <div class="card-footer text-muted text-left">
-                @if(substr($user->user_role,0,6) == 'Member')
+                @if($user->hasRole('Member'))
                     {{ trans('info.edit_user_warning') }}
                 @endif
             </div> 
         </div>
-        @if(substr($user->user_role,0,6) == 'Member')
+        @if($user->hasRole('Member'))
             <div class="card">
                 <div class="card-header">
                     {{ trans('info.details_partner') }}
@@ -128,7 +128,7 @@
                     </TABLE>
                 </div>
                 <div class="card-footer text-muted text-left">
-                    @if(Auth::user()->user_role = 'Member')
+                    @if(Auth::user()->hasRole('Member'))
                         <p>{{ trans('info.edit_user_warning2') }}<br>
                         <sup>*</sup> {{ trans('info.edit_user_warning3') }}</p>
                     @endif
@@ -146,7 +146,7 @@
                     </a>
                 @endif
                 <TABLE>
-                    @if(substr(Auth::user()->user_role,0,6) == 'Member')
+                    @if(Auth::user()->hasRole('Member'))
                         <TR>
                             <TD WIDTH="165">{{ trans('info.size') }}</TD>
                             <TD>{{ $user->size }}</TD>
@@ -169,7 +169,7 @@
                 </TABLE>
             </div> 
             <div class="card-footer text-muted text-left">
-                @if(Auth::user()->user_role = 'Member')
+                @if(Auth::user()->hasRole('Member'))
                     <p>{{ trans('info.edit_user_warning') }}</p>
                 @endif
             </div>

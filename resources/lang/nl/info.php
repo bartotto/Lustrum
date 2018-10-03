@@ -3,6 +3,7 @@
 return [
     'add_user'          => 'Maak nieuwe gebruiker',
     'admin'             => 'Admin',
+    'admininistrator'   => 'Administrator',
     'all'               => 'Alle',
     'archives'          => 'Archief',
     'are_you_sure'      => 'Weet je zeker dat je deze wilt verwijderen?',   
@@ -143,6 +144,10 @@ return [
     'questions_ask'     => ' en stel jouw vraag',
     'register'          => 'Registreer',
     'remember_me'       => 'Onthoud mij',
+    'role'              => 'Rol',
+    'roles'             => 'Rol(len)',
+    'role_users'        => 'Gebruikers met deze rol',
+    'role_has'          => 'heeft',
     'save'              => 'Sla op',
     'size'              => 'Kleding',
     'slides'            => 'Slides',

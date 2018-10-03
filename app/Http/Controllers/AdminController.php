@@ -20,11 +20,10 @@ class AdminController extends Controller {
         
     public function budget() {
         setlocale(LC_MONETARY, 'nl_NL');
-        $users = User::where([
-            ['joins','=','1'],
-            ['user_role','<>','Partner'],
-            ['user_role','<>','Guide']            
-            ])->orderBy('first_name')->get();
-        return view('budget', compact('users'));
+        $joiners = User::where('joins', '1')->whereHas('roles', function($q){
+            $q->where('description', 'Member');
+            })
+            ->orderBy('first_name')->get();
+        return view('budget', compact('joiners'));
         }
     }

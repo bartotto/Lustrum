@@ -9,23 +9,23 @@
             </div>
             <div class="card-body">
                 <div class="card-title">22/9 Saturday</div>
-                <p class="card-text">AMS 10:40 KL3108 Arrival TBS 17:15. Drive to wine area Telavi, traditional Georgian diner & overnight stay in Hotel Old Telavi.</p>
+                <p class="card-text">AMS 10:40 KL3108 Arrival TBS 17:15. Drive to wine area Telavi, traditional Georgian diner & overnight stay in <a href="http://www.oldtelavi.ge/en">Hotel Old Telavi</a>.</p>
                 <div class="card-title">23/9 Sunday</div>
-                <p class="card-text">AM: visit winecellar & lunch. Driving from Telavi to Omalo 4x4wd (Alexander catches up in Omalo). Overnight stay in Guest House Shina.</p>
+                <p class="card-text">AM: visit winecellar & lunch. Driving from Telavi to Omalo 4x4wd (Alexander catches up in Omalo). Overnight stay in <a href="http://www.shina.ge/hotel_shina.html">Guest House Shina</a>.</p>
                 <div class="card-title">24/9 Monday</div>
                 <p class="card-text">Hiking from Omalo to Dartlo.</p>
                 <div class="card-title">25/9 Tuesday</div>
-                <p class="card-text">Driving from Dartlo to Girevi. Hiking from Girevi to Camp 1 at 2600 meters.</p>
+                <p class="card-text">Driving from Dartlo to <a href="https://georgiacom.org/2014/08/12/girevi-tusheti/">Girevi</a>. Hiking from Girevi to Camp 1 at 2600 meters.</p>
                 <div class="card-title">26/9 Wednesday</div>
                 <p class="card-text">Hiking from Camp 1 to Camp 2 at 3000 meters (over the Atsunta pass at 3450 meters).</p>
                 <div class="card-title">27/9 Thursday</div>
                 <p class="card-text">Hiking from Camp 2 to Shatili.</p>
                 <div class="card-title">28/9 Friday</div>
-                <p class="card-text">Driving from Shatili to Jomardi rafting camp. Rafting, lunch. Drive to Tbilisi. Check in Hotel Orion. Diner at</p>
+                <p class="card-text">Driving from Shatili to Jomardi rafting camp. Rafting, lunch. Drive to Tbilisi. Check in Hotel Orion. Diner at retaurant.</p>
                 <div class="card-title">29/9 Saturday</div>
-                <p class="card-text">Visit Dry-bridge market and check in at <a href="/pdf/ROOMS HOTEL_FACT SHEET.pdf">Hotel Rooms</a>. Sulphur baths and scrub at Gulo's Bath. Club diner at Restaurant Meama.</p>
+                <p class="card-text">Visit Dry-bridge market and check in at <a href="/pdf/ROOMS HOTEL_FACT SHEET.pdf">Hotel Rooms</a>. Sulphur baths and scrub at <a href="http://thermal.ge/en/">Gulo's Bath</a>. Club diner at <a href="https://www.facebook.com/RestaurantMeama/">Restaurant Meama</a>.</p>
                 <div class="card-title">30/9 Sunday</div>
-                <p class="card-text">Daytrip to  Gori / Stalin museum and visit Cave city Uplistsikhe. Diner at Stamba.</p>
+                <p class="card-text">Daytrip to  Gori / <a href="https://www.lonelyplanet.com/georgia/gori/attractions/stalin-museum/a/poi-sig/502622/359316">Stalin museum</a> and visit <a href="https://en.wikipedia.org/wiki/Uplistsikhe">Cave city Uplistsikhe</a>. Diner at Stamba.</p>
                 <div class="card-title">01/10 Monday</div>
                 <p class="card-text">TBI 06:30 KL3109 arrival AMS 09:40.</p>
             </div>

@@ -7,20 +7,16 @@
                 {{ trans('info.joiners') }}
             </div>
             <div class="card-body">
-                @foreach ($users as $user)
-                    @if($user->joins)
-                        <div>
-                            @if(Auth::user()->user_role != 'Guide')
-                                <a href="/users/{{ $user->id }}">{{ $user->first_name }} {{ $user->name }}</a>
-                            @else
-                                {{ $user->first_name }} {{ $user->name }}
-                            @endif
-                        </div>
-                    @endif
-                @endforeach
+                <ol>
+                    @foreach ($joiners as $joiner)
+                        <li>
+                            <a href="/joiners/{{ $joiner->id }}">{{ $joiner->first_name }} {{ $joiner->name }}</a>
+                        </li>
+                    @endforeach
+                </ol>
             </div>
             <div class="card-footer text-muted">
-                @if(Auth::user()->user_role != 'Guide')
+                @if(Auth::user()->hasRole('Member') || Auth::user()->hasRole('Partner'))
                     <p class="card-text">{{ trans('info.members_descr') }}</p>
                 @endif
             </div>

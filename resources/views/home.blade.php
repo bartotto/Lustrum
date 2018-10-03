@@ -137,7 +137,7 @@
             </div>
         </div>
         
-        @if(substr(session('user_role'),0,6) == 'Member')
+        @if(Auth::user()->hasRole('Member'))
             <div class="card">
                 <a href="http://www.tabula.ge/en/story/115667-civil-society-activists-protest-lari-depreciation" target="_blank">
                     <img class="card-img-top" src="img/Other/Larikoek.jpg" alt="Larikoek">

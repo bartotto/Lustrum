@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Log;
 use App\User;
+use App\Role;
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 
@@ -14,16 +15,16 @@ class UsersController extends Controller {
         }
     
     public function index() {
-        $users = User::where([
-            ['user_role', '!=', 'Guide'],
-            ['user_role', '!=', 'Partner']
-            ])->orderBy('name')->get();
+        $users = User::whereHas('roles', function($q){
+            $q->where('description', 'Member');
+            }
+            )->orderBy('name')->get();
         return view('users.index', compact('users'));
         }
         
     public function show(User $user) {
-        session(['user_role' => auth()->user()->user_role]);
-        return view('users.show', compact('user'));
+        $roles = $user->roles()->orderBy('description')->get();
+        return view('users.show', compact('user','roles'));
         }
 
     public function edit(User $user) {
@@ -43,12 +44,16 @@ class UsersController extends Controller {
             'dob' => 'date'
             ]);
         $user->update($request->all());
-        return view('users.show', compact('user'))->with('successMsg', trans('info.user_update_success'));
+        $roles = $user->roles()->orderBy('description')->get();
+        return view('users.show', compact('user', 'roles'))->with('successMsg', trans('info.user_update_success'));
         }
         
     public function joiners() {
-        $users = User::where('user_role', '!=', 'Guide')->orderBy('name')->get();
-        return view('joiners', compact('users'));
+        $joiners = User::where('joins', '1')->whereHas('roles', function($q){
+            $q->where('description', 'Member');
+            })
+            ->orderBy('name')->get();
+        return view('joiners', compact('joiners'));
         }
         
     }

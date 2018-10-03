@@ -46,7 +46,7 @@
                             <a class="dropdown-item" href="{{ route('club') }}  ">{{ trans('info.club') }}</a>
                             <a class="dropdown-item" href="{{ route('joiners') }}">{{ trans('info.joiners') }}</a>
                             <a class="dropdown-item" href="{{ route('luco') }}   ">{{ trans('info.luco') }}</a>          
-                            @if(substr(Auth::user()->user_role,0,6) == 'Member')
+                            @if(Auth::user()->hasRole('Member'))
                                 <a class="dropdown-item" href="{{ route('budget') }} ">{{ trans('info.budget') }}</a>
                             @endif
                         </div>
@@ -57,8 +57,11 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
                             <a class="dropdown-item" href="/users/{{ Auth::user()->id }}">{{ trans('info.profile') }}</a>
-                            @if(Auth::user()->user_role == 'Member+')
+                            @if(Auth::user()->hasRole('Luco'))
                                 <a class="dropdown-item" href="/admin">{{ trans('info.admin') }}</a>
+                            @endif
+                            @if(Auth::user()->hasRole('Administrator'))
+                                <a class="dropdown-item" href="/administrator">{{ trans('info.administrator') }}</a>
                             @endif
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();

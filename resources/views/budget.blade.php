@@ -86,10 +86,10 @@
             <div class="card-header">Kledinglijn pakket:</div>
             <div class="card-body">
                 <div class="card-title">{{ trans('info.lappen_gestort') }}</div>
-                @foreach ($users as $user)
+                @foreach ($joiners as $joiner)
                     <div class="row">
-                        <div class="col-6">{{ $user->first_name}}</div>
-                        <div class="col-6 text-right">{{ money_format('%i', $user->paid_kleding) }}</div>
+                        <div class="col-6">{{ $joiner->first_name}}</div>
+                        <div class="col-6 text-right">{{ money_format('%i', $joiner->paid_kleding) }}</div>
                     </div>
                 @endforeach
             </div>
@@ -99,10 +99,10 @@
             <div class="card-header">{{ trans('info.lappen_status') }}</div>
             <div class="card-body">
                 <div class="card-title">{{ trans('info.lappen_gestort') }}</div>
-                @foreach ($users as $user)
+                @foreach ($joiners as $joiner)
                     <div class="row">
-                        <div class="col-6">{{ $user->first_name}}</div>
-                        <div class="col-6 text-right">{{ money_format('%i', $user->paid) }}</div>
+                        <div class="col-6">{{ $joiner->first_name}}</div>
+                        <div class="col-6 text-right">{{ money_format('%i', $joiner->paid) }}</div>
                     </div>
                 @endforeach
             </div>

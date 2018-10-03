@@ -81,10 +81,6 @@ class CommentsController extends Controller
         'body' => 'required|min:4|max:5000',
         ]);
         $comment = Comment::find($comment->id);
-        /* $comment->user_id = auth()->user()->id; */
-        $comment->title = $request->get('title');
-        $comment->body = $request->get('body');
-        /* $comment->post_id = $post->id; */
         $comment->save();
         return redirect('/posts')->with('success', trans('info.comment_update_success').$comment->title.trans('info.post_update_success2'));
         }

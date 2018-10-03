@@ -9,16 +9,16 @@
             <div class="card-body">
                 @foreach ($users as $user)
                     <div>
-                        @if(Auth::user()->user_role != 'Guide')
+                        @if(Auth::user()->hasRole('Member') || Auth::user()->hasRole('Partner'))
                             <a href="/users/{{ $user->id }}">{{ $user->first_name }} {{ $user->name }}</a>
-                        @else
-                            {{ $user->first_name }} {{ $user->name }}
+                        @else 
+                            {{ $user->first_name }} {{ $user->name }}   
                         @endif
                     </div>
                 @endforeach
             </div>
             <div class="card-footer text-muted">
-                @if(Auth::user()->user_role != 'Guide')
+                @if(Auth::user()->hasRole('Member') || Auth::user()->hasRole('Partner'))
                     <p class="card-text">{{ trans('info.members_descr') }}</p>
                 @endif
             </div>

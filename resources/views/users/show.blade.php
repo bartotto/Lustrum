@@ -6,7 +6,7 @@
     @endif
     
     <div class="card-columns">
-        <div class="card">
+        <div class="card">                                                      <!-- Personal details -->
             <div class="card-header">
                 {{ trans('info.details_all') }}
             </div>
@@ -41,17 +41,25 @@
                         <TD WIDTH="165">{{ trans('info.mobile') }}</TD>
                         <TD WIDTH="250">{{ $user->mobile }}</TD>
                     </TR>
+                    <TR>
+                        <TD WIDTH="165">{{ trans('info.roles') }}</TD>
+                        <TD WIDTH="250">
+                            @foreach ($roles as $role)
+                                {{ $role->description }},
+                            @endforeach
+                        </TD>
+                    </TR>
                 </TABLE>
             </div> 
             <div class="card-footer text-muted text-left">
-                @if(Auth::user()->user_role = 'Member')
+                @if(Auth::user()->hasRole('Member'))
                     <p>{{ trans('info.edit_user_warning') }}</p>
                 @endif
             </div>  
         </div>
-        @if(substr($user->user_role,0,6) == 'Member')
+        @if($user->hasRole('Member'))
             @if($user->partner_visible == 'Yes' || Auth::id() == $user->id)
-                <div class="card">
+                <div class="card">                                                  <!-- Partner details -->
                     <div class="card-header">
                         {{ trans('info.details_partner') }}
                     </div>
@@ -103,7 +111,7 @@
                 </div>
              @endif
         @endif
-        <div class="card">
+        <div class="card">                                                                  <!-- Other details -->
             <div class="card-header">
                 {{ trans('info.details_other') }}
             </div>
@@ -114,7 +122,7 @@
                     </a>
                 @endif
                 <TABLE BORDER="0">
-                    @if(substr(Auth::user()->user_role,0,6) == 'Member')
+                    @if(Auth::user()->hasRole('Member'))
                         <TR>
                             <TD WIDTH="165">{{ trans('info.size') }}</TD>
                             <TD>{{ $user->size }}</TD>
@@ -137,7 +145,7 @@
                 </TABLE>
             </div> 
             <div class="card-footer text-muted text-left">
-                @if(Auth::user()->user_role = 'Member')
+                @if(Auth::user()->hasRole('Member'))
                     <p>{{ trans('info.edit_user_warning') }}</p>
                 @endif
             </div>

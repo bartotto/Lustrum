@@ -19,7 +19,7 @@ class User extends Authenticatable {
     protected $fillable = [
         'name', 'first_name', 'dob', 'email', 'password', 'home_address', 'home_number', 'home_postalcode', 'home_city',
         'home_country', 'home_tel', 'mobile', 'partner', 'partner_first_name', 'partner_email', 'partner_mobile', 'partner_visible', 'partner_login',
-        'user_role', 'size', 'strandborrel', 'previous_last_login', 'last_login'
+        'size', 'strandborrel', 'previous_last_login', 'last_login'
     ];
 
     protected $dates = ['dob', 'previous_last_login', 'last_login'];
@@ -33,6 +33,20 @@ class User extends Authenticatable {
         $this->attributes['dob'] = Carbon::parse($date);
         }
     
+    /**
+     * The roles that belong to the user.
+     */
+    public function roles(){
+        return $this->belongsToMany('App\Role');
+        }
+        
+    public function hasRole($description) {
+        foreach ($this->roles as $role) {
+            if ($role->description == $description) return true;
+            }
+        return false;
+        }
+        
     protected $hidden = [
         'password', 'remember_token',
         ];

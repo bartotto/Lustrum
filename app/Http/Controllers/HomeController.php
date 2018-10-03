@@ -24,8 +24,6 @@ class HomeController extends Controller {
      */
         
     public function index() {
-        $role = auth()->user()->user_role;
-        session(['user_role' => $role]);
         return view('home');
         }
    

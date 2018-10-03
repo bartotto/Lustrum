@@ -3,6 +3,7 @@
 return [
     'add_user'          => 'Create new user',
     'admin'             => 'Admin',
+    'administrator'     => 'Administrator',
     'all'               => 'All',
     'archives'          => 'Archives',
     'are_you_sure'      => 'Are you sure you want to delete this?',  
@@ -134,6 +135,10 @@ return [
     'program_do'        => 'This is our itinerary',
     'ps'                => 'Talk and Sleep schedule',
     'ps_who'            => 'Who with who?',
+    'role'              => 'Role',
+    'roles'             => 'Role(s)',
+    'role_users'        => 'Users for this role',
+    'role_has'          => 'has',
     'questions'         => 'Still questions?',
     'questions_answer'  => 'The Luco attempts to come up with a good answer within 24 hours.',
     'questions_go_to'   => 'Go to ',

@@ -40,12 +40,12 @@
                 </TABLE>
             </div> 
             <div class="card-footer text-muted text-left">
-                @if(Auth::user()->user_role = 'Member')
+                @if(Auth::user()->hasRole('Member'))
                     <p>{{ trans('info.edit_user_warning') }}</p>
                 @endif
             </div>
         </div>
-        @if(substr($user->user_role,0,6) == 'Member')
+        @if(Auth::user()->hasRole('Member'))
             <div class="card">
                 <div class="card-header">
                     {{ trans('info.details_partner') }}
@@ -92,7 +92,7 @@
                     </TABLE>
                 </div>
                 <div class="card-footer text-muted text-left">
-                    @if(Auth::user()->user_role = 'Member')
+                    @if(Auth::user()->hasRole('Member'))
                         <p>{{ trans('info.edit_user_warning2') }}<br>
                         <sup>*</sup> {{ trans('info.edit_user_warning3') }}</p>
                     @endif
@@ -111,7 +111,7 @@
                         <button class="btn btn-primary" onclick="goBack()"><i class="fa fa-undo"> {{ trans('info.cancel') }}</i></button>
                         <button type="submit" class="btn btn-primary"><i class="fa fa-save"> {{ trans('info.save') }}</i></button>
                     </div>
-                    @if(substr(Auth::user()->user_role,0,6) == 'Member')
+                    @if(Auth::user()->hasRole('Member'))
                         <div class="form-group row">
                             <label for="size" class="col-sm-4 col-form-label">{{ trans('info.size') }}</label>
                             <div class="col-sm-7">
@@ -143,7 +143,7 @@
                 </form>
             </div>
             <div class="card-footer text-muted text-left">
-                @if(Auth::user()->user_role = 'Member')
+                @if(Auth::user()->hasRole('Member'))
                     <p>{{ trans('info.edit_user_warning') }}<br>
                 @endif
             </div>

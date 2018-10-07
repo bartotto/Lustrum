@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Log;
 use App\User;
 use App\Role;
+use App\Trip;
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 
@@ -17,8 +18,8 @@ class UsersController extends Controller {
     public function index() {
         $users = User::whereHas('roles', function($q){
             $q->where('description', 'Member');
-            }
-            )->orderBy('name')->get();
+            })
+            ->orderBy('name')->get();
         return view('users.index', compact('users'));
         }
         
@@ -39,7 +40,7 @@ class UsersController extends Controller {
         return view('users.edit_other', compact('user'));
         }
         
-    public function update(Request $request, User $user) {
+    public function update(Request $request, User $user) {  
         $validatedData = $request->validate([
             'dob' => 'date'
             ]);
@@ -48,11 +49,14 @@ class UsersController extends Controller {
         return view('users.show', compact('user', 'roles'))->with('successMsg', trans('info.user_update_success'));
         }
         
-    public function joiners() {
-        $joiners = User::where('joins', '1')->whereHas('roles', function($q){
-            $q->where('description', 'Member');
-            })
-            ->orderBy('name')->get();
+    public function joiners(Trip $trip) {
+        Log::info($trip);
+        $dest = $trip->destination;
+        Log::info($dest);
+        $joiners = User::whereHas('trips', function($qt){
+                $qt->where('destination', 'Georgia');
+                })
+            ->orderBy('name')->get();    
         return view('joiners', compact('joiners'));
         }
         

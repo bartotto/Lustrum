@@ -26,6 +26,8 @@
                     <a href="img/Luco/Dalarna.jpg" title="Dalarna"><img src="img/Luco/Thumbnails/Dalarna.jpg" alt="Dalarna"></a>
                     <a href="img/Luco/Dalarna1.png" title="Dalarna"><img src="img/Luco/Thumbnails/Dalarna1.png" alt="Dalarna1"></a>
                     <a href="img/Luco/Dalarna2.jpg" title="Dalarna"><img src="img/Luco/Thumbnails/Dalarna2.jpg" alt="Dalarna2"></a>
+                    <a href="img/Luco/Georgia1.jpg" title="Georgia"><img src="img/Luco/Thumbnails/Georgia1.jpg" alt="Georgia1"></a>
+                    <a href="img/Luco/Georgia2.jpg" title="Georgia"><img src="img/Luco/Thumbnails/Georgia2.jpg" alt="Georgia2"></a>
                 </div>
             </div>
             <div class="card-footer text-muted">

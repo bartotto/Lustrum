@@ -1,13 +1,14 @@
 <?php
 
 namespace App;
-
-use App\User;
-use Illuminate\Database\Eloquent\Model;
+use App\Trip;
 
 class Trip extends Model {
     
+    /**
+     * The users that belong to the trip.
+     */
     Public function users() {
-        return $this->belongtoMany('App\User');
+        return $this->belongsToMany('App\User');
         }
     }

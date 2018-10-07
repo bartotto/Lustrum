@@ -24,7 +24,7 @@ Route::group(['middleware' => 'language'], function () {
     Route::get('/program', 'HomeController@program')->name('program');
     Route::get('/tripPhoto','HomeController@tripPhoto')->name('tripPhoto');
     Route::get('/luco', 'HomeController@luco')->name('luco');
-    Route::get('/joiners', 'UsersController@joiners')->name('joiners');
+    Route::get('/joiners/{trip}', 'UsersController@joiners')->name('joiners');
     Route::get('/joiners/{user}', 'UsersController@show');
     Route::get('/budget', 'AdminController@budget')->name('budget');
     Route::get('/admin', 'AdminController@index')->name('admin');

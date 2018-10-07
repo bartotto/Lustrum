@@ -64,7 +64,14 @@ class User extends Authenticatable {
         }
         
     public function trips() {
-        return $this->belongtoMany(Trip::class)->withTimestamps();
+        return $this->belongstoMany('App\Trip');
+        }
+        
+    public function joinedTrip($destination) {
+        foreach ($this->trips as $trip) {
+            if ($trip->destination == $destination) return true;
+            }
+        return false;
         }
         
     }

@@ -83,34 +83,39 @@
         <div class="card">
             <div class="card-body">
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 6</div>
+                    <div class="numbertext">1 / 7</div>
                     <img src="img/Groep/Kenya.jpg" style="width:100%">
                     <div class="text">Kenya 1989</div>
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 6</div>
+                    <div class="numbertext">2 / 7</div>
                     <img src="img/Groep/Lappland.jpg" style="width:100%">
                     <div class="text">Lappland 1994</div>
                 </div>      
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 6</div>
+                    <div class="numbertext">3 / 7</div>
                     <img src="img/Groep/Cameroun.jpg" style="width:100%">
                     <div class="text">Cameroun 1999</div>
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">4 / 6</div>
+                    <div class="numbertext">4 / 7</div>
                     <img src="img/Groep/Oman.jpg" style="width:100%">
                     <div class="text">Oman 2005</div>
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">5 / 6</div>
+                    <div class="numbertext">5 / 7</div>
                     <img src="img/Groep/Carpathians.jpg" style="width:100%">
                     <div class="text">Karpaten 2009</div>
                 </div>
-                 <div class="mySlides fade">
-                    <div class="numbertext">6 / 6</div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 7</div>
                     <img src="img/Groep/Dalarna.jpg" style="width:100%">
                     <div class="text">Dalarna 2014</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="img/Groep/Georgia.jpg" style="width:100%">
+                    <div class="text">Georgia 2018</div>
                 </div>
             </div>
         </div>

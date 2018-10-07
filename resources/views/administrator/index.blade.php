@@ -13,7 +13,7 @@
                             {{ $user->first_name}} {{ $user->name}}
                         </a>
                         @if($user->previous_last_login)
-                            , {{ $user->last_login->format('d/m') }}&nbsp;{{ $user->last_login->format('H:i') }}
+                            ({{ $user->last_login->format('d/m') }}&nbsp;{{ $user->last_login->format('H:i') }})
                         @endif
                     </div>
                 @endforeach

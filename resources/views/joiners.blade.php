@@ -26,7 +26,7 @@
                 {{ trans('info.matrix') }}
             </div>
             <div class="card-body">
-                <img id="myImg" src="img/Other/Matrix_small.png" alt="Matrix">
+                <img id="myImg" src="/img/Other/Matrix_small.png" alt="Matrix">
                 <p class="card-text">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#matrix">
                         {{ trans('info.matrix_click') }}
@@ -43,38 +43,43 @@
             </div>
             <div class="card-body"> 
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 6</div>
-                    <img src="img/Groep/Kenya.jpg" style="width:100%">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="/img/Groep/Kenya.jpg" style="width:100%">
                     <div class="text">Kenya 1989</div>
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 6</div>
-                    <img src="img/Groep/Lappland.jpg" style="width:100%">
-                    <div class="text">Lappland 2004</div>
+                    <div class="numbertext">2 / 7</div>
+                    <img src="/img/Groep/Lappland.jpg" style="width:100%">
+                    <div class="text">Lappland 1994</div>
                 </div>      
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 6</div>
-                    <img src="img/Groep/Cameroun.jpg" style="width:100%">
-                    <div class="text">Cameroun 2009</div>
+                    <div class="numbertext">3 / 7</div>
+                    <img src="/img/Groep/Cameroun.jpg" style="width:100%">
+                    <div class="text">Cameroun 1999</div>
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">4 / 6</div>
-                    <img src="img/Groep/Oman.jpg" style="width:100%">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="/img/Groep/Oman.jpg" style="width:100%">
                     <div class="text">Oman 2005</div>
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">5 / 6</div>
-                    <img src="img/Groep/Carpathians.jpg" style="width:100%">
-                    <div class="text">Carpathians 2009</div>
+                    <div class="numbertext">5 / 7</div>
+                    <img src="/img/Groep/Carpathians.jpg" style="width:100%">
+                    <div class="text">Karpaten 2009</div>
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">6 / 6</div>
-                    <img src="img/Groep/Dalarna.jpg" style="width:100%">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="/img/Groep/Dalarna.jpg" style="width:100%">
                     <div class="text">Dalarna 2014</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="/img/Groep/Georgia.jpg" style="width:100%">
+                    <div class="text">Georgia 2018</div>
                 </div>
             </div>
             <div class="card-footer text-muted">
-                <p class="card-text">Binnenkort een nieuwe groepsfoto...</p>
+                <p class="card-text"></p>
             </div>
         </div>
         <div class="modal" tabindex="-1" role="dialog" id="matrix">
@@ -87,7 +92,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <img id="myImg" src="img/Other/Matrix.png" alt="Matrix" style="max-width:1400px">
+                        <img id="myImg" src="/img/Other/Matrix.png" alt="Matrix" style="max-width:1400px">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">{{ trans('info.close') }}</button>

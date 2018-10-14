@@ -1,16 +1,20 @@
 @extends('layouts.app')
 @section('subtitle', '| '.trans('info.profile'))
 @section('content')
-    @if(!empty($successMsg))
-        <div class="alert alert-success">{{ $successMsg }}</div>
-    @endif
-    
     <div class="card-columns">
         <div class="card">                                                      <!-- Personal details -->
             <div class="card-header">
                 {{ trans('info.details_all') }}
             </div>
             <div class="card-body">
+                @if(session()->get('success'))
+                    <div class="alert alert-success">
+                        {{ \Session::get('success') }}
+                    </div>
+                @endif
+                <button class="btn btn-primary" onclick="goBack()">
+                    <i class="fa fa-undo">{{ trans('info.back') }}</i>
+                </button>
                 @if(Auth::id() == $user->id)
                     <a class="btn btn-primary" href="{{ route('users.edit', ['id'=>$user->id]) }}">
                         <i class="fa fa-edit"> {{ trans('info.edit') }}</i>

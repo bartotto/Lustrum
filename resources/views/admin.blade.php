@@ -29,32 +29,7 @@
                 22 aug 18
             </div>
         </div>
-        <div class="card">
-            <img class="card-img-top" src="img/Other/Alex.jpg" alt="Alex" height="auto" width="48">
-            <div class="card-header">
-                Kledinglijn maten
-            </div>
-            <div class="card-body">
-                <div class="card-title">Al opgegeven:</div>
-                @foreach ($users as $user)
-                    @if($user->size)
-                        <div>{{ $user->first_name}}  {{$user->size}}</div>
-                    @endif
-                @endforeach
-                <hr>
-                <div class="card-title">Trage eikels:</div>
-                @foreach ($users as $user)
-                    @if($user->joins)
-                        @if(!$user->size)
-                            <div>{{ $user->first_name}}  {{$user->size}}</div>
-                        @endif
-                    @endif
-                @endforeach
-             </div>
-            <div class="card-footer text-muted">
-                14 aug 18
-            </div>
-        </div>
+        
         <div class="card">
             <img class="card-img-top" src="img/Strandborrel/1.jpg" alt="Strandborrel" height="auto" width="48">
             <div class="card-header">

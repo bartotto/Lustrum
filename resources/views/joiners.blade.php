@@ -10,7 +10,7 @@
                 <ol>
                     @foreach ($joiners as $joiner)
                         <li>
-                            <a href="/joiners/{{ $joiner->id }}">{{ $joiner->first_name }} {{ $joiner->name }}</a>
+                            <a href="/users/{{ $joiner->id }}">{{ $joiner->first_name }} {{ $joiner->name }}</a>
                         </li>
                     @endforeach
                 </ol>

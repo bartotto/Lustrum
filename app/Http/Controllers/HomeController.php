@@ -46,6 +46,10 @@ class HomeController extends Controller {
     public function tripPhoto() {
         return view('tripPhoto');
         }
+        
+    public function tripVideo() {
+        return view('tripVideo');
+        }
     
     public function luco() {
         return view('luco');

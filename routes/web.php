@@ -12,7 +12,6 @@
 */
 
 Route::get('/','HomeController@logout')->name('logout');
-Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 
 Auth::routes();
 
@@ -23,9 +22,9 @@ Route::group(['middleware' => 'language'], function () {
     Route::get('/destination_map', 'HomeController@destination_map')->name('destination_map');
     Route::get('/program', 'HomeController@program')->name('program');
     Route::get('/tripPhoto','HomeController@tripPhoto')->name('tripPhoto');
+    Route::get('/tripVideo','HomeController@tripVideo')->name('tripVideo');
     Route::get('/luco', 'HomeController@luco')->name('luco');
     Route::get('/joiners/{trip}', 'UsersController@joiners')->name('joiners');
-    Route::get('/joiners/{user}', 'UsersController@show');
     Route::get('/budget', 'AdminController@budget')->name('budget');
     Route::get('/admin', 'AdminController@index')->name('admin');
     Route::get('/administrator', 'AdministratorController@index')->name('administrator');

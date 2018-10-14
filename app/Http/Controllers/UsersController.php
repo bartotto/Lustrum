@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Log;
+use Session;
 use App\User;
 use App\Role;
 use App\Trip;
@@ -44,10 +45,17 @@ class UsersController extends Controller {
         $validatedData = $request->validate([
             'dob' => 'date'
             ]);
+        $old_name = $user->name;
         $user->update($request->all());
         $roles = $user->roles()->orderBy('description')->get();
-        return view('users.show', compact('user', 'roles'))->with('successMsg', trans('info.user_update_success'));
+        if($user->name <> $old_name){
+            return view('users.show', compact('user', 'roles'))->with('success', trans('info.user_update_success'));
+            }
+        else {
+            return view('users.show', compact('user', 'roles'));
+            }
         }
+        // ->with('success', trans('info.post_update_success').$post->title.trans('info.post_update_success2'));
         
     public function joiners(Trip $trip) {
         Log::info($trip);

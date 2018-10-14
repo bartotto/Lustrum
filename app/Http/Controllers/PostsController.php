@@ -57,11 +57,17 @@ class PostsController extends Controller {
             'body' => 'required|min:4|max:5000',
             ]);
         $post = Post::find($id);
-        $post->user_id = auth()->user()->id;
+        $old_title = $post->title;
+        $old_body = $post->body;
         $post->title = $request->get('title');
         $post->body = $request->get('body');
         $post->save();
-        return redirect('/posts')->with('success', trans('info.post_update_success').$post->title.trans('info.post_update_success2'));
+        if($post->title <> $old_title || $post->body <> $old_body){
+            return redirect('/posts')->with('success', trans('info.post_update_success').$post->title.trans('info.post_update_success2'));
+            }
+        else {
+            return redirect('/posts');
+            }
         }
         
     public function destroy($id) {

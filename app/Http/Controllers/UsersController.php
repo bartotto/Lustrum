@@ -43,24 +43,25 @@ class UsersController extends Controller {
         
     public function update(Request $request, User $user) {  
         $validatedData = $request->validate([
-            'dob' => 'date'
+            'name' => 'min:2',
+            'first_name' => 'min:2',
+            'dob' => 'date|before:today|nullable',
+            'email' => 'unique:users,email,'.$user->id,
+            'home_postalcode' => 'max:7'
             ]);
-        $old_name = $user->name;
+        $old_user_updated_at=$user->updated_at;  
         $user->update($request->all());
         $roles = $user->roles()->orderBy('description')->get();
-        if($user->name <> $old_name){
-            return view('users.show', compact('user', 'roles'))->with('success', trans('info.user_update_success'));
+        if($user->updated_at <> $old_user_updated_at) {
+            return redirect()->route('users.show', compact('user', 'roles'))->with('success', trans('info.update_success'));
             }
         else {
-            return view('users.show', compact('user', 'roles'));
+            return redirect()->route('users.show', compact('user', 'roles'))->with('danger', trans('info.update_nothing'));
             }
         }
-        // ->with('success', trans('info.post_update_success').$post->title.trans('info.post_update_success2'));
         
     public function joiners(Trip $trip) {
-        Log::info($trip);
         $dest = $trip->destination;
-        Log::info($dest);
         $joiners = User::whereHas('trips', function($qt){
                 $qt->where('destination', 'Georgia');
                 })

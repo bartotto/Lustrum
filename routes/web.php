@@ -11,28 +11,29 @@
 |
 */
 
-Route::get('/','HomeController@logout')->name('logout');
+  Route::get('/','HomeController@logout')->name('logout');
+
 
 Auth::routes();
 
 Route::group(['middleware' => 'language'], function () {
-    Route::get('/home', 'HomeController@index')->name('home');
-    Route::get('/logo', 'HomeController@logo')->name('logo');
-    Route::get('/destination', 'HomeController@destination')->name('destination');
-    Route::get('/destination_map', 'HomeController@destination_map')->name('destination_map');
-    Route::get('/program', 'HomeController@program')->name('program');
-    Route::get('/tripPhoto','HomeController@tripPhoto')->name('tripPhoto');
-    Route::get('/tripVideo','HomeController@tripVideo')->name('tripVideo');
-    Route::get('/luco', 'HomeController@luco')->name('luco');
-    Route::get('/joiners/{trip}', 'UsersController@joiners')->name('joiners');
-    Route::get('/budget', 'AdminController@budget')->name('budget');
-    Route::get('/admin', 'AdminController@index')->name('admin');
-    Route::get('/administrator', 'AdministratorController@index')->name('administrator');
-    Route::get('/administrator/{user}', 'AdministratorController@show');
-    Route::get('/role/{role}', 'AdministratorController@show_for_role');
+    Route::view('home', 'home');
+    Route::view('logo', 'logo');
+    Route::view('destination', 'destination');
+    Route::view('destination_map', 'destination_map');
+    Route::view('program', 'program');
+    Route::view('tripPhoto','tripPhoto');
+    Route::view('tripVideo','tripVideo');
+    Route::view('luco', 'luco');
+    Route::get('joiners/{trip}', 'UsersController@joiners');
+    Route::get('admin', 'AdminController@index');
+    Route::get('budget', 'AdminController@budget');
+    Route::get('administrator', 'AdministratorController@index');
+    Route::get('administrator/{user}', 'AdministratorController@show');
+    Route::get('role/{role}', 'AdministratorController@show_for_role');
     
-    Route::get('/users/{user}', 'UsersController@show');
-    Route::get('/users', 'UsersController@index')->name('club');
+    Route::get('/users/{user}', 'UsersController@show')->name('users.show');
+    Route::get('/users.index', 'UsersController@index');
     Route::get('/users/{user}/edit', 'UsersController@edit')->name('users.edit');
     Route::get('/users/{user}/edit_partner', 'UsersController@edit_partner')->name('users.edit_partner');
     Route::get('/users/{user}/edit_other', 'UsersController@edit_other')->name('users.edit_other');

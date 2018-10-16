@@ -8,7 +8,7 @@
                 <div class="card-body">
                     @if(session()->get('success'))
                         <div class="alert alert-success">
-                            {{\Session::get('success')}}
+                            {{ \Session::get('success') }}
                         </div>
                     @endif
                     <a href="{{ route('posts.create') }}" class="btn btn-primary">{{ trans('info.post_create') }}</a>

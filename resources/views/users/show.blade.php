@@ -1,17 +1,21 @@
 @extends('layouts.app')
 @section('subtitle', '| '.trans('info.profile'))
 @section('content')
+    @if(session()->get('success'))
+        <div class="alert alert-success">
+            {{ \Session::get('success') }}
+        </div>
+    @elseif(session()->get('danger'))
+        <div class="alert alert-danger">
+            {{ \Session::get('danger') }}
+        </div>
+    @endif
     <div class="card-columns">
         <div class="card">                                                      <!-- Personal details -->
             <div class="card-header">
                 {{ trans('info.details_all') }}
             </div>
             <div class="card-body">
-                @if(session()->get('success'))
-                    <div class="alert alert-success">
-                        {{ \Session::get('success') }}
-                    </div>
-                @endif
                 <button class="btn btn-primary" onclick="goBack()">
                     <i class="fa fa-undo">{{ trans('info.back') }}</i>
                 </button>
@@ -27,7 +31,7 @@
                     </TR>
                     <TR>
                         <TD WIDTH="165">{{ trans('info.dob') }}</TD>
-                        <TD>{{ date("d-m-y", strtotime($user->dob)) }}</TD>
+                        <TD>{{ date("d-m-Y", strtotime($user->dob)) }}</TD>
                     </TR>
                     <TR>
                         <TD WIDTH="165">{{ trans('info.email_address') }}</TD>
@@ -49,7 +53,7 @@
                         <TD WIDTH="165">{{ trans('info.roles') }}</TD>
                         <TD WIDTH="250">
                             @foreach ($roles as $role)
-                                {{ $role->description }},
+                                {{ $role->description }}@if (!$loop->last),@endif
                             @endforeach
                         </TD>
                     </TR>

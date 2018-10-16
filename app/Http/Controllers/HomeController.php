@@ -26,34 +26,6 @@ class HomeController extends Controller {
     public function index() {
         return view('home');
         }
-   
-    public function logo() {
-        return view('logo');
-        }
-    
-    public function destination() {
-        return view('destination');
-        }
-        
-    public function destination_map() {
-        return view('destination_map');
-        }
-        
-    public function program() {
-        return view('program');
-        }
-        
-    public function tripPhoto() {
-        return view('tripPhoto');
-        }
-        
-    public function tripVideo() {
-        return view('tripVideo');
-        }
-    
-    public function luco() {
-        return view('luco');
-        }
     
     public function logout() {
         return view('home');

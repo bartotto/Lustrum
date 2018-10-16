@@ -17,10 +17,10 @@ class User extends Authenticatable {
      * @var array
      */
     protected $fillable = [
-        'name', 'first_name', 'dob', 'email', 'password', 'home_address', 'home_number', 'home_postalcode', 'home_city',
-        'home_country', 'home_tel', 'mobile', 'partner', 'partner_first_name', 'partner_email', 'partner_mobile', 'partner_visible', 'partner_login',
+        'name', 'first_name', 'dob', 'email', 'password', 'home_address', 'home_postalcode', 'home_city', 'home_country', 'home_tel', 'mobile',
+        'partner', 'partner_first_name', 'partner_email', 'partner_mobile', 'partner_visible', 'partner_login',
         'size', 'strandborrel', 'previous_last_login', 'last_login'
-    ];
+        ];
 
     protected $dates = ['dob', 'previous_last_login', 'last_login'];
     /**

@@ -24,13 +24,12 @@
                             <input type="text" class="form-control" value="{{ $user->name }}" id="name" name="name" placeholder="{{ trans('info.last_name') }}">
                         </div>
                     </div>
-    <!--            <div class="nativeDatePicker">
-                        <label for="dob" class="col-sm-3 col-form-label">{{ trans('info.dob') }}</label>
-                        <div class="col-sm-9">
+                    <div class="form-group row">
+                        <label for="dob" class="col-sm-4 col-form-label">{{ trans('info.dob') }}</label>
+                        <div class="col-sm-5">
                             <input class="form-control" type="date" value="{{ date('d-m-Y', strtotime($user->dob)) }}" id="dob" name="dob"> 
                         </div>
                     </div>
-        -->
                     <div class="form-group row">
                         <label for="email" class="col-sm-4 col-form-label">{{ trans('info.email_address') }}</label>
                         <div class="col-sm-8">

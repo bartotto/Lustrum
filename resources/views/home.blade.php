@@ -184,43 +184,7 @@
                     <p>{{ trans('info.lappen_descr3') }}<a href="budget">{{ trans('info.budget') }}</a></p>
                 </div>
             </div>
-        @endif
-        
-        <div class="card">
-            <img class="card-img-top" src="img/Other/Passport.jpg" alt="Paspoort">
-            <div class="card-header">
-                {{ trans('info.passport') }}
-            </div>
-            <div class="card-block">
-                <div class="card-body">
-                    <div class="card-title">{{ trans('info.passport_title') }}</div>
-                    <p class="card-text">{{ trans('info.passport_text') }}</p>
-                    <p class="card-text">{{ trans('info.passport_text2') }}
-                        <a href="https://www.anwb.nl/vakantie/georgie/informatie/reisdocumenten">ANWB</a>{{ trans('info.passport_text3') }}
-                        <a href="https://www.landenkompas.nl/georgie">Landenkompas</a>{{ trans('info.passport_text4') }}
-                    </p>
-                </div>
-            </div>
-            <div class="card-footer text-muted">
-                <p>13 aug 18</p>
-            </div>
-        </div>
-        
-        <div class="card">
-            <img class="card-img-top" src="img/Other/Insurance.jpg" alt="Verzekering">
-            <div class="card-header">
-                {{ trans('info.insurance') }}
-            </div>
-            <div class="card-block">
-                <div class="card-body">
-                    <div class="card-title">{{ trans('info.insurance_title') }}</div>
-                    <p class="card-text">{{ trans('info.insurance_text') }}</p>
-                </div>
-            </div>
-            <div class="card-footer text-muted">
-                <p>13 aug 18</p>
-            </div>
-        </div>
+        @endif     
         
         <div class="card">
             <img class="card-img-top" src="img/Other/Question.jpg" alt="Vraag?">

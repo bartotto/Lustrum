@@ -47,7 +47,9 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="img/Strandborrel/2.jpg" alt="Strandborrel">
+            <a href="img\Strandborrel\1.jpg" title="1" data-gallery="#blueimp-gallery-club">
+                <img class="card-img-top" src="img/Strandborrel/2.jpg" alt="Strandborrel">
+            </a>
             <div class="card-header">
                 {{ trans('info.strand_borrel') }}
             </div>
@@ -57,24 +59,24 @@
                 <p class="card-text">Goed dat Hennink bij de borrel was en dat Jacqueline erbij was. De club leeft en de spanning voor de komende reis is voelbaar... Dames smeden plannen om tijdens de reis bij elkaar te komen? Wordt vervolgd... Klik op een foto hieronder voor de plaatjes</p>
             </div> 
             <div id="blueimp-gallery-club" class="blueimp-gallery blueimp-gallery-controls">
-                    <div class="slides"></div>
-                    <h3 class="title"></h3>
-                    <a class="prev">‹</a>
-                    <a class="next">›</a>
-                    <a class="close">×</a>
-                    <a class="play-pause"></a>
-                    <ol class="indicator"></ol>
-                </div>
-                <div id="links">
-                    <a href="img\Strandborrel\1.jpg" title="1" data-gallery="#blueimp-gallery-club"><img src="img\Strandborrel\Thumbnails\1.jpg" alt="1"></a>
-                    <a href="img\Strandborrel\2.jpg" title="2" data-gallery="#blueimp-gallery-club"><img src="img\Strandborrel\Thumbnails\2.jpg" alt="2"></a>
-                    <a href="img\Strandborrel\3.jpg" title="3" data-gallery="#blueimp-gallery-club"><img src="img\Strandborrel\Thumbnails\3.jpg" alt="3"></a>
-                    <a href="img\Strandborrel\4.jpg" title="4" data-gallery="#blueimp-gallery-club"><img src="img\Strandborrel\Thumbnails\4.jpg" alt="4"></a>
-                    <a href="img\Strandborrel\5.jpg" title="5" data-gallery="#blueimp-gallery-club"><img src="img\Strandborrel\Thumbnails\5.jpg" alt="5"></a>
-                    <a href="img\Strandborrel\6.jpg" title="6" data-gallery="#blueimp-gallery-club"><img src="img\Strandborrel\Thumbnails\6.jpg" alt="6"></a>
-                    <a href="img\Strandborrel\7.jpg" title="7" data-gallery="#blueimp-gallery-club"><img src="img\Strandborrel\Thumbnails\7.jpg" alt="7"></a>
-                    <a href="img\Strandborrel\8.jpg" title="8" data-gallery="#blueimp-gallery-club"><img src="img\Strandborrel\Thumbnails\8.jpg" alt="8"></a>
-                </div>
+                <div class="slides"></div>
+                <h3 class="title"></h3>
+                <a class="prev">‹</a>
+                <a class="next">›</a>
+                <a class="close">×</a>
+                <a class="play-pause"></a>
+                <ol class="indicator"></ol>
+            </div>
+            <div id="links">
+                <a href="img\Strandborrel\1.jpg" title="1" data-gallery="#blueimp-gallery-club"><img src="img\Strandborrel\Thumbnails\1.jpg" alt="1"></a>
+                <a href="img\Strandborrel\2.jpg" title="2" data-gallery="#blueimp-gallery-club"><img src="img\Strandborrel\Thumbnails\2.jpg" alt="2"></a>
+                <a href="img\Strandborrel\3.jpg" title="3" data-gallery="#blueimp-gallery-club"><img src="img\Strandborrel\Thumbnails\3.jpg" alt="3"></a>
+                <a href="img\Strandborrel\4.jpg" title="4" data-gallery="#blueimp-gallery-club"><img src="img\Strandborrel\Thumbnails\4.jpg" alt="4"></a>
+                <a href="img\Strandborrel\5.jpg" title="5" data-gallery="#blueimp-gallery-club"><img src="img\Strandborrel\Thumbnails\5.jpg" alt="5"></a>
+                <a href="img\Strandborrel\6.jpg" title="6" data-gallery="#blueimp-gallery-club"><img src="img\Strandborrel\Thumbnails\6.jpg" alt="6"></a>
+                <a href="img\Strandborrel\7.jpg" title="7" data-gallery="#blueimp-gallery-club"><img src="img\Strandborrel\Thumbnails\7.jpg" alt="7"></a>
+                <a href="img\Strandborrel\8.jpg" title="8" data-gallery="#blueimp-gallery-club"><img src="img\Strandborrel\Thumbnails\8.jpg" alt="8"></a>
+            </div>
             <div class="card-footer text-muted">
                 <p>17 aug 18</p>
             </div>
@@ -114,8 +116,19 @@
                 </div>
                 <div class="mySlides fade">
                     <div class="numbertext">7 / 7</div>
-                    <img src="img/Groep/Georgia.jpg" style="width:100%">
+                    <a href="img\Groep\Originals\Georgia.jpg" title="1" data-gallery="#blueimp-gallery-group">
+                        <img src="img/Groep/Georgia.jpg" style="width:100%">
+                    </a>
                     <div class="text">Georgia 2018</div>
+                </div>
+                <div id="blueimp-gallery-group" class="blueimp-gallery blueimp-gallery-controls">
+                    <div class="slides"></div>
+                    <h3 class="title"></h3>
+                    <a class="prev">‹</a>
+                    <a class="next">›</a>
+                    <a class="close">×</a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator"></ol>
                 </div>
             </div>
         </div>
@@ -142,6 +155,20 @@
             </div>
         </div>
         
+        <div class="card">
+            <a href="img\Groep\Originals\Georgia.jpg" title="1" data-gallery="#blueimp-gallery-group">
+                <img class="card-img-top" src="img/Groep/Georgia.jpg" alt="Georgia">
+            </a>
+            <div class="card-header">
+                {{ trans('info.beautiful') }}
+            </div>
+            <div class="card-body">
+                <div class="card-title">{{ trans('info.beautiful_descr1') }}</div>
+                <p>{{ trans('info.beautiful_descr2') }}</p>
+                <p>{{ trans('info.beautiful_descr3') }}<a href="program">{{ trans('info.program') }}</a></p>
+            </div>
+        </div>
+        
         @if(Auth::user()->hasRole('Member'))
             <div class="card">
                 <a href="http://www.tabula.ge/en/story/115667-civil-society-activists-protest-lari-depreciation" target="_blank">
@@ -158,18 +185,6 @@
                 </div>
             </div>
         @endif
-        
-        <div class="card">
-            <img class="card-img-top" src="img/Other/Departure.jpg" alt="Departure">
-            <div class="card-header">
-                {{ trans('info.when') }}
-            </div>
-            <div class="card-body">
-                <div class="card-title">{{ trans('info.when_descr') }}</div>
-                <p>{{ trans('info.when_descr2') }}</p>
-                <p>{{ trans('info.when_descr3') }}<a href="program">{{ trans('info.program') }}</a></p>
-            </div>
-        </div>
         
         <div class="card">
             <img class="card-img-top" src="img/Other/Passport.jpg" alt="Paspoort">

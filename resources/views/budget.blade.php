@@ -51,17 +51,17 @@
                         <TR>
                             <TD WIDTH="365" HEIGHT="30">Organisatie, satphone etc.</TD>
                             <TD align="right">€20</TD>
-                            <TD align="right">€53</TD>
+                            <TD align="right">€56</TD>
                         </TR>
                         <TR>
                             <TD WIDTH="365" HEIGHT="30">Totaal</TD>
                             <TD align="right">€1.540</TD>
-                            <TD align="right">€1.604</TD>
+                            <TD align="right">€1.608</TD>
                         </TR>
                         <TR>
                             <TD WIDTH="365" HEIGHT="30">Totaal excl. vliegreis</TD>
                             <TD align="right">€1.184</TD>
-                             <TD align="right">€1.248</TD>
+                             <TD align="right">€1.252</TD>
                         </TR>
                         <TR>
                             <TD WIDTH="365" HEIGHT="30">1e storting (voor 31 aug)</TD>
@@ -74,7 +74,7 @@
                         <TR>
                             <TD WIDTH="365" HEIGHT="30">Verwachte naheffing</TD>
                             <TD align="right"></TD>
-                            <TD align="right">€64</TD>
+                            <TD align="right">€68</TD>
                         </TR>
                     </TABLE>
                 </div>

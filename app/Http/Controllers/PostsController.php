@@ -8,10 +8,12 @@ use Log;
 use Session;
 use App\User;
 use App\Post;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Gate;
 use App\Events\newBlogPost;
 
 class PostsController extends Controller {
+    use Notifiable;
     
     public function __construct() {
         $this->middleware('auth');
@@ -43,6 +45,8 @@ class PostsController extends Controller {
             'body' => $request->get('body'),
             ]);
         $post->save();
+        $userToNotify = User::first();
+        Notification::send($userToNotify, new App\Notifications\NewPost('There is a new Post in the Blog'));
         return redirect('/posts')->with('success', trans('info.post_create_success'));
         }
         

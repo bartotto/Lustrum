@@ -13,7 +13,7 @@ class PostObserver {
      * @return void
      */
     public function creating(Post $post) {
-        Log::Info('hoi');
+        // Log::Info('hoi');
         }
         
     }

@@ -16,7 +16,7 @@ class TripsController extends Controller {
     
     public function index() {
         $trip = App\Trip::find(1);
-        foreach ($Trip->users as $user) {
+        foreach($Trip->users as $user) {
             $joiner[] = $user;
             }
         return view('trips.index', compact('trips'));

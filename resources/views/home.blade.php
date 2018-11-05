@@ -3,8 +3,61 @@
 @section('content')
     <div class="card-columns">
         <div class="card">
-            <img class="card-img-top" src="img/Logos/Georgia_new.jpg" alt="Logo Georgia">
+            <a href="/logo">
+                <img class="card-img-top" src="img/Logos/Georgia_new.jpg" alt="Logo Georgia">
+            </a>
+        </div> 
+        <div class="card">
+            <div class="card-body">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="img/Groep/Kenya.jpg" style="width:100%">
+                    <div class="text">Kenya 1989</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="img/Groep/Lappland.jpg" style="width:100%">
+                    <div class="text">Lappland 1994</div>
+                </div>      
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="img/Groep/Cameroun.jpg" style="width:100%">
+                    <div class="text">Cameroun 1999</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="img/Groep/Oman.jpg" style="width:100%">
+                    <div class="text">Oman 2005</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="img/Groep/Carpathians.jpg" style="width:100%">
+                    <div class="text">Karpaten 2009</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="img/Groep/Dalarna.jpg" style="width:100%">
+                    <div class="text">Dalarna 2014</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 7</div>
+                    <a href="img\Groep\Originals\Georgia.jpg" title="1" data-gallery="#blueimp-gallery-group">
+                        <img src="img/Groep/Georgia.jpg" style="width:100%">
+                    </a>
+                    <div class="text">Georgia 2018</div>
+                </div>
+                <div id="blueimp-gallery-group" class="blueimp-gallery blueimp-gallery-controls">
+                    <div class="slides"></div>
+                    <h3 class="title"></h3>
+                    <a class="prev">‹</a>
+                    <a class="next">›</a>
+                    <a class="close">×</a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator"></ol>
+                </div>
+            </div>
         </div>
+        
         <div class="card">
             <img class="card-img-top" src="img/Other/Rugzak.jpg" alt="Paklijst">
             <div class="card-header">
@@ -83,57 +136,6 @@
         </div>
         
         <div class="card">
-            <div class="card-body">
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 7</div>
-                    <img src="img/Groep/Kenya.jpg" style="width:100%">
-                    <div class="text">Kenya 1989</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 7</div>
-                    <img src="img/Groep/Lappland.jpg" style="width:100%">
-                    <div class="text">Lappland 1994</div>
-                </div>      
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 7</div>
-                    <img src="img/Groep/Cameroun.jpg" style="width:100%">
-                    <div class="text">Cameroun 1999</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 7</div>
-                    <img src="img/Groep/Oman.jpg" style="width:100%">
-                    <div class="text">Oman 2005</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">5 / 7</div>
-                    <img src="img/Groep/Carpathians.jpg" style="width:100%">
-                    <div class="text">Karpaten 2009</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">6 / 7</div>
-                    <img src="img/Groep/Dalarna.jpg" style="width:100%">
-                    <div class="text">Dalarna 2014</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">7 / 7</div>
-                    <a href="img\Groep\Originals\Georgia.jpg" title="1" data-gallery="#blueimp-gallery-group">
-                        <img src="img/Groep/Georgia.jpg" style="width:100%">
-                    </a>
-                    <div class="text">Georgia 2018</div>
-                </div>
-                <div id="blueimp-gallery-group" class="blueimp-gallery blueimp-gallery-controls">
-                    <div class="slides"></div>
-                    <h3 class="title"></h3>
-                    <a class="prev">‹</a>
-                    <a class="next">›</a>
-                    <a class="close">×</a>
-                    <a class="play-pause"></a>
-                    <ol class="indicator"></ol>
-                </div>
-            </div>
-        </div>
-        
-        <div class="card">
             <img class="card-img-top" src="img/Other/Aart.jpg" alt="Aart">
             <div class="card-header">
                 {{ trans('info.president') }}
@@ -182,6 +184,9 @@
                     <p>{{ trans('info.lappen_descr1') }}</p>
                     <p>{{ trans('info.lappen_descr2') }}</p>
                     <p>{{ trans('info.lappen_descr3') }}<a href="budget">{{ trans('info.budget') }}</a></p>
+                </div>
+                 <div class="card-footer text-muted">
+                    5 nov 18
                 </div>
             </div>
         @endif     

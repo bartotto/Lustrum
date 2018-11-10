@@ -186,7 +186,7 @@
                     <p>{{ trans('info.lappen_descr3') }}<a href="budget">{{ trans('info.budget') }}</a></p>
                 </div>
                  <div class="card-footer text-muted">
-                    5 nov 18
+                    10 nov 18
                 </div>
             </div>
         @endif     

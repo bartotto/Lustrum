@@ -6,47 +6,18 @@
             <a href="/logo">
                 <img class="card-img-top" src="img/Logos/Georgia_new.jpg" alt="Logo Georgia">
             </a>
-        </div> 
+        </div>
+        
         <div class="card">
+            <div class="card-header">
+                <img src="img/Groep/Georgia.jpg" style="width:100%">
+                {{ trans('info.beautiful') }}
+            </div>
             <div class="card-body">
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 7</div>
-                    <img src="img/Groep/Kenya.jpg" style="width:100%">
-                    <div class="text">Kenya 1989</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 7</div>
-                    <img src="img/Groep/Lappland.jpg" style="width:100%">
-                    <div class="text">Lappland 1994</div>
-                </div>      
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 7</div>
-                    <img src="img/Groep/Cameroun.jpg" style="width:100%">
-                    <div class="text">Cameroun 1999</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 7</div>
-                    <img src="img/Groep/Oman.jpg" style="width:100%">
-                    <div class="text">Oman 2005</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">5 / 7</div>
-                    <img src="img/Groep/Carpathians.jpg" style="width:100%">
-                    <div class="text">Karpaten 2009</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">6 / 7</div>
-                    <img src="img/Groep/Dalarna.jpg" style="width:100%">
-                    <div class="text">Dalarna 2014</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">7 / 7</div>
-                    <a href="img\Groep\Originals\Georgia.jpg" title="1" data-gallery="#blueimp-gallery-group">
-                        <img src="img/Groep/Georgia.jpg" style="width:100%">
-                    </a>
-                    <div class="text">Georgia 2018</div>
-                </div>
-                <div id="blueimp-gallery-group" class="blueimp-gallery blueimp-gallery-controls">
+                <div class="card-title">{{ trans('info.beautiful_descr1') }}</div>
+                <p>{{ trans('info.beautiful_descr2') }}</p>
+                <p>{{ trans('info.beautiful_descr3') }}<a href="program">{{ trans('info.program') }}</a>{{ trans('info.beautiful_descr4') }}</p>
+                <div id="blueimp-gallery-georgia" class="blueimp-gallery blueimp-gallery-controls">
                     <div class="slides"></div>
                     <h3 class="title"></h3>
                     <a class="prev">‹</a>
@@ -55,50 +26,36 @@
                     <a class="play-pause"></a>
                     <ol class="indicator"></ol>
                 </div>
+                <div id="links">
+                    <a href="img\Trips\Georgia\1.jpg" title="1" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\1.jpg" alt="1"></a>
+                    <a href="img\Trips\Georgia\2.jpg" title="2" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\2.jpg" alt="2"></a>
+                    <a href="img\Trips\Georgia\3.jpg" title="3" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\3.jpg" alt="3"></a>
+                    <a href="img\Trips\Georgia\4.jpg" title="4" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\4.jpg" alt="4"></a>
+                    <a href="img\Trips\Georgia\5.jpg" title="5" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\5.jpg" alt="5"></a>
+                    <a href="img\Trips\Georgia\6.jpg" title="6" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\6.jpg" alt="6"></a>
+                    <a href="img\Trips\Georgia\7.jpg" title="7" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\7.jpg" alt="7"></a>
+                    <a href="img\Trips\Georgia\8.jpg" title="8" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\8.jpg" alt="8"></a>
+                    <a href="img\Trips\Georgia\9.jpg" title="9" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\9.jpg" alt="9"></a>
+                    <a href="img\Trips\Georgia\10.jpg" title="10" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\10.jpg" alt="10"></a>
+                    <a href="img\Trips\Georgia\11.jpg" title="11" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\11.jpg" alt="11"></a>
+                    <a href="img\Trips\Georgia\12.jpg" title="12" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\12.jpg" alt="12"></a>
+                    <a href="img\Trips\Georgia\13.jpg" title="13" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\13.jpg" alt="13"></a>
+                    <a href="img\Trips\Georgia\14.jpg" title="14" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\14.jpg" alt="14"></a>
+                    <a href="img\Trips\Georgia\15.jpg" title="15" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\15.jpg" alt="15"></a>
+                    <a href="img\Trips\Georgia\16.jpg" title="16" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\16.jpg" alt="16"></a>
+                    <a href="img\Trips\Georgia\17.jpg" title="17" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\17.jpg" alt="17"></a>
+                    <a href="img\Trips\Georgia\18.jpg" title="18" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\18.jpg" alt="18"></a>
+                    <a href="img\Trips\Georgia\19.jpg" title="19" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\19.jpg" alt="19"></a>
+                    <a href="img\Trips\Georgia\20.jpg" title="20" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\20.jpg" alt="20"></a>
+                    <a href="img\Trips\Georgia\21.jpg" title="21" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\21.jpg" alt="21"></a>
+                    <a href="img\Trips\Georgia\22.jpg" title="22" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\22.jpg" alt="22"></a>
+                    <a href="img\Trips\Georgia\23.jpg" title="23" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\23.jpg" alt="23"></a>
+                    <a href="img\Trips\Georgia\24.jpg" title="24" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\24.jpg" alt="24"></a>
+                    <a href="img\Trips\Georgia\25.jpg" title="25" data-gallery="#blueimp-gallery-georgia"><img src="img\Trips\Georgia\Thumbnails\25.jpg" alt="25"></a>
+                </div>
             </div>
         </div>
         
-        <div class="card">
-            <img class="card-img-top" src="img/Other/Rugzak.jpg" alt="Paklijst">
-            <div class="card-header">
-                {{ trans('info.packlist') }}
-            </div>
-            <div class="card-body">
-                <p>Main backpack. Although the horses will carry our luggage during the hikes, you will want something you can carry comfortably if needed. Don’t forget the rain cover; some packs come with one built-in. </p>
-                <p>Day pack which can carry some minimal belongings which you may need during the hike, e.g.:</p>
-                <ul>
-                    <li>Water bottle</li>
-                    <li>Sunglasses</li>
-                    <li>Sunburn lotion</li>
-                    <li>Rain jacket</li>
-                    <li>Gloves</li>
-                    <li>Piece of plastic to sit on when we take a break during the day – in case it is wet</li>
-                    <li>Nordic walking stick (optional)</li>
-                    <li>Passport that is still 6 months valid at departure</li>
-                    <li>Appropriate travel insurance</li>
-                </ul>
-                <p>Main backpack:</p>
-                <ul>
-                    <li>Sleeping bag & pillow (David will provide tents & mattresses)</li>
-                    <li>Hiking boots offering sufficient support in rough terrain</li>
-                    <li>Clothes suitable for warm, cold, rainy and dry weather conditions</li>
-                    <li>swimming trunks</li>
-                    <li>Luco Kledinglijn Committee will arrange fleece & cap</li>
-                    <li>Toiletries, towel</li>
-                    <li>IOUs</li>
-                    <li>The Luco will bring a First aid kit. You are responsible for any personal medicine.</li>
-                    <li>Knife or multi-purpose tool</li>
-                    <li>Torch or headlamp: plus extra batteries</li>
-                    <li>Solar battery charger</li>
-                    <li>BONUS: Trash Bag. A zip lock bag is a great option</li>
-                </ul>
-                <p>Water filter not required – the water from the streams is safe to drink</p>
-                <p></p>
-            </div>
-            <div class="card-footer text-muted">
-                <p>17 aug 18</p>
-            </div>
-        </div>
         <div class="card">
             <a href="img\Strandborrel\1.jpg" title="1" data-gallery="#blueimp-gallery-club">
                 <img class="card-img-top" src="img/Strandborrel/2.jpg" alt="Strandborrel">
@@ -157,20 +114,6 @@
             </div>
         </div>
         
-        <div class="card">
-            <a href="img\Groep\Originals\Georgia.jpg" title="1" data-gallery="#blueimp-gallery-group">
-                <img class="card-img-top" src="img/Groep/Georgia.jpg" alt="Georgia">
-            </a>
-            <div class="card-header">
-                {{ trans('info.beautiful') }}
-            </div>
-            <div class="card-body">
-                <div class="card-title">{{ trans('info.beautiful_descr1') }}</div>
-                <p>{{ trans('info.beautiful_descr2') }}</p>
-                <p>{{ trans('info.beautiful_descr3') }}<a href="program">{{ trans('info.program') }}</a></p>
-            </div>
-        </div>
-        
         @if(Auth::user()->hasRole('Member'))
             <div class="card">
                 <a href="http://www.tabula.ge/en/story/115667-civil-society-activists-protest-lari-depreciation" target="_blank">
@@ -189,7 +132,58 @@
                     10 nov 18
                 </div>
             </div>
-        @endif     
+        @endif
+        
+        <div class="card">
+            <div class="card-body">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="img/Groep/Kenya.jpg" style="width:100%">
+                    <div class="text">Kenya 1989</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="img/Groep/Lappland.jpg" style="width:100%">
+                    <div class="text">Lappland 1994</div>
+                </div>      
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="img/Groep/Cameroun.jpg" style="width:100%">
+                    <div class="text">Cameroun 1999</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="img/Groep/Oman.jpg" style="width:100%">
+                    <div class="text">Oman 2005</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="img/Groep/Carpathians.jpg" style="width:100%">
+                    <div class="text">Karpaten 2009</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="img/Groep/Dalarna.jpg" style="width:100%">
+                    <div class="text">Dalarna 2014</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 7</div>
+                    <a href="img\Trips\Georgia\1.jpg" title="1" data-gallery="#blueimp-gallery-georgia">
+                        <img src="img/Groep/Georgia.jpg" style="width:100%">
+                    </a>
+                    <div class="text">Georgia 2018</div>
+                </div>
+                <div id="blueimp-gallery-group" class="blueimp-gallery blueimp-gallery-controls">
+                    <div class="slides"></div>
+                    <h3 class="title"></h3>
+                    <a class="prev">‹</a>
+                    <a class="next">›</a>
+                    <a class="close">×</a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator"></ol>
+                </div>
+            </div>
+        </div>
         
         <div class="card">
             <img class="card-img-top" src="img/Other/Question.jpg" alt="Vraag?">

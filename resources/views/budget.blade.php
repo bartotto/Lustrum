@@ -14,9 +14,9 @@
                 <div class="row">
                     <TABLE>
                         <TR>
-                            <TD WIDTH="365" HEIGHT="30"><span style="font-weight:bold">{{ trans('info.budgetDescription') }}</span></TD>
-                            <TD align="right"><span style="font-weight:bold">{{ trans('info.budgetBudget') }}</span></TD>
-                            <TD align="right"><span style="font-weight:bold">{{ trans('info.budgetActual') }}</span></TD>
+                            <TD WIDTH="365" HEIGHT="30"><span style="font-size:75%; font-weight:bold">{{ trans('info.budgetDescription') }}</span></TD>
+                            <TD align="right"><span style="font-size:75%; font-weight:bold">{{ trans('info.budgetBudget') }}</span></TD>
+                            <TD align="right"><span style="font-size:75%; font-weight:bold">{{ trans('info.budgetActual') }}</span></TD>
                         </TR>
                         <TR>
                             <TD WIDTH="365" HEIGHT="30">Vliegticket retour AMS - TBI</TD>
@@ -90,9 +90,9 @@
             <div class="card-header">{{ trans('info.lappen_status') }}</div>
             <div class="card-body">
                 <div class="row">
-                    <div class="card-title col-3"></div>
-                    <div class="card-title col-5 text-right" style="font-weight:bold">{{ trans('info.budgetKop1') }}</div>
-                    <div class="card-title col-4 text-right" style="font-weight:bold">{{ trans('info.budgetKop2') }}</div>
+                    <div class="card-title col-4"></div>
+                    <div class="card-title col-5 text-right" style="font-size:75%; font-weight:bold">{{ trans('info.budgetKop1') }}</div>
+                    <div class="card-title col-3 text-right" style="font-size:75%; font-weight:bold">{{ trans('info.budgetKop2') }}</div>
                 </div>
                 @foreach ($joiners as $joiner)
                     <div class="row">

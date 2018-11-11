@@ -22,8 +22,8 @@ Route::group(['middleware' => 'language'], function () {
     Route::view('destination', 'destination');
     Route::view('destination_map', 'destination_map');
     Route::view('program', 'program');
-    Route::view('tripPhoto','tripPhoto');
-    Route::view('tripVideo','tripVideo');
+    Route::view('photos','photos');
+    Route::view('video','video');
     Route::view('luco', 'luco');
     Route::get('joiners/{trip}', 'UsersController@joiners');
     Route::get('admin', 'AdminController@index');

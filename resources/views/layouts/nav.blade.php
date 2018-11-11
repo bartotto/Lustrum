@@ -36,10 +36,10 @@
                         <a class="nav-link" href="/posts">{{ trans('info.blog') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/tripPhoto">{{ trans('info.trips') }}</a>
+                        <a class="nav-link" href="/photos">{{ trans('info.photo') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/tripVideo">{{ trans('info.video') }}</a>
+                        <a class="nav-link" href="/video">{{ trans('info.video') }}</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

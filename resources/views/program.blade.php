@@ -123,6 +123,49 @@
                 10 aug 18
             </div>
         </div>
+        
+        <div class="card">
+            <img class="card-img-top" src="img/Other/Rugzak.jpg" alt="Paklijst">
+            <div class="card-header">
+                {{ trans('info.packlist') }}
+            </div>
+            <div class="card-body">
+                <p>Main backpack. Although the horses will carry our luggage during the hikes, you will want something you can carry comfortably if needed. Don’t forget the rain cover; some packs come with one built-in. </p>
+                <p>Day pack which can carry some minimal belongings which you may need during the hike, e.g.:</p>
+                <ul>
+                    <li>Water bottle</li>
+                    <li>Sunglasses</li>
+                    <li>Sunburn lotion</li>
+                    <li>Rain jacket</li>
+                    <li>Gloves</li>
+                    <li>Piece of plastic to sit on when we take a break during the day – in case it is wet</li>
+                    <li>Nordic walking stick (optional)</li>
+                    <li>Passport that is still 6 months valid at departure</li>
+                    <li>Appropriate travel insurance</li>
+                </ul>
+                <p>Main backpack:</p>
+                <ul>
+                    <li>Sleeping bag & pillow (David will provide tents & mattresses)</li>
+                    <li>Hiking boots offering sufficient support in rough terrain</li>
+                    <li>Clothes suitable for warm, cold, rainy and dry weather conditions</li>
+                    <li>swimming trunks</li>
+                    <li>Luco Kledinglijn Committee will arrange fleece & cap</li>
+                    <li>Toiletries, towel</li>
+                    <li>IOUs</li>
+                    <li>The Luco will bring a First aid kit. You are responsible for any personal medicine.</li>
+                    <li>Knife or multi-purpose tool</li>
+                    <li>Torch or headlamp: plus extra batteries</li>
+                    <li>Solar battery charger</li>
+                    <li>BONUS: Trash Bag. A zip lock bag is a great option</li>
+                </ul>
+                <p>Water filter not required – the water from the streams is safe to drink</p>
+                <p></p>
+            </div>
+            <div class="card-footer text-muted">
+                <p>17 aug 18</p>
+            </div>
+        </div>
+        
         <div class="card">
             <img class="card-img-top" src="img/Other/Question.jpg" alt="Vraag?" height="auto" width="48">
             <div class="card-header">

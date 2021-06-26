@@ -27,6 +27,7 @@
         "cross-env": "^5.2.0",
         "jquery": "^3.5.0",
         "laravel-mix": "^4.0.15",
+<<<<<<< HEAD
 >>>>>>> 5a6b1f64bd7bcf7a7585529cbd664665e1254393
         "lodash": "^4.17.11",
         "resolve-url-loader": "^4.0.0",
@@ -34,6 +35,9 @@
 =======
         "laravel-mix": "^4.0.15",
         "lodash": "^4.17.19",
+=======
+        "lodash": "^4.17.21",
+>>>>>>> e3901ddb9cde1095d2a4d7fe1567543efc458bb5
         "resolve-url-loader": "^2.3.2",
         "sass": "^1.20.1",
 >>>>>>> c3b8cd83c02d05f259128fd194b02425ea5dea34

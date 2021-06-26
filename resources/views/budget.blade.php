@@ -104,5 +104,5 @@
             </div>
         </div>
     </div>
-    <script src="{{ asset('js/photo.js') }}"></script>
+    <!-- <script src="{{ asset('js/photo.js') }}"></script> -->
 @endsection

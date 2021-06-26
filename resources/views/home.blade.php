@@ -201,5 +201,20 @@
             </div>
         </div>
     </div>
-    <script src="{{ asset('js/photo.js') }}"></script>
 @endsection
+
+@push('script-for-view')
+    <!-- <script src="{{ asset('js/photo.js') }}"></script> -->
+    <script>
+        window.addEventListener("load", function() {
+            document.getElementById('links').onclick = function (event) {
+                event = event || window.event
+                var target = event.target || event.srcElement
+                var link = target.src ? target.parentNode : target
+                var options = { index: link, event: event }
+                var links = this.getElementsByTagName('a')
+                blueimp.Gallery(links, options)
+            }
+        });
+    </script>
+@endpush

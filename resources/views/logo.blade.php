@@ -2,7 +2,6 @@
 @section('subtitle', '| '.trans('info.tamada'))
 @section('content')
     <div class="card-columns">
-        
         <div class="card">
             <img class="card-img-top" src="img/Logos/Georgia_new.jpg" alt="Logo Georgia" height="auto" width="48">
             <div class="card-header">

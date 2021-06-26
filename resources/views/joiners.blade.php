@@ -101,7 +101,10 @@
             </div>
         </div>
     </div>
-    <script src="{{ asset('js/photo.js') }}"></script>
+@endsection
+
+@push('script-for-view')
+    <!-- <script src="{{ asset('js/photo.js') }}"></script> -->
     <script>
         // Get the modal
         var modal = document.getElementById('myModal');
@@ -124,4 +127,4 @@
           modal.style.display = "none";
         }
     </script>
-@endsection
+@endpush

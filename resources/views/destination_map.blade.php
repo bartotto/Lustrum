@@ -2,6 +2,9 @@
 @section('subtitle', '| '.trans('info.map'))
 @section('content')
     <div id="map"></div>
+@endsection
+
+@push('script-for-view')
     <script>
         function myMap() {
             var tbilisi = {lat: 41.717, lng: 44.827};
@@ -19,4 +22,4 @@
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3PveB9htkol0a_N0hBEEzfEzUM4B9xUY&callback=myMap">
     </script> 
-@endsection
+@endpush

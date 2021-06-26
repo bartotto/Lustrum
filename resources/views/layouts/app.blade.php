@@ -25,7 +25,7 @@
     </head>
     <body>
         <h1 style="margin:auto; text-align:center; vertical-align:middle; background-color:#f9f9f9; padding:20px;">
-            VII<sup>e</sup> Lustrumreis Caligula: Kaukasisch Hilarisch!
+            VIII<sup>e</sup> Lustrumreis Caligula: Waar gaan wij deze keer naar toe?
         </h1>  
         <div id="app">
             <header>

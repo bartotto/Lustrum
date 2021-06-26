@@ -92,7 +92,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <img id="myImg" src="/img/Other/Matrix.png" alt="Matrix" style="max-width:1400px">
+                        <img id="myImg" src="/img/Other/Matrix.png" alt="Matrix" style="max-width:780px">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">{{ trans('info.close') }}</button>

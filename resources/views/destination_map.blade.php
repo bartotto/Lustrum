@@ -12,14 +12,14 @@
                 zoom: 6,
                 center: tbilisi,
                 mapTypeId: google.maps.MapTypeId.roadmap
-                });
-            var marker = new google.maps.Marker({
+            });
+            var marker = new google.maps.Marker( {
                 position: tbilisi,
                 map: map
-                });
-            }
+            });
+        }
     </script>
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3PveB9htkol0a_N0hBEEzfEzUM4B9xUY&callback=myMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3PveB9htkol0a_N0hBEEzfEzUM4B9xUY&callback=myMap">
     </script> 
 @endpush

@@ -60,7 +60,7 @@
                             {{ Auth::user()->first_name }}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
-                            <a class="dropdown-item" href="/users/{{ Auth::user()->id }}">{{ trans('info.profile') }}</a>
+                            <a class="dropdown-item" href="/users/{{ Auth::id() }}">{{ trans('info.profile') }}</a>
                             @if(Auth::user()->hasRole('Luco'))
                                 <a class="dropdown-item" href="/admin">{{ trans('info.admin') }}</a>
                             @endif

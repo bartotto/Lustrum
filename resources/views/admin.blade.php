@@ -13,7 +13,7 @@
                     @if($user->previous_last_login)
                         <div class="row">
                             <div class="col-sm">{{ $user->first_name}}</div>
-                            <div class="col-sm">{{ $user->last_login->format('d/m') }}&nbsp;{{ $user->last_login->format('H:i') }}</div>
+                            <div class="col-sm">{{ $user->last_login->format('d/m/y') }}&nbsp;{{ $user->last_login->format('H:i') }}</div>
                         </div>
                     @endif
                 @endforeach

@@ -20,7 +20,7 @@
                     <i class="fa fa-undo">{{ trans('info.back') }}</i>
                 </button>
                 @if(Auth::id() == $user->id)
-                    <a class="btn btn-primary" href="{{ route('users.edit', ['id'=>$user->id]) }}">
+                    <a class="btn btn-primary" href="{{ route('users.edit', $user->id) }}">
                         <i class="fa fa-edit"> {{ trans('info.edit') }}</i>
                     </a>
                 @endif
@@ -31,7 +31,7 @@
                     </TR>
                     <TR>
                         <TD WIDTH="165">{{ trans('info.dob') }}</TD>
-                        <TD>{{ date("d-m-Y", strtotime($user->dob)) }}</TD>
+                        <TD>{{ date('d-m-Y', strtotime($user->dob)) }}</TD>
                     </TR>
                     <TR>
                         <TD WIDTH="165">{{ trans('info.email_address') }}</TD>
@@ -73,7 +73,7 @@
                     </div>
                     <div class="card-body">
                         @if(Auth::id() == $user->id)
-                            <a class="btn btn-primary" href="{{ route('users.edit_partner', ['id'=>$user->id]) }}">
+                            <a class="btn btn-primary" href="{{ route('users.edit_partner', $user->id) }}">
                                 <i class="fa fa-edit"> {{ trans('info.edit') }}</i>
                             </a>
                         @endif
@@ -125,7 +125,7 @@
             </div>
             <div class="card-body">
                 @if(Auth::id() == $user->id)
-                    <a class="btn btn-primary" href="{{ route('users.edit_other', ['id'=>$user->id]) }}">
+                    <a class="btn btn-primary" href="{{ route('users.edit_other', $user->id) }}">
                         <i class="fa fa-edit"> {{ trans('info.edit') }}</i>
                     </a>
                 @endif

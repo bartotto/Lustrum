@@ -14,10 +14,17 @@
         "bootstrap": "^4.5.0",
         "cross-env": "^7.0.2",
         "jquery": "^3.4.1",
+<<<<<<< HEAD
         "laravel-mix": "^6.0.25",
         "lodash": "^4.17.11",
         "resolve-url-loader": "^4.0.0",
         "sass": "^1.27.1",
+=======
+        "laravel-mix": "^4.0.15",
+        "lodash": "^4.17.19",
+        "resolve-url-loader": "^2.3.2",
+        "sass": "^1.20.1",
+>>>>>>> c3b8cd83c02d05f259128fd194b02425ea5dea34
         "sass-loader": "^7.1.0",
         "vue": "^2.6.10",
         "vue-template-compiler": "^2.6.10"
